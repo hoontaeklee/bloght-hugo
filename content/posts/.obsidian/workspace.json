@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "8722e86ed58ab032",
+    "type": "split",
+    "children": [
+      {
+        "id": "49ecdc038e5c0972",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e98a6c4ac778d4d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20191229_blogging_with_hugo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20191229_blogging_with_hugo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f179982a9808e21e",
+    "type": "split",
+    "children": [
+      {
+        "id": "022fb5d6392e65c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99ed576585ed40b3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "69346039a2992a23",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "dropbox",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "def17da60922bee0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4e126974fa14ca89",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec9e87dc5a412130",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21802782f11d1227",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "20231119_jena_wk167.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 20231119_jena_wk167"
+            }
+          },
+          {
+            "id": "3475c8cfe2d55927",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "20231119_jena_wk167.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 20231119_jena_wk167"
+            }
+          },
+          {
+            "id": "f4bb67dbbd88ba30",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6eb30a773fcefb2e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "20231119_jena_wk167.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 20231119_jena_wk167"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "69346039a2992a23",
+  "lastOpenFiles": [
+    "20191208_Dropbox-RStudio-Github연동.md",
+    "20250913_paris_wk010.md",
+    "20250921_paris_wk011.md",
+    "weekly_log_in_Paris/wk011/Paris_wk011_014.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_013.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_012.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_011.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_010.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_009.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_008.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_007.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_006.jpg",
+    "weekly_log_in_Paris/wk011/Paris_wk011_005.jpg",
+    "weekly_log_in_Paris/wk011",
+    "20250913_paris_wk008.md",
+    "20250913_paris_wk009.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "20241020_jena_wk215.md",
+    "weekly_log_in_Paris/wk008",
+    "20250913_paris_wk007.md",
+    "20250817_paris_wk006.md",
+    "20250810_paris_wk005.md",
+    "weekly_log_in_Paris/wk007",
+    "20191229_blogging_with_hugo.md",
+    "20250803_paris_wk004.md",
+    "weekly_log_in_Paris/wk006",
+    "weekly_log_in_Paris/wk005",
+    "20250628_jena_wk250.md",
+    "20250616_jena_wk249.md",
+    "20250712_jena_wk251.md",
+    "20250712_jena_wk252.md",
+    "20250721_paris_wk002.md",
+    "20250727_paris_wk003.md",
+    "20250727_paris_wk004 (ossla's conflicted copy 2025-08-04).md",
+    "weekly_log_in_Paris/wk004",
+    "weekly_log_in_Paris/wk003",
+    "weekly_log_in_Paris/wk002",
+    "20250713_paris_wk001.md",
+    "20250616_jena_wk248.md",
+    "20250601_jena_wk247.md",
+    "20250525_jena_wk246.md",
+    "20250504_jena_wk243.md",
+    "20250511_jena_wk244.md",
+    "Research_topics.md",
+    "20250518_jena_wk245.md"
+  ]
+}

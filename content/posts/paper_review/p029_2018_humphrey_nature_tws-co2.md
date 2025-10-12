@@ -30,7 +30,7 @@ Although confirming the global relationship between CGR IAV and TWS, **this stud
 
 ## CGR IAV is strongly sensitive to TWS at the global scale.
 
-![](/en/posts/figures/paper_review/2018_Humphrey_fig2.jpg)
+![](/posts/figures/paper_review/2018_Humphrey_fig2.jpg)
 
 
 
@@ -44,7 +44,7 @@ Figure 2:
 
 ## CGR IAV shows higher partial correlation with TWS than temperature.
 
-![](/en/posts/figures/paper_review/2018_Humphrey_fig3.jpg)
+![](/posts/figures/paper_review/2018_Humphrey_fig3.jpg)
 
 
 
@@ -60,7 +60,7 @@ Figure 3:
 
 ## Models underestimate the magnitude of (soil) water-driven NEE IAV.
 
-![](/en/posts/figures/paper_review/2018_Humphrey_fig4.jpg)
+![](/posts/figures/paper_review/2018_Humphrey_fig4.jpg)
 
 
 

@@ -36,9 +36,9 @@ Their message can be summarized with this table.
 
 All the figures below support this conclusion, except for the global map of major river basins.
 
-| <img src="/en/posts/figures/paper_review/2008_Syed_fig6.png" style="zoom:100%;" /> | <img src="/en/posts/figures/paper_review/2008_Syed_fig7.png" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2008_Syed_fig6.png" style="zoom:100%;" /> | <img src="/posts/figures/paper_review/2008_Syed_fig7.png" style="zoom:100%;" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="/en/posts/figures/paper_review/2008_Syed_fig8.png" style="zoom:100%;" /> | <img src="/en/posts/figures/paper_review/2008_Syed_fig2.png" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2008_Syed_fig8.png" style="zoom:100%;" /> | <img src="/posts/figures/paper_review/2008_Syed_fig2.png" style="zoom:100%;" /> |
 
 Other messages include:
 

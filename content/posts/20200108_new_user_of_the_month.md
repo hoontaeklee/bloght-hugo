@@ -27,7 +27,7 @@ You’ve quickly become a valuable member of our community. Thanks for joining, 
 
 뱃지 수상자 명단은 [웹페이지](https://discourse.gohugo.io/badges/44/new-user-of-the-month)에 아래처럼 나와있다.
 
-![](/en/posts/20200108_new_user_of_the_month/20200108_new_user_of_the_month_fig1.jpg)
+![](/posts/20200108_new_user_of_the_month/20200108_new_user_of_the_month_fig1.jpg)
 
 2020년 1월 8일에 선정됐으니 19년 12월 활동 내역을 기준으로 한 것 같다. 하지만 내가 Hugo 커뮤니티에 질문을 올린 건 크리스마스 이후부터다. 두어 개 질문이긴 한데, 서로 피드백을 여러 번 주고 받아서 대화가 길어졌다. 그 덕에 받은 건가. 혹은 Hugo에 뉴비가 별로 없는 것인가(어느 달에는 한 명만 받았다).
 

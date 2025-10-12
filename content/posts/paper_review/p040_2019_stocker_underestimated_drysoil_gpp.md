@@ -30,14 +30,14 @@ Stocker et al. investigated the effect of dry soil on GPP across scales after is
 
 ## Global distribution of soil moisture effect on the global GPP IAV
 
-| <img src="/en/posts/figures/paper_review/2019_Stocker_figS9.png" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2019_Stocker_figS9.png" style="zoom:100%;" /> |
 | ------------------------------------------------------------ |
 
 - Values were calculated following Ahlstrom et al. (2015)
 - I can see that most of hotspots of the global TWS IAV errors have strong amplification of GPP IAV by dry soil (e.g., the Parana basin).
 - But also some of hotspots didn't show a clear sign (e.g., lower Mekong basin).
 
-| <img src="/en/posts/figures/paper_review/2019_Stocker_figS10.png" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2019_Stocker_figS10.png" style="zoom:100%;" /> |
 | ------------------------------------------------------------ |
 
 - Again, semi-arid regions pop up. 

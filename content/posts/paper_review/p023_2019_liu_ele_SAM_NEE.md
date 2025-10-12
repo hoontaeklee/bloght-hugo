@@ -49,7 +49,7 @@ The authors quantified the antecedent effect of some key factors on NEE. They us
 
 - **Scaling relationship** between environmental memory and water stress
 
-  ![](/en/posts/figures/paper_review/2019_Liu_fig1.jpg)
+  ![](/posts/figures/paper_review/2019_Liu_fig1.jpg)
 
 - **Drylands may be more vulnerable to the future droughts**
   

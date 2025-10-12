@@ -32,7 +32,7 @@ This is **a review paper of the FLUXCOM products of the carbon cycle** (i.e. GPP
 
 ## Schematic overview of the FLUXCOM initiative
 
-![](/en/posts/figures/paper_review/2020_jung_fig1.jpg)
+![](/posts/figures/paper_review/2020_jung_fig1.jpg)
 
 
 
@@ -86,7 +86,7 @@ This is an independent product of **top-down** method. I have heard many times t
 
 ### IAV
 
-![](/en/posts/figures/paper_review/2020_jung_fig8.jpg)
+![](/posts/figures/paper_review/2020_jung_fig8.jpg)
 
 
 

@@ -21,7 +21,7 @@ Guo, J.S., Hultine, K.R., Koch, G.W., Kropp, H. and Ogle, K. (2020), Temporal sh
 
 ## A key reference for applying the SAM framework
 
-I have reviewed a [paper](/en/posts/paper_review/p023_2019_liu_ele_SAM_NEE) in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). **However**, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.
+I have reviewed a [paper](/posts/paper_review/p023_2019_liu_ele_SAM_NEE) in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). **However**, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.
 
 **Instead**, I found this paper. Guo et al. provides an excellent reference case **with relevant R & JAGS source** **code** of sufficiently complex design.
 

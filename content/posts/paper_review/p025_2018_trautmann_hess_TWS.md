@@ -39,7 +39,7 @@ The terrestrial water storage consisted of two classifications: 1) snowpack, and
 
 ## Key findings
 
-![](/en/posts/figures/paper_review/2018_Trautmann_fig9.jpg)
+![](/posts/figures/paper_review/2018_Trautmann_fig9.jpg)
 
 The seasonal TWS variation was driven by the snowpack, while inter-annual variation was dominated by liquid water storages, especially by the soil moisture.
 
@@ -47,7 +47,7 @@ The seasonal TWS variation was driven by the snowpack, while inter-annual variat
 
 ## The hydrological model
 
-![](/en/posts/figures/paper_review/2018_Trautmann_fig2.jpg)
+![](/posts/figures/paper_review/2018_Trautmann_fig2.jpg)
 
 
 

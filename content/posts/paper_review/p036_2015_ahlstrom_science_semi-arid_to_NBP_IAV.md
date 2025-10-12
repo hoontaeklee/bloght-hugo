@@ -23,7 +23,7 @@ Ahlstrom A, Raupach MR, Schurgers G, Smith B, Arneth A, Jung M, et al. The domin
 
 The take-home message was simple and strong. Semi-arid regions dominated the global variability of land carbon sink variability (both long-term trend and interannual variability).
 
-| <img src="/en/posts/figures/paper_review/2015_Ahlstrom_fig1.jpg" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2015_Ahlstrom_fig1.jpg" style="zoom:100%;" /> |
 | -------------------------------------------------------------------------------------- |
 
 ## Reasoning: from the bird-eyes-view then zoomed-in view
@@ -42,7 +42,7 @@ This paper shares a similarity of methodologies with my current study on TWS. I 
 
 On top of temporal decomposition (i.e. long-term trend and IAV), I would like to mention **how they quantified regional contribution to the global NBP IAV**.
 
-| <img src="/en/posts/figures/paper_review/2015_Ahlstrom_eq1.jpg" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2015_Ahlstrom_eq1.jpg" style="zoom:100%;" /> |
 | ------------------------------------------------------------------------------------- |
 
 Accroding to eq. 1, they calculated **a contribution factor** for each region. Here are some properties of the factor:

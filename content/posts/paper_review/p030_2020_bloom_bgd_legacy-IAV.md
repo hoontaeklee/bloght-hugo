@@ -32,7 +32,7 @@ With this implication, I would be interested in **applying the methodology to SI
 
 ## Decomposing into LAG and CON
 
-![](/en/posts/figures/paper_review/2020_Bloom_eq13-15.jpg)
+![](/posts/figures/paper_review/2020_Bloom_eq13-15.jpg)
 
 The authors quantified the lagged effect by introducing the state ***x*** of the monthly climatological mean meteorological drivers.
 
@@ -47,14 +47,14 @@ and the two effects constitute the total change in state ***x*** in year ***a***
 It seems that **the lagged effect** in this study is driven by **physiological flexibility or sensitivity of the ecosystem**. The effect comes from differences in states between ones in long-term mean condition vs. ones in the current condition. **If the ecosystem is pretty (in)sensitive then the difference would decrease**. 
 
 
-![](/en/posts/figures/paper_review/2020_Bloom_fig3.jpg)
+![](/posts/figures/paper_review/2020_Bloom_fig3.jpg)
 
 
 
 
 ## Key Results
 
-![](/en/posts/figures/paper_review/2020_Bloom_table4.jpg)
+![](/posts/figures/paper_review/2020_Bloom_table4.jpg)
 
 Table4:
 
@@ -63,7 +63,7 @@ Table4:
 
 
 
-![](/en/posts/figures/paper_review/2020_Bloom_table5.jpg)
+![](/posts/figures/paper_review/2020_Bloom_table5.jpg)
 
 Table5:
 
@@ -76,7 +76,7 @@ Table5:
 ## Etc...
 
 - Schematic of the CARDAMOM framework (a DA framework) and DALEC2a model structure.
-  ![](/en/posts/figures/paper_review/2020_Bloom_fig1.jpg)
+  ![](/posts/figures/paper_review/2020_Bloom_fig1.jpg)
 - Why did not they decompose concurrent anomalies?
   - bc. their interest was the lagged effect?
 - In around line 515, they explained that "the enhanced foliar C in 2011 ... attributable to a combination of reduced fires and increase productivity..." **but both fires (Fig. S2) and production (Fig. 5) increased in 2011 over the Australian continent**. ...

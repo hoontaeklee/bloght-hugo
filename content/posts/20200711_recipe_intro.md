@@ -15,7 +15,7 @@ tags:
 - Recipe
 ---
 
-<img src="/en/posts/Recipe/Recipe_페이지_1.jpg" style="zoom:50%;" />
+<img src="/posts/Recipe/Recipe_페이지_1.jpg" style="zoom:50%;" />
 
 ### Recipe 시작
 

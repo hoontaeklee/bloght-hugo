@@ -30,7 +30,7 @@ Soil moisture (SM) and vapor pressure deficit (VPD) have been regarded as the ma
 
 ## Serendipity!? - decoupling SM-VPD coupling
 
-![](/en/posts/figures/paper_review/2020_Liu_fig2.jpg)
+![](/posts/figures/paper_review/2020_Liu_fig2.jpg)
 
 
 
@@ -40,7 +40,7 @@ They did not explain how this decoupling method could work. One possible explain
 
 ## A dominant SM stress
 
-![](/en/posts/figures/paper_review/2020_Liu_fig3.jpg)
+![](/posts/figures/paper_review/2020_Liu_fig3.jpg)
 
 
 
@@ -48,7 +48,7 @@ After making them decoupled, VPD-SIF relationship became weak and even reverted 
 
 
 
-![](/en/posts/figures/paper_review/2020_Liu_fig4.jpg)
+![](/posts/figures/paper_review/2020_Liu_fig4.jpg)
 
 
 
@@ -58,7 +58,7 @@ Why was SM, rather than VPD, the major driver of dryness stress over most terres
 
 ## A message to models
 
-![](/en/posts/figures/paper_review/2020_Liu_fig5.jpg)
+![](/posts/figures/paper_review/2020_Liu_fig5.jpg)
 
 
 

@@ -34,7 +34,7 @@ Here **the authors confirm land-atmosphere feedbacks** using satellite observati
 
 ## Feedbacks by each direction
 
-![](/en/posts/figures/paper_review/2017_Green_fig1.jpg)
+![](/posts/figures/paper_review/2017_Green_fig1.jpg)
 
 (**a, b**)
 
@@ -61,7 +61,7 @@ If they had quantified the each feedback process, they could have given more sou
 
 ## ESMs representation of feedbacks
 
-![](/en/posts/figures/paper_review/2017_Green_fig3.jpg)
+![](/posts/figures/paper_review/2017_Green_fig3.jpg)
 
 
 

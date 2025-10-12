@@ -50,6 +50,6 @@ With regard to the interpretation, it's quite **similar with that of the z-score
 
 > Alaska, the Caspian Sea, Northern India, Argentina, Chile, the Eastern Amazon, the High Plains Aquifer and California are hotspots of TWS loss. ... Iran, North-East China, Kazakhstan, South-East Asia, and several catchments in Southern Africa are also experiencing abnormal TWS loss.
 
-![](/en/posts/figures/paper_review/2021_vishwakarma_fig4.jpg)
+![](/posts/figures/paper_review/2021_vishwakarma_fig4.jpg)
 
 > similar TWS trends have markedly different TVR values.

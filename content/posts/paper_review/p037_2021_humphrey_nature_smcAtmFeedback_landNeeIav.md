@@ -33,12 +33,12 @@ Many studies have reported various factors such as SMC, Tair, and VPD, as the dr
 
 
 
-| <img src="/en/posts/figures/paper_review/2021_humphrey_fig1.jpg" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2021_humphrey_fig1.jpg" style="zoom:100%;" /> |
 | ------------------------------------------------------------------------------------- |
 
 
 
-| <img src="/en/posts/figures/paper_review/2021_humphrey_fig3.jpg" style="zoom:100%;" /> |
+| <img src="/posts/figures/paper_review/2021_humphrey_fig3.jpg" style="zoom:100%;" /> |
 | ------------------------------------------------------------------------------------- |
 
 

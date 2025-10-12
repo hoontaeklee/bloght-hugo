@@ -30,11 +30,11 @@ This paper compared time series pattern and temporal anomaly of diverse soil moi
 
 ### Controversy about KBDI
 
-![](/en/posts/figures/paper_review/2016_Holgate_table3.jpg)
+![](/posts/figures/paper_review/2016_Holgate_table3.jpg)
 
 
 
-![](/en/posts/figures/paper_review/2016_Holgate_fig8.jpg)
+![](/posts/figures/paper_review/2016_Holgate_fig8.jpg)
 
 --> The authors pointed out that the KBDI dried down too slowly after days of wet condition, which might be the cause of low correlation value. **However**, in my case, KBDI shows a good agreement with in-situ SMC observations without any slow responses after wet conditions.
 

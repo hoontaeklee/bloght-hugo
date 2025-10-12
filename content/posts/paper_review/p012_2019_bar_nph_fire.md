@@ -24,5 +24,5 @@ My research group at NIFOS was invited to write a research paper for a special i
 This paper, as other Tansley reviews often do, includes excellent visual summaries like Figure 3 which compiles the physiological responses of plant organs to fire injuries. In short, dreadful heat and drastic drying are the major causes of burning up NSCs, malfunctioning of the hydraulic system, and increasing susceptibility to insect attacks.
 After reading this,  I felt that the mechanism behind the fire-caused tree dieback is the same as the one behind general tree dieback. Fire is just one of the triggers.
 
-![](/en/posts/figures/paper_review/2019_Bar_fig1.jpg)
+![](/posts/figures/paper_review/2019_Bar_fig1.jpg)
 

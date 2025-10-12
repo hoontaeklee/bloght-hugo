@@ -84,7 +84,7 @@ enableGitInfo: true
 
 GA에서 해당 속성 페이지의 실시간 개요 페이지를 연다(**크롬**, **웨일** 기준으로는 북마크 페이지 아래에 맨 왼쪽에 **GA로고** 가 있고, 다음으로 **"애널리틱스"** 글자가 나오고 그 오른쪽에 계정-속성을 선택할 수 있는 단추가 있다).
 
-![](/en/posts/20200103_google_analytics_on_hugo/20200103_google_analytics_on_Hugo_fig1.jpg)
+![](/posts/20200103_google_analytics_on_hugo/20200103_google_analytics_on_Hugo_fig1.jpg)
 
 현재 활성 사용자 수가 1명으로 나온다. 이리저리 페이지를 옮겼기 때문에 우측 상단에 초당 페이지 뷰 수에 막대가 촘촘하게 생겼다. 그리고 사용 중 페이지도 잘 모니터링 되고 있다.  
 반면, 로컬 서버로 접속하면 위와 같은 변화가 나타나지 않는다.

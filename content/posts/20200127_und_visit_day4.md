@@ -14,17 +14,17 @@ draft: false
 
 아침부터 대학원생들이 공항까지 태워줬다. Thank you.
 
-![](/en/posts/20200127_und_visit_day4/day4-fig1.jpg)
+![](/posts/20200127_und_visit_day4/day4-fig1.jpg)
 
 --> 사우스벤드 공항. 매우 작다.
 
-![](/en/posts/20200127_und_visit_day4/day4-fig2.jpg)
+![](/posts/20200127_und_visit_day4/day4-fig2.jpg)
 
 --> Chicago style hotdog. 6달러 남짓. 그냥 핫도그다. 비행기가 한 시간 반정도 **지연**된 김에 간단하게 먹은 아침. 디트로이트에서 있을 두 시간 정도 여유가 날아갔다.
 
 지연은 됐지만, 디트로이트에 내리면 게이트로 가서 바로 다음 비행기 타면 되기 때문에 비행기 환승 시간은 충분했다. **쓸데없이 짐 찾겠다고 나갔다가 다시 배낭 검사 받지 않는 한...** 
 
-![](/en/posts/20200127_und_visit_day4/day4-fig3.jpg)
+![](/posts/20200127_und_visit_day4/day4-fig3.jpg)
 
 --> 인천 도착해서는 순두부찌개를 먹었다. **역시 한식이 좋다**.
 

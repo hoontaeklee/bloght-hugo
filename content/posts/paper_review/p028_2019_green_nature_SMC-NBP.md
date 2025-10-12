@@ -37,7 +37,7 @@ The authors decomposed changes in the total NBP into changes due to:
 
 
 
-![](/en/posts/figures/paper_review/2019_Green_fig1.jpg)
+![](/posts/figures/paper_review/2019_Green_fig1.jpg)
 
 
 
@@ -52,7 +52,7 @@ Figure 1:
 
 
 
-![](/en/posts/figures/paper_review/2019_Green_fig2.jpg)
+![](/posts/figures/paper_review/2019_Green_fig2.jpg)
 
 
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20250913_paris_wk009.md",
+                "file": "20250928_paris_wk009.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20250913_paris_wk009"
+              "title": "20250928_paris_wk009"
             }
           }
         ]
@@ -171,10 +171,12 @@
   },
   "active": "e98a6c4ac778d4d2",
   "lastOpenFiles": [
-    "20250913_paris_wk008.md",
-    "20250913_paris_wk010.md",
-    "20250921_paris_wk011.md",
     "20250913_paris_wk009.md",
+    "20250928_paris_wk009.md",
+    "20250928_paris_wk010.md",
+    "20250913_paris_wk010.md",
+    "20250913_paris_wk008.md",
+    "20250921_paris_wk011.md",
     "20250913_paris_wk007.md",
     "20250803_paris_wk004.md",
     "20250727_paris_wk003.md",
@@ -214,8 +216,6 @@
     "20250601_jena_wk247.md",
     "20250525_jena_wk246.md",
     "20250504_jena_wk243.md",
-    "20250511_jena_wk244.md",
-    "Research_topics.md",
-    "20250518_jena_wk245.md"
+    "20250511_jena_wk244.md"
   ]
 }

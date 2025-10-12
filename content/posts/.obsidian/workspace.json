@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20191229_blogging_with_hugo.md",
+                "file": "20250913_paris_wk009.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20191229_blogging_with_hugo"
+              "title": "20250913_paris_wk009"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dropbox",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,11 +169,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "69346039a2992a23",
+  "active": "e98a6c4ac778d4d2",
   "lastOpenFiles": [
-    "20191208_Dropbox-RStudio-Github연동.md",
+    "20250913_paris_wk008.md",
     "20250913_paris_wk010.md",
     "20250921_paris_wk011.md",
+    "20250913_paris_wk009.md",
+    "20250913_paris_wk007.md",
+    "20250803_paris_wk004.md",
+    "20250727_paris_wk003.md",
+    "20250817_paris_wk006.md",
+    "20250810_paris_wk005.md",
+    "20250712_jena_wk252.md",
+    "20250713_paris_wk001.md",
+    "20250721_paris_wk002.md",
+    "20191229_blogging_with_hugo.md",
+    "20191208_Dropbox-RStudio-Github연동.md",
     "weekly_log_in_Paris/wk011/Paris_wk011_014.jpg",
     "weekly_log_in_Paris/wk011/Paris_wk011_013.jpg",
     "weekly_log_in_Paris/wk011/Paris_wk011_012.jpg",
@@ -186,31 +196,20 @@
     "weekly_log_in_Paris/wk011/Paris_wk011_006.jpg",
     "weekly_log_in_Paris/wk011/Paris_wk011_005.jpg",
     "weekly_log_in_Paris/wk011",
-    "20250913_paris_wk008.md",
-    "20250913_paris_wk009.md",
     "Untitled 1.base",
     "Untitled.base",
     "20241020_jena_wk215.md",
     "weekly_log_in_Paris/wk008",
-    "20250913_paris_wk007.md",
-    "20250817_paris_wk006.md",
-    "20250810_paris_wk005.md",
     "weekly_log_in_Paris/wk007",
-    "20191229_blogging_with_hugo.md",
-    "20250803_paris_wk004.md",
     "weekly_log_in_Paris/wk006",
     "weekly_log_in_Paris/wk005",
     "20250628_jena_wk250.md",
     "20250616_jena_wk249.md",
     "20250712_jena_wk251.md",
-    "20250712_jena_wk252.md",
-    "20250721_paris_wk002.md",
-    "20250727_paris_wk003.md",
     "20250727_paris_wk004 (ossla's conflicted copy 2025-08-04).md",
     "weekly_log_in_Paris/wk004",
     "weekly_log_in_Paris/wk003",
     "weekly_log_in_Paris/wk002",
-    "20250713_paris_wk001.md",
     "20250616_jena_wk248.md",
     "20250601_jena_wk247.md",
     "20250525_jena_wk246.md",

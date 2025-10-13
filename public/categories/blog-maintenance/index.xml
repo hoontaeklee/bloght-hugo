@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog Maintenance on My New Hugo Site</title>
+    <link>http://localhost:1313/categories/blog-maintenance/</link>
+    <description>Recent content in Blog Maintenance on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Feb 2020 15:09:56 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blog-maintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to switch to another Hugo theme (Hugo 테마 변경하기)</title>
+      <link>http://localhost:1313/posts/20200215_switch_theme/</link>
+      <pubDate>Sat, 15 Feb 2020 15:09:56 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200215_switch_theme/</guid>
+      <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;Hugo theme 목록에 마음에 드는 테마가 올라왔다. 기존에 사용하던 &lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme&#34;&gt;Cupper&lt;/a&gt; 테마에서 &lt;a href=&#34;https://themes.gohugo.io//theme/hugo-theme-zzo/en/&#34;&gt;Zzo&lt;/a&gt; 테마로 바꾸기로 했다. 이유는 굳이 따지지 않는다. 그냥 바꾸고 싶은 거다.&lt;/p&gt;
+&lt;p&gt;Zzo 테마는 &lt;strong&gt;예쁘고&lt;/strong&gt;, 기능도 &lt;strong&gt;있을 것 다 있고&lt;/strong&gt;(맨 위로 가는 버튼, 이전/다음 게시글 이동 버튼 등), &lt;strong&gt;없을 기능도 있고&lt;/strong&gt;(Resume page, publication page, &amp;hellip;), &lt;strong&gt;&lt;a href=&#34;https://zzodocs.netlify.com/&#34;&gt;메뉴얼&lt;/a&gt;도 잘 돼있다&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;어떻게 바꿔야 할까.&lt;/p&gt;
+&lt;h1 id=&#34;plan&#34;&gt;Plan&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;처음에는&lt;/strong&gt; Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. &lt;strong&gt;삽질한 게 얼만데.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>검색 엔진에 블로그 노출시키기</title>
+      <link>http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/</link>
+      <pubDate>Sun, 12 Jan 2020 16:52:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/</guid>
+      <description>&lt;h2 id=&#34;lets-coming-out&#34;&gt;Let&amp;rsquo;s coming out&lt;/h2&gt;
+&lt;p&gt;블로그를 검색 엔진에 노출 시켜보자. 아주 간단하다.&lt;br&gt;
+게다가 참고할만한 &lt;a href=&#34;https://tinnia.github.io/blog/post4/&#34;&gt;좋은 글&lt;/a&gt;도 발견했다.&lt;/p&gt;
+&lt;p&gt;현재는 내 &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances&#34;&gt;utterance 게시글&lt;/a&gt;을 구글에서 찾아볼 수 없다.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C_fig1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;앞으로 어떻게 바뀔지 지켜보자.&lt;/p&gt;
+&lt;h2 id=&#34;google&#34;&gt;Google&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://search.google.com/search-console/about?hl=ko&#34;&gt;Google Search Console&lt;/a&gt;에 접속해서 &lt;strong&gt;시작하기&lt;/strong&gt; 를 누른다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;url(&lt;code&gt;https://username.github.io&lt;/code&gt;)을 입력하고 &lt;code&gt;계속&lt;/code&gt; 버튼을 누른다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;다운받으라는 &lt;code&gt;html&lt;/code&gt; 파일을 &lt;code&gt;블로그경로/public&lt;/code&gt; 파일에 저장하고 GitHub에 &lt;code&gt;push&lt;/code&gt;한다. 곧바로 소유권이 확인된다. &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C_fig2.jpg&#34;&gt;&lt;br&gt;
+&lt;strong&gt;속성으로 이동&lt;/strong&gt; 을 클릭하여 해당 페이지로 이동한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sitemap.xml&lt;/code&gt; 제출&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;먼저, &lt;code&gt;public&lt;/code&gt; 폴더에 &lt;code&gt;sitemap.xml&lt;/code&gt; 파일이 있는지 확인하자. 없다면 &lt;a href=&#34;https://tinnia.github.io/blog/post4/&#34;&gt;여기&lt;/a&gt;를 참고해서 만든다.&lt;/li&gt;
+&lt;li&gt;Google Search Console의 속성 페이지 왼쪽 메뉴에 &lt;strong&gt;Sitemaps&lt;/strong&gt; 라는 게 있다. 이걸 클릭하면 &lt;code&gt;sitemap.xml&lt;/code&gt; 파일을 등록할 수 있다. 등록할 때 해당 파일의 경로를 입력해야 한다. &lt;strong&gt;이 때&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;주소 입력란에 &amp;ldquo;sitemap.xml&amp;quot;이라고 입력한다.&lt;!-- raw HTML omitted --&gt; 물론, 실제로 &lt;code&gt;public&lt;/code&gt; 폴더에서 주소는 다르겠지만, 그 주소 입력하면 에러가 날 것이다. 성공하면 아래와 같이 보인다.&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C_fig3.jpg&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;변경 사항이 적용되려면 며칠 걸리는 듯하다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 블로그 게시글에 첨부한 로컬 이미지가 안 보일 때</title>
+      <link>http://localhost:1313/posts/20200106_using_local_image_in_md/</link>
+      <pubDate>Mon, 06 Jan 2020 20:59:44 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200106_using_local_image_in_md/</guid>
+      <description>&lt;h2 id=&#34;해답은-이미지-주소를-올바르게-참조하는-것&#34;&gt;해답은 이미지 주소를 올바르게 참조하는 것&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hugo 게시판에 올린 &lt;a href=&#34;https://discourse.gohugo.io/t/image-is-not-shown-or-broken-on-webpage/22584&#34;&gt;질문&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;블로그에 게시글 올릴 때, 게시글에 이미지를 자주 사용하게 된다.&lt;/p&gt;
+&lt;p&gt;마크다운으로 글을 작성할 때 해당 이미지의 &lt;strong&gt;인터넷 주소&lt;/strong&gt; 를 참조하거나, 혹은 이미지를 폴더에 저장한 후 저장한 &lt;strong&gt;폴더의 주소&lt;/strong&gt; 를 참조한다.&lt;/p&gt;
+&lt;p&gt;처음에 이런 방법으로 이미지를 첨부했는데, 마크다운 에디터 미리보기에서는 그 이미지가 보이지만 정작 웹페이지에서는 안 보이는 문제가 있었다.&lt;/p&gt;
+&lt;p&gt;답변을 참조하면서 이리저리 해보다가 &lt;strong&gt;working solution&lt;/strong&gt; 을 찾았다. 바로 1) 블로그 root directory와 그 하위 폴더는 주소에서 제외하는 것, 그리고 2) &lt;strong&gt;/&lt;/strong&gt; 로 시작하는 것이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 블로그에 Google analytics 추가하기</title>
+      <link>http://localhost:1313/posts/20200103_add_google_analytics/</link>
+      <pubDate>Fri, 03 Jan 2020 20:33:22 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200103_add_google_analytics/</guid>
+      <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
+&lt;p&gt;블로그는 사막에서 혼자 지낸다는 마음가짐으로 하는 것이지만, 그래도 누가누가 내 블로그에 오는지는 알고 싶은 법이다. 이를 위해 Google Analytics (GA)를 설치한다. &lt;a href=&#34;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&#34;&gt;이 글&lt;/a&gt;의 내용을 따라했다. 웹사이트에 GA를 추가하려면 두 가지가 필요하다:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Analytics 계정&lt;/li&gt;
+&lt;li&gt;Google Analytics를 추가할 Hugo 웹사이트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;google-analytics-계정-및-추적-id-생성&#34;&gt;Google Analytics 계정 및 추적 ID 생성&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://marketingplatform.google.com/about/analytics/&#34;&gt;여기&lt;/a&gt;에서 Google Analytics 계정을 생성한다.&lt;/p&gt;
+&lt;p&gt;GA는 웹사이트나 어플리케이션 등에 대한 데이터를 수집해주는 도구이다. 웹사이트의 경우 수집하는 데이터 종류는 방문한 사람 수, 방문한 사람의 유형, 유입 경로, 취한 행동(회원가입, 다운로드 등)에 따른 방문자 유형 등이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 블로그 댓글 기능 추가: utterances</title>
+      <link>http://localhost:1313/posts/20200101_add_utterances/</link>
+      <pubDate>Wed, 01 Jan 2020 15:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200101_add_utterances/</guid>
+      <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
+&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
+이 글에는 utterrances 소개는 관두고&amp;hellip; 설치 관련 내용만 적었다.&lt;/p&gt;
+&lt;h2 id=&#34;utterances-설치&#34;&gt;utterances 설치&lt;/h2&gt;
+&lt;h3 id=&#34;1-utterances-사이트-접속&#34;&gt;1. utterances 사이트 접속&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://utteranc.es/&#34;&gt;여기&lt;/a&gt;로 이동해서 &lt;code&gt;configuration&lt;/code&gt; 부분을 따라한다.&lt;/p&gt;
+&lt;h3 id=&#34;2-public-저장소-생성&#34;&gt;2. Public 저장소 생성&lt;/h3&gt;
+&lt;p&gt;나는 &lt;strong&gt;bloght-comments&lt;/strong&gt; 라고 만들었다.&lt;/p&gt;
+&lt;h3 id=&#34;3-blog-post--issue-mapping-theme-선택&#34;&gt;3. Blog Post ↔️ Issue Mapping, Theme 선택&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Blog Post ↔️ Issue Mapping&lt;/code&gt;은 세 번째 옵션을(Title 기준 매칭),&lt;br&gt;
+&lt;code&gt;Theme&lt;/code&gt;은 내 블로그가 밝으니 &lt;code&gt;Github Light&lt;/code&gt;를 선택했다.&lt;/p&gt;
+&lt;h3 id=&#34;4-enable-utterances&#34;&gt;4. Enable Utterances&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Enable Utterances&lt;/code&gt; 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.&lt;br&gt;
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 &lt;code&gt;Hugo&lt;/code&gt;가 어떻게 작동하는지 잘 모르니까 &lt;code&gt;hugo server&lt;/code&gt;로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 &lt;code&gt;footer.html&lt;/code&gt;에 담겨있었던 것 같으니 거기부터 시도.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 테마 커스터마이징 - 게시 날짜 및 시간</title>
+      <link>http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/</link>
+      <pubDate>Wed, 01 Jan 2020 13:31:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/</guid>
+      <description>&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%EB%AC%B8%EC%9D%98-%EC%82%AC%ED%95%AD&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#1-darklight-%EB%B2%84%ED%8A%BC-%EC%9C%84%EC%B9%98-%EB%B3%80%EA%B2%BD&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-%ED%8F%AC%EC%8A%A4%ED%8C%85-%EB%82%A0%EC%A7%9C-%EB%B0%8F-%EC%8B%9C%EA%B0%84-%EC%A0%95%EB%B3%B4-%EC%B6%94%EA%B0%80&#34;&gt;2. &lt;strong&gt;포스팅 날짜 및 시간 정보 추가&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-md-%ED%8C%8C%EC%9D%BC-%EB%82%B4-%EA%B2%8C%EC%8B%9C-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%A4%EC%A0%9C-%EB%82%A0%EC%A7%9C%EA%B0%80-%EA%B0%99%EC%9C%BC%EB%A9%B4-%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4-%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EB%AC%B8%EC%A0%9C&#34;&gt;3. &lt;strong&gt;.md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#4-%EC%8B%9C%EA%B0%84-%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C-%EC%A0%95%EB%A0%AC&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%ED%9B%84%EA%B8%B0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;블로그 테마로 &lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme&#34;&gt;Cupper&lt;/a&gt;를 선택했다.
+기본 세팅에서 네 가지 고치고 싶은 사항이 있어 &lt;a href=&#34;https://discourse.gohugo.io/t/four-issues-about-the-cupper-theme-dark-button-posting-time-and-an-error/22523&#34;&gt;Hugo Forum에 문의했다.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;문의-사항&#34;&gt;문의 사항&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Four issues about the cupper theme (dark button, posting time, and an error)
+I am building a static website using the Cupper theme (&lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme)&#34;&gt;https://github.com/zwbetz-gh/cupper-hugo-theme)&lt;/a&gt;.
+I have four issues:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기</title>
+      <link>http://localhost:1313/posts/20191229_blogging_with_hugo/</link>
+      <pubDate>Wed, 01 Jan 2020 13:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191229_blogging_with_hugo/</guid>
+      <description>&lt;h2 id=&#34;설치&#34;&gt;설치&lt;/h2&gt;
+&lt;h4 id=&#34;git-설치&#34;&gt;Git 설치&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/&#34;&gt;Git 홈페이지&lt;/a&gt; 오른쪽 아래 초록 링크&lt;/li&gt;
+&lt;li&gt;cmd에서 버전 잘 나오나 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git --version
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;hugo-설치&#34;&gt;Hugo 설치&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#windows&#34;&gt;Hugo 웹페이지&lt;/a&gt; 참고&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;C드라이브에 Hugo 폴더 생성(블로그 관련 파일 저장용)&lt;/li&gt;
+&lt;li&gt;Hugo 폴더 안에 bin 폴더 생성(Hugo 관련 파일 저장)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo 깃허브 저장소&lt;/a&gt;에서 최신 릴리즈 압축파일 다운로드&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C:/Hugo/bin&lt;/code&gt;에 압축 해제&lt;/li&gt;
+&lt;li&gt;환경변수에 &lt;code&gt;C:/Hugo/bin&lt;/code&gt;추가&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;윈도우 10: &lt;a href=&#34;https://gohugo.io/getting-started/installing/#for-windows-10-users&#34;&gt;여기&lt;/a&gt;를 참고
+&lt;ul&gt;
+&lt;li&gt;윈도우키 - &amp;ldquo;환경&amp;rdquo; 검색 - &amp;ldquo;계정의 환경 변수 편집&amp;rdquo; - 유저 변수에서 &lt;code&gt;Path&lt;/code&gt; 더블클릭 - 새로만들기 - &lt;code&gt;C:/Hugo/bin&lt;/code&gt;입력 - 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;환경변수를 추가하면 &lt;code&gt;C:/Hugo/bin&lt;/code&gt; 외의 경로에서도 &lt;code&gt;C:/Hugo/bin&lt;/code&gt;의 &lt;code&gt;hugo.exe&lt;/code&gt; 사용 가능(= Hugo 사용 가능)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;설치 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cmd&lt;/code&gt;에서 버전 정보 나오는지 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;웹사이트-생성&#34;&gt;웹사이트 생성&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;블로그 담을 폴더 생성(&lt;code&gt;\C:\Users\Owner\Dropbox\bloght&lt;/code&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dropbox - RStudio- Github 연동 : 더 편해졌을까?</title>
+      <link>http://localhost:1313/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/</link>
+      <pubDate>Wed, 01 Jan 2020 14:16:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/</guid>
+      <description>&lt;h2 id=&#34;2019-12-08&#34;&gt;2019. 12. 08.&lt;/h2&gt;
+&lt;p&gt;하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 
+옮기는 방식은 다음과 같다 :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Git의 블로그 저장소에 .md 파일 생성&lt;/li&gt;
+&lt;li&gt;옮기려는 워드 파일을 열어서 내용 복붙&lt;/li&gt;
+&lt;li&gt;오타, 문장 수정 &amp;amp; Preview를 보며 문장, 문단 배치 수정&lt;/li&gt;
+&lt;li&gt;표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가&lt;/li&gt;
+&lt;li&gt;Medium Story로 Publish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 &lt;code&gt;blogdown&lt;/code&gt; 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. &lt;a href=&#34;https://uang.tistory.com/11&#34;&gt;이 글&lt;/a&gt;을 참고해서 일단 해봤다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

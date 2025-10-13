@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>확률적 프로그래밍 기초 원리 | My New Hugo Site</title>
+<meta name="keywords" content="Book Review, 2020">
+<meta name="description" content="
+Intro
+요즘 종종 베이지안 네트워크(Bayesian network, BN)를 활용하는 논문이 보인다. 예를 들어 산불관련 논문에서는 산불 발생과 관련된 인위적, 자연적 인자를 나열한 후 각 인자 및 인자간 조합에 따른 산불 발생 확률을 분석했다.
+베이지안 네트워크에 흥미를 조금씩 가져가던 차에 과학원 도서관에서 이 책을 발견했다. 총 4부 중 실습과 관련된 3, 4부를 제외하고 1, 2부만 읽어보기로 했다. 개략적으로 살펴보는 게 목적이니까.
+Bayesian network
+Description
+간단히 정리하면
+베이지안 네트워크란 특정 상황에 대한 지식들을 원인과 결과의 형태로 표기하는 그래프를 말한다. 베이지안 네트워크는 명제를 벽돌삼는 몇 가지 형태(순차, 발산, 수렴)의 노드로 이루어져 있다. 이 벽돌을 구성하는 개념(확률, 조건부 확률, 진리표, 주관적 확률 등)은 1장~8장에서 설명하고 있다. 네트워크를 이루는 각 노드의 발생 확률을 정량적으로 구해서 이해하기 쉽게 표현하고 예측 및 추론에 사용할 수 있는 도구다.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20200225_probprog/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200225_probprog/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      확률적 프로그래밍 기초 원리
+    </h1>
+    <div class="post-meta"><span title='2020-02-25 20:54:40 +0900 +0900'>February 25, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><!-- raw HTML omitted -->
+<h2 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h2>
+<p>요즘 종종 <strong>베이지안 네트워크(Bayesian network, BN)를</strong> 활용하는 논문이 보인다. 예를 들어 산불관련 논문에서는 산불 발생과 관련된 인위적, 자연적 인자를 나열한 후 각 인자 및 인자간 조합에 따른 산불 발생 확률을 분석했다.</p>
+<p><strong>베이지안 네트워크</strong>에 흥미를 조금씩 가져가던 차에 과학원 도서관에서 이 책을 발견했다. 총 4부 중 실습과 관련된 3, 4부를 제외하고 1, 2부만 읽어보기로 했다. 개략적으로 살펴보는 게 목적이니까.</p>
+<h2 id="bayesian-network">Bayesian network<a hidden class="anchor" aria-hidden="true" href="#bayesian-network">#</a></h2>
+<h3 id="description">Description<a hidden class="anchor" aria-hidden="true" href="#description">#</a></h3>
+<p>간단히 정리하면</p>
+<p><strong>베이지안 네트워크란</strong> 특정 상황에 대한 지식들을 원인과 결과의 형태로 표기하는 그래프를 말한다. 베이지안 네트워크는 명제를 벽돌삼는 몇 가지 형태(순차, 발산, 수렴)의 노드로 이루어져 있다. 이 벽돌을 구성하는 개념(확률, 조건부 확률, 진리표, 주관적 확률 등)은 1장~8장에서 설명하고 있다. 네트워크를 이루는 <strong>각 노드의 발생 확률을 정량적으로 구해서 이해하기 쉽게 표현하고 예측 및 추론에 사용</strong>할 수 있는 도구다.</p>
+<p>인자가 많아질 수록 네트워크가 복잡해질 수 있는데, 베이지안 네트워크에서는 각 노드 간 독립성(자신, 부모, 자손을 제외한 모든 노드) 성질을 이용해 <strong>네트워크를 단순화</strong>할 수 있다.</p>
+<h3 id="why-bn">Why BN?<a hidden class="anchor" aria-hidden="true" href="#why-bn">#</a></h3>
+<p>이와 관련된 설명은 7, 8장에 잘 나와있다. 결론적으로 BN에서 사용하는 <strong>베이지안 확률(주관적 확률)로 현실을, 사람의 사고 과정을 잘 표현할 수 있기 때문</strong>이다.</p>
+<h4 id="객관적-확률과-주관적-확률">객관적 확률과 주관적 확률<a hidden class="anchor" aria-hidden="true" href="#객관적-확률과-주관적-확률">#</a></h4>
+<p><strong>객관적 확률</strong>에서는 참, 거짓 혹은 그 사건이 발생할 확률이 딱딱 계산된다. 반면, <strong>주관적 확률</strong>(vs 객관적 확률)에서는 사람마다 느끼는 <strong>사전 확률</strong>이 사건 발생 후 <strong>사후 확률</strong>로 수정되는 과정이 발생한다.</p>
+<h4 id="베이지안의-현실성">베이지안의 현실성<a hidden class="anchor" aria-hidden="true" href="#베이지안의-현실성">#</a></h4>
+<p>실제로 <strong>사람들은 베이지안과 비슷하게 추론</strong>한다. 증거를 본 후 기존 믿음에 변화를 준다.</p>
+<p>게다가 현실에서는 참/거짓으로 딱딱 나눠지는 상황, 단순한 인과관계를 갖는 상황이 아닌 경우가 많다. 참인 것 같으면서 어느 조건이 만족하면 거짓이 되는 등&hellip; 매우 복잡하다. 확률과 명제를 함께 사용하면 더 많은, 복잡한 정보를 <strong>현실에 가깝게 표현할 수 있다</strong>.</p>
+<h2 id="bayes-theorem--likelihood">Bayes theorem &amp; likelihood<a hidden class="anchor" aria-hidden="true" href="#bayes-theorem--likelihood">#</a></h2>
+<ul>
+<li>베이지안 정리 및 가능도(우도, likelihood)를 이해하는 데 조금 도움이 됐다. <strong>도움이 됐다</strong>는 것은 이 책이 특별히 설명을 잘 해서라기보다는 여러 번 이 정리와 용어를 봐오던 중 지금 우연히 이해도가 올라갔을 수 있다. <strong>조금</strong> 도움이 됐다는 것은 이 책이 설명을 못했다기보다는 원래 저 용어와 정리가 직관적으로 받아들이기 힘들다는 뜻이다.</li>
+<li>베이지안 정리는 <strong>사후확률 = 가능도 x 사전확률 / 증거</strong>로 쓸 수 있다. 수두가 발생하는 사건이 H, 붉은 반점이 보이는 사건이 D라고 하자. <strong>구하고 싶은 것은 P(H|D)</strong>, 즉 붉은 반점이 보일 때 수두일 확률이다. 베이지안 정리로 풀면 <strong>P(H|D) = P(D|H) x P(H) / P(D)이다</strong>. 수두는 한 천 명에 한 명 걸리나(사전확률)? 여기에 수두에 걸린 사람이 그 증거(붉은 반점)를 보일 확률(내 사전 믿음에서 해당 증거가 발견 될 가능성, likelihood)을 곱하고, 이것을 증거가 발생할 확률로 <strong>스케일링</strong>해준다.</li>
+<li>스케일링 해준다는 것은 전체 H집합 중 D에 해당하는 것으로 상정 범위를 좁혀준다는 뜻이다. <strong>사후확률오즈</strong>(두 베이지안 모델의 사후확률 비율)를 구할 때는 고려하지 않아도 된다. 두 모델 모두 P(D)를 분모로 하여 계산 중에 약분되기 때문이다. 이런 점에서도 P(D)로 나누는 것은 단순히 스케일을 조정하는 기능(표준편차 구할 때 제곱근을 구하는 것처럼)으로 볼 수 있을 것 같다.</li>
+</ul>
+<h2 id="others">Others<a hidden class="anchor" aria-hidden="true" href="#others">#</a></h2>
+<ul>
+<li><strong>6장 초반에 나오는 가능도에 대한 설명은 틀린 것 같다</strong>. 주어진 데이터를 기반으로 가설이 맞을 확률을 구하기 때문에 <strong>가능도 = P(H|D)라고</strong> 써 있는데, 앞 장의 표기방식이 변한 게 아니라면 <strong>가능도는 P(D|H)가</strong> 맞는 것 같다.</li>
+<li><strong>설명이 친절하다</strong>. 개념, 상황 등 설명을 정의 한 줄, 요약 한 줄로 끝내는 게 아니라 정의, 여러 예시와 자세한 풀이, 뒤에서 한 번 더 요약하고 다른 장에서 반복하기까지&hellip; 나는 이렇게 말하듯 자세히 풀어 설명해주는 게 좋다.</li>
+<li><strong>요약이 잘 돼있다</strong>. 첫 번째와 비슷한 장점이다. 장 끝마다 몇 포인트로 요약을 해뒀는데, 이것만 가볍게 읽어도 감을 잡을 수 있을 정도다.</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>제목</th>
+          <th>저자</th>
+          <th>출판사</th>
+          <th>판</th>
+          <th>출간</th>
+          <th>완독</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>확률적 프로그래밍 기초 원리</td>
+          <td>신승환</td>
+          <td>에이콘</td>
+          <td>1</td>
+          <td>2015. 09. 21.</td>
+          <td>2020. 02. 24.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/book-review/">Book Review</a></li>
+      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

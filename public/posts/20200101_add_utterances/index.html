@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Hugo 블로그 댓글 기능 추가: utterances | My New Hugo Site</title>
+<meta name="keywords" content="Hugo, GitHub, Blog, Customizing, 2020">
+<meta name="description" content="서론
+댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.
+이 글에는 utterrances 소개는 관두고&hellip; 설치 관련 내용만 적었다.
+utterances 설치
+1. utterances 사이트 접속
+여기로 이동해서 configuration 부분을 따라한다.
+2. Public 저장소 생성
+나는 bloght-comments 라고 만들었다.
+3. Blog Post ↔️ Issue Mapping, Theme 선택
+Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),
+Theme은 내 블로그가 밝으니 Github Light를 선택했다.
+4. Enable Utterances
+Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20200101_add_utterances/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200101_add_utterances/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Hugo 블로그 댓글 기능 추가: utterances
+    </h1>
+    <div class="post-meta"><span title='2020-01-01 15:35:00 +0900 +0900'>January 1, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="서론">서론<a hidden class="anchor" aria-hidden="true" href="#서론">#</a></h2>
+<p>댓글 기능이 꼭 필요할 것 같지는 않지만, <a href="#reference">좋은 레퍼런스</a>를 찾았기 때문에 일단 시도했다.<br>
+이 글에는 utterrances 소개는 관두고&hellip; 설치 관련 내용만 적었다.</p>
+<h2 id="utterances-설치">utterances 설치<a hidden class="anchor" aria-hidden="true" href="#utterances-설치">#</a></h2>
+<h3 id="1-utterances-사이트-접속">1. utterances 사이트 접속<a hidden class="anchor" aria-hidden="true" href="#1-utterances-사이트-접속">#</a></h3>
+<p><a href="https://utteranc.es/">여기</a>로 이동해서 <code>configuration</code> 부분을 따라한다.</p>
+<h3 id="2-public-저장소-생성">2. Public 저장소 생성<a hidden class="anchor" aria-hidden="true" href="#2-public-저장소-생성">#</a></h3>
+<p>나는 <strong>bloght-comments</strong> 라고 만들었다.</p>
+<h3 id="3-blog-post--issue-mapping-theme-선택">3. Blog Post ↔️ Issue Mapping, Theme 선택<a hidden class="anchor" aria-hidden="true" href="#3-blog-post--issue-mapping-theme-선택">#</a></h3>
+<p><code>Blog Post ↔️ Issue Mapping</code>은 세 번째 옵션을(Title 기준 매칭),<br>
+<code>Theme</code>은 내 블로그가 밝으니 <code>Github Light</code>를 선택했다.</p>
+<h3 id="4-enable-utterances">4. Enable Utterances<a hidden class="anchor" aria-hidden="true" href="#4-enable-utterances">#</a></h3>
+<p><code>Enable Utterances</code> 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.<br>
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 <code>Hugo</code>가 어떻게 작동하는지 잘 모르니까 <code>hugo server</code>로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 <code>footer.html</code>에 담겨있었던 것 같으니 거기부터 시도.</p>
+<pre tabindex="0"><code>&lt;footer role=&#34;contentinfo&#34;&gt;
+  {{ with .Site.Params.footer }}
+    {{ . | markdownify }}
+  {{ end }}
+&lt;/footer&gt;
+</code></pre><p>위와 같은 <code>footer.html</code>을 아래와 같이 바꿨다:</p>
+<pre tabindex="0"><code>&lt;footer role=&#34;contentinfo&#34;&gt;
+  {{ with .Site.Params.footer }}
+    {{ . | markdownify }}
+  {{ end }}
+  &lt;script src=&#34;https://utteranc.es/client.js&#34;
+        repo=&#34;hoontaeklee/bloght-comments&#34;
+        issue-term=&#34;title&#34;
+        theme=&#34;github-light&#34;
+        crossorigin=&#34;anonymous&#34;
+        async&gt;
+&lt;/script&gt;
+&lt;/footer&gt;
+</code></pre><p>원하는 결과가 나왔다:</p>
+<p><img loading="lazy" src="/posts/20200101_add_utterances/20200101_add_utterances_fig1.jpg"></p>
+<p>한 가지 문제가 있다. 원래 <code>Cupper</code> 테마는 댓글 플러그인으로 <code>Disqus</code> 사용을 전제로 만들어진 것 같다. 위 그림의 <code>Show comments</code> 버튼을 누르면 &ldquo;Disqus comments are disabled.&ldquo;라는 메시지가 뜬다. 두 가지 안이 있다.</p>
+<ol>
+<li>저 버튼을 살리면서 <code>Disqus</code>를 <code>utterances</code>로 교체: 버튼 디자인이 테마와 잘 어울린다</li>
+<li>저 버튼과 <code>Disqus</code>를 한 번에 제거</li>
+</ol>
+<p>버튼이 이쁘니 1안을 시도해보자.</p>
+<h2 id="disqus를-utterances로-대체">Disqus를 utterances로 대체<a hidden class="anchor" aria-hidden="true" href="#disqus를-utterances로-대체">#</a></h2>
+<p>각 게시글의 레이아웃 정보는 <code>post/single.html</code>에 담겨있다. 역시 테마 커스터마이징 때 삽질했던 게 도움이 된다(ㅜㅜ).</p>
+<p><code>single.html</code>을 보면 맨 아랫줄에</p>
+<pre tabindex="0"><code>&lt;/main&gt;
+{{ partial &#34;disqus.html&#34; . }}
+{{ end }}
+</code></pre><p>위와 같이 <code>partial</code>에 있는 <code>disqus.html</code>을 불러오도록 돼 있다. <code>disqus.html</code>을 확인해보자.</p>
+<pre tabindex="0"><code>&lt;div id=&#34;disqus-container&#34;&gt;
+  {{ with .Site.DisqusShortname }}
+    &lt;button id=&#34;disqus-button&#34; onclick=&#34;showComments()&#34;&gt;Show comments&lt;/button&gt;
+    &lt;div id=&#34;disqus-comments&#34;&gt;
+      {{ $isDummyName := eq . &#34;yourdiscussshortname&#34; }}
+      {{ $isServer := $.Site.IsServer }}
+      {{ if or $isDummyName $isServer }}
+        &lt;p&gt;&lt;em&gt;Disqus comments are disabled.&lt;/em&gt;&lt;/p&gt;
+        &lt;script type=&#34;application/javascript&#34;&gt;
+          function showComments() {
+            {{ partial &#34;disqus-js-common.js&#34; . | safeJS }}
+          }
+        &lt;/script&gt;
+      {{ else }}
+        &lt;div id=&#34;disqus_thread&#34;&gt;
+        &lt;/div&gt;
+        &lt;script type=&#34;application/javascript&#34;&gt;
+          function showComments() {
+            {{ partial &#34;disqus-js-main.js&#34; . | safeJS }}
+            {{ partial &#34;disqus-js-common.js&#34; . | safeJS }}
+          }
+        &lt;/script&gt;
+      {{ end }}
+      &lt;noscript&gt;Enable JavaScript to view Disqus comments.&lt;/noscript&gt;
+    &lt;/div&gt;
+  {{ end }}
+&lt;/div&gt;
+</code></pre><p><code>disqus.html</code>을 보면&hellip; 첫 부분에 <code>&lt;button id=&quot;disqus-button&quot; onclick=&quot;showComments()&quot;&gt;Show comments&lt;/button&gt;</code>와 같이 내가 보전하려 했던 버튼을 생성하는 듯한 코드가 보인다. 클릭하면 <code>showComments()</code>라는 함수가 작동하는 것 같다.<br>
+다음으로 <code>if</code> 조건문이 등장하는데, <code>disqus</code>가 <code>off</code>일 경우, <code>on</code>일 경우가 순서대로 적혀있다. 현재 나는 <code>disqus</code>를 설치하지 않았고, 버튼을 클릭하면 <code>disqus 없다</code>는 메시지가 나타난다. <code>on</code>일 경우는 어찌됐든 상관 없으니 지우고, <code>if</code>문 형식도 지우고, <code>off</code>인 경우 실행되는 코드만 살린다. 이 부분에서 메시지를 띄우는 듯한 <code>&lt;p&gt;&lt;em&gt;Disqus comments are disabled.&lt;/em&gt;&lt;/p&gt;</code>을 지우고 <code>utterances</code> 사이트에서 복사했던 코드를 붙여 넣자. 그럼 아래와 같이 남는다.</p>
+<pre tabindex="0"><code>&lt;div id=&#34;disqus-container&#34;&gt;
+  {{ with .Site.DisqusShortname }}
+    &lt;button id=&#34;disqus-button&#34; onclick=&#34;showComments()&#34;&gt;Show comments&lt;/button&gt;
+    &lt;div id=&#34;disqus-comments&#34;&gt;
+      {{ $isDummyName := eq . &#34;yourdiscussshortname&#34; }}
+      {{ $isServer := $.Site.IsServer }}
+        &lt;script type=&#34;application/javascript&#34;&gt;
+          function showComments() {
+            {{ partial &#34;disqus-js-common.js&#34; . | safeJS }}
+          }
+        &lt;/script&gt;
+        &lt;script src=&#34;https://utteranc.es/client.js&#34;
+              repo=&#34;hoontaeklee/bloght-comments&#34;
+              issue-term=&#34;title&#34;
+              theme=&#34;github-light&#34;
+              crossorigin=&#34;anonymous&#34;
+              async&gt;
+        &lt;/script&gt;
+      &lt;noscript&gt;Enable JavaScript to view Disqus comments.&lt;/noscript&gt;
+    &lt;/div&gt;
+  {{ end }}
+&lt;/div&gt;
+</code></pre><p>웹페이지를 보면</p>
+<p><img loading="lazy" src="/posts/20200101_add_utterances/20200101_add_utterances_fig2.jpg"></p>
+<p>잘 나왔다. <code>Show comments</code> 버튼을 클릭하면 위 그림과 같이 나온다.<br>
+다만, <code>Dark</code> 모드로 바꾸면 같이 어둡게 변하면 좋겠는데 계속 밝게 남아있어서 거슬린다. 일단은 여기까지.</p>
+<h2 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h2>
+<ul>
+<li><a href="https://github.com/Integerous/Integerous.github.io">Hugo로 Github.io 블로그 만들기</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/tags/github/">GitHub</a></li>
+      <li><a href="http://localhost:1313/tags/blog/">Blog</a></li>
+      <li><a href="http://localhost:1313/tags/customizing/">Customizing</a></li>
+      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

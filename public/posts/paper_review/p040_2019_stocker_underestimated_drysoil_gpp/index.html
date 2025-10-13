@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Paper Review: Stocker et al., (2019). Underestimated GPP by RS models under dry soils | My New Hugo Site</title>
+<meta name="keywords" content="2022, Research, Paper review">
+<meta name="description" content="19 February, 2022 (Stocker, ngeo, underestimated_drysoil_gpp)
+Stocker, B.D., Zscheischler, J., Keenan, T.F. et al. Drought impacts on terrestrial primary production underestimated by satellite monitoring. Nat. Geosci. 12, 264–270 (2019). https://doi.org/10.1038/s41561-019-0318-6Introduction
+Stocker et al. investigated the effect of dry soil on GPP across scales after isolating from the effect of VPD. I read this paper, wondering the global error distribution is associated with my global TWS IAV error map.
+Message: Soil moisture should be included as a GPP estimator as VPD alone cannot account for dry soil impact on GPP
+
+Dry soil effect reduces the global annual GPP by 15%
+The effect of dry soil decreases with increasing spatial scale, due to compensation from different regions.
+
+validated by symmetric pattern of histogram of soil moisture effect across the globe.
+it was interesting that the compensatory perspective is applied here as well
+
+
+
+Global distribution of soil moisture effect on the global GPP IAV
+
+  
+      
+          
+      
+  
+  
+  
+
+
+Values were calculated following Ahlstrom et al. (2015)
+I can see that most of hotspots of the global TWS IAV errors have strong amplification of GPP IAV by dry soil (e.g., the Parana basin).
+But also some of hotspots didn&rsquo;t show a clear sign (e.g., lower Mekong basin).
+
+
+  
+      
+          
+      
+  
+  
+  
+
+
+Again, semi-arid regions pop up.
+
+fLUE, a metric to quantify the bias from soil moisture effect
+Stocker et al. (2018) separated SM effect on GPP from VPM effect on GPP using neural network (NN), a magical blackbox.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/paper_review/p040_2019_stocker_underestimated_drysoil_gpp/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/paper_review/p040_2019_stocker_underestimated_drysoil_gpp/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Paper Review: Stocker et al., (2019). Underestimated GPP by RS models under dry soils
+    </h1>
+    <div class="post-meta"><span title='2022-02-19 14:46:17 +0100 +0100'>February 19, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="19-february-2022-stocker-ngeo-underestimated_drysoil_gpp">19 February, 2022 (Stocker, ngeo, underestimated_drysoil_gpp)<a hidden class="anchor" aria-hidden="true" href="#19-february-2022-stocker-ngeo-underestimated_drysoil_gpp">#</a></h2>
+<p>Stocker, B.D., Zscheischler, J., Keenan, T.F. <em>et al.</em> Drought impacts on terrestrial primary production underestimated by satellite monitoring. <em>Nat. Geosci.</em> <strong>12,</strong> 264–270 (2019). <a href="https://doi.org/10.1038/s41561-019-0318-6Introduction">https://doi.org/10.1038/s41561-019-0318-6Introduction</a></p>
+<p>Stocker et al. investigated the effect of dry soil on GPP across scales after isolating from the effect of VPD. I read this paper, wondering the global error distribution is associated with my global TWS IAV error map.</p>
+<h2 id="message-soil-moisture-should-be-included-as-a-gpp-estimator-as-vpd-alone-cannot-account-for-dry-soil-impact-on-gpp">Message: Soil moisture should be included as a GPP estimator as VPD alone cannot account for dry soil impact on GPP<a hidden class="anchor" aria-hidden="true" href="#message-soil-moisture-should-be-included-as-a-gpp-estimator-as-vpd-alone-cannot-account-for-dry-soil-impact-on-gpp">#</a></h2>
+<ul>
+<li>Dry soil effect reduces the global annual GPP by 15%</li>
+<li>The effect of dry soil decreases with increasing spatial scale, due to compensation from different regions.
+<ul>
+<li>validated by symmetric pattern of histogram of soil moisture effect across the globe.</li>
+<li><strong>it was interesting that the compensatory perspective is applied here as well</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="global-distribution-of-soil-moisture-effect-on-the-global-gpp-iav">Global distribution of soil moisture effect on the global GPP IAV<a hidden class="anchor" aria-hidden="true" href="#global-distribution-of-soil-moisture-effect-on-the-global-gpp-iav">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<ul>
+<li>Values were calculated following Ahlstrom et al. (2015)</li>
+<li>I can see that most of hotspots of the global TWS IAV errors have strong amplification of GPP IAV by dry soil (e.g., the Parana basin).</li>
+<li>But also some of hotspots didn&rsquo;t show a clear sign (e.g., lower Mekong basin).</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<ul>
+<li>Again, semi-arid regions pop up.</li>
+</ul>
+<h2 id="flue-a-metric-to-quantify-the-bias-from-soil-moisture-effect"><em>fLUE</em>, a metric to quantify the bias from soil moisture effect<a hidden class="anchor" aria-hidden="true" href="#flue-a-metric-to-quantify-the-bias-from-soil-moisture-effect">#</a></h2>
+<p><a href="https://doi.org/10.1111/nph.15123">Stocker et al. (2018)</a> separated SM effect on GPP from VPM effect on GPP using neural network (NN), a magical blackbox.</p>
+<p>They trained two kinds of NN to predict LUE. One learned from <strong>T, VPD, and PAR</strong>, the other one learned from <strong>T, VPD, PAR, and SM</strong>. So, the difference or ratio can be used as SM-alone effect on GPP.</p>
+<p><em>fLUE</em>  excellently quantifies and corrects model bias (e.g., Figure 1b).</p>
+<h2 id="behind-the-paper">Behind the paper&hellip;<a hidden class="anchor" aria-hidden="true" href="#behind-the-paper">#</a></h2>
+<p>Stocker wrote <a href="https://stineb.netlify.app/post/soilm_global/">an interesting post</a> about the background of this paper; most of them are well-described in the introduction of this paper as well.</p>
+<ul>
+<li><strong>Remote sensing cannot nicely monitor soil moisture.</strong>
+<ul>
+<li>or only limited to the very shallow layer (~5 cm)</li>
+</ul>
+</li>
+<li>So, <strong>many RS-based approaches rely on LUE model to estimate GPP</strong>
+<ul>
+<li>GPP = PAR * fAPAR * LUE</li>
+<li>PAR reflects light-GPP relationship</li>
+<li>fAPAR includes the effect of vegetation greeness, so does that of phenology and mortality which drought are one contributor to.</li>
+<li>LUE covers differences in leaf-level physiological responses.</li>
+<li>LUE is commonly modelled using vegetation properties, air temperature, and <strong>VPD</strong></li>
+</ul>
+</li>
+<li><strong>It has not been clear if VPD can represent the whole SM effect or not, and thereby further impact of the bias is not clear, either</strong></li>
+</ul>
+<h2 id="etc">etc<a hidden class="anchor" aria-hidden="true" href="#etc">#</a></h2>
+<p>An on-going challenge to monitor soil moisture and its effect on Earth system:</p>
+<blockquote>
+<p>Directly using soil moisture as an input to RS models has thus far been hampered by data availability with global coverage. New soil moisture data products that are based on microwave remote sensing47 may resolve this constraint but are generally representative only for upper soil layers
+(which limits their applicability to deep-rooted vegetation) and are subject to data gaps in regions with dense vegetation cover47. <strong>Recent</strong>
+<strong>efforts to estimate root-zone soil moisture48 combined with estimates of the global distribution of plant rooting depth49 may prove useful to address these limitations.</strong></p></blockquote>
+<p>A possible role of water storages other than ones in shallow soil layers:</p>
+<blockquote>
+<p>We further found <strong>a compensatory role of water limitation in different regions</strong> that leads to a reduced apparent soil moisture effecton IAV in global GPP. This reflects earlier work that found a declining importance of water availability on GPP and the land C balance when moving from local to global scales. However, we note that the model used for our analysis, as well as the one used by ref. 54, accounts for only relatively shallow soil water storage, <strong>without accounting for the possible role of other types of water storage that may be relevant for vegetation productivity (groundwater, for example), control its interannual variability and may preserve a strong soil moisture effect on C cycle variability at the global scale.</strong></p></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2022/">2022</a></li>
+      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
+      <li><a href="http://localhost:1313/tags/paper-review/">Paper Review</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

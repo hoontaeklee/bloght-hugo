@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>2019 on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/2019/</link>
+    <description>Recent content in 2019 on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2020 16:12:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기</title>
+      <link>http://localhost:1313/posts/20191229_blogging_with_hugo/</link>
+      <pubDate>Wed, 01 Jan 2020 13:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191229_blogging_with_hugo/</guid>
+      <description>&lt;h2 id=&#34;설치&#34;&gt;설치&lt;/h2&gt;
+&lt;h4 id=&#34;git-설치&#34;&gt;Git 설치&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/&#34;&gt;Git 홈페이지&lt;/a&gt; 오른쪽 아래 초록 링크&lt;/li&gt;
+&lt;li&gt;cmd에서 버전 잘 나오나 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git --version
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;hugo-설치&#34;&gt;Hugo 설치&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#windows&#34;&gt;Hugo 웹페이지&lt;/a&gt; 참고&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;C드라이브에 Hugo 폴더 생성(블로그 관련 파일 저장용)&lt;/li&gt;
+&lt;li&gt;Hugo 폴더 안에 bin 폴더 생성(Hugo 관련 파일 저장)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo 깃허브 저장소&lt;/a&gt;에서 최신 릴리즈 압축파일 다운로드&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C:/Hugo/bin&lt;/code&gt;에 압축 해제&lt;/li&gt;
+&lt;li&gt;환경변수에 &lt;code&gt;C:/Hugo/bin&lt;/code&gt;추가&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;윈도우 10: &lt;a href=&#34;https://gohugo.io/getting-started/installing/#for-windows-10-users&#34;&gt;여기&lt;/a&gt;를 참고
+&lt;ul&gt;
+&lt;li&gt;윈도우키 - &amp;ldquo;환경&amp;rdquo; 검색 - &amp;ldquo;계정의 환경 변수 편집&amp;rdquo; - 유저 변수에서 &lt;code&gt;Path&lt;/code&gt; 더블클릭 - 새로만들기 - &lt;code&gt;C:/Hugo/bin&lt;/code&gt;입력 - 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;환경변수를 추가하면 &lt;code&gt;C:/Hugo/bin&lt;/code&gt; 외의 경로에서도 &lt;code&gt;C:/Hugo/bin&lt;/code&gt;의 &lt;code&gt;hugo.exe&lt;/code&gt; 사용 가능(= Hugo 사용 가능)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;설치 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cmd&lt;/code&gt;에서 버전 정보 나오는지 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;웹사이트-생성&#34;&gt;웹사이트 생성&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;블로그 담을 폴더 생성(&lt;code&gt;\C:\Users\Owner\Dropbox\bloght&lt;/code&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>우리 몸이 세계라면</title>
+      <link>http://localhost:1313/posts/20191222_%EC%9A%B0%EB%A6%AC%EB%AA%B8%EC%9D%B4%EC%84%B8%EA%B3%84%EB%9D%BC%EB%A9%B4/</link>
+      <pubDate>Sun, 01 Mar 2020 16:12:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191222_%EC%9A%B0%EB%A6%AC%EB%AA%B8%EC%9D%B4%EC%84%B8%EA%B3%84%EB%9D%BC%EB%A9%B4/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;우리-몸이-세계라면--과학이-삐뚤어질-수-있는-방법&#34;&gt;우리 몸이 세계라면 – 과학이 삐뚤어질 수 있는 방법&lt;/h1&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;우리에게 필요한 지식을 만드는 일에 관하여&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;뒷표지에서 이 문구를 본 후 나는 이 책을 집어들어 서점을 나왔다. 이전에 김대식 교수의 “어떻게 질문할 것인가”를 읽을 때 기대했던 것처럼 혹시 “질문하는 방법”에 대한 내용이 담겨있을까 생각했다. 비록 이런 내용은 없었지만, 올해 읽은 최고의 책으로 꼽겠다.&lt;/p&gt;
+&lt;p&gt;김승섭 교수가 전공하는 역학(Epidemiology)은 인구집단에서 질병의 원인을 탐구하는 학문(p. 252)이다. 이 책 전반에는 &lt;strong&gt;1) 사회의 부조리함이 어떻게 특정 인구집단의 질병 발생에 영향을 미치는지&lt;/strong&gt;에 대한 이야기가 담겨있다. 이 이야기의 중심에는 지식 생산의 주요 수단인 과학이 있다. 김승섭 교수가 소개하는 사례 중 다수는 이해 관계, 사회적 분위기 등이 과학하기와 콜라보하여 잘못된 방식으로 연구가 진행된 것이 원인이었다. 김승섭 교수는 과학이 어떻게 잘못 진행되었는지를 밝히면서 &lt;strong&gt;2) 올바르게 과학하는 방법&lt;/strong&gt;에 대한 이야기를 함께 들려준다. 첫 번째 이야기는 PD수첩 등 사회 고발 프로그램을 보는 듯 흥미로우면서도 공감할 수 있는 부분이 많다. 특히 이 부조리가 다른 나라, 다른 인종뿐만 아니라 우리나라에서도 진행되고 있음을 보여주기에 스스로를 돌아보게 한다. 두 번째 이야기는 과학을 잘못된 길로 인도할 수 있는 요소가 무엇인지를 알려준다는 점에서 나처럼 과학을 하는 사람은 물론 과학 지식에 노출되고 소비하는 모든 사람들에게 유익할 내용이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Fisher (2010). JULES-ED. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p014_2010_fisher_nph_jules-ed/</link>
+      <pubDate>Sun, 01 Mar 2020 16:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p014_2010_fisher_nph_jules-ed/</guid>
+      <description>&lt;h2 id=&#34;18-december-2019-fisher-nph-jules-ed&#34;&gt;18 December, 2019 (Fisher, NPH, JULES-ED)&lt;/h2&gt;
+&lt;p&gt;Fisher, R., McDowell, N., Purves, D., Moorcroft, P., Sitch, S., Cox, P., Huntingford, C., Meir, P. and Ian Woodward, F. (2010), Assessing uncertainties in a second‐generation dynamic vegetation model caused by ecological scale limitations. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;, 187: 666-681. doi:10.1111/j.1469-8137.2010.03340.x&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How demographic processes of two-dimensional spatial scales influence simulations of community structure, and responses of ecosystems to climate change?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recently second-generation DGVMs have become advanced in their capability to simulate short-term surface gas and energy exchanges and atmospheric CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;However, the 2&lt;!-- raw HTML omitted --&gt;nd&lt;!-- raw HTML omitted --&gt; gen. DGVMs are still lack in representation of demographic processes because of insufficient observations.&lt;/li&gt;
+&lt;li&gt;This poor representations of competition and coexistence may bring uncertainties in simulation of the community structure and responses of ecosystem to climate change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Smith-Martin (2019). Liana. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p013_2019_smith-martin_nph_liana/</link>
+      <pubDate>Sun, 01 Mar 2020 16:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p013_2019_smith-martin_nph_liana/</guid>
+      <description>&lt;h2 id=&#34;17-december-2019-smith-martin-nph-liana&#34;&gt;17 December, 2019 (Smith-Martin, NPH, Liana)&lt;/h2&gt;
+&lt;p&gt;Smith‐Martin, C.M., Xu, X., Medvigy, D., Schnitzer, S.A. and Powers, J.S. (2019), Allometric scaling laws linking biomass and rooting depth vary across ontogeny and functional groups in tropical dry forest lianas and trees. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;. doi:10.1111/nph.16275&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do mature lianas invest less biomass in stems compared to trees? The authors tried to compare the investment strategy between lianas and trees.&lt;/li&gt;
+&lt;li&gt;Do juveniles follow the same allocation patterns as mature individuals?&lt;/li&gt;
+&lt;li&gt;Is either leaf phenology of life form a predictor of rooting depth?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to outline a paper</title>
+      <link>http://localhost:1313/posts/20191217_how_to_outline_a_paper/</link>
+      <pubDate>Sun, 23 Feb 2020 16:53:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191217_how_to_outline_a_paper/</guid>
+      <description>&lt;h3 id=&#34;which-information-do-i-have-to-mine-from-a-paper-for-developing-a-research-question&#34;&gt;Which information do I have to mine from a paper for developing a research question?&lt;/h3&gt;
+&lt;p&gt;Every day, I receive email alerts from journals or paper-searching websites. I skim through the title list in the alerts and select ones including keywords that I am interested in. In turn, I read the abstract to grasp what the paper is about and add it to my read-later folder if I feel it is interesting. After cycling the routine a lot, several problems have occurred:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dropbox - RStudio- Github 연동 : 더 편해졌을까?</title>
+      <link>http://localhost:1313/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/</link>
+      <pubDate>Wed, 01 Jan 2020 14:16:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/</guid>
+      <description>&lt;h2 id=&#34;2019-12-08&#34;&gt;2019. 12. 08.&lt;/h2&gt;
+&lt;p&gt;하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 
+옮기는 방식은 다음과 같다 :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Git의 블로그 저장소에 .md 파일 생성&lt;/li&gt;
+&lt;li&gt;옮기려는 워드 파일을 열어서 내용 복붙&lt;/li&gt;
+&lt;li&gt;오타, 문장 수정 &amp;amp; Preview를 보며 문장, 문단 배치 수정&lt;/li&gt;
+&lt;li&gt;표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가&lt;/li&gt;
+&lt;li&gt;Medium Story로 Publish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 &lt;code&gt;blogdown&lt;/code&gt; 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. &lt;a href=&#34;https://uang.tistory.com/11&#34;&gt;이 글&lt;/a&gt;을 참고해서 일단 해봤다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>블로그 시작과 플랫폼 선택</title>
+      <link>http://localhost:1313/posts/20191208_blogstart_platform/</link>
+      <pubDate>Wed, 01 Jan 2020 14:12:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191208_blogstart_platform/</guid>
+      <description>&lt;h3 id=&#34;블로그를-시작한다&#34;&gt;블로그를 시작한다.&lt;/h3&gt;
+&lt;p&gt;서평, 논문 리뷰, 생각 등 남겨두고 싶은 것들을 그냥 흘려보내지 않기 위함이 첫째다.&lt;br&gt;
+그리고 기록을 함으로써 생각을 구체적으로 정리할 수 있을 것 같고,&lt;br&gt;
+글쓰는 취미를 가지는 것은 직업에도 도움이 될 것 같다.&lt;br&gt;
+이렇게 남겨둔 글 하나하나가 모여서 하나의 완전한 창작물이 될 수 있다면 좋겠다.&lt;/p&gt;
+&lt;h3 id=&#34;플랫폼---고려사항&#34;&gt;플랫폼 - 고려사항&lt;/h3&gt;
+&lt;p&gt;어떤 플랫폼으로 블로그를 할지 고민을 &lt;del&gt;(or 고민만)&lt;/del&gt; 오래 했다.&lt;br&gt;
+염두에 둔 후보는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;R&lt;/code&gt;의 &lt;code&gt;Blogdown&lt;/code&gt; 라이브러리&lt;/li&gt;
+&lt;li&gt;Medium&lt;/li&gt;
+&lt;li&gt;Gitgub Pages or Netlify + Hugo
+이렇게 세 가지다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;플랫폼 결정에 고려한 사항은 네 가지다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Bar (2019). Fire. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p012_2019_bar_nph_fire/</link>
+      <pubDate>Sun, 01 Mar 2020 16:36:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p012_2019_bar_nph_fire/</guid>
+      <description>&lt;h2 id=&#34;7-december-2019-bar-nph-fire&#34;&gt;7 December, 2019 (Bar, NPH, Fire)&lt;/h2&gt;
+&lt;p&gt;Bär, A., Michaletz, S.T. and Mayr, S. (2019), Fire effects on tree physiology. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;, 223: 1728-1741. doi:10.1111/nph.15871&lt;/p&gt;
+&lt;p&gt;My research group at NIFOS was invited to write a research paper for a special issue of a journal. We decided to write a paper about the lagged browning after the forest fire at April 2019. I wrote about how forest fire affects an individual tree&amp;rsquo;s physiology, referring majorly to this paper.&lt;br&gt;
+This paper, as other Tansley reviews often do, includes excellent visual summaries like Figure 3 which compiles the physiological responses of plant organs to fire injuries. In short, dreadful heat and drastic drying are the major causes of burning up NSCs, malfunctioning of the hydraulic system, and increasing susceptibility to insect attacks.
+After reading this,  I felt that the mechanism behind the fire-caused tree dieback is the same as the one behind general tree dieback. Fire is just one of the triggers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>과학자의 글쓰기</title>
+      <link>http://localhost:1313/posts/20191130_%EA%B3%BC%ED%95%99%EC%9E%90%EC%9D%98%EA%B8%80%EC%93%B0%EA%B8%B0/</link>
+      <pubDate>Sun, 01 Mar 2020 16:04:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191130_%EA%B3%BC%ED%95%99%EC%9E%90%EC%9D%98%EA%B8%80%EC%93%B0%EA%B8%B0/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;이 책은 좋은 국내 과학 저서를 여러 권 소개해준다는 점에서 가치 있다. 또한 글 쓸 때 고려해볼만한 기본적이면서도 유용한 지침들도 함께 담겨있다.&lt;/p&gt;
+&lt;p&gt;그냥 지나칠 수 없는 제목이었다. 작년에 읽었던 “기자의 글쓰기”가 생각나기도 했다. 곧바로 구매한 후 내 독서 대기 목록에 올려뒀다.&lt;/p&gt;
+&lt;p&gt;나는 보통 글쓰기 책을 읽을 때는 문장을 쓰는 방법, 문단을 구성하는 방법 등 글쓰는 것 자체에 도움이 되는 방법을 얻고자 하는 마음이 있다. 하지만 이 책에 그런 팁은 담겨있지 않다. 대신, 본격적으로 글 쓰기에 돌입하기 전에 발생할 수 있는 여러 질문에 대답해주고 있다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>신이 내린 필력은 없지만 잘 쓰고 싶습니다</title>
+      <link>http://localhost:1313/posts/20191123_%EC%8B%A0%EC%9D%B4%EB%82%B4%EB%A6%B0%ED%95%84%EB%A0%A5/</link>
+      <pubDate>Sun, 01 Mar 2020 15:55:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191123_%EC%8B%A0%EC%9D%B4%EB%82%B4%EB%A6%B0%ED%95%84%EB%A0%A5/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;나는 여러 권의 &lt;strong&gt;글쓰기 관련 책&lt;/strong&gt;을 읽었다. 그 중 한 권을 추천한다면 영문 도서는 Joshua Schimel의 “Writing Science”를, &lt;strong&gt;한글 도서는 이 책을 추천&lt;/strong&gt;하겠다. 두 책 모두 단순, 명확하면서도 특정 종류가 아닌 일반적인 글쓰기에 통용될 수 있는 원칙을 다루고 있다.&lt;/p&gt;
+&lt;h2 id=&#34;글쓰기&#34;&gt;글쓰기&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;질문은 문장-기계를 돌리는 연료다. 한 문장을 쓰고 적절한 질문을 한 후 답하면, 다음 문장이 나온다. 문장을 지배하려면 질문을 지배해야 한다. 질문이 멈추면 문장도 멈춘다. … 질문을 통해 문장을 이어나가는 방식은 아주 단순하면서도 강력하다. 그 문장을 왜 썼고 왜 그 자리에 위치시켰는지 대답을 줄 수 있으면서도, 반대로 글 쓸 때 자연스레 이를 고민하게 해준다. (61-62 pp)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Resco de Dios (2019). FMC. AFM</title>
+      <link>http://localhost:1313/posts/paper_review/p011_2015_rescodedios_afm_fmc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:35:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p011_2015_rescodedios_afm_fmc/</guid>
+      <description>&lt;h2 id=&#34;12-august-2019-resco-de-dios-afm-fmc&#34;&gt;12 August, 2019 (Resco de Dios, AFM, FMC)&lt;/h2&gt;
+&lt;p&gt;Resco de Dios, V., Fellows, A.W., Nolan, R.H., Boer, M.M., Bradstock, R.A., Domingo, F. and Goulden, M.L. (2015). A semi-mechanistic model for predicting the moisture content of fine litter. &lt;strong&gt;&lt;em&gt;Agricultural and Forest Meteorology&lt;/em&gt;&lt;/strong&gt;, 203, 64-73.&lt;/p&gt;
+&lt;p&gt;I read this paper to get some hints for my fuel moisture research at NIFOS. This paper developed a semi-mechanistic model in which fuel moisture content (FMC) and vapor pressure deficit (VPD) were exponentially related. This model is able to be easily applied to other researches once VPD for target sites is known. Hence, contrary to my model, this model can be synergized with remote sensing VPD data sets to broaden the spatial scope of the model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Vinodkumar (2019). SMC. AFM</title>
+      <link>http://localhost:1313/posts/paper_review/p010_2019_vinodkumar_afm_smc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p010_2019_vinodkumar_afm_smc/</guid>
+      <description>&lt;h2 id=&#34;22-june-2019-vinodkumar-afm-smc&#34;&gt;22 June, 2019 (Vinodkumar, AFM, SMC)&lt;/h2&gt;
+&lt;p&gt;Vinodkumar and Dharssi (2019). Evaluation and calibration of a high-resolution soil moisture product for wildfire prediction and management. &lt;strong&gt;&lt;em&gt;Agricultural and Forest Meteorology&lt;/em&gt;&lt;/strong&gt;, 264, 27-39.&lt;/p&gt;
+&lt;p&gt;This paper can be a good guide for both of my researches at SNU and NIFOS. This paper used the JULES to predict soil moisture deficit (SMD), which is similar to the object of the study at SNU. On the other hand, the purpose of SMD prediction was to imporve a fire danger index, which is the same as my research at NIFOS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Berry (2019). FWU. PCE</title>
+      <link>http://localhost:1313/posts/paper_review/p009_2019_berry_pce_fwu/</link>
+      <pubDate>Sun, 01 Mar 2020 16:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p009_2019_berry_pce_fwu/</guid>
+      <description>&lt;h2 id=&#34;15-june-2019-berry-pce-fwu&#34;&gt;15 June, 2019 (Berry, pce, FWU)&lt;/h2&gt;
+&lt;p&gt;Berry, Z.C., Emery, N.C., Gotsch, S.G., Goldsmith, G.R. (2019). Foliar water uptake: Processes, pathways, and integration into plant water budgets. &lt;strong&gt;&lt;em&gt;Plant, Cell and Environment&lt;/em&gt;&lt;/strong&gt;, 42, 410-423.&lt;/p&gt;
+&lt;p&gt;As I saw foliar water uptake (FWU) in alert lists sometimes, I became curious about the process. So I read this paper. FWU was observed about 400 years ago (1727), but it seems like relatively new and immatured field. Some knowledge chunks have been made, but the field lacks many details. Roughly, FWU occurs when leaves are wet, the main gate of water movement is stomata, most of biomes shows this phenomenon, and the amount is up tp 10% of transpiration. But, further studies such as details about water movement, methodologies to observe the pathway, and species-specific physiological responses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Hartmann (2018). Mortality. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p008_2018_hartmann_nph_mortality/</link>
+      <pubDate>Sun, 01 Mar 2020 16:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p008_2018_hartmann_nph_mortality/</guid>
+      <description>&lt;h2 id=&#34;8-june-2019-hartmann-nph-mortality&#34;&gt;8 June, 2019 (Hartmann, NPH, Mortality)&lt;/h2&gt;
+&lt;p&gt;Hartmann, H., Moura, C.F., Anderegg, W.R.L., Ruehr, N.K., Salmon, Y., Allen, C.D., Arndt, S.K., Breshears, D.D., Davi, H. and Galbraith, D. (2018). Research frontiers for improving our understanding of drought-induced tree and forest mortality. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;, 218(1), 15-28.&lt;/p&gt;
+&lt;p&gt;This paper suggests some research frontiers (questions) about plant responses to drought. But, rather than the suggestions, I was interested in the topic of Box 1: definition of death for plants. Plants are different to animals, physiologically. Plants lack the nervous system, can easily resprout from a organ, and maintain their lifes with only a few parts of them. These features make a complex issue in defining the death of plant, and this propagates to a hardness in understanding and predicting plant motality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Li (2018). SIF. GCB</title>
+      <link>http://localhost:1313/posts/paper_review/p007_2018_li_gcb_sif/</link>
+      <pubDate>Sun, 01 Mar 2020 16:32:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p007_2018_li_gcb_sif/</guid>
+      <description>&lt;h2 id=&#34;26-may-2019-li-gcb-sif&#34;&gt;26 May, 2019 (Li, GCB, SIF)&lt;/h2&gt;
+&lt;p&gt;Li, X., Xiao, J., He, B., Altaf Arain, M., Beringer, J., Desai, A.R., Emmel, C., Hollinger, D.Y., Krasnova, A., Mammarella, I., Noe, S.M., Ortiz, P.S., Rey-Sanchez, A.C., Rocha, A.V. and Varlagin, A. (2018). Solar-induced chlorophyll fluorescence is strongly correlated with terrestrial photosynthesis for a wide variety of biomes: First global analysis based on OCO-2 and flux tower observations. &lt;strong&gt;&lt;em&gt;Global Change Biology&lt;/em&gt;&lt;/strong&gt;, 24(9), 3990-4008.&lt;/p&gt;
+&lt;p&gt;This paper demonstrates that SIF is a strong proxy of terrestrial GPP using different point of view. Also, it shows that SIF is more strongly correlated with GPP than VIs (EVI, NDVI) and GPP estimates from LUE methods.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>프로그래머를 위한 선형대수</title>
+      <link>http://localhost:1313/posts/20190519_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%84%A0%EB%8C%80/</link>
+      <pubDate>Sun, 01 Mar 2020 15:49:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190519_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%84%A0%EB%8C%80/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;선형대수 학점을 높이고 싶거나 선형대수에 관한 직관을 키우고 싶다면 꼭 읽어야 할 책이다.&lt;/p&gt;
+&lt;p&gt;논문을 읽다 보면 가끔 어려운 수학 표현이 등장하는데, 이를 이해하지 못하는 경우가 있다. 이해하지 못하면 써먹을 수도 없으므로 내가 손을 뻗을 수 있는 참고 문헌의 범위가 수학 때문에 줄어들게 되는 것이다. 그리고 통계 관련 자료도 조금 깊이 있는 설명을 원하면 어려운 수학이 꼭 등장하고 비슷한 어려움을 겪는다. 이런 일 때문에 수학을 공부할 필요성을 느낀다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Fisher (2014). TBM. ANN</title>
+      <link>http://localhost:1313/posts/paper_review/p006_2014_fisher_ann_tbm/</link>
+      <pubDate>Sun, 01 Mar 2020 16:31:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p006_2014_fisher_ann_tbm/</guid>
+      <description>&lt;h2 id=&#34;18-may-2019-fisher-ann-tbm&#34;&gt;18 May, 2019 (Fisher, ANN, TBM)&lt;/h2&gt;
+&lt;p&gt;Fisher, J.B., Huntzinger, D.N., Schwalm, C.R. and Sitch, S. (2014). Modeling the terrestrial biosphere. &lt;strong&gt;&lt;em&gt;Annual Review of Environment and Resources&lt;/em&gt;&lt;/strong&gt;, 39, 91-123.&lt;/p&gt;
+&lt;p&gt;This paper synthesized in what context the terrestrial biosphere model (TBM) appeared, which processes TBMs included, and what&amp;rsquo;s next. It was interesting that actually many part of the TBM was studied and developed separately around the world, and the development was accelerated after the parts were incorporated into a type of model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Zhang (2019). CLM4.5. JGRBG</title>
+      <link>http://localhost:1313/posts/paper_review/p005_2019_zhang_jgrbg_clm45/</link>
+      <pubDate>Sun, 01 Mar 2020 16:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p005_2019_zhang_jgrbg_clm45/</guid>
+      <description>&lt;h2 id=&#34;11-may-2019-zhang-jgrbg-clm45&#34;&gt;11 May, 2019 (Zhang, JGRBG, CLM4.5)&lt;/h2&gt;
+&lt;p&gt;Zhang, L., Lei, H., Shen, H., Cong, Z., Yang, D. and Liu, T. (2019). Evaluating the representation of vegetation phenology in the Community Land model 4.5 in a temperate grassland. &lt;strong&gt;&lt;em&gt;Journal of Geophysical Research: Biogeosciences&lt;/em&gt;&lt;/strong&gt; 124.&lt;/p&gt;
+&lt;p&gt;This was a key paper for the first revision of my paper. This paper had its focus on improving phenology module in CLM 4.5 by comparing MODIS LAI. Two problem were issued and resolved. &lt;strong&gt;First&lt;/strong&gt;, EOS in the CLM 4.5 was too late compared with that of MODIS LAI. The authors showed that too low threshold soil temperature for leaf offset caused this problem; the temperature was increased. &lt;strong&gt;Second&lt;/strong&gt;, the model sometimes showed zero LAI during summer, which caused multiple growing cycles. This problem was resulted from too high rate of leaf onset. By adjusting the rate, this problem could be solved. And then the authors confirmed that how these improvements affected GPP and ET simulations at stand and national levels.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Xu (2016). ED-Hydro. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p004_2016_xu_nph_ed-hydro/</link>
+      <pubDate>Sun, 01 Mar 2020 16:29:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p004_2016_xu_nph_ed-hydro/</guid>
+      <description>&lt;h2 id=&#34;5-may-2019-xu-nph-ed-hydro&#34;&gt;5 May, 2019 (Xu, NPH, ED-Hydro)&lt;/h2&gt;
+&lt;p&gt;Xu, X., Medvigy, D., Powers, J.S., Becknell, J.M. and Guan, K. (2016). Diversity in plant hydraulic traits explains seasonal and inter‐annual variations of vegetation dynamics in seasonally dry tropical forests. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt; 212(1), 80-95.&lt;/p&gt;
+&lt;p&gt;This paper incoporated hydraulic module into the ED2. This module accounted for hydraulic traits such as tugor loss point (TLP), saturated xylem conductivity, 50% xylem conductivity loss water potential, and area-based A&lt;del&gt;net&lt;/del&gt; under sufficient water supply. These traits were estimated using a meta analysis in which relationships between the traits and wood density (WD) or SLA were retrieved. Also, four new PFTs, which were classified based on the SLA-WD space, were introduced to the model. And then finally some simulations were conducted to investigate the effect of adding the new module and PFTs by comparing with in-situ observation and MODIS data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>고급 문장 수업</title>
+      <link>http://localhost:1313/posts/20190402_%EA%B3%A0%EA%B8%89%EB%AC%B8%EC%9E%A5%EC%88%98%EC%97%85/</link>
+      <pubDate>Sun, 01 Mar 2020 15:47:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190402_%EA%B3%A0%EA%B8%89%EB%AC%B8%EC%9E%A5%EC%88%98%EC%97%85/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;목차를 보고 바로 샀다. 더 좋은 한글 문장을 쓰는 데 도움이 되는 실용적인 팁들이 많이 담겨있을 것 같았다. 구성도 짤막짤막하게 끊어 읽기 좋았다. 출근 후 근무 시작 전에 하루 다섯 개씩 읽었다.&lt;/p&gt;
+&lt;p&gt;읽은 후에는 아쉬움이 많이 들었다. 수록한 팁 중에서는 강조하고자 하는 것에 따라 ‘은/는’과 ‘이/가’를 구분해 사용하는 방법을 설명한 것 등 비교적 명쾌하게 설명한 것이 있었다. 하지만 대부분의 설명은 두루뭉술하다고 느꼈다. “이렇게 쓰는 것이 더 안정적이다”와 같은 설명이 많다. 이런 애매한 설명으로 177개 팁을 나열하다 보니 기억하기도 쉽지 않다. 그 177개 중에서도 별로 다르지 않은 팁이 매우 많다. 자세히 구분하는 것도 좋지만, 177개는 너무 많지 않은가. 좋은 사례 문장을 많이 볼 수 있어 좋았지만 더 기억하기 쉽게 정리했더라면 하는 아쉬움이 남는다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Van den Hoof (2016). JULES. JGRBG</title>
+      <link>http://localhost:1313/posts/paper_review/p003_2016_vandenhoof_jgrbg_jules/</link>
+      <pubDate>Sun, 01 Mar 2020 16:28:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p003_2016_vandenhoof_jgrbg_jules/</guid>
+      <description>&lt;h2 id=&#34;27-april-2019-van-den-hoof-jgrbg-jules&#34;&gt;27 April, 2019 (Van den Hoof, JGRBG, JULES)&lt;/h2&gt;
+&lt;p&gt;Van den Hoof, C. and Lambert, F. (2016). Mitigation of drought negative effect of ecosystem productivity by vegetation mixing. &lt;strong&gt;&lt;em&gt;Journal of Geophysical Research: Biogeosciences&lt;/em&gt;&lt;/strong&gt;, 121, 2667–2683.&lt;/p&gt;
+&lt;p&gt;This paper conducted an interesting numerical experiment to investigate changes in SMC and Carbon &amp;amp; Water fluxes by vegetation mixing. This vegetation mixing was represented by adjusting PFT cover ratios of grid in the JULES model. Results show that NPP and LE flux were increased and SMC was decreased, especially during drought period. This was because multiple PFTs could better exploit ecosystem resources than the sole PFT does, which was related to differences in niche classified by phenology, WUE, and rooting depth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Dietze (2014). NSC. ANN</title>
+      <link>http://localhost:1313/posts/paper_review/p002_2014_dietze_ann_nsc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p002_2014_dietze_ann_nsc/</guid>
+      <description>&lt;h2 id=&#34;20-april-2019-dietze-ann-nsc&#34;&gt;20 April, 2019 (Dietze, ANN, NSC)&lt;/h2&gt;
+&lt;p&gt;Dietze, M. C. (2014). Nonstructural Carbon in Woody Plants. &lt;strong&gt;&lt;em&gt;Annual Review of Plant Biology&lt;/em&gt;&lt;/strong&gt;, 65, 667–687.&lt;/p&gt;
+&lt;p&gt;NSC is important for tree plants because it acts as an physiological insurance budget for them. I expected that this paper would be organized as a chapter about NSC in a textbook and I can get basic knowledge about NSC. Although this paper is not organized as I expected, it provides well-summarized review about NSC related research results which contain interesting knowledge about NSC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Bonan (2016). Climate. ANN</title>
+      <link>http://localhost:1313/posts/paper_review/p001_2016_bonan_ann_climate/</link>
+      <pubDate>Sun, 01 Mar 2020 16:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p001_2016_bonan_ann_climate/</guid>
+      <description>&lt;h2 id=&#34;13-april-2019-bonan-ann-climate&#34;&gt;13 April, 2019 (Bonan, ANN, Climate)&lt;/h2&gt;
+&lt;p&gt;Bonan, G. B. (2016). Forests, climate, and public policy: A 500-year interdisciplinary odyssey. &lt;strong&gt;&lt;em&gt;Annual Review of Ecology, Evolution, and Systematics&lt;/em&gt;&lt;/strong&gt;, 47, 97–121.&lt;/p&gt;
+&lt;p&gt;I anticipated that this paper explains how the results from forest-climate research have been deployed to public policy. However, this paper had its focus to forest-climate relationships, and &amp;ldquo;these relationships should be understood well to be properly applied to policy&amp;rdquo; was all about the public policy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>세상에서 가장 쉬운 베이즈통계학 입문</title>
+      <link>http://localhost:1313/posts/20190330_%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99%EC%9E%85%EB%AC%B8/</link>
+      <pubDate>Sun, 01 Mar 2020 15:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190330_%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99%EC%9E%85%EB%AC%B8/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;세상에서 가장 쉬운 통계학 입문을 보고 같은 저자의 다른 책도 읽어 봤다. 베이즈통계학 역시 머신러닝에서도 많이 쓰이기 때문에(나이브 베이즈) 한 번 관심을 가져볼 만 했다.&lt;/p&gt;
+&lt;p&gt;서술 방식은 다른 책과 동일하다. 이해하는 데 어려운 개념이 필요하지 않았고 비약 없이 차근차근 잘 설명해준다. 책 전반에 걸쳐 사전 분포 설정, 새로운 관찰로 경우의 수 조정, 사후 분포 계산이라는 과정이 반복된다. 이 단순한 과정이 나이브 베이즈의 기본이라는 건 알겠는데 실제로 머신 러닝이 해내는 문제와는 복잡도 측면에서 괴리가 있다고 느껴지고 이 책에서는 이를 메워주지 못하는 것 같다. 이런 아쉬움이 있지만 아무튼 기본 개념을 알려주기 위한 입문 서적이기 때문에 이 정도에서 만족해야겠다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Writing Science</title>
+      <link>http://localhost:1313/posts/20190329_writing_science/</link>
+      <pubDate>Sun, 12 Jan 2020 11:11:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190329_writing_science/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://images-na.ssl-images-amazon.com/images/I/51jii3KQptL._SX322_BO1,204,203,200_.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;글쓰기-필독서&#34;&gt;글쓰기 필독서&lt;/h2&gt;
+&lt;p&gt;석사학위논문 쓰는 데 참고하려고 구입한 책 중 하나. 같이 산 다른 책들이 “논문 작성법”에 관한 실용적 팁 위주의 내용을 담고 있다면, 이 책은 “논문이라는 글을 쓰는 방법”이라는 큰 목표에 더 치우쳐 있다. 예를 들어, 단어부터 문장, 문단, 섹션까지 단위별로 어떻게 구성하고 전개해나가야 하는지 그 방법을 설명하기도 하고, 독자의 입장을 고려해 이렇게 쓰는 게 좋다는 설명을 자주하기도 한다. 한 번 쓱 읽으면서 습득하기는 힘든 내용들이다. 주변에 두고 여러 번 읽고 연습해야 할 책이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>이공계 연구자를 위한 영문과학논문 작성매뉴얼</title>
+      <link>http://localhost:1313/posts/20180400_%EC%98%81%EB%AC%B8%EA%B3%BC%ED%95%99%EB%85%BC%EB%AC%B8%EC%9E%91%EC%84%B1%EB%A7%A4%EB%89%B4%EC%96%BC/</link>
+      <pubDate>Sun, 19 Jan 2020 11:20:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20180400_%EC%98%81%EB%AC%B8%EA%B3%BC%ED%95%99%EB%85%BC%EB%AC%B8%EC%9E%91%EC%84%B1%EB%A7%A4%EB%89%B4%EC%96%BC/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image.aladin.co.kr/product/2754/72/cover500/8997140809_1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;석사학위논문을 쓰는 데 참고하려고 산 책. 구입 전에 들여다 본 논문 작성법 관련 한글 책 중에서는 가장 내용이 충실한 것 같다. 게다가 찰랑찰랑한 속지로 잘 만들어졌다.&lt;/p&gt;
+&lt;p&gt;책의 구성이 논문 같아서 참고하기 좋다. 논문의 각 파트에 어떤 내용을 써 넣으면 좋을 것인지 힌트를 얻거나 영작 관련 내용을 주로 참고했다.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;제목&lt;/th&gt;
+          &lt;th&gt;저자&lt;/th&gt;
+          &lt;th&gt;출판사&lt;/th&gt;
+          &lt;th&gt;판&lt;/th&gt;
+          &lt;th&gt;출간&lt;/th&gt;
+          &lt;th&gt;완독&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;이공계 연구자를 위한 영문과학논문 작성매뉴얼&lt;/td&gt;
+          &lt;td&gt;민양기&lt;/td&gt;
+          &lt;td&gt;범문에듀케이션&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2013. 6.&lt;/td&gt;
+          &lt;td&gt;2018. 4.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>초보자를 위한 RStudio 마스터</title>
+      <link>http://localhost:1313/posts/20190319_mastering_rstudio/</link>
+      <pubDate>Tue, 19 Mar 2019 17:15:06 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190319_mastering_rstudio/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;RStudio로 할 수 있는 다양한 컨텐츠를 소개한다. Git과 연동, Shiny 앱, R 마크다운, RStudio 서버, 패키지 개발과 같은 주제를 모두 다루고 있는 책이기에 기대를 가지고 구입했지만 실망만 안겨줬다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;장점&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;위에 나열한 내용을 포함해 여러 주제를 전반적으로 다룬다. 검색 한 번 해보지 않은 주제가 많다면 읽어볼 만하다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;단점&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;아주 얕다. 주제가 방대하기 때문에 구입하기 전에 당연히 예상 했어야 했다. 대부분 주제가 튜토리얼을 보여주거나 그보다 얕은 수준으로 다룬다. 한 번 미리 찾아봤던 주제는 추가로 배우는 것이 없고, 심지어 완전 처음 접하는 주제라도 크게 배울 것이 없었다. 특히 RStudio 서버 다루기나 R 패키지 개발하는 내용은 블로그 게시글 하나 찾아보는 게 나을 정도로 정말 배울 게 없었다. 단, Shiny 앱을 다룬 내용에서는 그나마 코드를 자세히 살펴줘서 대략 어느 논리로 돌아가는지는 알 수 있게 해줬다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>세상에서 가장 쉬운 통계학 입문</title>
+      <link>http://localhost:1313/posts/20190310_%ED%86%B5%EA%B3%84%ED%95%99%EC%9E%85%EB%AC%B8/</link>
+      <pubDate>Sun, 10 Mar 2019 00:06:32 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190310_%ED%86%B5%EA%B3%84%ED%95%99%EC%9E%85%EB%AC%B8/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;t검정을 이해하는 데 필요한 직관을 효율적으로 심어주는 책.&lt;/p&gt;
+&lt;p&gt;대체로 모든 설명이 친절해서 중학생도 이해할 수 있을 것 같다.&lt;/p&gt;
+&lt;p&gt;특히 표준편차가 가지는 의미를 더 잘 이해할 수 있게 해준다.&lt;/p&gt;
+&lt;p&gt;저자가 더 많은 통계학 책을 쓰지 않아 아쉽다.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;제목&lt;/th&gt;
+          &lt;th&gt;저자&lt;/th&gt;
+          &lt;th&gt;출판사&lt;/th&gt;
+          &lt;th&gt;판&lt;/th&gt;
+          &lt;th&gt;출간&lt;/th&gt;
+          &lt;th&gt;완독&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;세상에서 가장 쉬운 통계학 입문&lt;/td&gt;
+          &lt;td&gt;고지마 히로유키&lt;/td&gt;
+          &lt;td&gt;지상사&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2009. 12.&lt;/td&gt;
+          &lt;td&gt;2019. 03. 10.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Machine Learning with R</title>
+      <link>http://localhost:1313/posts/20190215_machine_learning_with_r/</link>
+      <pubDate>Fri, 15 Feb 2019 00:04:09 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190215_machine_learning_with_r/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;R로 다양한 머신 러닝 기법을 직접 체험해보기 좋은 책. 각 기법이 어떤 유형의 문제에 활용될 수 있는지를 정리한 표가 있어서 좋다. 각 기법이 동작하는 기본 원리도 잘 설명했고 실습 코드도 따라해보기 좋다. R 머신러닝 입문으로 추천.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;제목&lt;/th&gt;
+          &lt;th&gt;저자&lt;/th&gt;
+          &lt;th&gt;출판사&lt;/th&gt;
+          &lt;th&gt;판&lt;/th&gt;
+          &lt;th&gt;출간&lt;/th&gt;
+          &lt;th&gt;완독&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Machine Learning with R&lt;/td&gt;
+          &lt;td&gt;Brett Lantz&lt;/td&gt;
+          &lt;td&gt;Packt Publishing&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;2015. 07.&lt;/td&gt;
+          &lt;td&gt;2019. 02. 15.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Science Research Writing</title>
+      <link>http://localhost:1313/posts/20190100_science_research_writing/</link>
+      <pubDate>Tue, 15 Jan 2019 00:02:07 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20190100_science_research_writing/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;석사학위논문 쓸 때 참고자료로 구입한 책 중 하나. 본격적으로 읽은 건 2019년 과학원에서 첫 논문 쓸 때였다.&lt;/p&gt;
+&lt;p&gt;이 책은 실제 논문의 섹션별로 유닛이 나눠져 있고, 각 유닛마다 비슷한 구조가 반복된다 (그 섹션에 써야 할 내용 – 관련 문법/표현 – 예제 – 예제 분석 – 단어). 이런 이유로 필요한 부분을 참고하기 쉽다는 장점을 가지고 있다. 예제 분석은 문장 단위로 진행하는데, 각 문장이 해당 부분에서 쓰인 원인을 짚어줬기 때문에 글 쓸 때 문장 카탈로그처럼 참고할 수 있을 것 같다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>마스터 알고리즘</title>
+      <link>http://localhost:1313/posts/20160700_%EB%A7%88%EC%8A%A4%ED%84%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Wed, 01 Jan 2020 13:49:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20160700_%EB%A7%88%EC%8A%A4%ED%84%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;&amp;hellip;&#34; loading=&#34;lazy&#34; src=&#34;http://image.yes24.com/momo/TopCate1232/MidCate002/123118223.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;머신러닝에 대해 알고 싶은 마음이 생겼다.&lt;br&gt;
+내가 이를 어떻게 활용할 수 있을 지와는 별개로, 그저 개괄만이라도 알아두면 좋겠다 싶었다.&lt;br&gt;
+유명한 무료 인터넷 강의도 있고, 누군가 그리 길지 않은 글로 정리한 것도 있겠지만 나는 책을 읽어보기로 했다.&lt;br&gt;
+지하철에서 읽을 책도 정할 필요가 있으니.&lt;/p&gt;
+&lt;p&gt;머신러닝을 소개하는 책은 수학 기본서와 같은 느낌을 주는 것이 많았다.&lt;br&gt;
+배경 이론을 설명한 후 박스 하나가 나오는데 그 안에는 Theorem 1. 블라블라~~ 다음 문단에 추가설명&amp;hellip;&lt;br&gt;
+이 책도 결국은 이론을 쭉 설명해주는 책에 불과하지만 특별한 점은 이야기를 풀어놓듯이 설명했다는 것이다.&lt;br&gt;
+이 책에 대한 찬사가 많기는 하지만, 그와 별개로 이해가 잘 안 된다는 의견도 많아서 볼까 말까 고민을 좀 했다.&lt;br&gt;
+하지만 머신러닝 자체가 원래 배경지식이 많이 필요한 난해한 분야이기 때문에&lt;br&gt;
+구입하면서는 이것 한 권 읽는다고 이해는 되지 않겠지만 첫걸음을 떼보자는 생각을 하였다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

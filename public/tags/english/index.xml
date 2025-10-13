@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>English on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/english/</link>
+    <description>Recent content in English on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Aug 2020 16:27:31 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>라이브아카데미</title>
+      <link>http://localhost:1313/posts/20200531_liveacad/</link>
+      <pubDate>Sun, 31 May 2020 17:04:13 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200531_liveacad/</guid>
+      <description>&lt;h2 id=&#34;1-이름을-잘-기억-못해요&#34;&gt;1. 이름을 잘 기억 못해요.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;It usually takes me a while to&lt;/strong&gt; start to write the introduction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I am not very good at&lt;/strong&gt; understanding what other people&amp;rsquo;s saying.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I often got&lt;/strong&gt; the students&amp;rsquo; names &lt;strong&gt;mixed up&lt;/strong&gt;.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2-지금은-생각이-많이-달라졌어요&#34;&gt;2. 지금은 생각이 많이 달라졌어요.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;It really got me thinking about&lt;/strong&gt; the perfume &lt;strong&gt;from a different perspective.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I feel differently about&lt;/strong&gt; using perfume now.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;3-by-vs-with&#34;&gt;3. by vs. with&lt;/h2&gt;
+&lt;p&gt;by: + 수단, 방법, 방식 (by subway)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

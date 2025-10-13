@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>R on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/r/</link>
+    <description>Recent content in R on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Nov 2020 20:53:43 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Isolation Forest</title>
+      <link>http://localhost:1313/posts/20201122_isolation_forest/</link>
+      <pubDate>Sun, 22 Nov 2020 20:53:43 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20201122_isolation_forest/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;knitr&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;opts_chunk&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(eval &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRUE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      echo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRUE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      warning &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;solitude: &lt;a href=&#34;https://github.com/talegari/solitude&#34;&gt;https://github.com/talegari/solitude&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;isofor: &lt;a href=&#34;https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest&#34;&gt;https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install.packages(&amp;#34;mvoutlier&amp;#34;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install.packages(&amp;#34;remotes&amp;#34;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# remotes::install_github(&amp;#34;Zelazny7/isofor&amp;#34;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#import libraries&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(ggplot2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(ggpubr)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(solitude)  &lt;span style=&#34;color:#75715e&#34;&gt;# hereafter, &amp;#34;sol&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(isofor)  &lt;span style=&#34;color:#75715e&#34;&gt;# hereafter, &amp;#34;iso&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(viridis)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;packageVersion&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;solitude&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#create sample data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;humus&amp;#34;&lt;/span&gt;, package &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mvoutlier&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 2-dimensional&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;columns_required &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; humus[ , columns_required]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# multi-dimensional&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;columns_required_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setdiff&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;colnames&lt;/span&gt;(humus)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                               , &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cond&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ID&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;XCOO&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;YCOO&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LOI&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                               )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; humus[ , columns_required_mul]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;(humus2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;(humus_mul)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#plot data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;(shape &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, alpha &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(alpha &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;, colour&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Legend&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# solitude library&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# sample (50%)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set.seed&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sample&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;nrow&lt;/span&gt;(humus2) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sample&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;nrow&lt;/span&gt;(humus_mul) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# initiate an isolation forest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; isolationForest&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt;(sample_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(index))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; isolationForest&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt;(sample_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(index))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# fit an isolation forest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fit&lt;/span&gt;(humus2[index, ])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol_mul&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fit&lt;/span&gt;(humus_mul[index, ])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# isofor library&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;iForest&lt;/span&gt;(humus2,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  phi &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nrow&lt;/span&gt;(humus2) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# sample size&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  )
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Obtain anomaly scores&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; if_sol&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(humus2)&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;anomaly_score
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus_mul&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; if_sol_mul&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(humus_mul)&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;anomaly_score
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(if_iso,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            newdata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; humus2[, &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# decision: outlier if score &amp;gt; 0.6 (threshold could vary by users)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;is_outlier_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.6&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;is_outlier_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.55&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# create grid values for contour plot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bi_seq &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Bi),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#a6e22e&#34;&gt;max&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Bi),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              length.out &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Cd_seq &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Cd),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#a6e22e&#34;&gt;max&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Cd),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              length.out &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2_grid &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;expand.grid&lt;/span&gt;(Bi &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi_seq,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                           Cd &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd_seq)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; if_sol&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(humus2_grid)&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;anomaly_score
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(if_iso,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                 newdata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; humus2_grid[, &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# scatter plot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sca_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_sol)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; is_outlier_sol)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;scale_color_viridis&lt;/span&gt;(discrete &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      direction &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sca_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_iso)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; is_outlier_iso)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;scale_color_viridis&lt;/span&gt;(discrete &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      direction &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# contour plot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gmin &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol, humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gmax &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;max&lt;/span&gt;(humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol, humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gbreaks &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;round&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(gmin, gmax, length.out &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cont_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2_grid, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_sol)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_contour_filled&lt;/span&gt;(breaks &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; gbreaks) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cont_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2_grid, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_iso)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_contour_filled&lt;/span&gt;(breaks &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; gbreaks) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# aggregate ggplots&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;theme_set&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt;(legend.position &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_plot &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggarrange&lt;/span&gt;(sca_sol, sca_iso, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            cont_sol, cont_iso,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            labels &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;solitude&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iso&amp;#34;&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, nrow &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_plot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Two scatter plots are similar even if they use different threshold values for the decision.&lt;/li&gt;
+&lt;li&gt;Two contour plots look very different. This is because they have different range of scores. If we compare the regions with the same levels and colors, they show similar result.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Parallel processing in R</title>
+      <link>http://localhost:1313/posts/20200607_r%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC%EB%A9%94%EB%AA%A8/</link>
+      <pubDate>Tue, 26 May 2020 10:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200607_r%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC%EB%A9%94%EB%AA%A8/</guid>
+      <description>&lt;h1 id=&#34;들어가며&#34;&gt;들어가며&lt;/h1&gt;
+&lt;p&gt;워크스테이션 성능은 괴물같은데 할 일 없이 놀고만 있다.&lt;br&gt;
+병렬처리로 빡세게 굴려보자.&lt;br&gt;
+이놈들.&lt;br&gt;
+(하지만 내 코드가 멀티코어 사용으로는 해결되지 않을 종류일 수 있다.)&lt;/p&gt;
+&lt;h1 id=&#34;템플릿&#34;&gt;템플릿&lt;/h1&gt;
+&lt;h2 id=&#34;라이브러리-불러오기&#34;&gt;라이브러리 불러오기&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 라이브러리 불러오기&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(foreach)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(doParallel)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;foreach&lt;/code&gt;를 불러오지 않고 &lt;code&gt;foreach::foreach&lt;/code&gt;를 수행하면
+&lt;strong&gt;%dopar% 함수를 찾을 수 없습니다&lt;/strong&gt; 에러가 발생한다.&lt;/p&gt;
+&lt;h2 id=&#34;클러스터-셋업-파티-모집&#34;&gt;클러스터 셋업: 파티 모집&lt;/h2&gt;
+&lt;p&gt;게임에서 레이드 뛸 파티를 구성하는 작업이라고 보면 된다. (= 일 할 코어 구성)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 코어 숫자 설정&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n.cores &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; parallel&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;detectCores&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;몇 명 모집할 것인지 정한다. &lt;code&gt;parallel::detectCores()&lt;/code&gt;는 가용 최대 코어 수를 알려준다.
+마우스 움직이는 등은 기본 작업을 해야 하니 1개 빼준다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>R packages by Hadley Wickham 정리</title>
+      <link>http://localhost:1313/posts/20200515_r_packages/</link>
+      <pubDate>Tue, 12 May 2020 10:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200515_r_packages/</guid>
+      <description>&lt;h1 id=&#34;getting-started&#34;&gt;Getting started&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;h3 id=&#34;패키지를-만드는-이유&#34;&gt;패키지를 만드는 이유&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;다른 사람과 코드 공유&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;다른 사람들이&lt;/strong&gt; 내 코드를 쉽게 이해하고 사용할 수 있게 매뉴얼 작성&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;나 자신이&lt;/strong&gt; 내 코드를 쉽게 이해하고 사용할 수 있게 매뉴얼 작성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;getting-started-1&#34;&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;필요한 패키지&amp;amp;함수를 설치한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;install.packages&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;devtools&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;roxygen2&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;testthat&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;knitr&amp;#34;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;올바른 버전의 패키지를 설치했는지 확인한다(TRUE가 나와야 함).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;install.packages&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rstudioapi&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rstudioapi&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;isAvailable&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.99.149&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;devtools&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;install_github&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;r-lib/devtools&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;필요한 것 모두 설치됐는지 확인한다.&lt;br&gt;
+아래 코드 수행 결과 &lt;strong&gt;TRUE&lt;/strong&gt;가 나오는지 확인한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(devtools)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;has_devel&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;package-structure&#34;&gt;Package structure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;패키지를 만드는 과정&lt;/li&gt;
+&lt;li&gt;패키지와 라이브러리의 차이점&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;naming-your-package&#34;&gt;Naming your package&lt;/h3&gt;
+&lt;h4 id=&#34;requirements-for-a-name&#34;&gt;Requirements for a name&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;문자, 숫자, 마침표로 구성
+&lt;ul&gt;
+&lt;li&gt;문자로 시작해야 하고, 마침표는 마지막에 올 수 없다.&lt;/li&gt;
+&lt;li&gt;되도록 마침표는 쓰지 말자.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;strategies-for-creating-a-name&#34;&gt;Strategies for creating a name&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;유니크한 이름: 구글링 쉽게 되도록
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/available_packages_by_name.html&#34;&gt;CRAN&lt;/a&gt;에서
+해당 패키지가 이미 존재하는지 확인하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;대소문자 섞지 말기: 타이핑, 기억 어렵다
+&lt;ul&gt;
+&lt;li&gt;RGtk2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;패키지의 기능을 쉽게 연상할 수 있는 이름
+&lt;ul&gt;
+&lt;li&gt;lubridate: date와 times 다루기 쉽게하는(lubricate)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;축약형(abbreviation) 사용&lt;/li&gt;
+&lt;li&gt;r 추가해주기
+&lt;ul&gt;
+&lt;li&gt;stringr, readr, gistr, &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;상용 패키지를 개발할 경우, 해당 회사의 가이드라인 숙지하기
+&lt;ul&gt;
+&lt;li&gt;Dropbox는 브랜드 이름으로 어플리캐이션을 만들지 못하게 한다. 그래서 rDropbox가 아닌 rDrop이 되었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;creating-a-package&#34;&gt;Creating a package&lt;/h4&gt;
+&lt;p&gt;이름을 지었다면 새 패키지를 만들어보자.&lt;br&gt;
+&lt;strong&gt;두 가지 방법&lt;/strong&gt;이 있는데, &lt;strong&gt;모두 RStudio에서 진행 가능하다.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Advanced R (2nd ed.)</title>
+      <link>http://localhost:1313/posts/20200412_advr/</link>
+      <pubDate>Sun, 12 Apr 2020 17:19:53 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200412_advr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;log&#34;&gt;Log&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2020-04-12&lt;/strong&gt;: 23, 24.6&lt;/p&gt;
+&lt;p&gt;과학원에서 기상자료 QC하는 R 코드를 짰는데, 꽤 애먹었다.&lt;/p&gt;
+&lt;p&gt;컴퓨터 메모리는 8GB.&lt;/p&gt;
+&lt;p&gt;인풋으로 사용하는 csv 파일이 최대 2GB 정도로 크긴 했지만 메모리에는 문제가 없어 보였다.&lt;/p&gt;
+&lt;p&gt;하지만 분명 언뜻 보기에 8GB가 넘지 않을 것 같은데도 &lt;strong&gt;메모리 용량 부족으로 에러&lt;/strong&gt;가 자꾸 났다.&lt;/p&gt;
+&lt;p&gt;읽어들인 파일을 수동으로 쪼갠 후 열심히 QC를 진행했지만&amp;hellip; 결국 친구가 말해준 기한을 넘겨버렸다.&lt;/p&gt;
+&lt;p&gt;내 추측에&amp;hellip; 함수가 작동하는 과정에서 내부적으로 변수를 복사하기 때문에 메모리 사용량이 내 예상을 넘는 것 같다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>R에서 Open API 사용하기 - 카카오 지도</title>
+      <link>http://localhost:1313/posts/20200217_using_api_in_r/</link>
+      <pubDate>Mon, 27 Jan 2020 20:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200217_using_api_in_r/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;연구실에서 &lt;strong&gt;여러 장소의 주소 &amp;ndash;&amp;gt; 경위도 좌표&lt;/strong&gt; 변환을 할 일이 있다.&lt;/p&gt;
+&lt;p&gt;하나하나 웹페이지에서 하기는 많으므로 코딩을 하기로 했다.&lt;/p&gt;
+&lt;p&gt;API를 사용하면 되는 듯하다.&lt;/p&gt;
+&lt;h2 id=&#34;api&#34;&gt;API?&lt;/h2&gt;
+&lt;p&gt;Application Programming Interface.&lt;/p&gt;
+&lt;p&gt;구글에 검색하면 &lt;a href=&#34;https://brunch.co.kr/@cysstory/115&#34;&gt;잘 설명한 글&lt;/a&gt;을 여럿 찾아 볼 수 있지만, 나름대로 한 번 적어보고 넘어가려 한다.&lt;/p&gt;
+&lt;p&gt;나는 API를 &lt;strong&gt;술집 종업원&lt;/strong&gt;에 비유하려 한다. 술집에서는 여러 &lt;strong&gt;안주요리나 술&lt;/strong&gt;을 팔고 있다. 손님들은 술집에 들어가면 &lt;strong&gt;종업원&lt;/strong&gt;에게 &lt;strong&gt;신분증&lt;/strong&gt;을 보여줘 미성년자가 아님을 확인한다. 그리고 종업원을 통해 술과 먹태를 주문하면, 종업원은 주문 내용을 조리실에 전달해 요리를 손님에게 전달해준다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ISLR Note</title>
+      <link>http://localhost:1313/posts/20200516_islr/</link>
+      <pubDate>Thu, 05 Apr 2018 16:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200516_islr/</guid>
+      <description>&lt;h1 id=&#34;2-statistical-learning&#34;&gt;2. Statistical Learning&lt;/h1&gt;
+&lt;h2 id=&#34;21-what-is-statistical-learning&#34;&gt;2.1. What Is Statistical Learning?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Y&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;) + &lt;em&gt;e&lt;/em&gt;&lt;br&gt;
+여기서 함수 &lt;em&gt;f&lt;/em&gt;는 &lt;em&gt;X&lt;/em&gt;가 담고 있는 &lt;em&gt;Y&lt;/em&gt;에 대한 &lt;strong&gt;systematic information&lt;/strong&gt;이다.&lt;br&gt;
+&lt;em&gt;e&lt;/em&gt;는 &lt;em&gt;f&lt;/em&gt;가 표현하지 못하는 &lt;strong&gt;random error term&lt;/strong&gt;이다.&lt;br&gt;
+&lt;em&gt;e&lt;/em&gt;는 &lt;em&gt;X&lt;/em&gt;에 독립이고 평균값은 0이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Statistical learning&lt;/strong&gt;은 위의 함수 &lt;em&gt;f&lt;/em&gt;를 찾는 다양한 방법을 모두 일컫는다.&lt;/p&gt;
+&lt;h3 id=&#34;211-why-estimate-f&#34;&gt;2.1.1. Why Estimate &lt;em&gt;f&lt;/em&gt;?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;prediction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;측정값 &lt;em&gt;X&lt;/em&gt;로 &lt;em&gt;Y&lt;/em&gt; 값을 예측한다(&lt;em&gt;Y&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;)).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;f&lt;/em&gt;는 &lt;em&gt;black box&lt;/em&gt;로 남아도 상관 없다(&lt;em&gt;Y&lt;/em&gt;만 잘 맞추면 된다).&lt;/li&gt;
+&lt;li&gt;이 때 발생하는 에러는 두 가지: &lt;!-- raw HTML omitted --&gt;reducible&lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt;irreducible&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;reducible: &lt;em&gt;f&lt;/em&gt;를 더 잘 예측하면 줄일 수 있다.&lt;/li&gt;
+&lt;li&gt;irreducible: 측정 항목에서 어떤 중요한 변수를 놓치고 있거나,&lt;br&gt;
+혹은 측정 불가능한 요소(예: 약물 투여 때 환자의 심리)가 개입하기 때문에 발생한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inference&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

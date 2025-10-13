@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>In Jena: Week 220 | My New Hugo Site</title>
+<meta name="keywords" content="2024, Daily Life, Jena">
+<meta name="description" content="이번 주는&hellip;
+
+developing tws_nee_in_model
+vegpp_eval revision
+
+두 번째 논문 리비전을 대략 끝냈어야 했는데, 뭔가 집중이 잘 되지 않았다. 리프레시.
+2024. 11. 20. 수요일
+오랜만에 MDI 미팅에서 발표를 했다. 내용은 요즘 진행중인 미완성 세 번째 챕터. 뭐 하고 있는지는 전달이 된 것 같다. 누노가 관심을 보이는 것 같아 기분이 좋았다. 날카로운 코멘트도 있었는데, 어떻게 할 지는 아직 잘 모르겠다. 다음 주에 한 번더 보기로 했다.
+
+  
+      
+          
+          
+      
+  
+  
+  
+
+슈퍼마켓과 DM에서 배달을 시켜봤다. DM은 DHL이 대행으로 배달해줘서 몇 시에 도착할 지 모르는 게 단점이지만, 주문 최소 금액이 59유로로 슈퍼마켓보다 적고 이를 넘으면 배달비가 무료인 게 장점이다. 슈퍼마켓은 그 반대. 직접 배달해줘서 몇 시에 올지도 알려주는 게 좋지만, 주문 최소 금액이 75유로에다가 이를 넘어도 배달이 가능해질 뿐, 배달비 10유로는 줘야 한다. 추가로 고기나 야채 등은 품질 상 배달이 불가피해질 수 있다. 식료품이기에 어쩔 수 없는 부분. 대신 배달원이 내가 주문한 것 중 무엇이 못 왔는지 같이 체크해주고, 환불도 해준다.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20241124_jena_wk220/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20241124_jena_wk220/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      In Jena: Week 220
+    </h1>
+    <div class="post-meta"><span title='2024-11-24 13:00:18 +0100 +0100'>November 24, 2024</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="이번-주는">이번 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#이번-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model</li>
+<li>vegpp_eval revision</li>
+</ul>
+<p>두 번째 논문 리비전을 대략 끝냈어야 했는데, 뭔가 집중이 잘 되지 않았다. 리프레시.</p>
+<h2 id="2024-11-20-수요일">2024. 11. 20. 수요일<a hidden class="anchor" aria-hidden="true" href="#2024-11-20-수요일">#</a></h2>
+<p>오랜만에 MDI 미팅에서 발표를 했다. 내용은 요즘 진행중인 미완성 세 번째 챕터. 뭐 하고 있는지는 전달이 된 것 같다. 누노가 관심을 보이는 것 같아 기분이 좋았다. 날카로운 코멘트도 있었는데, 어떻게 할 지는 아직 잘 모르겠다. 다음 주에 한 번더 보기로 했다.</p>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>슈퍼마켓과 DM에서 배달을 시켜봤다. DM은 DHL이 대행으로 배달해줘서 몇 시에 도착할 지 모르는 게 단점이지만, 주문 최소 금액이 59유로로 슈퍼마켓보다 적고 이를 넘으면 배달비가 무료인 게 장점이다. 슈퍼마켓은 그 반대. 직접 배달해줘서 몇 시에 올지도 알려주는 게 좋지만, 주문 최소 금액이 75유로에다가 이를 넘어도 배달이 가능해질 뿐, 배달비 10유로는 줘야 한다. 추가로 고기나 야채 등은 품질 상 배달이 불가피해질 수 있다. 식료품이기에 어쩔 수 없는 부분. 대신 배달원이 내가 주문한 것 중 무엇이 못 왔는지 같이 체크해주고, 환불도 해준다.</p>
+<h2 id="2024-11-21-목요일">2024. 11. 21. 목요일<a hidden class="anchor" aria-hidden="true" href="#2024-11-21-목요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+  </tbody>
+</table>
+<p>눈이 내렸다. 진눈깨비? 정도가 화요일에 내렸던 것 같은데, 이번에는 눈 답게 내린다. 쌓이지는 않았다. 이날 프라이부르크에도 눈이 왔는데, 거기는 많이 쌓였다.</p>
+<p>반면 아이슬란드에서는 화산 폭발이 있었나보다. 블루라군 주차장이 용암으로 덮였다. 우리가 갔을 때는 폭발이 없어서 다행이다. 최근에 디랑 잉린이 아이슬란드에 갔었는데, 그 애들이 더 운 좋았다. 1달만 늦게 갔어도 큰 일 났을 듯.</p>
+<h2 id="그-외">그 외&hellip;<a hidden class="anchor" aria-hidden="true" href="#그-외">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>넘쳐 흐르는 모찌. 작아 보이는 데도 저기를 계속 좋아한다. 아니면 저기 밖에 없는 걸까.</li>
+<li>모찌 침대보를 빨아서 설치해줬다. 잘 쓰는 중. 특히 난방할 때 같이 따뜻해져서 더 좋아하는 것 같다.</li>
+<li>화장실 갈아주자마자 바로 똥을 눈다.</li>
+<li>오랜만에 사그라다. 솔로잉. 에버델 솔로잉과 달리 무지 어렵다. 나는 주사위 운이 안 좋은 듯.</li>
+<li>춘휘가 만든 김치볶음밥. 보내준 백종원 레시피를 참고했다. 맛있다고 한다. 맛있어 보인다.</li>
+</ul>
+<h2 id="다음-주는">다음 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#다음-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model</li>
+<li>vegpp_eval revision</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2024/">2024</a></li>
+      <li><a href="http://localhost:1313/tags/daily-life/">Daily Life</a></li>
+      <li><a href="http://localhost:1313/tags/jena/">Jena</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Ecological Forecasting | My New Hugo Site</title>
+<meta name="keywords" content="Book Review, Research, 2020">
+<meta name="description" content="
+Intro
+Near-term Ecological Forecasting Initiative (NEFI) Summer Course 2020.
+책 저자이자 보스턴 대학교(Boston University)에 재직중인 Dietze 교수는 매년 Bayesian application to ecological forecasting을 가르치는 summer course를 진행하고 있다. NEFI 2019에는 선발되지 못했지만, 올해는 고맙게도 나를 초대해줬다.
+이 책을 교재로 사용하는데, 가서 잘 배우려면 한 번 예습은 해야 하지 않을까&hellip;해서 구입했다.
+내 toolbox에 담을 수 있을만한 주제이니 잘 공부해두면 도움이 많이 되겠다. 챕터마다 요약도 잘 돼 있고, Github에 exercise 코드도 정리돼있고, 중간중간 기억해둘만한 표현도 꽤 있다.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20200311_ecological_forecasting/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200311_ecological_forecasting/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Ecological Forecasting
+    </h1>
+    <div class="post-meta"><span title='2020-03-11 20:35:43 +0900 +0900'>March 11, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><!-- raw HTML omitted -->
+<h1 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h1>
+<p><a href="https://ecoforecast.org">Near-term Ecological Forecasting Initiative (NEFI) Summer Course 2020</a>.</p>
+<p>책 저자이자 보스턴 대학교(Boston University)에 재직중인 Dietze 교수는 매년 Bayesian application to ecological forecasting을 가르치는 summer course를 진행하고 있다. NEFI 2019에는 선발되지 못했지만, 올해는 고맙게도 나를 초대해줬다.</p>
+<p>이 책을 교재로 사용하는데, 가서 잘 배우려면 한 번 예습은 해야 하지 않을까&hellip;해서 구입했다.</p>
+<p>내 toolbox에 담을 수 있을만한 주제이니 잘 공부해두면 도움이 많이 되겠다. 챕터마다 요약도 잘 돼 있고, <a href="https://github.com/EcoForecast/EF_Activities">Github</a>에 exercise 코드도 정리돼있고, 중간중간 기억해둘만한 표현도 꽤 있다.</p>
+<p>이런 책을 쓸 날이 올까.</p>
+<h2 id="erratum">Erratum<a hidden class="anchor" aria-hidden="true" href="#erratum">#</a></h2>
+<ul>
+<li>30 p. 8th line from the below: &ldquo;<!-- raw HTML omitted -->we be<!-- raw HTML omitted --> able to&rdquo;</li>
+</ul>
+<h1 id="1-introduction">1. Introduction<a hidden class="anchor" aria-hidden="true" href="#1-introduction">#</a></h1>
+<h2 id="11-why-forecast">1.1. Why forecast?<a hidden class="anchor" aria-hidden="true" href="#11-why-forecast">#</a></h2>
+<blockquote>
+<p>기후변화와 더불어 생태계 역시 급격히 변하고 있다. 정책 관련 의사결정을 돕고 생태계 변화 이면을 더 잘 이해하기 위한 도구로서 EF가 필요</p></blockquote>
+<p>Decision making &amp; Understanding ecological processes</p>
+<ul>
+<li>We live in an era of rapid and interacting <strong>changes in the natural world</strong></li>
+<li>Ecological questions about the future status are being asked by <strong>policymakers</strong></li>
+<li>How do we, as ecologist, provide the best available <strong>scientific predictions</strong>?</li>
+<li>Quantitative tests are at the heart of the scientific method for advancing our knowledge</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Capture uncertainties</p>
+<ul>
+<li>Coarse understanding, noisy data, and site-specific dynamics defy our understanding</li>
+<li>Ecological forecasts need to capture these uncertainties to be more predictive science</li>
+</ul>
+<h2 id="12-the-informatics-challenge-in-forecasting">1.2. The informatics challenge in forecasting<a hidden class="anchor" aria-hidden="true" href="#12-the-informatics-challenge-in-forecasting">#</a></h2>
+<blockquote>
+<p>EF는 결국 관측 자료를 다루는 일일 것인데, 이는 대부분 생태학자가 미흡한 부분이기에(교육과정) 이 책을 통해 다루려 한다.</p></blockquote>
+<ul>
+<li>Ecological forecasts may end up being devoted to data management and processing</li>
+<li>The informatics will be leveraged when performing syntheses and making forecasts</li>
+</ul>
+<h2 id="13-the-model-data-loop">1.3. The model-data loop<a hidden class="anchor" aria-hidden="true" href="#13-the-model-data-loop">#</a></h2>
+<blockquote>
+<p>데이터로 모델을 맞추고,</p>
+<p>그렇게 맞춘 모델의 uncertainty 분석을 통해 어떤 데이터가 필요한지 찾고,</p>
+<p>새로 얻은 데이터를 추가해서 새로운 모델을 맞추고</p>
+<p>&hellip;</p></blockquote>
+<ul>
+<li>Forecasting the future status of real systems <strong>requires data</strong> about thos systems</li>
+<li>The model-data loop refers to the idea of <strong>iteratively using data to constrain models and  then using models to determine what new data is most needed</strong></li>
+<li>The model-data loop applies <strong>regardless of the complexity</strong> of the model</li>
+</ul>
+<h2 id="14-why-bayes">1.4. Why Bayes?<a hidden class="anchor" aria-hidden="true" href="#14-why-bayes">#</a></h2>
+<blockquote>
+<p>Bayes는 사전확률 설정 -&gt; 데이터 추가 -&gt; 사전확률 조정(=사후확률 계산)의 과정을 거치는데,</p>
+<p>이것이 the model-data loop idea와 흡사하다.</p></blockquote>
+<p>The Bayesian approach</p>
+<ul>
+<li>allows us to treat <strong>all the terms</strong> in a forecast as probability distributions</li>
+<li>is able to <strong>update predictions</strong> as new data becomes available</li>
+<li>tends to be flexible and robust, <strong>allowing us to deal with the complexity of real-world data</strong> and to forecast with relatively complex models.</li>
+</ul>
+<h2 id="15-models-as-scaffolds">1.5. Models as scaffolds<a hidden class="anchor" aria-hidden="true" href="#15-models-as-scaffolds">#</a></h2>
+<blockquote>
+<p>여기저기서 데이터가 쏟아지고 있는데 서로 측정 방법, 측정 스케일, 방법, 가정, 목표하는 process (증발산 vs 증발), 등 같은 분야에서도 서로 다른 점이 너무 많다.</p>
+<p>이 데이터들을 통합하는 데 model이 가교(scaffold) 역할을 할 수 있다.</p>
+<p>Model을 이용해 여러 data를 통합하면서 model-data loop idea를 실현 &ndash;&gt; models as scaffold approach</p></blockquote>
+<p>Three modeling approaches:</p>
+<ol>
+<li>Forward modeling: use observed inputs to generate output sets</li>
+<li>Inverst modeling: use observations of model outputs to infer the most likely inputs</li>
+<li>Model as scaffold: use models and data together to constrain estimates of different ecosystem variables
+<ul>
+<li>Different data sets may not be directly comparable to one another (scales, assumptions, target processes, &hellip;), <strong>but may all be comparable to the model</strong></li>
+<li>Combining data and models is a fundamentally data-driven exercise</li>
+</ul>
+</li>
+</ol>
+<h2 id="16-case-studies-and-decision-support">1.6. Case studies and decision support<a hidden class="anchor" aria-hidden="true" href="#16-case-studies-and-decision-support">#</a></h2>
+<blockquote>
+<p>연구용 EF와 Decision support는 다른 문제.</p>
+<p>Decision support는</p>
+<p>생태계에 대한 이해가 선행돼야 하고</p>
+<p>value, trade-offs 등 가치판단이 추가된다.</p>
+<p>때문에, 책 후반부에 다룰 예정이다.</p></blockquote>
+<p>Prediction vs. Projection</p>
+<ul>
+<li>Prediction: probabilistic forecasts <strong>based on current</strong> trends and conditions</li>
+<li>Projection: probabilistic forecasts driven <strong>by explicit scenarios</strong></li>
+</ul>
+<h1 id="2-from-models-to-forecasts">2. From models to forecasts<a hidden class="anchor" aria-hidden="true" href="#2-from-models-to-forecasts">#</a></h1>
+<h2 id="21-the-traditional-modellers-toolbox">2.1. The traditional modeller&rsquo;s toolbox<a hidden class="anchor" aria-hidden="true" href="#21-the-traditional-modellers-toolbox">#</a></h2>
+<blockquote>
+<p>지금까지 뉴턴식 결정론적 사고에 입각한 관점에서 교육을 받아왔다.</p>
+<p>하지만 이제부터 모든 것을(데이터, 모델) random variable로 간주하고 확률분포를 두는 사고를 해야 한다.</p>
+<p>우리의 지식, 자연의 변화 모두 uncertainties를 포함하고 있기 때문이다.</p></blockquote>
+<ul>
+<li>The core difference between forecasting and theory ins&rsquo;t a specific set of quantitative skills, but rather in the way we see the world (deterministic and Newtonian way).</li>
+<li>The traditional approach emphasizes <em>equilibria</em>, the lack of change in a system over time, and <em>stability</em>, the tendency for a system to return to equilibrium when perturbed.</li>
+<li><strong>Traditional ecological theory does a bad job</strong> of making connections between models and measurements.</li>
+<li><strong>Modern ecosystems are rarely in equilibrium</strong>, and knowing the current trajectory of a system is often more important to policy and mangement than an asymptotic equilibrium.</li>
+<li>Although stability also has a large impact on how well we can forecast, we require to shift the focus of our modeling <strong>to be less deterministic and to think probabilistically</strong> about both data and models.</li>
+</ul>
+<h2 id="22-example-the-logistic-growth-model">2.2. Example: The logistic growth model<a hidden class="anchor" aria-hidden="true" href="#22-example-the-logistic-growth-model">#</a></h2>
+<blockquote>
+<p>로지스틱 성장 모형이 많이들 익숙할테니, 이걸 예시로 uncertainty 종류를 소개하겠다.</p></blockquote>
+<ul>
+<li>
+<p>Logistic growth model: dN/dt = rN(1-N/K)</p>
+<p>where N is the population size, K is the carrying capacity, and a is a constant.</p>
+</li>
+</ul>
+<h2 id="23-adding-sources-of-uncertainty">2.3. Adding sources of uncertainty<a hidden class="anchor" aria-hidden="true" href="#23-adding-sources-of-uncertainty">#</a></h2>
+<blockquote>
+<p>obervation error</p>
+<p>parameter uncertainty</p>
+<p>initial condition uncertainty</p>
+<p>process variability</p>
+<p>others: model selection uncertainty, driver and scenario uncertainty, numerical approximation errorS</p></blockquote>
+<ul>
+<li>uncertainty: <strong>our ignorance about a process</strong> and should decrease asymptotically with sample size</li>
+<li>variability: <strong>variation in the process itself</strong> that are not captured by a model</li>
+</ul>
+<h3 id="231--observation-error">2.3.1.  Observation error<a hidden class="anchor" aria-hidden="true" href="#231--observation-error">#</a></h3>
+<blockquote>
+<p>조금이라도 무조건 존재한다.</p>
+<p>모델링하려는 대상 자체에는 영향 없다(광합성 진행과 상관 없이 우리가 측정하면서 만드는 오차).</p>
+<p>결정론적 관점 : residual error = observation error (자연의 상태는 결정돼있으므로 오차x).</p></blockquote>
+<ul>
+<li>The mean of zero implies that the observations are unbiased</li>
+<li>The key to understanding observation error is to realize that <strong>it does not affect the underlying process itself</strong>.</li>
+<li>Most statistical models <strong>deem residual error as being 100% observation error</strong></li>
+<li><strong>Increasing sample size does not reduce it</strong>; It does not disappear asymptotically</li>
+<li>If observation error was the only source of uncertainty, then this forecast would have zero uncertainty because observation error doesn&rsquo;t affect the system itself.</li>
+</ul>
+<h3 id="232-parameter-uncertainty">2.3.2. Parameter uncertainty<a hidden class="anchor" aria-hidden="true" href="#232-parameter-uncertainty">#</a></h3>
+<blockquote>
+<p>모델의 모수 값을 결정할 때 발생하는 오차이다.</p>
+<p>모델링하려는 대상 자체에는 영향 없다.</p></blockquote>
+<ul>
+<li>is the uncertainty about the true values of all the coefficients in a model</li>
+<li>treats the underlying model as deterministic; just the model calibration arouses errors</li>
+<li></li>
+</ul>
+<p>Box 2.1. Covariance</p>
+<p><strong>Variance</strong> is a special case of covariance (covariance between a variable and itself).</p>
+<p><strong>Any covariance matrix can be decomposed</strong> into a diagonal matrix of standard deviations for each X and a matrix of correlation coefficients: <strong>DRD</strong></p>
+<p><strong>independency of the two variables</strong> can be determined by their covariance matrix (independence -&gt; off-diagonal elements will be zero).</p>
+<p>Covariances are <strong>critical to the &ldquo;model as scaffold&rdquo; idea</strong> where we use correlations among the variables to constrain one variable based on observations of another.</p>
+<h3 id="233-initial-conditions">2.3.3. Initial conditions<a hidden class="anchor" aria-hidden="true" href="#233-initial-conditions">#</a></h3>
+<blockquote>
+<p>초기조건 혹은 state variables는 계의 (변화 방향이 아닌) 현재 상태를 나타내는 값이다.</p>
+<p>Equilibria에는 큰 영향이 없지만, 안정상태 도달 전에는 영향이 크다.</p>
+<p>Equilibria를 논하는 theoretical ecology와는 달리 forecasting은 trajectory(어떻게 변화해갈 것인지)를 다루기 때문에 state variables에 관심이 크다.</p>
+<p>모델링하려는 대상 자체에는 영향 없다.</p></blockquote>
+<ul>
+<li>The initial conditions specify <strong>the starting values of the system&rsquo;s state variables</strong>
+<ul>
+<li><strong>state variables</strong> are those that give a snopshot of the system&rsquo;s properties at any single point in time.</li>
+<li><strong>variables describing the changes of those states</strong> are typically not treated as state variables</li>
+<li>(pool sizes, age structure, species composition) vs (recruitment, mortality, NPP)</li>
+</ul>
+</li>
+<li>In forecasting we are often <strong>much more interested in the current trajectory of a system</strong> than its theoretical asymptote.</li>
+<li>More complex models often have multiple state variables, requiring the estimation of maps of multiple quantities.</li>
+</ul>
+<p>Box 2.2. Chaos</p>
+<p><strong>What defines chaotic systems</strong> is their <em>sensitivity to initial conditions</em>: A population forecast with slightly perturbed initial condition will have a different trajectory from the original.</p>
+<p><strong>Lyapunov exponent</strong> is a parameter that describes <strong>the rate of change</strong> of the difference between the trajectories and <strong>the different trajectories will diverge or converge</strong>.</p>
+<p><strong>Predictability와 관련된다는 이야기가 나오는데, 잘 모르겠다.</strong></p>
+<p><strong>An important question</strong> is that how chaotic dynamics impact out ability to make forecasts.</p>
+<ul>
+<li>many of the tools ecologists are using for forecasting are borrowed from atmospheric science, <strong>where the initial condition uncertainty dominates the problems</strong>.</li>
+<li>However, for ecological forecasting, <strong>more important question</strong> is how chaotic dynamics impact our ability to make forecasts.</li>
+<li><strong>determining what the fundamental nature of the ecological forecasting problem is</strong> will in turn affects the tools we use and how successful we are.</li>
+</ul>
+<h3 id="234-process-error">2.3.4. Process error<a hidden class="anchor" aria-hidden="true" href="#234-process-error">#</a></h3>
+<blockquote>
+<p>모의 대상 자체에서 발생한 모든 uncertainties를 의미한다(모델이 잘못 계산한 것, 모델에 포함하지 못한 process에서 발생한 것 등).</p>
+<p>모의 대상 자체에 영향을 미친다.</p>
+<p>결정론적 관점의 모델에서는 process error도 observation error로 간주한다.</p></blockquote>
+<ul>
+<li>
+<p>Process error encompasses all of the sources of true variability in the underlying process that are not captured by the model.</p>
+<ul>
+<li>
+<p>Demographic and environmental stochasticity are examples.</p>
+<p>(c.f. <strong>Stochastic models</strong> draw and add random numbers to the dynamics of a model to represent the discrete nature of births and deaths and the unpredictable year-to-year variability of the <strong>climate</strong>)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Process errors <strong>affet the underlying model dynamics</strong>.</p>
+</li>
+<li>
+<p><strong>Process errors can propagate</strong> forward in time, outward in space, and across any other unit being investigated and <strong>can be partitioned in various ways</strong>, including additive, independent, and autocorrelated ways.</p>
+</li>
+</ul>
+<h3 id="235-other-sources-of-uncertainty">2.3.5. Other sources of uncertainty<a hidden class="anchor" aria-hidden="true" href="#235-other-sources-of-uncertainty">#</a></h3>
+<blockquote>
+<p>모델 선택에서 발생: 앙상블 사용해서 줄인다.</p>
+<p>입력 자료가 가진 오차: observation error이지만 모델에 사용되는 자료이기 때문에 모델에도 옮겨갈 수 있다.</p>
+<p>Numerical approximation errors: 보통은 별로 크지 않지만 상당한 경우도 있다.</p></blockquote>
+<ul>
+<li>Model choice:
+<ul>
+<li>increasing the complexity of a model increases parameter error but reduces process error.</li>
+<li><strong>There is no guarantee that any of models being considered are correct</strong>.</li>
+<li>It is generally beneficial to work with <strong>a set of models (ensemble), essentially treating model structure like a discrete random variable</strong>.</li>
+</ul>
+</li>
+<li>Driver uncertainty or boundary condition uncertainty: Uncertainty in model inputs</li>
+<li>Scenario uncertainty</li>
+<li>Numerical approximation</li>
+</ul>
+<h2 id="24-thinking-probabilistically">2.4. Thinking probabilistically<a hidden class="anchor" aria-hidden="true" href="#24-thinking-probabilistically">#</a></h2>
+<blockquote>
+<p>모든 파라미터를 random variable 취급하고 각각에 적당한 확률분포를 부여한다.</p>
+<p>설령 매커니즘이 확실히 밝혀졌더라도 관측 오차 등을 완전히 없앨 수는 없으므로 이러한 불완전성을 표현한다는 점에서도 적합한 방법이다.</p></blockquote>
+<ul>
+<li>Everything in the model is described in terms of probability distributions.</li>
+<li>Philosophically, treating parameters as random variables doesn&rsquo;t necessarily mean that the process itself is stochastic. It is a statement about <strong>our imperfect understanding</strong>.</li>
+</ul>
+<h2 id="25-predictability">2.5. Predictability<a hidden class="anchor" aria-hidden="true" href="#25-predictability">#</a></h2>
+<blockquote>
+<p>prediction은 원래 어려운 것이다.</p>
+<p>하나의 가설이나 기존의 데이터에만 집착하지 말고, 여러 가설을 비교 검증하고, 새로운 데이터를 적극 활용해야 한다.</p></blockquote>
+<ul>
+<li>We know there are <strong>known unknowns</strong>, but there are also <strong>unknown unknowns</strong>.
+<ul>
+<li>known unknowns: we put them using <strong>probabilistic distributions.</strong></li>
+<li>unknown unknowns: aka &ldquo;<strong>black swans</strong>.&rdquo; Failing to anticipate this probability of disturbance does not actually have a huge impact on the mean but results in enormously <strong>overconfident results</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="251-barriers-to-forecasting">2.5.1. Barriers to forecasting<a hidden class="anchor" aria-hidden="true" href="#251-barriers-to-forecasting">#</a></h3>
+<blockquote>
+<ol>
+<li>태생적 한계(애초에 예측이 불가능)</li>
+<li>단순화 불가능한 대상</li>
+<li>대상에 대한 지식 부족</li>
+</ol></blockquote>
+<ul>
+<li>inherent barriers: such as local disturbances</li>
+<li>computational irreducibility: cannot use an explicit representation of detailed processes such as species niche spaces. It limits the predictability of important global change processes.</li>
+<li>failures to understand: unlike to weather forecasting models, ecological models cannot represent the physics of the target processes. This may <strong>limit the usability of the pending big ecological data</strong>.</li>
+</ul>
+<h3 id="252-weather-forecasting">2.5.2. Weather forecasting<a hidden class="anchor" aria-hidden="true" href="#252-weather-forecasting">#</a></h3>
+<blockquote>
+<p>날씨 예측용 모델, 기술이 많이 발달 돼 있음.</p>
+<p>날씨 예측과 생태계 예측 문제의 서로 다른 점을 잘 파악하여(초기 조건 민감성 등) 그들의 toolbox를 잘 활용하자.</p>
+<p>지금 당장 시작하자. 완벽히 이해하고 시작할 필요 없다. 모델 쓰면서 이해도도 더 높아질 것이다.</p></blockquote>
+<ul>
+<li><strong>Ecologists can no longer wait to start making forecasts</strong>, and it is unrealistic to postpone forecasting until we have perfect knowledge.</li>
+<li>The atmosphere is highly chaotic, which makes these models very sensitive to initial conditions.</li>
+<li>It is an open question <strong>how many of these tools can be used as-is by ecologists</strong>.</li>
+</ul>
+<h3 id="253-the-ecological-forecasting-problem">2.5.3. The ecological forecasting problem<a hidden class="anchor" aria-hidden="true" href="#253-the-ecological-forecasting-problem">#</a></h3>
+<blockquote>
+<p><strong>어렵다.</strong></p>
+<p>Ecological forecasting에서 자주 쓰는 a general form of logistic growth model을 예시로 주고,</p>
+<p>예측 대상의 uncertainty를 표현한 식에서 각 항의 의미를 자세히 분석하고 있다.</p>
+<p>어떤 적용 사례에 대해서도 uncertainty를 분해해서 각 항별로 정량화 &amp; 중요도 비교가 가능하다!</p>
+<p>uncertainty를 잘 파악해야 overconfident를 피할 수 있다.</p></blockquote>
+<ul>
+<li>
+<p>There are important differences between the nature of the forecasting problem in meteorology versus ecology.</p>
+</li>
+<li>
+<p>Y<!-- raw HTML omitted -->t+1<!-- raw HTML omitted --> = f(Y<!-- raw HTML omitted -->t<!-- raw HTML omitted -->, X<!-- raw HTML omitted -->t<!-- raw HTML omitted --> | theta_bar + alpha) + epsilon</p>
+<p><strong>Var[Y<!-- raw HTML omitted -->t+1<!-- raw HTML omitted -->] = (stability x IC uncert) + (driver sens x driver uncert) + {param sens x (param uncert + param variability)} + (process error)</strong></p>
+<ul>
+<li>IC tems:
+<ul>
+<li>Internal (= endogenous) stability.</li>
+<li>Because it is recursive, it <strong>will dominate all other term if |df/dy| &gt; 1</strong>.</li>
+<li>There are definitely ecological systems that <strong>appear to be chaotic (too sensitive to the IC)</strong>, so my personal working hypothesis is that for most ecological forecasting problems <strong>we need to focus on the other terms</strong>.</li>
+<li>The only term that shows the <strong>recursive property</strong> (i.e. exponentially increase or decrease), which means <strong>it will increase into the future</strong>.</li>
+</ul>
+</li>
+<li>Driver terms:
+<ul>
+<li>External (= exogenous) sensitivity</li>
+<li>The magnitude of this term will be problem specific.</li>
+<li>We might use different covariates for forecasting than we use for explaining the same process.</li>
+<li>Experimental design for forecasting is often different from that for hypothesis testing.</li>
+</ul>
+</li>
+<li>parameter terms:
+<ul>
+<li>parameter uncertainty (how well do we know the mean of theta?)</li>
+<li>parameter variability: the variability of the process itself; <strong>another manifestation of the process error</strong></li>
+</ul>
+</li>
+<li>process error
+<ul>
+<li>errors from processes not explained by the model</li>
+<li>stochasticity: disturbances, dispersal, mortality, reproduction, &hellip;</li>
+<li>structural uncertainty: aroused by empirical equations rather than those based on physical laws</li>
+<li>heterogeneity in space, time, and phylogeny</li>
+</ul>
+</li>
+<li><strong>The power of the equation</strong> is that for any particular application it gives <strong>a quantitative way of breaking down the overall forecast</strong> into its components and <strong>comparing their relative size and importance</strong>.</li>
+<li><strong>It is more pressing to quantify variability than it is to explain it.</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="3-data-large-and-small">3. Data. Large and Small<a hidden class="anchor" aria-hidden="true" href="#3-data-large-and-small">#</a></h1>
+<h2 id="31-the-data-cycle-and-best-practices">3.1. The data cycle and best practices<a hidden class="anchor" aria-hidden="true" href="#31-the-data-cycle-and-best-practices">#</a></h2>
+<blockquote>
+<p>미래의 나를 위해서 + 코웤 증가하는 시대에 맞춰</p>
+<p>데이터를 <strong>잘</strong> 관리해야 한다 - 일정 형식 + 메타데이터</p></blockquote>
+<!-- raw HTML omitted -->
+<ul>
+<li>Data Life Cycle: two scales
+<ol>
+<li>data generation: plan - collect - assure - describe - preserve</li>
+<li>synthesis and forecasting: discover, integrate, and analyze</li>
+</ol>
+</li>
+<li>Best practices
+<ol>
+<li>automated</li>
+<li>documented</li>
+<li>recoverable</li>
+</ol>
+</li>
+</ul>
+<h3 id="311-plan">3.1.1. Plan<a hidden class="anchor" aria-hidden="true" href="#311-plan">#</a></h3>
+<blockquote>
+<p>계획을 잘 짜야 후환이 적다</p>
+<p>어차피 grant proposal에도 써야 한다</p></blockquote>
+<h3 id="312-collect">3.1.2. Collect<a hidden class="anchor" aria-hidden="true" href="#312-collect">#</a></h3>
+<blockquote>
+<p>미리 열제목 등 틀을 만들어 놓자.</p>
+<p>그날 모은 건 그날 확인하자.</p></blockquote>
+<h3 id="313-assure">3.1.3. Assure<a hidden class="anchor" aria-hidden="true" href="#313-assure">#</a></h3>
+<blockquote>
+<p>QA/QC 잘 하자.</p>
+<p>원 값을 바꾸기보다는 QA/QC 플래그를 추가하는 게 좋다.</p></blockquote>
+<h3 id="314-describe">3.1.4. Describe<a hidden class="anchor" aria-hidden="true" href="#314-describe">#</a></h3>
+<blockquote>
+<p>메타데이터 만들자.</p></blockquote>
+<h3 id="315-preserve">3.1.5. Preserve<a hidden class="anchor" aria-hidden="true" href="#315-preserve">#</a></h3>
+<blockquote>
+<p>변경 기록 잘 하자.</p>
+<p>공개 무료 저장소를 사용하자.</p></blockquote>
+<h3 id="316-discover-integrate-analyze">3.1.6. Discover, integrate, analyze<a hidden class="anchor" aria-hidden="true" href="#316-discover-integrate-analyze">#</a></h3>
+<blockquote>
+<p>데이터 다루는 스킬 갖추자.</p></blockquote>
+<h2 id="32-data-standards-and-metadata">3.2. Data standards and metadata<a hidden class="anchor" aria-hidden="true" href="#32-data-standards-and-metadata">#</a></h2>
+<h3 id="321-metadata">3.2.1. Metadata<a hidden class="anchor" aria-hidden="true" href="#321-metadata">#</a></h3>
+<blockquote>
+<p>Data&rsquo;s provenance: 메타데이터 잘 쓰자.</p></blockquote>
+<h3 id="322-data-standards">3.2.2. Data standards<a hidden class="anchor" aria-hidden="true" href="#322-data-standards">#</a></h3>
+<blockquote>
+<p>정답이 있는 건 아니지만, 그래도 서로 합의 하에 <strong>일정한 형식</strong>으로 데이터를 작성하자.</p></blockquote>
+<h2 id="33-handling-big-data">3.3. Handling big data<a hidden class="anchor" aria-hidden="true" href="#33-handling-big-data">#</a></h2>
+<blockquote>
+<p>Big-data: size, RAM size, handling tool &hellip;</p></blockquote>
+<p>Box 3.1. Self-documenting Data</p>
+<p>The key to the self-documenting data is that the data and the metadata are stored together.</p>
+<p>The two most common self-documenting file formats:</p>
+<ul>
+<li>the network common data format (<strong>netCDF</strong>)</li>
+<li>the hierarchical data format (<strong>HDF</strong>)</li>
+</ul>
+<h1 id="4-scientific-workflows-and-the-informatics-of-model-data-fusion">4. Scientific Workflows and the Informatics of Model-Data fusion<a hidden class="anchor" aria-hidden="true" href="#4-scientific-workflows-and-the-informatics-of-model-data-fusion">#</a></h1>
+<h2 id="41-transparency-accountability-and-repeatability">4.1. Transparency, accountability, and repeatability<a hidden class="anchor" aria-hidden="true" href="#41-transparency-accountability-and-repeatability">#</a></h2>
+<blockquote>
+<p>재현가능해야 한다 &ndash;&gt; 데이터, 방법, 소프트웨어 투명하게 공개</p>
+<p>오픈소스 소프트웨어 적극 활용합시다.</p></blockquote>
+<h2 id="42-workflows-and-automation">4.2. Workflows and automation<a hidden class="anchor" aria-hidden="true" href="#42-workflows-and-automation">#</a></h2>
+<blockquote>
+<p>재현가능해야 한다 &ndash;&gt; 각 과정이 정확히 기록돼야 한다 &ndash;&gt; version control (e.g. Git)</p></blockquote>
+<ul>
+<li>Workflow: A sequence of steps performed in an analysis</li>
+</ul>
+<p>Box 4.1. Software Development Tools</p>
+<p>An example of software development pattern</p>
+<ol>
+<li><strong>세팅</strong>: <em>pull</em> the latest code from the mainline repository to your local repository</li>
+<li><strong>할 일 체크</strong>: issue tracking system에 있는 건의사항이나 다음 milestone을 위해 필요한 일 확인</li>
+<li><strong>Ctrl+S</strong>: 작업용 복사본(branch) 생성. 작업 하나 완료할 때마다 <em>commit</em>하기</li>
+<li><strong>테스트</strong>: 완료되면 <em>push</em>.</li>
+<li><strong>반영 요청</strong> (<em>pull request</em>)
+<ul>
+<li>Collaborators가 작업 내용 검토</li>
+<li>이상 없으면 <em>mainline</em>에 병합(pulled into the <em>mainline</em>)</li>
+<li>작업 로그 및 comment들도 같이 저장됨</li>
+</ul>
+</li>
+<li><strong>셔터 내리기</strong>: 완료한 issue close하기.</li>
+<li><strong>배포</strong>: 모든 버그, 건의 등 반영됐으면 배포하기</li>
+</ol>
+<ul>
+<li><em>pull</em>: 다른 branch (=version)의 코드를 가져오는 것</li>
+<li><em>commit</em>: 현재 작업중인 branch의 변경사항을 local repository에 저장</li>
+<li><em>push</em>: 현재 branch를 remote repository에 저장</li>
+<li><em>mainline</em>: main branch (= <em>trunk</em> or <em>master</em>). Stable branch와 development branch로 나누기도 함.</li>
+</ul>
+<h2 id="43-best-practices-for-scientific-computing">4.3. Best practices for scientific computing<a hidden class="anchor" aria-hidden="true" href="#43-best-practices-for-scientific-computing">#</a></h2>
+<blockquote>
+<p>재현가능해야 한다 &ndash;&gt; 올바른 습관을 기르기!</p></blockquote>
+<p>My top recommendations</p>
+<ul>
+<li>
+<p>계획 세우기: psuedo-coding</p>
+</li>
+<li>
+<p>유지보수 용이하게: Modular</p>
+<ul>
+<li>하나의 기능 - 하나의 함수</li>
+</ul>
+</li>
+<li>
+<p>Version control system 사용하기</p>
+</li>
+<li>
+<p>하나 만들때마다 테스트로 검증</p>
+</li>
+<li>
+<p>주석은 해당 위치에</p>
+</li>
+<li>
+<p>변수 이름 공들여서</p>
+</li>
+<li>
+<p>코딩에 너무 공들이지 말기: 일단 무사히 실행하는 게 목적!</p>
+</li>
+</ul>
+<h1 id="5-introduction-to-bayes">5. Introduction to Bayes<a hidden class="anchor" aria-hidden="true" href="#5-introduction-to-bayes">#</a></h1>
+<h2 id="51-confronting-models-with-data">5.1. Confronting models with data<a hidden class="anchor" aria-hidden="true" href="#51-confronting-models-with-data">#</a></h2>
+<blockquote>
+<p>재현가능해야 한다 &ndash;&gt; 데이터, 방법, 소프트웨어 투명하게 공개</p>
+<p>오픈소스 소프트웨어 적극 활용합시다.</p></blockquote>
+<h2 id="51-confronting-models-with-data-1">5.1. Confronting models with data<a hidden class="anchor" aria-hidden="true" href="#51-confronting-models-with-data-1">#</a></h2>
+<h2 id="52-probability-101">5.2. Probability 101<a hidden class="anchor" aria-hidden="true" href="#52-probability-101">#</a></h2>
+<h2 id="53-the-likelihood">5.3. The likelihood<a hidden class="anchor" aria-hidden="true" href="#53-the-likelihood">#</a></h2>
+<h2 id="54-bayes-theorem">5.4. Bayes&rsquo; theorem<a hidden class="anchor" aria-hidden="true" href="#54-bayes-theorem">#</a></h2>
+<h2 id="55-prior-information">5.5. Prior information<a hidden class="anchor" aria-hidden="true" href="#55-prior-information">#</a></h2>
+<h2 id="56-numerical-methods-for-bayes">5.6. Numerical methods for Bayes<a hidden class="anchor" aria-hidden="true" href="#56-numerical-methods-for-bayes">#</a></h2>
+<h2 id="57-evaluating-mcmc-output">5.7. Evaluating MCMC output<a hidden class="anchor" aria-hidden="true" href="#57-evaluating-mcmc-output">#</a></h2>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/book-review/">Book Review</a></li>
+      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
+      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

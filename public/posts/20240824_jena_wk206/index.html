@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>In Jena: Week 206 (모찌 3살, 보드게임카페-7 Wonders, 저녁@조지) | My New Hugo Site</title>
+<meta name="keywords" content="2024, Daily Life, Jena">
+<meta name="description" content="이번 주는&hellip;
+
+review a paper: got a review request&hellip; finally start reading the paper ~2 weeks before the deadline
+developing tws_nee_in_model: shared what I have done in July with Sujan and Martin. Got some comments&hellip; and a suggestion on a new opti. experiment: calculate costNEEIAV using a global time series calculated from the 904 grid cells; this made a difference in the case of Zavud.
+모찌 3살 생일
+보드게임카페 - 완통, 디
+저녁@조지
+
+2024. 08. 12. 월요일
+
+  
+      
+          
+      
+  
+  
+  
+
+모찌 3살. 벌써 3살이다. 기념으로 모찌 사진을 몇개 모아서 스티커로 만들었다. 춘휘 아이디어. 어디에 붙일까.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20240824_jena_wk206/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20240824_jena_wk206/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      In Jena: Week 206 (모찌 3살, 보드게임카페-7 Wonders, 저녁@조지)
+    </h1>
+    <div class="post-meta"><span title='2024-08-24 09:28:45 +0200 +0200'>August 24, 2024</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="이번-주는">이번 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#이번-주는">#</a></h2>
+<ul>
+<li>review a paper: got a review request&hellip; finally start reading the paper ~2 weeks before the deadline</li>
+<li>developing tws_nee_in_model: shared what I have done in July with Sujan and Martin. Got some comments&hellip; and a suggestion on a new opti. experiment: calculate costNEEIAV using a global time series calculated from the 904 grid cells; this made a difference in the case of Zavud.</li>
+<li>모찌 3살 생일</li>
+<li>보드게임카페 - 완통, 디</li>
+<li>저녁@조지</li>
+</ul>
+<h2 id="2024-08-12-월요일">2024. 08. 12. 월요일<a hidden class="anchor" aria-hidden="true" href="#2024-08-12-월요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>모찌 3살. 벌써 3살이다. 기념으로 모찌 사진을 몇개 모아서 스티커로 만들었다. 춘휘 아이디어. 어디에 붙일까.</p>
+<h2 id="2024-08-16-화요일">2024. 08. 16. 화요일<a hidden class="anchor" aria-hidden="true" href="#2024-08-16-화요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>거의 한 달 보름 가까이 이어지고 있는 새 마우스 구매 프로젝트. 현재 시도 중인 건 게이밍 마우스 포함 5 기종. 게이밍 마우스 두 기종을 먼저 주문했고, 다른 세 기종을 며칠 뒤에 주문했다. 세 기종 중에 두 개는 전에 시도 후 반품한 마우스 중 다시 고려해볼만한 것이고, 다른 하나는 새로 시도해본 기종이다.</p>
+<p><a href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro">Razer Basilisk V3 Pro</a></p>
+<ul>
+<li>윗줄 맨 왼쪽 것.</li>
+<li>크기가 커 보였지만, 그립감이 상당히 좋고 편하다. Logitech M720 다음으로 손 편한 마우스.</li>
+<li>무소음은 아니지만 클릭 감이 괜찮다.</li>
+<li>무한휠 기능이 있다. 다만 무한휠로 설정하면 너무 헐렁해서 마우스만 조금 흔들어도 휠이 돌아간다. 휠은 확실히 로지텍이 낫다.</li>
+<li>우분투에도 컨트롤링 소프트웨어가 있다. 덕분에 RGB 조명을 끌 수 있다.</li>
+<li>배터리 90시간. 게이밍 마우스라면 광고할만큼 긴 시간이지만, 오피스용으로는 낙제점.</li>
+<li>100유로 넘는 비싼 마우스이면서도 내 요구조건에 못 미치는 요소가 몇개 있다. 특히 배터리.</li>
+</ul>
+<p><a href="https://www.logitechg.com/en-eu/products/gaming-mice/g502-x-plus-wireless-lightforce.910-006162.html?srsltid=AfmBOopCKPEVYAC_lnH39lCRKbGxLNg_kiSpehVXM8BsIj2pA493la4B">Logitech G 502 X PLUS LIGHTSPEED</a></p>
+<ul>
+<li>사진에는 없다. 게이밍 마우스 둘 중에는 바실리스크 프로로 마음을 정해놨기에 집에 모셔놨다.</li>
+<li>역시 크기에 비해 그립감이 나쁘지 않지만, 나한테는 레이저 바실리스크 프로가 더 편하다.</li>
+<li>클릭감이 특이하다. 스프링 반동이 느껴지는 듯한 느낌.</li>
+<li>사무용 로지텍 마우스의 좋은 휠은 여기에 넣지 않았다. 레이저 바실리스크 휠과 비슷.</li>
+<li>배터리 130시간. 역시 게이밍 마우스 치고는 긴 시간이지만, 오피스용으로는 평균 이하다.</li>
+<li>소프트웨어 설치 포기했다. 덕분에 화려한 RGB 조명을 끌 수 없었다. 포기했던 가장 큰 이유.</li>
+<li>100유로 넘는 비싼 마우스이면서도 내 요구조건에 못 미치는 요소가 몇개 있다. 특히 배터리.</li>
+</ul>
+<p><a href="https://www.logitech.com/en-ch/products/mice/m720-triathlon.html?srsltid=AfmBOorZmrdxq8mpiT5amw-sa0Y5V-6o3MTG30pSYGJrUtkDc3faacrT">Logitech M720 Triathlon</a></p>
+<ul>
+<li>매장에서 잡아본 것 중 가장 편했던 M650의 후속작이라 들었다. 관심가서 주문.</li>
+<li>역시 비슷하게 가장 편하다. 조금 묵직하지만, 오히려 조약돌하나 살포시 움켜쥐고 컨트롤하는 느낌이라 좋다.</li>
+<li>클릭감은 평범하게 좋다. 클릭클릭.</li>
+<li>휠은 안 좋다. 드르륵 소리가 크면서도 한 칸 돌려서 움직이는 정도가 크지 않아서 드르르르륵 많이 돌려야 한다. 무한휠을 지원하는 건 좋지만 로지텍 다른 마우스 답지 않게 헐랭이 무한휠이다. 스크롤이 지멋대로 돌아간다.</li>
+<li>배터리는 짱짱하다. AA 건전지 하나로 2년 사용 가능.</li>
+<li>한 가지 마음에 안 드는 점은 최신 기술이 적용되지 않았음에도 가격이 엄청 싸지 않다는 것. 로지볼트가 아니라 유니파잉 리시버를 쓴다. M650과 비교해서 가성비가 뒤쳐지는 느낌.</li>
+</ul>
+<p>결국 지금은 M720 (아랫줄 맨 오른쪽), M650 (아랫줄 맨 오른쪽에서 두 번째), Razer Pro Click Mini (아랫줄 맨 오른쪽에서 세 번째) 중에서 고민 중이다. 고민 기간은 약 2주 남았다.</p>
+<h2 id="2024-08-17-토요일">2024. 08. 17. 토요일<a hidden class="anchor" aria-hidden="true" href="#2024-08-17-토요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+  </tbody>
+</table>
+<p>다음주 완통이 미국으로 가기 전에 중국 친구들이 공원에 만나서 같이 저녁 먹는다고 한다. 나는 그 자리는 참여 안 하고, 대신 그 전에 오후에 같이 보드게임카페에 가기로 했다.</p>
+<p>보드게임 가기 전에 점심&amp;춘휘 먹을 저녁 도시락을 만들었다. 점심은 배추랑 두부, 참치를 이용한 요리다. 두부랑 참치로 속을 만들고, 익힌 배춧잎에 싼 후, 계란물을 묻혀서 군만두처럼 구워내서 소스에 찍어먹는 요리다. 두부랑 배추를 사용한 레시피 검색하다가 괜찮아보여서 만들었는데, 알고보니 다이어트 요리. 사실 구성이 다이어트에 좋을 법도 하지만, 마지막 구울 때 기름이 좀 들어가기 때문에 꼭 좋은 것만은 아닐지도? 아무튼 맛은 아주 좋다. 배추 쌈싸는 게 좀 귀찮긴 하지만.</p>
+<p>춘휘 도시락으로는 스팸주먹밥을 만들었다. 원래 춘휘가 참치를 쓸 예정이었으나, 내가 저 레시피를 찾는 바람에 내가 쓰게 됐다. 대신, 스팸주먹밥 레시피를 찾아서 소개해줬다. 김가루, 구운 스팸과 양파, 당근 등을 사용했다. 꽤 괜찮게 만들어졌다. 다들 좋아했다는 후문.</p>
+<p>요리하느라 시간이 좀 늦어졌다. 빠르게 먹고 보드게임하러 갔다. 완통, 디가 참여해서 4인 게임을 했다. 전에 춘휘랑 했던 세븐원더스:듀얼의 오리지널 세븐원더스를 해봤다. 세븐원더스:듀얼과 대체로 비슷하지만, 세부 규칙에 좀 차이가 있었다. 2라운드 중 첫 번째는 내가, 두 번째는 디가 이겼다. 세븐원더스:듀얼과 비슷하게 재미있었지만, 4명인게 차이점.</p>
+<h2 id="2024-08-18-일요일">2024. 08. 18. 일요일<a hidden class="anchor" aria-hidden="true" href="#2024-08-18-일요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>조지가 나랑 춘휘를 초대했다. 그리스 음식 먹을 예정. 핀신과 이름 모르는 중국 여자애가 조지를 도와 준비해줬다. 우리도 준비 도와줄까?했지만 조지가 두 명 도우미 있다고 사양했다. 편하게 가서 먹고 왔다. 조지네 집은 여러 명이 같이 살고 있다. 집구조 자체가 셰어하우스로 디자인된 듯했다. 큰 복도 주변으로 각자의 방과 주방이 붙어있는 모양새. 독일어 수업 같이 듣는 안드레아스도 여기 살고 있다. 식사 중에 주방에 왔길래 인사를 나눴다.</p>
+<p>메뉴는 빵과 드레싱으로 전채 요리, 샐러드, 시금치치즈파이, 그리고 메인으로 렌틸콩 죽. 조지는 채식주의자라서 고기는 없다. 그래도 렌틸콩이 있어서 단백질 섭취는 문제가 없다. 조지는 두 도우미와 업무분담을 잘 해서 효율적인 주방을 지향했으나, 우리가 보기엔 그리 효율적이지 못했다. 일이 없이 노는 인원이 있고, 시간이 많이 필요한 일이 뒤로 가 있고. 아무튼 그러려고 노력했다는 게 중요하다.</p>
+<p>구경만하던 우리도 버섯 손질하는 것 등을 도와줬다. 특이하게도 조지는 양송이버섯 머리의 갈색부분, 버섯 다리의 밑바닥을 잘라내고 사용한다. 어릴 때 할머니께서 그러라고 한 후부터 계속 그렇게 하고 있다고 한다. 우리는 할머니께서 당신이 요리하는 동안 어린 조지를 조용히 시키기 위해 묘수를 낸 것이 아닌가 의심을 했다. 검색해보니 갈색 부분을 제거하는 게 흰색으로 통일을 할 수는 있을지 몰라도 영양소를 많이 버리는 거라고 한다.</p>
+<p>다른 특이점은 올리브오일을 무진장 쓴다. 조지가 그리스 사람이라 올리브오일 평가에 아주 엄격하다. 일반 슈퍼에서 파는 엑스트라버진 올리브오일은 취급을 안 해준다. 그날 쓰고 있던 것은 동네 한 조그만 슈퍼에서 파는 제품이었는데, 예나에서 두 번째로 좋은 올리브오일이라고 한다. 예나에서 올리브오일 파는 곳은 다 돌아본 듯. 렌틸콩에 올리브오일 한 컵, 샐러드에 한 컵을 쓴 듯. 문화가 이렇게 다르다.</p>
+<p>음식은 아주 맛있었다. 고기는 없었지만 배부르게 잘 먹었다. 빵에 찍어먹는 드레싱도 아주 맛있고, 파이도 잘 구워졌고, 렌틸콩 죽도 맛있게 잘 됐다. 전채 요리로 만든 소스는 그릭요거트와 오이, 마늘 등을 넣어 만든 거다. 꽤 맛있음. 이름 모른느 중국 여자애도 만들어봤지만 조지가 만든 것 같이는 안 나온 듯하다. 조지가 으스대면서 팁을 줬다. 중요한 건 수분이 많은 오이속을 파내고 사용해야 한다는 것. 수분이 섞이면 맛의 깊이가 떨어지나보다.</p>
+<p>렌틸콩 죽을 먹는 방법은 사람마다 다르다고 한다. 그냥 먹는 사람, 고춧가루 넣어 먹는 사람, 식초 넣는 사람, &hellip; 나는 하나씩+여러 조합을 다 시도해봤다. 그냥 먹는 거, 고춧가루 넣는 거, 식초 넣는 거 다 비슷하게 맛있는 듯.</p>
+<p>원래 밥 먹고 보드게임을 할 생각으로 가져왔지만, 먹고 이야기만 나눴는데 11시?가 돼버렸다. 식사를 늦게 시작했기도 했다. 잘 먹고 이야기 잘 나누고 헤어졌다.</p>
+<h2 id="그-외">그 외&hellip;<a hidden class="anchor" aria-hidden="true" href="#그-외">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<ul>
+<li>춘휘가 만든 중국식 닭볶음탕(?). 한국의 맵고 달달한 맛을 덜고 두반장 맛을 더한 모양새. 좋은 밥 반찬.</li>
+</ul>
+<h2 id="다음-주는">다음 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#다음-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model</li>
+<li>paper review</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2024/">2024</a></li>
+      <li><a href="http://localhost:1313/tags/daily-life/">Daily Life</a></li>
+      <li><a href="http://localhost:1313/tags/jena/">Jena</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

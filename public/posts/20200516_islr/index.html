@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>ISLR Note | My New Hugo Site</title>
+<meta name="keywords" content="2020, Book Review, R">
+<meta name="description" content="2. Statistical Learning
+2.1. What Is Statistical Learning?
+Y = f(X) &#43; e
+여기서 함수 f는 X가 담고 있는 Y에 대한 systematic information이다.
+e는 f가 표현하지 못하는 random error term이다.
+e는 X에 독립이고 평균값은 0이다.
+Statistical learning은 위의 함수 f를 찾는 다양한 방법을 모두 일컫는다.
+2.1.1. Why Estimate f?
+
+
+prediction
+
+측정값 X로 Y 값을 예측한다(Y = f(X)).
+f는 black box로 남아도 상관 없다(Y만 잘 맞추면 된다).
+이 때 발생하는 에러는 두 가지: reducible, irreducible.
+reducible: f를 더 잘 예측하면 줄일 수 있다.
+irreducible: 측정 항목에서 어떤 중요한 변수를 놓치고 있거나,
+혹은 측정 불가능한 요소(예: 약물 투여 때 환자의 심리)가 개입하기 때문에 발생한다.
+
+
+
+inference">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20200516_islr/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200516_islr/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      ISLR Note
+    </h1>
+    <div class="post-meta"><span title='2018-04-05 16:00:00 +0900 +0900'>April 5, 2018</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="2-statistical-learning">2. Statistical Learning<a hidden class="anchor" aria-hidden="true" href="#2-statistical-learning">#</a></h1>
+<h2 id="21-what-is-statistical-learning">2.1. What Is Statistical Learning?<a hidden class="anchor" aria-hidden="true" href="#21-what-is-statistical-learning">#</a></h2>
+<p><em>Y</em> = <em>f</em>(<em>X</em>) + <em>e</em><br>
+여기서 함수 <em>f</em>는 <em>X</em>가 담고 있는 <em>Y</em>에 대한 <strong>systematic information</strong>이다.<br>
+<em>e</em>는 <em>f</em>가 표현하지 못하는 <strong>random error term</strong>이다.<br>
+<em>e</em>는 <em>X</em>에 독립이고 평균값은 0이다.</p>
+<p><strong>Statistical learning</strong>은 위의 함수 <em>f</em>를 찾는 다양한 방법을 모두 일컫는다.</p>
+<h3 id="211-why-estimate-f">2.1.1. Why Estimate <em>f</em>?<a hidden class="anchor" aria-hidden="true" href="#211-why-estimate-f">#</a></h3>
+<ul>
+<li>
+<p>prediction</p>
+<ul>
+<li>측정값 <em>X</em>로 <em>Y</em> 값을 예측한다(<em>Y</em> = <em>f</em>(<em>X</em>)).</li>
+<li><em>f</em>는 <em>black box</em>로 남아도 상관 없다(<em>Y</em>만 잘 맞추면 된다).</li>
+<li>이 때 발생하는 에러는 두 가지: <!-- raw HTML omitted -->reducible<!-- raw HTML omitted -->, <!-- raw HTML omitted -->irreducible<!-- raw HTML omitted -->.</li>
+<li>reducible: <em>f</em>를 더 잘 예측하면 줄일 수 있다.</li>
+<li>irreducible: 측정 항목에서 어떤 중요한 변수를 놓치고 있거나,<br>
+혹은 측정 불가능한 요소(예: 약물 투여 때 환자의 심리)가 개입하기 때문에 발생한다.</li>
+</ul>
+</li>
+<li>
+<p>inference</p>
+<ul>
+<li><em>Y</em>와 각 <em>X</em>의 관계를 정확히 파악하고 싶다.</li>
+<li><em>f</em>는 <em>black box</em>로 남으면 안 된다.</li>
+<li>어떤 <em>X</em>가 <em>Y</em>와 더 관계가 강한지, 여러 <em>X</em>와 <em>Y</em>의 관계는 선형인지 비선형인지 등.</li>
+</ul>
+</li>
+</ul>
+<p>문제에 따라서</p>
+<ul>
+<li>prediction과 inference 중 하나만, 혹은 둘 다 필요할 수 있다.</li>
+<li>간단한 선형 모형으로도 만족할 수도 있고, 복잡한 비선형 모형을 사용해야 할 수도 있다.</li>
+</ul>
+<h3 id="212-how-do-we-estimate-f">2.1.2. How Do We Estimate <em>f</em>?<a hidden class="anchor" aria-hidden="true" href="#212-how-do-we-estimate-f">#</a></h3>
+<p><em>f</em>를 찾는 데는 여러 방법이 있는데, 이들이 공통으로 가지는 특징이 있다.</p>
+<ul>
+<li>training data: {(<em>x</em><del>1</del>, <em>y</em><del>1</del>), &hellip;, (<em>x</em><em><del>n</del></em>, <em>y</em><em><del>n</del></em>)}</li>
+<li>parametric or non-parametric method 중에 하나다.</li>
+<li>parametric methods
+<ul>
+<li><em>f</em>의 형태(equation, distribution, &hellip;)를 상정한 후(parameter가 정해진다)</li>
+<li>parameter 값을 추정해서 <em>f</em>를 결정한다.</li>
+<li><em>f</em>를 찾는 문제가 몇개의 paraemters를 추정하는 문제로 바뀐다(쉬워진다).</li>
+<li><em>f</em>의 형태를 잘못 상정했다면 오차가 커질 수 있다.</li>
+<li>위의 경우를 방지하기 위해 <em>f</em>의 형태에 <!-- raw HTML omitted -->flexibility<!-- raw HTML omitted -->를 높이고자 한다면 더 많은 parameters가 필요하고,<br>
+따라서 <!-- raw HTML omitted -->overfitting<!-- raw HTML omitted -->이 발생할 확률도 높아진다.</li>
+</ul>
+</li>
+<li>non-parametric methods
+<ul>
+<li><em>f</em>에 특정한 형태를 상정하지 않는다.</li>
+<li>때문에 <em>f</em>가 실제로 어떤 형태를 갖더라도 정확히 추정할 잠재력이 있는 방법이다.</li>
+<li>단, parameter estimation이라는 쉬운 문제로 바꾸지 않았기 때문에<br>
+parametric methods보다 훨씬 많은 관측 데이터가 필요하다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="213-the-trade-off-between-prediction-accuracy-and-model-interpretability">2.1.3. The Trade-Off Between Prediction Accuracy and Model Interpretability<a hidden class="anchor" aria-hidden="true" href="#213-the-trade-off-between-prediction-accuracy-and-model-interpretability">#</a></h3>
+<p>restrictive &ndash;&gt; interpertable (inference 목적에 적합)<br>
+하지만, prediction 목적에서도 꼭 the most flexible approach를 사용하는 게 정답은 아니다(2.2에서 다룰 예정).</p>
+<h3 id="214-supervised-versus-unsupervised-learning">2.1.4. Supervised Versus Unsupervised Learning<a hidden class="anchor" aria-hidden="true" href="#214-supervised-versus-unsupervised-learning">#</a></h3>
+<p>supervised: <em>Y</em> 관측값 존재 &lt;-&gt; unsupervised</p>
+<h3 id="215-regression-versus-classification-problems">2.1.5. Regression Versus Classification Problems<a hidden class="anchor" aria-hidden="true" href="#215-regression-versus-classification-problems">#</a></h3>
+<p><strong>response variable</strong>이<br>
+연속형 &ndash;&gt; regression<br>
+범주형 &ndash;&gt; classification</p>
+<p>일반적으로 <strong>predictor</strong>는 연속형, 범주형 각각에 맞춰 코딩 가능하기 때문에 위의 판정에서는 덜 중요하다.</p>
+<h2 id="22-assessing-model-accuracy">2.2. Assessing Model Accuracy<a hidden class="anchor" aria-hidden="true" href="#22-assessing-model-accuracy">#</a></h2>
+<p>모든 상황에 만능인 모델은 없다.<br>
+해결해야 할 문제에 따라, 주어진 데이터에 따라 가장 적합한 모델이 매번 달라진다.</p>
+<p>그래서 상황마다 매번 여러 모델을 비교해본다.</p>
+<h3 id="221-measuring-the-quality-of-fit">2.2.1. Measuring the Quality of Fit<a hidden class="anchor" aria-hidden="true" href="#221-measuring-the-quality-of-fit">#</a></h3>
+<p>Mean squared error(MSE): regression setting에서는 가장 많이 사용한다.</p>
+<blockquote>
+<p><em>MSE</em><br>
+= $\frac{1}{n}$$\sum_{i=1}^{n}$(<em>y</em><del><em>i</em></del> - $\hat{f}$(<em>x</em><del><em>i</em></del>))^2^<br>
+= Ave(<em>y</em><del><em>i</em></del> - $\hat{f}$(<em>x</em><del><em>i</em></del>)^2^)</p></blockquote>
+<p>training MSE vs test MSE: 우리가 관심 있는 건 minimize(test MSE).</p>
+<p>(Figure 2.9)</p>
+<ol>
+<li>training MSE는 flexibility가 증가할수록 단조 감소하는 패턴을 보이고,</li>
+<li>test MSE는 flexibility와 U자형 관계를 보인다.<br>
+즉, training MSE를 낮추기 위해 flexibility를 마구 증가시키면<br>
+정작 test MSE는 restrictive model보다 오히려 더 높아질 수 있다(<strong>overfitting</strong>).</li>
+</ol>
+<p>2의 U자형 관계로부터 <strong>test MSE에 최솟값이 존재</strong>함을 확인했는데,<br>
+<!-- raw HTML omitted -->최소 MSE를 가지는 model을 찾는 방법<!-- raw HTML omitted -->도 다루게 될 것이다(예: 5장의 cross-validation).</p>
+<h3 id="222-the-bias-variance-trade-off">2.2.2. The Bias-Variance Trade-Off<a hidden class="anchor" aria-hidden="true" href="#222-the-bias-variance-trade-off">#</a></h3>
+<p>test MSE 기댓값 =  함숫값의 분산 + 함숫값의 bias 제곱 + 오차항 분산<br>
+우변의 세 항 모두 0 이상이기 때문에 좌변의 최솟값은 오차항 분산(irreducible error)이 된다.</p>
+<p>flexible <em>f</em> &ndash;&gt; high variance(데이터에 따라 <em>f</em> 형태가 쉽게 변한다), low bias(데이터를 잘 맞춘다)</p>
+<p>(Figure 2.12)<br>
+flexibility가 증가하기 시작하면</p>
+<p>처음에는<br>
+bias가 감소하는 속도 &gt; variance가 증가하는 속도  &ndash;&gt; test MSE 감소</p>
+<p>일정 지점이 지나면
+bias가 감소하는 속도 &lt; variance가 증가하는 속도  &ndash;&gt; test MSE 증가</p>
+<h3 id="223-the-classification-setting">2.2.3. The Classification Setting<a hidden class="anchor" aria-hidden="true" href="#223-the-classification-setting">#</a></h3>
+<p>MSE &ndash;&gt; regression setting에서 사용한다.
+classification setting에서는 <strong>error rate</strong>를 사용한다(minimize).</p>
+<blockquote>
+<p>error rate = (<em>y</em> 범주를 잘못 예측한 데이터 개수) / (전체 데이터 개수)</p></blockquote>
+<h1 id="5-resampling-methods">5. Resampling Methods<a hidden class="anchor" aria-hidden="true" href="#5-resampling-methods">#</a></h1>
+<p>Resampling Methods</p>
+<ul>
+<li>같은 training data에서 샘플 추출 -&gt; model fitting 반복하는 과정이다.</li>
+<li>어떤 추가 정보(?)를 얻을 수 있다.</li>
+<li>cross-validation: flexibility 결정하거나 test error 구할 때 사용한다.</li>
+<li>bootstrap: parameter estimate accuracy 평가할 때 가장 많이 사용한다.</li>
+</ul>
+<p>model assessment: model performance 평가<br>
+model selection: model flexibility 선택</p>
+<h2 id="51-cross-validation">5.1. Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#51-cross-validation">#</a></h2>
+<h3 id="511-the-validation-set-approach">5.1.1. The Validation Set Approach<a hidden class="anchor" aria-hidden="true" href="#511-the-validation-set-approach">#</a></h3>
+<p>전체 데이터를 같은 크기의 두 subsets - <em>training set</em> + <em>validation set</em> (or <em>hold-out set</em>) - 으로 나눈다. <strong>랜덤하게</strong>.<br>
+training set을 이용해 model fitting 후 validation set으로 test error (e.g. MSE) 계산한다.</p>
+<ul>
+<li>두 가지 단점
+<ul>
+<li>데이터를 나눌 때마다 MSE가 달라진다.</li>
+<li>model fitting에 수집한 데이터를 모두 활용할 수 없다 &ndash;&gt; MSE가 과대평가된다.</li>
+</ul>
+</li>
+</ul>
+<p>위 단점을 해결한다 &ndash;&gt; <strong>cross-validation</strong></p>
+<h3 id="512-leave-one-out-cross-validation">5.1.2. Leave-One-Out Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#512-leave-one-out-cross-validation">#</a></h3>
+<p>(<em>x</em><del>1</del>, <em>y</em><del>1) 제외한 <em>n</em>-1 개 데이터를 사용해 training한다.<br>
+남겨둔 데이터로 test error rate(MSE</del>1~)를 계산한다.<br>
+같은 방법으로 test 데이터를 (<em>x</em><del><em>n</em></del>, <em>y</em><del><em>n</em>)까지 변경하며 n번 진행, MSE</del><em>n</em>~까지 구한다.</p>
+<p>test error rate = CV~(<em>n</em>)~ = Ave(MSE~<em>i</em>~)</p>
+<ul>
+<li>LOOCV 장점(= validation set approach의 단점 해결)
+<ul>
+<li>데이터를 충분히 사용하기 때문에 bias를 과대평가할 위험도가 validation set approach보다 낮다.</li>
+<li>test error rate가 일정하다.</li>
+</ul>
+</li>
+</ul>
+<p>LOOCV는 대부분의 predictive modeling에 적용할 수 있다.<br>
+least square linear (or polynomial) regression에서는 CV~(<em>n</em>)~을 더 간단하게 계산할 수 있다(식 5.2).</p>
+<h3 id="513-k-fold-cross-validation">5.1.3. k-Fold Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#513-k-fold-cross-validation">#</a></h3>
+<p>LOOCV와 비슷한데, test로 사용할 데이터를 한 개씩이 아니라 한 그룹씩 남기는 차이가 있다.</p>
+<p>fold = group<br>
+데이터를 같은 크기의 <em>k</em>개 그룹으로 랜덤하게 나눈다.<br>
+1^st^ 그룹을 제외한 나머지로 training, 남겨둔 그룹으로 error rate 계산(MSE<del>1</del>)
+<em>k</em>^th^ 그룹까지 진행(MSE~<em>k</em>~).</p>
+<p>test error rate = CV~(<em>k</em>)~ = Ave(MSE~<em>i</em>~)</p>
+<p><!-- raw HTML omitted -->LOOCV는 <em>k</em>=<em>n</em>인 <em>k</em>-Fold CV로 볼 수 있다.<!-- raw HTML omitted --><br>
+보통 <em>k</em>는 5나 10을 사용한다.</p>
+<ul>
+<li>계산량이 줄어들기 때문</li>
+<li>5나 10을 사용해도 LOOCV와 flexiblility with minimum MSE 결과가 비슷하기 때문</li>
+</ul>
+<h3 id="514-bias-variance-trade-off-for-k-fold-cross-validation">5.1.4. Bias-Variance Trade-Off for k-Fold Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#514-bias-variance-trade-off-for-k-fold-cross-validation">#</a></h3>
+<p><em>k</em>-fold CV에서 <em>k</em> 값에 따라 bias-variance trade-off가 발생한다.</p>
+<p><em>k</em>가 <em>n</em>에 가까울수록<br>
+예측치의 bias는 감소하고() 분산은 증가한다.</p>
+<p><em>k</em>로 5나 10을 많이 사용하는 이유 : test error rate가 가장 작기 때문</p>
+<h3 id="515-cross-validation-on-classification-problems">5.1.5. Cross-Validation on Classification Problems<a hidden class="anchor" aria-hidden="true" href="#515-cross-validation-on-classification-problems">#</a></h3>
+<p>CV 수식에서 MSE 대신 잘못 분류한 데이터 비율을 사용한다.</p>
+<h2 id="52-the-bootstrap">5.2. The Bootstrap<a hidden class="anchor" aria-hidden="true" href="#52-the-bootstrap">#</a></h2>
+<p>관측 데이터로부터 새로운 데이터셋을 만드는 기법이다.<br>
+랜덤하게, 원래 관측데이터와 같은 크기만큼 재추출한다.<br>
+복원 혹은 비복원 추출 선택.</p>
+<p>예)<br>
+데이터가 세 개 밖에 없어도
+크기가 3인 데이터셋 B개를 새로 만들어서<br>
+각 데이터셋마다 estimates 계산하고(총 B개), 이로부터 standard error 계산한다.</p>
+<ul>
+<li>can be used <strong>to quantify the uncertainty</strong> associated with a given estimatior or statistical learning method (예: 선형회귀에서 추정한 모수값의 표준오차).</li>
+<li>선형회귀 외 많은 모형에도 쉽게 적용 가능!</li>
+</ul>
+<pre tabindex="0"><code>(식 5.8에서)
+
+왜 괄호 안이 alpha - alpha_hat이 아니지?  
+    
+alpha의 참값을 모른다고 가정하기 때문에  
+alpha_hat을 참값 대신 사용하고, 각 alpha마다 bootstrap을 B번 실행해서 alpha의 SS를 계산하는 건가?
+</code></pre><h2 id="53-lab-cross-validation-and-the-bootstrap">5.3. Lab: Cross-Validation and the Bootstrap<a hidden class="anchor" aria-hidden="true" href="#53-lab-cross-validation-and-the-bootstrap">#</a></h2>
+<h3 id="531-the-validation-set-approach">5.3.1. The Validation Set Approach<a hidden class="anchor" aria-hidden="true" href="#531-the-validation-set-approach">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ISLR)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>) <span style="color:#75715e"># set seed to get the same results at a later time</span>
+</span></span><span style="display:flex;"><span>train <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(x <span style="color:#f92672">=</span> <span style="color:#ae81ff">392</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">196</span>) <span style="color:#75715e"># training subset</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fit a simple linear model</span>
+</span></span><span style="display:flex;"><span>lm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto, subset <span style="color:#f92672">=</span> train)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">attach</span>(Auto)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((mpg <span style="color:#f92672">-</span> <span style="color:#a6e22e">predict</span>(lm.fit, Auto))[<span style="color:#f92672">-</span>train] ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># compute MSE</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 23.26601
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># fit a quadratic linear model </span>
+</span></span><span style="display:flex;"><span>lm.fit2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> <span style="color:#a6e22e">poly</span>(horsepower, <span style="color:#ae81ff">2</span>), data <span style="color:#f92672">=</span> Auto, subset <span style="color:#f92672">=</span> train)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((mpg <span style="color:#f92672">-</span> <span style="color:#a6e22e">predict</span>(lm.fit2, Auto))[<span style="color:#f92672">-</span>train] ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># compute MSE</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 18.71646
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># fit a cubic linear model </span>
+</span></span><span style="display:flex;"><span>lm.fit3 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> <span style="color:#a6e22e">poly</span>(horsepower, <span style="color:#ae81ff">3</span>), data <span style="color:#f92672">=</span> Auto, subset <span style="color:#f92672">=</span> train)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((mpg <span style="color:#f92672">-</span> <span style="color:#a6e22e">predict</span>(lm.fit3, Auto))[<span style="color:#f92672">-</span>train] ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># compute MSE</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 18.79401
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(horsepower, mpg) <span style="color:#75715e"># looks like a curve fit is better than a straight line</span>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/5.3.1.-1.png"></p>
+<h3 id="532-leave-one-out-cross-validation">5.3.2. Leave-One-Out Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#532-leave-one-out-cross-validation">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>lm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto)
+</span></span><span style="display:flex;"><span>glm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">glm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">coef</span>(lm.fit)
+</span></span></code></pre></div><pre tabindex="0"><code>## (Intercept)  horsepower 
+##  39.9358610  -0.1578447
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">coef</span>(glm.fit) <span style="color:#75715e"># glm() w/o family argument --&gt; lm()</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## (Intercept)  horsepower 
+##  39.9358610  -0.1578447
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## cv for a simple linear fit</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(boot)
+</span></span><span style="display:flex;"><span>glm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">glm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto)
+</span></span><span style="display:flex;"><span>cv.err <span style="color:#f92672">=</span> <span style="color:#a6e22e">cv.glm</span>(Auto, glm.fit)
+</span></span><span style="display:flex;"><span>cv.err<span style="color:#f92672">$</span>delta <span style="color:#75715e"># CV(n) results: standard one, bias-corrected one</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 24.23151 24.23114
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## cv iteration for polynomial fit of order 1 to 5 </span>
+</span></span><span style="display:flex;"><span>cv.error <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">5</span>){
+</span></span><span style="display:flex;"><span>  glm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">glm</span>(mpg <span style="color:#f92672">~</span> <span style="color:#a6e22e">poly</span>(horsepower, i), data <span style="color:#f92672">=</span> Auto)
+</span></span><span style="display:flex;"><span>  cv.error[i] <span style="color:#f92672">=</span> <span style="color:#a6e22e">cv.glm</span>(data <span style="color:#f92672">=</span> Auto, glmfit <span style="color:#f92672">=</span> glm.fit)<span style="color:#f92672">$</span>delta[1]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>cv.error
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 24.23151 19.24821 19.33498 19.42443 19.03321
+</code></pre><h3 id="533-k-fold-cross-validation">5.3.3. k-Fold Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#533-k-fold-cross-validation">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">17</span>)
+</span></span><span style="display:flex;"><span>cv.error.10 <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>){
+</span></span><span style="display:flex;"><span>  glm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">glm</span>(mpg <span style="color:#f92672">~</span> <span style="color:#a6e22e">poly</span>(horsepower, i), data <span style="color:#f92672">=</span> Auto)
+</span></span><span style="display:flex;"><span>  cv.error.10[i] <span style="color:#f92672">=</span> <span style="color:#a6e22e">cv.glm</span>(data <span style="color:#f92672">=</span> Auto, glmfit <span style="color:#f92672">=</span> glm.fit, K <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)<span style="color:#f92672">$</span>delta[1]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># much shorter running time than that of LOOCV</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># still cubic or higher order terms don&#39;t seem superior</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.error.10, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/5.3.3.-1.png"></p>
+<h3 id="534-the-bootstrap">5.3.4. The Bootstrap<a hidden class="anchor" aria-hidden="true" href="#534-the-bootstrap">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## accuracy of regression model --&gt; standard error of parameter estimated</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## bootstrap can be applied to compute the se</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(boot)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 1. create a function to compute statistics of interest</span>
+</span></span><span style="display:flex;"><span>alpha.fn <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(data, index){
+</span></span><span style="display:flex;"><span>  X <span style="color:#f92672">=</span> data<span style="color:#f92672">$</span>X[index]
+</span></span><span style="display:flex;"><span>  Y <span style="color:#f92672">=</span> data<span style="color:#f92672">$</span>Y[index]
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>((<span style="color:#a6e22e">var</span>(Y) <span style="color:#f92672">-</span> <span style="color:#a6e22e">cov</span>(X, Y)) <span style="color:#f92672">/</span> (<span style="color:#a6e22e">var</span>(X) <span style="color:#f92672">+</span> <span style="color:#a6e22e">var</span>(Y) <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">cov</span>(X, Y)))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 2. boot()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## compute an alpha value (a kind of statistics)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">alpha.fn</span>(Portfolio, <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span>, replace <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)) 
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.7368375
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## repeat 1000 times with bootstrap</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">boot</span>(Portfolio, alpha.fn, R <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>) 
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## ORDINARY NONPARAMETRIC BOOTSTRAP
+## 
+## 
+## Call:
+## boot(data = Portfolio, statistic = alpha.fn, R = 1000)
+## 
+## 
+## Bootstrap Statistics :
+##      original       bias    std. error
+## t1* 0.5758321 -0.001695873  0.09366347
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># se(alpha_hat) = 0.5758321 +- 0.08861826</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## linear regression coef. estimates</span>
+</span></span><span style="display:flex;"><span>boot.fn <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(data, index){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>(<span style="color:#a6e22e">coef</span>(<span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> data, subset <span style="color:#f92672">=</span> index)))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">boot.fn</span>(data <span style="color:#f92672">=</span> Auto, index <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">392</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>## (Intercept)  horsepower 
+##  39.9358610  -0.1578447
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">boot.fn</span>(data <span style="color:#f92672">=</span> Auto, index <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">392</span>, <span style="color:#ae81ff">392</span>, replace <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+</span></span></code></pre></div><pre tabindex="0"><code>## (Intercept)  horsepower 
+##  40.3404517  -0.1634868
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">boot.fn</span>(data <span style="color:#f92672">=</span> Auto, index <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">392</span>, <span style="color:#ae81ff">392</span>, replace <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+</span></span></code></pre></div><pre tabindex="0"><code>## (Intercept)  horsepower 
+##  40.1186906  -0.1577063
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># with replacement --&gt; the result can vary</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">boot</span>(Auto, boot.fn, <span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## ORDINARY NONPARAMETRIC BOOTSTRAP
+## 
+## 
+## Call:
+## boot(data = Auto, statistic = boot.fn, R = 1000)
+## 
+## 
+## Bootstrap Statistics :
+##       original        bias    std. error
+## t1* 39.9358610  0.0544513229 0.841289790
+## t2* -0.1578447 -0.0006170901 0.007343073
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># compare to</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(<span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto))<span style="color:#f92672">$</span>coef
+</span></span></code></pre></div><pre tabindex="0"><code>##               Estimate  Std. Error   t value      Pr(&gt;|t|)
+## (Intercept) 39.9358610 0.717498656  55.65984 1.220362e-187
+## horsepower  -0.1578447 0.006445501 -24.48914  7.031989e-81
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># se estimates are more accurate in boot() than in lm() (see ISLR 196p)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## better fit --&gt; more similar se between boot() and summary()</span>
+</span></span><span style="display:flex;"><span>boot.fn <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(data, index){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">coefficients</span>(<span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower <span style="color:#f92672">+</span> <span style="color:#a6e22e">I</span>(horsepower ^ <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span>                  data <span style="color:#f92672">=</span> data, 
+</span></span><span style="display:flex;"><span>                  subset <span style="color:#f92672">=</span> index))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">boot</span>(Auto, boot.fn, <span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## ORDINARY NONPARAMETRIC BOOTSTRAP
+## 
+## 
+## Call:
+## boot(data = Auto, statistic = boot.fn, R = 1000)
+## 
+## 
+## Bootstrap Statistics :
+##         original        bias     std. error
+## t1* 56.900099702  3.511640e-02 2.0300222526
+## t2* -0.466189630 -7.080834e-04 0.0324241984
+## t3*  0.001230536  2.840324e-06 0.0001172164
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(<span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower <span style="color:#f92672">+</span> <span style="color:#a6e22e">I</span>(horsepower ^ <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span>                  data <span style="color:#f92672">=</span> Auto))<span style="color:#f92672">$</span>coef
+</span></span></code></pre></div><pre tabindex="0"><code>##                     Estimate   Std. Error   t value      Pr(&gt;|t|)
+## (Intercept)     56.900099702 1.8004268063  31.60367 1.740911e-109
+## horsepower      -0.466189630 0.0311246171 -14.97816  2.289429e-40
+## I(horsepower^2)  0.001230536 0.0001220759  10.08009  2.196340e-21
+</code></pre><h1 id="7-moving-beyond-linearity">7. Moving Beyond Linearity<a hidden class="anchor" aria-hidden="true" href="#7-moving-beyond-linearity">#</a></h1>
+<h2 id="74-regression-splines">7.4. Regression Splines<a hidden class="anchor" aria-hidden="true" href="#74-regression-splines">#</a></h2>
+<h3 id="741-piecewise-polynomials">7.4.1. Piecewise Polynomials<a hidden class="anchor" aria-hidden="true" href="#741-piecewise-polynomials">#</a></h3>
+<p>knot라고 부르는 위치를 기준으로 구간을 나눠서 polynomial regression fitting을 수행한다.<br>
+knot에서 각 곡선이 툭툭 끊어질 수 있다.</p>
+<h3 id="742-constraints-and-splines">7.4.2. Constraints and Splines<a hidden class="anchor" aria-hidden="true" href="#742-constraints-and-splines">#</a></h3>
+<p>툭툭 끊기지 않고 부드럽게 이어지는 spline curve를 만들기 위해 아래의 constraints를 추가 (삼차식일 경우)</p>
+<ul>
+<li>knot에서 함숫값</li>
+<li>knot에서 미분계수</li>
+<li>knot에서 이차미분계수</li>
+</ul>
+<p>일차식이라면 첫 번째 조건만으로도 충분하다.</p>
+<h1 id="8-tree-based-methods">8. Tree-Based Methods<a hidden class="anchor" aria-hidden="true" href="#8-tree-based-methods">#</a></h1>
+<ul>
+<li><em>tree-based</em> methods = <em>decision tree</em> methods : 설명변수를 여러 구간으로 나눈다</li>
+<li>regression, classification 모두 가능하다</li>
+<li>해석이 (그나마) 용이하다</li>
+<li>단순한 tree 구조만으로는 다른 머신러닝 기법에 비해 예측 정확도가 낮다</li>
+<li><em>bagging</em>, <em>random forests</em>, <em>boosting</em> 이용 &ndash;&gt; 모형이 복잡해진다 &ndash;&gt;  예측 정확도 &lt;-&gt; 해석 용이성 trade-off</li>
+</ul>
+<h2 id="81-the-basics-of-decision-trees">8.1. The Basics of Decision Trees<a hidden class="anchor" aria-hidden="true" href="#81-the-basics-of-decision-trees">#</a></h2>
+<h3 id="811-regression-trees">8.1.1. Regression Trees<a hidden class="anchor" aria-hidden="true" href="#811-regression-trees">#</a></h3>
+<p>decision tree의 형태와 관련된 용어는 거꾸로 꽂아 놓은 나무를 떠올리면 이해하기 쉽다.</p>
+<ul>
+<li>terminal nodes (leaves): 가장 아래 적혀있는 구역별 y값</li>
+<li>internal node: 분기점</li>
+<li>branch: 각 node를 잇는 선</li>
+</ul>
+<p>나무 상단에 위치할 수록 예측에 영향이 큰 조건(분기점)이다.<br>
+조건에 따라 그릴 수 있고 위와 같이 해석이 가능하기 때문에 regression tree는 시각화, 해석이 모두 용이하다.</p>
+<p>\</p>
+<h4 id="recursive-binary-splitting"><strong>Recursive Binary Splitting</strong><a hidden class="anchor" aria-hidden="true" href="#recursive-binary-splitting">#</a></h4>
+<p>regression tree를 만드는 방법: 1. predictor의 구간을 나눈다, 2. 각 구간별로 예측값(평균, &hellip;)을 구한다.<br>
+그렇다면 구간은 어떻게 나눌까? &ndash;&gt; 목적함수를 둔다.</p>
+<ul>
+<li>구간별 RSS를 구해서 그 합계가 최소가 되도록 구역을 나눈다</li>
+</ul>
+<p>하지만 가능한 모든 경우의 수에서 위의 계산을 하려면 양이 너무 많다.<br>
+그래서 <em>top-down</em>, <em>greedy</em> approach 혹은 <em>recursive binary splitting</em> 알고리즘을 사용한다.</p>
+<ul>
+<li>top-down: 상위 노드(구역 갯수가 1개인 상태)에서 시작하기 때문</li>
+<li>greedy: 구간을 나눌 때마다 지금보다 나은 방법이 아닌 최상의 방법(best split)을 찾기 때문</li>
+</ul>
+<p>다음과 같이 작동한다.</p>
+<ol>
+<li>먼저 어떤 <em>X</em>~<em>j</em>~를 어느 값(<em>s</em>)을 기준으로 나눠야 두 구역의 RSS 합이 최소가 될지 결정한다.</li>
+<li>두 구역으로 나눠진다.</li>
+<li>두 구역 중 어느 구역을 어떤 <em>j</em>, <em>s</em>로 나눠야 세 구역의 RSS 합이 최소가 될지 결정한다.</li>
+<li>세 구역이 된다.</li>
+<li>세 구역 중 어느 구역을 어떤 <em>j</em>, <em>s</em>로 나눠야 네 구역의 RSS 합이 최소가 될지 결정한다.</li>
+<li>네 구역이 된다.</li>
+<li>&hellip;</li>
+<li><!-- raw HTML omitted -->특정 조건<!-- raw HTML omitted -->을 충족할 때까지 계속 구역을 나눈다.
+<ul>
+<li>특정 조건의 예: 모든 구역의 관측값이 5개 미만이다</li>
+</ul>
+</li>
+</ol>
+<p>\</p>
+<h4 id="tree-pruning"><strong>Tree Pruning</strong><a hidden class="anchor" aria-hidden="true" href="#tree-pruning">#</a></h4>
+<p><em>recursive binary splitting</em> 알고리즘은 overffing이 발생하여 정작 test data에서는 성능이 안 좋을 수 있다.<br>
+이를 방지하기 위해 RSS가 일정값 이상 감소하지 않으면 구역을 나누지 않는다!는 규칙을 넣을 수도 있지만,<br>
+그 이후에 RSS가 확 감소하는 구획이 가능했었다면 이를 놓치게 된다.<br>
+따라서 <em>recursive binary splitting</em>으로 아주 큰 나무를 만든 후 **가지치기(pruning)**하는 방법을 택한다.<br>
+그렇다면 <!-- raw HTML omitted -->어떤 기준<!-- raw HTML omitted -->으로 가지를 쳐낼까?<br>
+우리가 원하는 건 test error rate를 줄이는 건데, 그렇다면 모든 가능한 subtree에서 이를 계산한 후 비교해야 할까?</p>
+<p>&ndash;&gt; <!-- raw HTML omitted --><em>Cost complexity pruning</em> (or <em>weakest link pruning</em>)<!-- raw HTML omitted -->을 사용한다!<br>
+원래 목적함수(RSS)에 terminal node 갯수에 패널티를 주는 항($\alpha$|T|)을 추가했다.<br>
+|T|은 subtree의 terminal node 갯수를 의미한다.<br>
+$\alpha$마다 대응하는 subtree가 존재한다.<br>
+$\alpha$가 0이라면 subtree는 원래 가장 커다란 나무와 같겠고,<br>
+$\alpha$가 0보다 클 수록 |T|에 목적함수값이 영향을 많이 받게 되는데(증가),<br>
+이 영향을 없애려면 RSS가 꽤 감소하는 구획이 아닌 한 |T|를 줄여야 할 것이다.</p>
+<ol>
+<li><em>recursive binary splitting</em>으로 커다란 나무를 만든다.</li>
+<li>K-fold CV 방법으로 test error rate를 최소화하는 $\alpha$를 결정한 후,</li>
+<li>이 $\alpha$에 대응하는 subtree를 최종 모형으로 결정한다.</li>
+</ol>
+<h3 id="812-classification-trees">8.1.2. Classification Trees<a hidden class="anchor" aria-hidden="true" href="#812-classification-trees">#</a></h3>
+<p>Regression tree와 다른 점</p>
+<ul>
+<li>반응변수가 범주형(<!-- raw HTML omitted -->설명변수도 범주형일 수 있다<!-- raw HTML omitted -->)</li>
+<li>terminal node에는 그 구역의 평균값이 아니라 가장 빈도가 높은 범주</li>
+<li>구역마다 계산할 criteron은 RSS 대신 다른 것
+<ul>
+<li>가장 빈도가 높은 범주에 속하지 않는 데이터의 비율</li>
+<li>위 비율 보다는 <em>Gini index</em>나 <em>Entropy</em>(Shannon index)를 더 많이 쓴다.</li>
+<li>위 두 지수는 모두 <strong>impurity</strong>를 나타낸다. 그 구역이 다양한 범주의 데이터로 이루어져 있으면 값이
+커진다.</li>
+</ul>
+</li>
+<li>predicted classification이 나눠지지 않는 node가 생길 수 있다(나눠도 두 구역 모두 같은 범주)
+<ul>
+<li>Gini index나 Entropy를 구획의 목적함수로 사용한다.</li>
+<li>위와 같이 구역을 나누면 목적함수값이 줄어들기 때문에(error rate는 같지만) 알고리즘상 node가 추가된다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="813-trees-versus-linear-models">8.1.3. Trees Versus Linear Models<a hidden class="anchor" aria-hidden="true" href="#813-trees-versus-linear-models">#</a></h3>
+<p>무엇이 더 나은지는 상황에 따라 다르다.</p>
+<p>test error rate가 한쪽이 더 나을 수 있고,<br>
+interpretability가 한쪽이 더 나을 수 있다.</p>
+<h3 id="814-advantages-and-disadvantages-of-trees">8.1.4. Advantages and Disadvantages of Trees<a hidden class="anchor" aria-hidden="true" href="#814-advantages-and-disadvantages-of-trees">#</a></h3>
+<p><del>(8.1.3이랑 뭐가 달라)</del></p>
+<p>(vs classical regression methods)<br>
+(tree methods 입장에서)</p>
+<p>장점</p>
+<ul>
+<li>비전문가에게도 설명하기 쉽다</li>
+<li>인간의 의사결정과정을 더 비슷하게 모사한 방법이다</li>
+<li>범주형 변수를 다루기 더 쉽다(더미변수 다루는 것보다 훨씬 쉽다)</li>
+</ul>
+<p>단점</p>
+<ul>
+<li>예측 정확도가 낮은 편이다(<em>bagging</em>, <em>random forests</em>, <em>boosting</em>으로 해결)</li>
+<li>non-robust. 데이터에 따라 tree 구조가 변하기 쉽다</li>
+</ul>
+<h2 id="82-bagging-random-forests-boosting">8.2. Bagging, Random Forests, Boosting<a hidden class="anchor" aria-hidden="true" href="#82-bagging-random-forests-boosting">#</a></h2>
+<h3 id="821-bagging">8.2.1. Bagging<a hidden class="anchor" aria-hidden="true" href="#821-bagging">#</a></h3>
+<p>Bagging = Bootstrap aggregation<br>
+statistical learning method의 variance를 줄이기 위해 사용되는 general-purpose procecure이지만<br>
+decision tree 관련해서 자주 쓰이기 때문에 여기서 소개한다.</p>
+<p>원리</p>
+<ul>
+<li>평균의 분산은 분산을 n으로 나눈 것 &ndash;&gt; 평균을 구하면 분산이 낮아진다!</li>
+<li>resampling 여러번 해서 training set 여러개 생성 &ndash;&gt; 각 set마다 tree 생성 &ndash;&gt; tree 예측값 평균</li>
+<li>(training set 생성에 bootstrap이 사용된다)</li>
+<li>범주형일 경우 가장 빈도가 높은 예측 범주로 결정(나무한테 투표권 부여!)</li>
+<li>생성할 training set 갯수는 크게 중요치 x. 매우 커도 overfitting 없다. 충분히 큰 값으로 고르자.</li>
+</ul>
+<p><del>(bootstrap이랑 뭐가 달라)</del></p>
+<p>\</p>
+<h4 id="out-of-bag-error-estimation"><strong>Out-of-Bag Error Estimation</strong><a hidden class="anchor" aria-hidden="true" href="#out-of-bag-error-estimation">#</a></h4>
+<p>bagged model의 test error 구하는 방법: 각 모델에 CV 수행해서 결과 비교할 필요 없다!<br>
+각 bagged tree는 전체 데이터 중 약 2/3를 사용하게 된다.<br>
+이 2/3에 들지 못한 데이터를 out-of-bag(OOB) observation이라 부른다.<br>
+전체 bagged tree가 <em>B</em>개 있다면, OOB obs. 한 개당 약 3/B개의 prediction을 구할 수 있다.<br>
+이 3/B개 값을 평균(for regression)하거나 투표(for classification)하면 OOB MSE나 classification error를 구할 수 있다.<br>
+이는 모델을 만들 때 사용하지 않은 데이터(OOB)를 이용해 모델 성능을 평가했으므로 유효한 방법이다.</p>
+<p><del>이게 bootstrap + 3-fold CV랑 다를 게 뭐야</del></p>
+<p>\</p>
+<h4 id="variable-importance-measures"><strong>Variable Importance Measures</strong><a hidden class="anchor" aria-hidden="true" href="#variable-importance-measures">#</a></h4>
+<p>bagging을 수행하면 이제 더 이상 해석하기 수월한 모델이 아니게 된다.<br>
+대신 bagged tree를 이용해 어떤 변수가 예측력이 높았는지 알 수 있다.</p>
+<ul>
+<li>각 predictor마다 구획 후 감소한 RSS(or Gini index)를 더해서 비교한다.</li>
+<li>한 predictor가 여러 node에서 사용되었다면 각 node에서 발생한 RSS(or Gini index) 감소량을 모두 더해서 비교한다.</li>
+</ul>
+<h3 id="822-random-forests">8.2.2. Random Forests<a hidden class="anchor" aria-hidden="true" href="#822-random-forests">#</a></h3>
+<p>Bagging &lt; Random Forests</p>
+<p>만약 어떤 predictor가 특히 영향력이 높다면,<br>
+bagging에서는 이 predictor만 주로 사용하여 구역을 나누게 될 것이다.<br>
+그 결과 bagged tree는 서로 거의 차이가 없을 것이고 예측 결과도 비슷할 것이다.<br>
+이러한 highly correlated quantities를 평균해도 variance reduction 양은 별로 되지 않는다.</p>
+<p>때문에 <strong>Randomforest</strong>는</p>
+<ul>
+<li>decorrelating으로 variance reduction을 높인다.
+<ul>
+<li>매 구획마다 몇 개의 predictor를 랜덤하게 뽑아서 이것만 고려한다.</li>
+<li>즉 모든 predictor를 공평하게 경쟁시키는 게 아니다.</li>
+<li>때문에 영향력 낮은 predictor도 node에 참여할 기회가 많아지고</li>
+<li>resulted tree도 더욱 다양해진다(decorrelated).</li>
+<li>보통 <em>m</em>=sqrt(<em>p</em>) 만큼 샘플링한다.</li>
+<li>평균적으로 (<em>p</em>-<em>m</em>)/<em>p</em> 만큼의 node가 최강 predictor를 고려하지 않게 된다.</li>
+<li>bagging과 마찬가지로 나무 갯수는 크게 중요x. 충분히 많이 만들자.</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>왜 영향력이 높지 않은 변수를 사용하지? 왜 RF 결과가 더 좋아지지?
+
+Averaging many highly correlated data does not lead to as large of a reduction in variance as averaging many uncorrelated quantities. In particular, this means that bagging will not lead to a substantial reduction in variance over a single tree in this setting
+
+correlated quantities면 평균해도 variance가 별로 줄어들지 않는다?  
+근데 
+bagging은 highly correlated &amp; highly accurate인 반면
+RF는 less correlated &amp; less accurate가 아닐까?  
+그래서 variance reduction은 RF가 크지만 accuracy는 bagging이 더 크다? (근데 현실은 RF가 더 정확)
+
+there by making the average of the resulting trees less variable and hence more reliable
+
+decorrelated values를 평균하는 게 왜 less variable?
+</code></pre><h3 id="823-boosting">8.2.3. Boosting<a hidden class="anchor" aria-hidden="true" href="#823-boosting">#</a></h3>
+<p>Bagging과 마찬가지로 decision tree 외 다른 기법에도 두루 쓰일 수 있다.</p>
+<p>작동 원리</p>
+<ul>
+<li>NULL 모델(fx=0), NULL residual(r<del>i</del>=y<del>i</del>) 생성</li>
+<li>작은 나무 한 그루 생성, NULL 모델에 더하기, residual 계산</li>
+<li>작은 나무 한 그루 생성, 기존 나무에 더하기, residual 계산</li>
+<li>작은 나무 한 그루 생성, 기존 나무에 더하기, residual 계산</li>
+<li>&hellip;</li>
+</ul>
+<p>나무 여러개를 만들어서 합치는 게 아니라,<br>
+한 그루를 계속 키우는 방식. <em>learn slowly</em>.</p>
+<p>관련 모수 3개</p>
+<ul>
+<li><em>B</em>: 만들 총 나무 수. <strong>너무 크면 overffiting 될 수 있다</strong>. CV 사용해서 B 결정한다.</li>
+<li><em>$\lambda$</em>: shrinkage parameter. 새로 만든 작은 나무를 기존 나무에 더하기 전에 이 숫자를 곱해준다.<br>
+즉 나무가 자라는(learning) 속도를 결정한다.
+<ul>
+<li>보통 천천히 배울 수록 최종 성능은 좋아진다.</li>
+<li>0.01이나 0.001을 주로 사용한다.</li>
+</ul>
+</li>
+<li><em>d</em>: 새로 만들 작은 나무의 나뭇잎 개수.
+<ul>
+<li>보통 1로 두는데, 이러면 각 나무는 가지가 1개 뿐이니 <em>stump</em>가 된다. (stump는 어울리는 용어가 아닌듯)</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>bagging, RF, Boosting이 대략 어떻게 모델을 만든다는 느낌은 온다만
+그 과정을 뚜렷하게 그리지는 못 하겠다.
+
+bagging, RF에서 최종 모형은 평균값을 쓴다는 데, 이게 무슨 말이지?
+Boosting에서 각 중간 모델(나무)를 기존 것에 더한다는데 이 &#39;더한다&#39;는 게 무슨 말이지?
+Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용되는 것도 아니고.
+</code></pre><h2 id="83-lab-decision-trees">8.3. Lab: Decision Trees<a hidden class="anchor" aria-hidden="true" href="#83-lab-decision-trees">#</a></h2>
+<h3 id="831-fitting-classification-trees">8.3.1. Fitting Classification Trees<a hidden class="anchor" aria-hidden="true" href="#831-fitting-classification-trees">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(tree)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ISLR)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">attach</span>(Carseats)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## create a &#34;High&#34; column</span>
+</span></span><span style="display:flex;"><span>High <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(Sales <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">8</span>, <span style="color:#e6db74">&#34;No&#34;</span>, <span style="color:#e6db74">&#34;Yes&#34;</span>)
+</span></span><span style="display:flex;"><span>Carseats <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(Carseats, High)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str</span>(Carseats)
+</span></span></code></pre></div><pre tabindex="0"><code>## &#39;data.frame&#39;:	400 obs. of  12 variables:
+##  $ Sales      : num  9.5 11.22 10.06 7.4 4.15 ...
+##  $ CompPrice  : num  138 111 113 117 141 124 115 136 132 132 ...
+##  $ Income     : num  73 48 35 100 64 113 105 81 110 113 ...
+##  $ Advertising: num  11 16 10 4 3 13 0 15 0 0 ...
+##  $ Population : num  276 260 269 466 340 501 45 425 108 131 ...
+##  $ Price      : num  120 83 80 97 128 72 108 120 124 124 ...
+##  $ ShelveLoc  : Factor w/ 3 levels &#34;Bad&#34;,&#34;Good&#34;,&#34;Medium&#34;: 1 2 3 3 1 1 3 2 3 3 ...
+##  $ Age        : num  42 65 59 55 38 78 71 67 76 76 ...
+##  $ Education  : num  17 10 12 14 13 16 15 10 10 17 ...
+##  $ Urban      : Factor w/ 2 levels &#34;No&#34;,&#34;Yes&#34;: 2 2 2 2 2 1 2 2 1 1 ...
+##  $ US         : Factor w/ 2 levels &#34;No&#34;,&#34;Yes&#34;: 2 2 2 2 1 2 1 2 1 2 ...
+##  $ High       : Factor w/ 2 levels &#34;No&#34;,&#34;Yes&#34;: 2 2 2 1 1 2 1 2 1 1 ...
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## try to fit a classification tree</span>
+</span></span><span style="display:flex;"><span>tree.carseats <span style="color:#f92672">=</span> <span style="color:#a6e22e">tree</span>(High <span style="color:#f92672">~</span> . <span style="color:#f92672">-</span>Sales, Carseats)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(tree.carseats) 
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Classification tree:
+## tree(formula = High ~ . - Sales, data = Carseats)
+## Variables actually used in tree construction:
+## [1] &#34;ShelveLoc&#34;   &#34;Price&#34;       &#34;Income&#34;      &#34;CompPrice&#34;   &#34;Population&#34; 
+## [6] &#34;Advertising&#34; &#34;Age&#34;         &#34;US&#34;         
+## Number of terminal nodes:  27 
+## Residual mean deviance:  0.4575 = 170.7 / 373 
+## Misclassification error rate: 0.09 = 36 / 400
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># training error rate = 9%</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># deviance: smaller is good</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># residual mean deviance: deviance / (n - |T|)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(tree.carseats) <span style="color:#75715e"># plot tree</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(tree.carseats, pretty <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) <span style="color:#75715e"># add text</span>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## test error rate</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>train <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(Carseats), <span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>Carseats.test <span style="color:#f92672">=</span> Carseats[<span style="color:#f92672">-</span>train, ]
+</span></span><span style="display:flex;"><span>High.test <span style="color:#f92672">=</span> High[<span style="color:#f92672">-</span>train]
+</span></span><span style="display:flex;"><span>tree.carseats <span style="color:#f92672">=</span> <span style="color:#a6e22e">tree</span>(High <span style="color:#f92672">~</span> . <span style="color:#f92672">-</span>Sales, Carseats, subset <span style="color:#f92672">=</span> train)
+</span></span><span style="display:flex;"><span>tree.pred <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(object <span style="color:#f92672">=</span> tree.carseats, 
+</span></span><span style="display:flex;"><span>                    newdata <span style="color:#f92672">=</span> Carseats.test,
+</span></span><span style="display:flex;"><span>                    type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>) <span style="color:#75715e"># specifying the tree is for classification</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># test error rate = diagonal / whole</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(<span style="color:#a6e22e">table</span>(tree.pred, High.test))) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">table</span>(tree.pred, High.test))
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.77
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## pruninig (cost complexity pruning)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>cv.carseats <span style="color:#f92672">=</span> <span style="color:#a6e22e">cv.tree</span>(tree.carseats, 
+</span></span><span style="display:flex;"><span>                      FUN <span style="color:#f92672">=</span> prune.misclass) <span style="color:#75715e"># for classification problem</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">names</span>(cv.carseats) 
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] &#34;size&#34;   &#34;dev&#34;    &#34;k&#34;      &#34;method&#34;
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># size: # of leaf</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># k: alpha in eq 8.4 (cost for tree complexity)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># dev: cv error rate</span>
+</span></span><span style="display:flex;"><span>cv.carseats
+</span></span></code></pre></div><pre tabindex="0"><code>## $size
+## [1] 21 19 14  9  8  5  3  2  1
+## 
+## $dev
+## [1] 74 76 81 81 75 77 78 85 81
+## 
+## $k
+## [1] -Inf  0.0  1.0  1.4  2.0  3.0  4.0  9.0 18.0
+## 
+## $method
+## [1] &#34;misclass&#34;
+## 
+## attr(,&#34;class&#34;)
+## [1] &#34;prune&#34;         &#34;tree.sequence&#34;
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.carseats<span style="color:#f92672">$</span>size, cv.carseats<span style="color:#f92672">$</span>dev, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.carseats<span style="color:#f92672">$</span>k, cv.carseats<span style="color:#f92672">$</span>dev, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-2.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># tree with 9 leaves is turned out to be the best tree</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fit the tree explicitly</span>
+</span></span><span style="display:flex;"><span>prune.carseats <span style="color:#f92672">=</span> <span style="color:#a6e22e">prune.misclass</span>(tree.carseats, best <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># best: # of leaves. result of cost-complexity </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(prune.carseats)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(prune.carseats, pretty <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tree.pred <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(prune.carseats, Carseats.test, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(<span style="color:#a6e22e">table</span>(tree.pred, High.test))) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">table</span>(tree.pred, High.test))
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.775
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># pruned tree has simpler structure and more accurate prediction</span>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-3.png"></p>
+<h3 id="832-fitting-regression-trees">8.3.2. Fitting Regression Trees<a hidden class="anchor" aria-hidden="true" href="#832-fitting-regression-trees">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## fit a regreession tree</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(MASS)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>train <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(Boston), <span style="color:#a6e22e">nrow</span>(Boston) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>tree.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">tree</span>(medv <span style="color:#f92672">~</span> ., Boston, subset <span style="color:#f92672">=</span> train)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(tree.boston)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Regression tree:
+## tree(formula = medv ~ ., data = Boston, subset = train)
+## Variables actually used in tree construction:
+## [1] &#34;rm&#34;    &#34;lstat&#34; &#34;crim&#34;  &#34;age&#34;  
+## Number of terminal nodes:  7 
+## Residual mean deviance:  10.38 = 2555 / 246 
+## Distribution of residuals:
+##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -10.1800  -1.7770  -0.1775   0.0000   1.9230  16.5800
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(tree.boston)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(tree.boston)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## prune</span>
+</span></span><span style="display:flex;"><span>cv.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">cv.tree</span>(tree.boston)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.boston<span style="color:#f92672">$</span>size, cv.boston<span style="color:#f92672">$</span>dev, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-2.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>prune.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">prune.tree</span>(tree.boston, best <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(prune.boston)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Regression tree:
+## snip.tree(tree = tree.boston, nodes = 5L)
+## Variables actually used in tree construction:
+## [1] &#34;rm&#34;    &#34;lstat&#34;
+## Number of terminal nodes:  5 
+## Residual mean deviance:  13.69 = 3396 / 248 
+## Distribution of residuals:
+##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -10.1800  -1.9770  -0.1775   0.0000   2.4230  16.5800
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(prune.boston)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(prune.boston, pretty <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-3.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>yhat <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(tree.boston, newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ])
+</span></span><span style="display:flex;"><span>boston.test <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, <span style="color:#e6db74">&#34;medv&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(yhat, boston.test)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">abline</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-4.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># MSE</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 35.28688
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># here, pruned tree has simpler structure but it has larger MSE</span>
+</span></span></code></pre></div><h3 id="833-bagging-and-random-forests">8.3.3. Bagging and Random Forests<a hidden class="anchor" aria-hidden="true" href="#833-bagging-and-random-forests">#</a></h3>
+<ul>
+<li>(8.3.2의 decision tree 결과와 비교해보기)</li>
+<li><code>randomForest</code> 패키지 하나로 충분하다(Bagging은 random forest 중 <em>m</em>=<em>p</em>인 a special case).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## perform bagging</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(randomForest)
+</span></span></code></pre></div><pre tabindex="0"><code>## randomForest 4.6-14
+</code></pre><pre tabindex="0"><code>## Type rfNews() to see new features/changes/bug fixes.
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>bag.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomForest</span>(medv <span style="color:#f92672">~</span> . , data <span style="color:#f92672">=</span> Boston, 
+</span></span><span style="display:flex;"><span>                          subset <span style="color:#f92672">=</span> train,
+</span></span><span style="display:flex;"><span>                          mtry <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>, <span style="color:#75715e"># 구획할 때 샘플수링할 설명변수 개수</span>
+</span></span><span style="display:flex;"><span>                          importance <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>bag.boston
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+##  randomForest(formula = medv ~ ., data = Boston, mtry = 13, importance = TRUE,      subset = train) 
+##                Type of random forest: regression
+##                      Number of trees: 500
+## No. of variables tried at each split: 13
+## 
+##           Mean of squared residuals: 11.39601
+##                     % Var explained: 85.17
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## get test error rate</span>
+</span></span><span style="display:flex;"><span>yhat.bag <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(bag.boston, newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ])
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(yhat.bag, boston.test)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">abline</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.3-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat.bag <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>) 
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 23.59273
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># 13.50808 (bagging) vs 26.83413 (a regression tree)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## change the number of tree to grow</span>
+</span></span><span style="display:flex;"><span>bag.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomForest</span>(medv <span style="color:#f92672">~</span> ., 
+</span></span><span style="display:flex;"><span>                          data <span style="color:#f92672">=</span> Boston,
+</span></span><span style="display:flex;"><span>                          subset <span style="color:#f92672">=</span> train,
+</span></span><span style="display:flex;"><span>                          mtry <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>,
+</span></span><span style="display:flex;"><span>                          ntree <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>)
+</span></span><span style="display:flex;"><span>yhat.bag <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(bag.boston, 
+</span></span><span style="display:flex;"><span>                   newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ])
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat.bag <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>) 
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 23.66716
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## random forests</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>rf.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">randomForest</span>(medv <span style="color:#f92672">~</span>., 
+</span></span><span style="display:flex;"><span>                         data <span style="color:#f92672">=</span> Boston,
+</span></span><span style="display:flex;"><span>                         subset <span style="color:#f92672">=</span> train,
+</span></span><span style="display:flex;"><span>                         mtry <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>,
+</span></span><span style="display:flex;"><span>                         importance <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>yhat.rf <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(rf.boston,
+</span></span><span style="display:flex;"><span>                  newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ])
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat.rf <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 19.62021
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># 11.40256 (rf) vs 13.50808 (bagging) vs 26.83413 (a regression tree)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">importance</span>(rf.boston)
+</span></span></code></pre></div><pre tabindex="0"><code>##           %IncMSE IncNodePurity
+## crim    16.697017    1076.08786
+## zn       3.625784      88.35342
+## indus    4.968621     609.53356
+## chas     1.061432      52.21793
+## nox     13.518179     709.87339
+## rm      32.343305    7857.65451
+## age     13.272498     612.21424
+## dis      9.032477     714.94674
+## rad      2.878434      95.80598
+## tax      9.118801     364.92479
+## ptratio  8.467062     823.93341
+## black    7.579482     275.62272
+## lstat   27.129817    6027.63740
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># %IncMSE: 그 변수가 없을 때 모델 정확도가 줄어드는 정도(MSE가 증가하는 정도?)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># IncNodePurity: 그 변수가 없을 때 Gini index가 줄어드는 정도(purity가 증가하는 정도)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># node impurity: regression은 RSS로, classification은 deviance로 계산</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">varImpPlot</span>(rf.boston)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.3-2.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># rm and lstat의 영향이 가장 크더라</span>
+</span></span></code></pre></div><h3 id="834-boosting">8.3.4. Boosting<a hidden class="anchor" aria-hidden="true" href="#834-boosting">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## fit a boosted model</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(gbm)
+</span></span></code></pre></div><pre tabindex="0"><code>## Loaded gbm 2.1.5
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>boost.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">gbm</span>(medv <span style="color:#f92672">~</span> ., 
+</span></span><span style="display:flex;"><span>                   data <span style="color:#f92672">=</span> Boston[train, ],
+</span></span><span style="display:flex;"><span>                   distribution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gaussian&#34;</span>, <span style="color:#75715e"># binary classification --&gt; &#34;bernoulli&#34;</span>
+</span></span><span style="display:flex;"><span>                   n.trees <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>, <span style="color:#75715e"># # of tree to grow</span>
+</span></span><span style="display:flex;"><span>                   interaction.depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#75715e"># depth (= # of node layer) of each tree</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(boost.boston)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-1.png"></p>
+<pre tabindex="0"><code>##             var    rel.inf
+## rm           rm 43.9919329
+## lstat     lstat 33.1216941
+## crim       crim  4.2604167
+## dis         dis  4.0111090
+## nox         nox  3.4353017
+## black     black  2.8267554
+## age         age  2.6113938
+## ptratio ptratio  2.5403035
+## tax         tax  1.4565654
+## indus     indus  0.8008740
+## rad         rad  0.6546400
+## zn           zn  0.1446149
+## chas       chas  0.1443986
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># rel.inf: relative influence</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(boost.boston, i <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rm&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-2.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(boost.boston, i <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lstat&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-3.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## predict</span>
+</span></span><span style="display:flex;"><span>yhat.boost <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(boost.boston,
+</span></span><span style="display:flex;"><span>                     newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ],
+</span></span><span style="display:flex;"><span>                     n.trees <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat.boost <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 18.84709
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># 10.81479 (boost) vs 11.40256 (rf) vs 13.50808 (bagging) vs 26.83413 (a regression tree)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## manipulate shrinkage parameter</span>
+</span></span><span style="display:flex;"><span>boost.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">gbm</span>(medv <span style="color:#f92672">~</span> ., 
+</span></span><span style="display:flex;"><span>                   data <span style="color:#f92672">=</span> Boston[train, ],
+</span></span><span style="display:flex;"><span>                   distribution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gaussian&#34;</span>,
+</span></span><span style="display:flex;"><span>                   n.trees <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>,
+</span></span><span style="display:flex;"><span>                   interaction.depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>                   shrinkage <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>, <span style="color:#75715e"># default = 0.001</span>
+</span></span><span style="display:flex;"><span>                   verbose <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>yhat.boost <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(boost.boston,
+</span></span><span style="display:flex;"><span>                     newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ],
+</span></span><span style="display:flex;"><span>                     n.trees <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat.boost <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># vs 10.81479 (wih lambda = 0.001)</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 18.33455
+</code></pre><h1 id="9-support-vector-machines">9. Support Vector Machines<a hidden class="anchor" aria-hidden="true" href="#9-support-vector-machines">#</a></h1>
+<p><em>Support vector machine</em> (SVM)</p>
+<ul>
+<li>1990년대에 컴싸 분야에서 개발했다.</li>
+<li>one of the best &ldquo;out of the box&rdquo; classifier.
+<ul>
+<li>&ldquo;out of box&rdquo;: 완제품? 특별한 작업 없이 바로 써먹을 수 있는 classifier.</li>
+</ul>
+</li>
+<li><em>maximal margin classifier</em>의 일반화 버전
+<ul>
+<li><em>maximal margin classifier</em>: linear boundary 있을 때만 사용 가능</li>
+<li><em>support vector classifier</em>: extension</li>
+<li><em>support vector machine</em>: further extension</li>
+</ul>
+</li>
+<li>class가 2개인 classification 문제 해결을 위해 만들었다.</li>
+<li>하지만 2개보다 더 많은 class를 가지는 문제, 심지어 regression에도 적용할 수 있다.</li>
+</ul>
+<h2 id="91-maximal-margin-classifier">9.1. Maximal Margin Classifier<a hidden class="anchor" aria-hidden="true" href="#91-maximal-margin-classifier">#</a></h2>
+<h3 id="911-what-is-a-hyperplane">9.1.1. What Is a Hyperplane?<a hidden class="anchor" aria-hidden="true" href="#911-what-is-a-hyperplane">#</a></h3>
+<ul>
+<li><em>Hyperplane</em>: <em>p</em>차원 공간에서는 (<em>p-1</em>) 차원의 <strong>flat</strong> affine subspace가 된다.
+<ul>
+<li>affine space: 벡터공간에 점(point)의 개념을 추가한 것. 원점은 따로 존재하지 않음.</li>
+<li>예로, 2차원 공간에서는 직선이 되고, 3차원 공간에서는 2차원 평면이 된다.</li>
+<li>4차원 이상이면 시각화가 곤란하지만 개념은 똑같다.</li>
+</ul>
+</li>
+<li>수식으로는, <em>$\beta$</em><del>0</del>+<em>$\beta$</em><del>1</del><em>X</em><del><em>1</em></del>+<em>$\beta$</em><del>2</del><em>X</em><del><em>2</em></del>+&hellip;+<em>$\beta$</em><del><em>p</em></del><em>X</em><del><em>p</em></del>=0을 만족하는 모든 <em>X</em>=(<em>X</em><del>1</del>, &hellip;, <em>X</em><del>p</del>)^<em>T</em>^로 쓸 수 있다.
+<ul>
+<li>Hyperplane은 <em>p</em>차원 공간을 두 영역으로 나누게 된다(좌변이 0보다 큰 곳, 작은 곳)</li>
+</ul>
+</li>
+</ul>
+<h3 id="912-classification-using-a-separating-hyperplane">9.1.2. Classification Using a Separating Hyperplane<a hidden class="anchor" aria-hidden="true" href="#912-classification-using-a-separating-hyperplane">#</a></h3>
+<ul>
+<li>Hyperplane이 만드는 두 구역의 class를 각각 1, -1로 indexing.</li>
+<li><em>separating hyperplane</em>: 한 구역에 한 class만 있게 만드는 hyperplane.
+<ul>
+<li><em>y</em><del><em>i</em></del>(<em>$\beta$</em><del>0</del>+<em>$\beta$</em><del>1</del><em>X</em><del>1</del>+<em>$\beta$</em><del>2</del><em>X</em><del>2</del>+&hellip;+<em>$\beta$</em><del><em>p</em></del><em>X</em><del><em>p</em></del>)&gt;0을 만족한다(<em>y</em>~<em>i</em>는 해당 class의 index).</li>
+<li>왜냐햐면 좌변&gt;0인 class는 1로 indexing, 좌변&lt;0인 class는 -1로 indexing하기 때문.</li>
+</ul>
+</li>
+<li>좌변 절댓값이 0보다 클수록 hyperplane에서 멀어진다 &ndash;&gt; 어느 구역에 속할지 더 쉽게 구분할 수 있다.</li>
+</ul>
+<h3 id="913-the-maximal-margin-classifier">9.1.3. The Maximal Margin Classifier<a hidden class="anchor" aria-hidden="true" href="#913-the-maximal-margin-classifier">#</a></h3>
+<p><em>Maximal margin classifier</em> (or <em>optimal separating hyperplane</em>)</p>
+<ul>
+<li>hyperplane을 하나 찾았다면, 이를 살짝살짝 움직이면서 무수히 많은 놈들을 더 만들 수 있다.</li>
+<li>이 중 어떤 놈을 선택해야 할까?</li>
+<li>두 그룹 사이를 아슬아슬하게 스쳐가듯 나누기보다는 최대한 멀찌감치 나누고 싶다.</li>
+<li>hyperplane에서 각 point의 거리를 계산했을 때, 이 거리의 최솟값을 <strong>margin</strong>이라 한다.</li>
+<li><strong>margin</strong>이 최대인 hyperplane = <em>maximal margin classifier</em></li>
+<li><em>p</em>가 커지면 overfitting하는 경향이 있다.</li>
+</ul>
+<p>여기서 <em>support vector</em>는 maximal margin에 위치하는 points를 의미한다.</p>
+<ul>
+<li>support: maximal margin hyperplane 선택에 도움을 주기 때문</li>
+<li>vector:  각 point는 <em>p</em>차원 공간의 벡터이기 때문</li>
+</ul>
+<p>이에 따라 maximual margin hyperplane은 support vector에만 영향을 받게 된다.<br>
+반대로 말하면 support vector 외 다른 점들이 maximal margin 밖 어디를 뛰어댕겨도 hyperplane은 움직이지 않는다.</p>
+<h3 id="914-construction-of-the-maximal-margin-classifier">9.1.4. Construction of the Maximal Margin Classifier<a hidden class="anchor" aria-hidden="true" href="#914-construction-of-the-maximal-margin-classifier">#</a></h3>
+<p>the Maximal Margin Classifier를 구할 때 사용하는 세 목적함수</p>
+<ol>
+<li>maximize <em>M</em>
+<ul>
+<li>margin을 최대화한다. the Maximal Margin Classifier의 정의.</li>
+</ul>
+</li>
+<li>모든 점에서 <em>y</em><del><em>i</em></del>(<em>$\beta$</em><del>0</del>+<em>$\beta$</em><del>1</del><em>X</em><del><em>1</em></del>+<em>$\beta$</em><del>1</del><em>X</em><del><em>2</em></del>+&hellip;+<em>$\beta$</em><del>1</del><em>X</em><del><em>p</em></del>)&gt;=<em>M</em></li>
+<li>$\sum_{j = 1}^{p}$$\beta$<del><em>j</em></del>^2^=1
+<ul>
+<li>2와 3이 합쳐져서 &ndash;&gt; 모든 관측값은 그에 맞는 구역에 위치하고 margin은 <em>M</em>이상이어야 한다.</li>
+<li><em>p</em>차원 공간의 한 점에서 hyperplane까지 거리를 구하면 분자는 2의 좌변(<em>y</em><del><em>i</em></del> 제외한), 분모는 sqrt($\sum_{j = 1}^{p}$$\beta$<del><em>j</em></del>^2^)가 된다.</li>
+<li>조건 3이 있기 때문에 2의 우변이 <em>M</em>일 수 있다(없다면 저 분모 값을 고려해서 우변을 바꿔야겠지?)</li>
+</ul>
+</li>
+</ol>
+<p>위 세 목적함수를 두고 어찌어찌 최적화 문제를 풀어 hyperplane을 구한다(자세한 건 생략)</p>
+<h3 id="915-the-non-separable-case">9.1.5. The Non-separable Case<a hidden class="anchor" aria-hidden="true" href="#915-the-non-separable-case">#</a></h3>
+<p>위 최적화 문제의 해답(=maximal margin classifier)은 커녕<br>
+separating hyperplane 조차 구할 수 없는 경우가 많다.<br>
+\</p>
+<p>&ndash;&gt; 두 구역을 딱딱 구분하는 것이 아닌 얼추 구분해내는 soft margin을 적용한다.<br>
+&ndash;&gt; support vector classifier(m.m.c.를 non-separatable case로 확장) 등을 사용한다.</p>
+<h2 id="92-support-vector-classifiers">9.2. Support Vector Classifiers<a hidden class="anchor" aria-hidden="true" href="#92-support-vector-classifiers">#</a></h2>
+<h3 id="921-overview-of-the-support-vector-classifier">9.2.1. Overview of the Support Vector Classifier<a hidden class="anchor" aria-hidden="true" href="#921-overview-of-the-support-vector-classifier">#</a></h3>
+<p>Maximal Margin Classifier는 <strong>모든 관측값을 정확하게 분류</strong> 해내려고 한다.<br>
+이런 hyperplane은 존재하기도 힘들뿐더러,<br>
+존재한다고 해도 아래와 같은 특징을 가지는 매우 예민한 놈일 것이다.</p>
+<ul>
+<li>관측값 하나하나에 민감하게 반응한다(완벽주의)</li>
+<li>maximal margin이 매우 작아질 수 있다(아슬아슬) &ndash;&gt; 불-편</li>
+<li>overfitting 가능성(완벽주의)</li>
+</ul>
+<p>따라서</p>
+<ul>
+<li><strong>대부분</strong>의 관측값을 잘 분류해내면서 Margin도 일정 값 이상을 유지하는</li>
+<li>때문에 관측값 하나하나에 쉽게 변하지 않는(덜 민감한, robust)</li>
+</ul>
+<p>놈이 필요하다.<br>
+&ndash;&gt; <em>support vector classifier</em> (or <em>soft margin classifier</em>)</p>
+<h3 id="922-details-of-the-support-vector-classifier">9.2.2. Details of the Support Vector Classifier<a hidden class="anchor" aria-hidden="true" href="#922-details-of-the-support-vector-classifier">#</a></h3>
+<p>the Support Vector Classifier를 구할 때 사용하는 목적함수</p>
+<ol>
+<li>maximize <em>M</em>
+<ul>
+<li>margin을 최대화한다.</li>
+</ul>
+</li>
+<li>$\sum_{j = 1}^{p}$$\beta$<del><em>j</em></del>^2^ = 1</li>
+<li>모든 점에서 <em>y</em><del><em>i</em></del>(<em>$\beta$</em><del>0</del> + <em>$\beta$</em><del>1</del><em>X</em><del><em>1</em></del> + <em>$\beta$</em><del>1</del><em>X</em><del><em>2</em></del> + &hellip; + <em>$\beta$</em><del>1</del><em>X</em><del><em>p</em></del>) &gt;= <em>M</em>(1-$\epsilon$<del><em>i</em></del>)</li>
+<li>$\epsilon$<del><em>i</em></del> &gt;= 0, $\sum_{i=1}^{n}$$\epsilon$<del><em>i</em></del> &lt;= <em>C</em></li>
+</ol>
+<p>Maximal Margin Classifier의 목적함수와 비교</p>
+<ul>
+<li>1, 2번 조건은 같다.
+<ul>
+<li>1번은 margin을 최대화하기 위한 것</li>
+<li>2번은 조건 3의 우변을 <em>M</em>으로 두기 위한 보조 장치</li>
+</ul>
+</li>
+<li>3번 조건은 우변이 M(1-$\epsilon$<del><em>i</em></del>)로 바뀌었고, 4번 조건은 새로 추가됐다.
+<ul>
+<li>3번의 $\epsilon$~<em>i</em>~은 <strong>slack variable</strong></li>
+<li>4번의 <em>C</em>는 <strong>tolerance</strong></li>
+</ul>
+</li>
+</ul>
+<p>Maximal Margin Classifier 보다 느슨한 classifier를 만들기 위해 tuning parameter <em>C</em>(tolerance)를 추가했다. <br>
+hyperplane과 margin을 그어서 데이터를 분류했을 때,</p>
+<ul>
+<li>slack이 0이면 margin 이상의 거리에서 잘 분류한 것 (남방한계선 침범하지 않고 남한에 위치)</li>
+<li>slack이 0보다 크면 margin 미만의 거리에서 잘 분류한 것 (남한측 DMZ에 위치)</li>
+<li>slack이 1보다 크면 잘못 분류한 것 (탈남. 북한 DMZ or 북한 영토 침범)</li>
+</ul>
+<p>으로 볼 수 있다.</p>
+<p><em>C</em>는 slack의 budget으로 생각할 수 있다. <em>C</em>만큼의 포인트가 있고 slack 값에 따라 포인트가 차감되는 형식이다. 포인트가 0이라면 slack은 모두 0이어야 하고(= Maximal Margin Classifier) 포인트가 많을 수록 더 많은, 혹은 더 값이 큰 slack이 발생할 수 있다. 이런 의미에서 <em>C</em>를 SVC의 tolerance라 부르는 것이다.</p>
+<p>Support Vector Classifier에서도 hyperplane을 결정할 때 영향을 미치는 값들을 <em>support vector</em>라 하는데 Maximal margin classifier 때와는 대상이 조금 다르다.</p>
+<ul>
+<li>Maximal Margin Classifier: maximal margin에 위치하는 points($\epsilon$ = 0)</li>
+<li>Support Vector Classifier: maximal margin에 혹은 그보다 더 반대 영역에 가까이 위치하는 points ($\epsilon$ &gt;= 0)</li>
+</ul>
+<p><em>C</em>가 클 수록 support vector가 더 많아지기 때문에 hyperplane의 variance가 작아지고 bias는 커진다. <br>
+<em>C</em>가 작을 수록 support vector가 더 많아지기 때문에 hyperplane의 variance가 커지고,  bias는 작아진다.<br>
+즉, <em>C</em>를 이용해 Classifier의 bias-variance trade-off를 조절할 수 있다.<br>
+<em>C</em>는 다른 classifier에서 사용한 것처럼 cross-validation으로 추정한다.</p>
+<p>Support vecotr classifier는 전체 관측값 중 일부(support vector)만 사용해 분류하기 때문에 관측치를 모두 사용하는 방법(e.g. linear discriminant analysis)보다는 관측값(또는 이상값)에 덜 민감하다.</p>
+<h2 id="93-support-vector-machines">9.3. Support Vector Machines<a hidden class="anchor" aria-hidden="true" href="#93-support-vector-machines">#</a></h2>
+<ul>
+<li>9.3.1: non-linear boundary일 때 사용하는 메커니즘 소개</li>
+<li>9.3.2: 위 메커니즘을 자동화한 방법 소개(SVM)</li>
+</ul>
+<h3 id="931-classification-with-non-liinear-decision-boundaries">9.3.1. Classification with Non-liinear Decision Boundaries<a hidden class="anchor" aria-hidden="true" href="#931-classification-with-non-liinear-decision-boundaries">#</a></h3>
+<p>key = Enlarging the feature space</p>
+<ul>
+<li>직선으로 부족하면 곡선을 만든다(2차항, 3차항, &hellip; 추가).</li>
+<li>목적함수는 변하지 않는다(predictor+계수만 늘어날 뿐)</li>
+</ul>
+<p>항을 늘리면 계산량도 부쩍부쩍 는다.</p>
+<p>SVM를 이용하면 효율적으로 문제를 해결할 수 있도록 feature space를 결정할 수 있다.</p>
+<h3 id="932-the-support-vector-machine">9.3.2. The Support Vector Machine<a hidden class="anchor" aria-hidden="true" href="#932-the-support-vector-machine">#</a></h3>
+<p>SVM은 feature space를 확장할 때 <em>kernel</em>을 이용한다(자세한 계산은 복잡하다. 지금은 feature space를 확장한다는 아이디어를 수행하다고 생각하자).</p>
+<p>Support vector classfier의 목적 함수에는 관측치의 <em>inner product</em>외 다른 계산은 포함하지 않았다.</p>
+<ul>
+<li>inner product = &lt;<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>&gt; = $\sum_{j=1}^{p}$x~<em>ij</em><del>x</del><em>i&rsquo;j</em>~</li>
+</ul>
+<p>이는 inner product만으로도 support vector classifier의 목적함수를 표현할 수 있다는 뜻이다.</p>
+<ul>
+<li><em>f</em>(<em>x</em>) = $\beta$<del>0</del> + $\sum_{i=1}^{n}$$\alpha$<del>i</del>&lt;<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>&gt;</li>
+</ul>
+<p>여기서 $\alpha$<del>i</del>는 각 관측치마다 부여하는 weighting factor 정도의 의미가 된다.<br>
+<!-- raw HTML omitted -->support vector가 아니라면<!-- raw HTML omitted --> hyperplane 결정에 영향이 없으므로 $\alpha$<del>i</del> = 0이 되고,<br>
+<!-- raw HTML omitted -->support vector에서는<!-- raw HTML omitted --> 일정 값이 정해진다(원래 식에서는 이 값이 $\beta$ 계수들이 된다).</p>
+<p>$\alpha$<del>i</del>를 추정하기 위해서는$\binom{n}{2}$개의 &lt;<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>&gt;를 계산하게 된다.</p>
+<ul>
+<li>margin을 결정하려면 가능한 모든 한 쌍의 관측치 조합마다 거리를 계산해서 비교해야 하기 때문</li>
+</ul>
+<p>위의 inner product 관련 항을 **일반화(generalization)**하여 아래와 같이 표현해보자.</p>
+<ul>
+<li><em>K</em>(<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>)</li>
+</ul>
+<p>위의 <em>K</em>가 바로 <em>kernel</em>이다. kernel은 두 관측치가 얼마나 비슷한지(혹은 다른지)를 정량적으로 표현해준다(거리).<br>
+kernel이 inner product 항을 **일반화(generalization)**했다고 표현한 이유는 여러 종류의 inner product 표현이 존재하기 때문이다.<br>
+즉, SVM에 다양한 종류의 kernel을 사용할 수 있다는 의미다.</p>
+<ul>
+<li><em>K</em>(<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>) = $\sum_{j=1}^{p}$x~<em>ij</em><del>x</del><em>i&rsquo;j</em>~ (linear kernel)</li>
+<li><em>K</em>(<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>) = (1 + $\sum_{j=1}^{p}$x~<em>ij</em><del>x</del><em>i&rsquo;j</em>~)^<em>d</em>^ (polynomial kernel)</li>
+<li><em>K</em>(<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>) = exp(-$\gamma$$\sum_{j=1}^{p}$(<em>x</em><del><em>ij</em></del> - <em>x</em><del><em>i&rsquo;j</em></del>)^2^) (radial kernel)
+<ul>
+<li>$\gamma$가 클수록 non-linear</li>
+</ul>
+</li>
+</ul>
+<p>polynomial kernel에서 d가 1이면 linear kernel이 된다(1은 상수항이기 때문에 $\beta$<del>0</del>에 흡수된다).</p>
+<p>위와 같이 다양한 kernel을 모두 가질 수 있는 것이 <strong>support vector machine</strong>이고,<br>
+SVM 중 linear kernel을 사용하는 경우(혹은 <em>d</em>=1인 polynomial kernel)가 <strong>support vector classifier</strong>인 것이다.</p>
+<pre tabindex="0"><code>SVC와 SVM을 다른 관점에서 설명하는 것 같아 헷갈린다.
+
+support vector classifier에서는 hyperplane에서 support vector까지의 &#34;거리&#34; 개념으로 목적함수가 내포하는 의미를 설명해줬다.
+
+반면 support vector machine에서는 inner product를 이용해 목적함수의 꼴을 설명해줬다.
+
+게다가 
+SVC에서는 한 점과 hyperplane까지의 거리를 이용했는데,
+SVM에서는 두 점사이의 거리를 다룬다. 하지만 두 점의 거리만 다루지는 않는 것 같다.
+xi와 xi&#39;는 두 관측값의 거리였고, x와 xi는 새로운 관측값과 training points 간의 거리였다.
+(여기서 training points는 hyperplane(혹은 margin?)을 의미하는 것 같다)
+
+SVM에서도 SVC와 같은 개념(거리와 margin을 비교)이 적용될 수 있다면
+SVM의 kernel을 
+&#34;두 점 사이의 거리를 표현하는 다양한 종류의 함수&#34;라고 이해하는 게 편할 것 같다.
+SVC에서 직선꼴의 hyperplane과 한 점까지의 거리를 계산하는 kernel을 사용한 것처럼
+SVM에서는 곡선꼴의 hyperplane과 한 점까지의 거리를 계산하는 (복잡하게 생긴) kernel을 사용한 것이다.
+</code></pre><h3 id="933-an-application-to-the-heart-disease-data">9.3.3. An Application to the Heart Disease Data<a hidden class="anchor" aria-hidden="true" href="#933-an-application-to-the-heart-disease-data">#</a></h3>
+<h2 id="94-svms-with-more-than-two-classes">9.4. SVMs with More than Two Classes<a hidden class="anchor" aria-hidden="true" href="#94-svms-with-more-than-two-classes">#</a></h2>
+<p>SVM을 K-class case로 확장하는 방법엔 대표적으로 두 가지가 있다.</p>
+<ul>
+<li><em>One-versus-one</em> (or <em>all-pairs</em>) approach</li>
+<li><em>One-versus-all</em> approach</li>
+</ul>
+<h3 id="941-one-versus-one-classification">9.4.1. One-Versus-One Classification<a hidden class="anchor" aria-hidden="true" href="#941-one-versus-one-classification">#</a></h3>
+<p><em>K</em> classes 중 두 개 classes를 선택해서 binary classification한다.</p>
+<ul>
+<li>$\binom{k}{2}$개 SVM을 만든다</li>
+<li>각 SVM은 <em>K</em> classes 중 <em>k</em>th, *k&rsquo;*th class에 대한 two-class setting 문제를 풀게 된다</li>
+<li>$\binom{k}{2}$개 SVM을 가지고 각 관측치를 어느 class로 분류헀는지 투표한다</li>
+<li>가장 많은 표를 얻은 class가 각 관측치의 최종 분류 결과가 된다</li>
+</ul>
+<h3 id="942-one-versus-all-classification">9.4.2. One-Versus-All Classification<a hidden class="anchor" aria-hidden="true" href="#942-one-versus-all-classification">#</a></h3>
+<p><em>K</em> classes 중 <em>k</em>th class를 선택해서 (<em>k</em>th class) vs (나머지 <em>k</em>-1 classes)에 대해 binary classification한다.</p>
+<p>관측치 x를 분류하려 한다면,</p>
+<ul>
+<li><em>K</em>개 SVM을 만든다</li>
+<li>각 SVM의 kernel에서 계산한 값(=거리) 중 가장 큰 값을 가진 SVM의 class <em>K</em>로 분류한다
+<ul>
+<li>값이 클 수록 더 안정적으로 해당 class에 속하기 때문</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>본문에서는 linear kernel 수식으로만 서술했는데 그냥 예를 든 거겠지?
+</code></pre><h2 id="95-relationship-to-logistic-regression">9.5. Relationship to Logistic Regression<a hidden class="anchor" aria-hidden="true" href="#95-relationship-to-logistic-regression">#</a></h2>
+<p>SVM이 처음 나온 1990년대에는 hyperplane과 kernel 이용한다는 점이 참신하게 느껴졌다고 한다.<br>
+하지만 SVM은 기존 classical classification approaches와 궤를 같이한다는 점이 밝혀졌다.</p>
+<p>support vector classifier의 목적함수는 아래처럼 쓸 수 있다(또?).</p>
+<ul>
+<li>$\beta$<del>p</del>에 대해 minimize{ $\sum_{i=1}^{n}$ max[0, 1 - <em>y</em><del><em>i</em></del><em>f</em>(<em>x</em><del><em>i</em></del>)] + $\lambda$$\sum_{j=1}^{p}$$\beta$^2^<del>j</del> }
+<ul>
+<li>$\lambda$는 variance-bias trade-off를 조절하는 tuning parameter다(SVC의 <em>C</em>)</li>
+</ul>
+</li>
+</ul>
+<p>위에서 minimize 안은 <strong>Loss + Penalty</strong> 형태로 이루어져 있다.<br>
+SVM에서 loss는 한 점에서 hyperplane까지의 거리, penalty는 tolerance이다.<br>
+SVM와 같은 loss function을 <em>hinge loss</em>라 한다. 여기서 support vector가 아닌 관측값은 loss값이 0이 된다.</p>
+<p>logistic regression, linear discriminant analysis, lasso regression, ridge regression 역시 <strong>Loss + Penalty</strong> 형태로 이루어져 있었다.<br>
+또한 이들 방법에서도 non-linear kernel을 사용할 수 있다. 단지 historical reasons 때문에 non-linear kernel은 SVM에서 더 자주 사용할 뿐이다.</p>
+<p>Logistic regression과 SVC는 비슷한 결과를 보이는 경우가 많은데,<br>
+이들의 <em>y</em><del><em>i</em></del>(<em>$\beta$</em><del>0</del>+<em>$\beta$</em><del>1</del><em>X</em><del>1</del>+<em>$\beta$</em><del>2</del><em>X</em><del>2</del>+&hellip;+<em>$\beta$</em><del><em>p</em></del><em>X</em><del><em>p</em></del>)에 따른 Loss function 값이 비슷하기 때문이다.</p>
+<ul>
+<li>loss가 비슷하다 = 비슷한 범주로 분류한다</li>
+<li>다만 SVC에서는 support vector가 아니면 loss가 0인 반면,<br>
+logistic regressioin에서는 loss가 0인 경우는 없다).</li>
+</ul>
+<h4 id="support-vector-regression-vs-least-squares-regression"><strong>Support vector regression vs least squares regression</strong><a hidden class="anchor" aria-hidden="true" href="#support-vector-regression-vs-least-squares-regression">#</a></h4>
+<p>Loss function이 다르다.</p>
+<ul>
+<li>least squares regression: residual sum of squares를 최소로하는 $\beta$<del>0</del>, &hellip;, $\beta$<del><em>p</em></del></li>
+<li>support vector regression: 특정 값 이상의 절댓값을 가지는 관측치만 loss function에 영향을 미친다(svc와 비슷)</li>
+</ul>
+<pre tabindex="0"><code>support vector regression 좀 자세히 설명해주지 --&gt; 9.6.3에 조금 나온ㄷ
+</code></pre><h2 id="96-lab-support-vector-machines">9.6. Lab: Support Vector Machines<a hidden class="anchor" aria-hidden="true" href="#96-lab-support-vector-machines">#</a></h2>
+<p>여기서는 <code>e1071</code> 패키지를 사용한다. <br>
+<code>LiblineaR</code> 패키지도 있는데, predictor가 꽤 많은 상황에서 사용하면 좋다.</p>
+<h3 id="961-support-vector-classifier">9.6.1. Support Vector Classifier<a hidden class="anchor" aria-hidden="true" href="#961-support-vector-classifier">#</a></h3>
+<p>svc: <code>e1071::svm()</code></p>
+<ul>
+<li>kernel: &ldquo;linear&quot;일 때는 svm 중에서도 svc가 된다(책에서 소개한 것과는 조금 다른 목적함수를 푼다).</li>
+<li>cost: tolerance 조절 모수. cost가 작으면 slack이 커지고 support vector가 많아진다.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># make a two-dimensional example data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">20</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">-1</span>, <span style="color:#ae81ff">10</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>))
+</span></span><span style="display:flex;"><span>x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">=</span> x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e"># add 1 for last 10 data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, 
+</span></span><span style="display:flex;"><span>     col <span style="color:#f92672">=</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> y)) <span style="color:#75715e"># non-linear boundary </span>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-1-1.png"></p>
+<p>For classification problem,<br>
+class variable should be in <strong>factor type</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x, 
+</span></span><span style="display:flex;"><span>                 y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(y))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(e1071)
+</span></span><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> ., 
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, 
+</span></span><span style="display:flex;"><span>             scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># don&#39;t do normalization</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-2-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># cross: support vector</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># circle: !(support vector)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># return index of support vector</span>
+</span></span><span style="display:flex;"><span>svmfit<span style="color:#f92672">$</span>index
+</span></span></code></pre></div><pre tabindex="0"><code>## [1]  1  2  5  7 14 16 17
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## svm(formula = y ~ ., data = dat, kernel = &#34;linear&#34;, cost = 10, scale = FALSE)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  10 
+## 
+## Number of Support Vectors:  7
+## 
+##  ( 4 3 )
+## 
+## 
+## Number of Classes:  2 
+## 
+## Levels: 
+##  -1 1
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># cost = 10</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># # of support vector = 7 (4 in class &#34;-1&#34;)</span>
+</span></span></code></pre></div><p>SVC with a smaller cost.<br>
+tolerance가 더 높아지고 margin이 넓어지고 support vector가 더 많아질 것이다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>,
+</span></span><span style="display:flex;"><span>             scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-3-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit<span style="color:#f92672">$</span>index
+</span></span></code></pre></div><pre tabindex="0"><code>##  [1]  1  2  3  4  5  7  9 10 12 13 14 15 16 17 18 20
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## svm(formula = y ~ ., data = dat, kernel = &#34;linear&#34;, cost = 0.1, scale = FALSE)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  0.1 
+## 
+## Number of Support Vectors:  16
+## 
+##  ( 8 8 )
+## 
+## 
+## Number of Classes:  2 
+## 
+## Levels: 
+##  -1 1
+</code></pre><p><code>tune()</code>: 원하는 모수 값 범위에서 10-fold CV를 수행해준다.</p>
+<ul>
+<li>error: <code>tune.control()</code> <strong>error.fun</strong>에서 지정한 함수로 에러를 구한다. 이렇게 구한 에러를 <strong>sampling.aggregate</strong>에서 지정한 함수로 요약한다
+<ul>
+<li><strong>error.fun</strong> 기본값: classification은 misclassification rate가, regression에서는 MSE가 사용된다</li>
+<li><strong>sampling.aggregate</strong> 기본값: mean</li>
+</ul>
+</li>
+<li>dispersion: <code>tune.control()</code> <strong>error.fun</strong>에서 지정한 함수로 에러를 구한다. 이렇게 구한 에러를 <strong>sampling.dispersion</strong>에서 지정한 함수로 요약한다
+<ul>
+<li><strong>sampling.dispersion</strong> 기본값: sd</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>tune.out <span style="color:#f92672">=</span> <span style="color:#a6e22e">tune</span>(svm, 
+</span></span><span style="display:flex;"><span>                y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>                data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>                kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>                ranges <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(cost <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">100</span>)))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(tune.out)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Parameter tuning of &#39;svm&#39;:
+## 
+## - sampling method: 10-fold cross validation 
+## 
+## - best parameters:
+##  cost
+##   0.1
+## 
+## - best performance: 0.05 
+## 
+## - Detailed performance results:
+##    cost error dispersion
+## 1 1e-03  0.55  0.4377975
+## 2 1e-02  0.55  0.4377975
+## 3 1e-01  0.05  0.1581139
+## 4 1e+00  0.15  0.2415229
+## 5 5e+00  0.15  0.2415229
+## 6 1e+01  0.15  0.2415229
+## 7 1e+02  0.15  0.2415229
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># extract information of the best model </span>
+</span></span><span style="display:flex;"><span>bestmod <span style="color:#f92672">=</span> tune.out<span style="color:#f92672">$</span>best.model
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(bestmod)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## best.tune(method = svm, train.x = y ~ ., data = dat, ranges = list(cost = c(0.001, 
+##     0.01, 0.1, 1, 5, 10, 100)), kernel = &#34;linear&#34;)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  0.1 
+## 
+## Number of Support Vectors:  16
+## 
+##  ( 8 8 )
+## 
+## 
+## Number of Classes:  2 
+## 
+## Levels: 
+##  -1 1
+</code></pre><p><code>predict()</code>: 만들어놓은 svm으로 새로운 데이터의 class를 예측(regression에서는 값을 예측)한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>xtest <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">20</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>),
+</span></span><span style="display:flex;"><span>               ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>ytest <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-1</span>, <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">20</span>, rep <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>xtest[ytest <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">=</span> xtest[ytest <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>testdat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> xtest,
+</span></span><span style="display:flex;"><span>                     y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(ytest))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ypred <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(bestmod,
+</span></span><span style="display:flex;"><span>                testdat)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(predict <span style="color:#f92672">=</span> ypred,
+</span></span><span style="display:flex;"><span>      truth <span style="color:#f92672">=</span> testdat<span style="color:#f92672">$</span>y)
+</span></span></code></pre></div><pre tabindex="0"><code>##        truth
+## predict -1 1
+##      -1  9 3
+##      1   2 6
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># with another cost (0.01)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>,
+</span></span><span style="display:flex;"><span>             scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span>ypred <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(svmfit, testdat)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(predict <span style="color:#f92672">=</span> ypred,
+</span></span><span style="display:flex;"><span>      truth <span style="color:#f92672">=</span> testdat<span style="color:#f92672">$</span>y)
+</span></span></code></pre></div><pre tabindex="0"><code>##        truth
+## predict -1  1
+##      -1 10  4
+##      1   1  5
+</code></pre><p>Linearly separable한 경우</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">=</span> x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, 
+</span></span><span style="display:flex;"><span>     col <span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>     pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-6-1.png"></p>
+<p>이제 linearly separable한 경우가 됐다.<br>
+cost를 높여서(= tolerance를 아주 낮춰서) 아주 철저하게 분류해보자.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x,
+</span></span><span style="display:flex;"><span>                 y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(y))
+</span></span><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## svm(formula = y ~ ., data = dat, kernel = &#34;linear&#34;, cost = 1e+05)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  1e+05 
+## 
+## Number of Support Vectors:  3
+## 
+##  ( 1 2 )
+## 
+## 
+## Number of Classes:  2 
+## 
+## Levels: 
+##  -1 1
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-7-1.png"></p>
+<p>training 데이터를 완벽히 분류해냈지만,<br>
+margin이 매우 작다(파란색 support vector와 가장 가까운 동그라미 사이 거리가 매우 가깝다).<br>
+때문에 test error는 높을 수 있다.<br>
+cost를 낮춰보자.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> ., 
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## svm(formula = y ~ ., data = dat, kernel = &#34;linear&#34;, cost = 1)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  1 
+## 
+## Number of Support Vectors:  7
+## 
+##  ( 4 3 )
+## 
+## 
+## Number of Classes:  2 
+## 
+## Levels: 
+##  -1 1
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit,
+</span></span><span style="display:flex;"><span>     dat)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-8-1.png"></p>
+<p>분홍색 한 개가 하늘색으로 잘못 분류됐지만, 그 대신 margin이 더 커졌다.<br>
+cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
+<h3 id="962-support-vector-machine">9.6.2. Support Vector Machine<a hidden class="anchor" aria-hidden="true" href="#962-support-vector-machine">#</a></h3>
+<p>Non-linear kernel을 사용하려면<br>
+<code>svm()</code> 함수의 <code>kernel</code>인자로 &ldquo;linear&quot;대신 다른 것을 사용한다.</p>
+<ul>
+<li>&ldquo;polynomial&rdquo;: <code>d</code>인자를 이용해 다항의 차수를 조절한다</li>
+<li>&ldquo;radial&rdquo;: ```gamma``인자를 이용해 **$\lambda$<strong>를 조절한다(</strong>$\lambda$**가 작을 수록 선형에 가깝다)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(e1071)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>x[1<span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>, ] <span style="color:#f92672">=</span> x[1<span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>, ] <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>x[101<span style="color:#f92672">:</span><span style="color:#ae81ff">150</span>, ] <span style="color:#f92672">=</span> x[101<span style="color:#f92672">:</span><span style="color:#ae81ff">150</span>, ] <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">150</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">50</span>))
+</span></span><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x, 
+</span></span><span style="display:flex;"><span>                 y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(y))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, col <span style="color:#f92672">=</span> y) <span style="color:#75715e"># non-linear boundary</span>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-9-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>train <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat[train, ],
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
+</span></span><span style="display:flex;"><span>             gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat[train, ])
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-9-2.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## svm(formula = y ~ ., data = dat[train, ], kernel = &#34;radial&#34;, gamma = 1, 
+##     cost = 1)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  radial 
+##        cost:  1 
+## 
+## Number of Support Vectors:  31
+## 
+##  ( 16 15 )
+## 
+## 
+## Number of Classes:  2 
+## 
+## Levels: 
+##  1 2
+</code></pre><p>Cost를 높여보자.</p>
+<ul>
+<li>더욱 구불구불해지고</li>
+<li>overfitting 가능성이 높아진다</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat[train, ],
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
+</span></span><span style="display:flex;"><span>             gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat[train, ])
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-10-1.png"></p>
+<p>SVC에서 헀던 것처럼,<br>
+<code>tune()</code> 함수(10-fold cross validation 수행해준다)를 이용해<br>
+최적의 $\lambda$와 cost값을 찾아보자.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>tune.out <span style="color:#f92672">=</span> <span style="color:#a6e22e">tune</span>(svm,
+</span></span><span style="display:flex;"><span>                y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>                data <span style="color:#f92672">=</span> dat[train, ],
+</span></span><span style="display:flex;"><span>                kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
+</span></span><span style="display:flex;"><span>                ranges <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(cost <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">1000</span>),
+</span></span><span style="display:flex;"><span>                              gamma <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">help</span>(tune)
+</span></span></code></pre></div><pre tabindex="0"><code>## starting httpd help server ... done
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(tune.out)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Parameter tuning of &#39;svm&#39;:
+## 
+## - sampling method: 10-fold cross validation 
+## 
+## - best parameters:
+##  cost gamma
+##     1   0.5
+## 
+## - best performance: 0.07 
+## 
+## - Detailed performance results:
+##     cost gamma error dispersion
+## 1  1e-01   0.5  0.26 0.15776213
+## 2  1e+00   0.5  0.07 0.08232726
+## 3  1e+01   0.5  0.07 0.08232726
+## 4  1e+02   0.5  0.14 0.15055453
+## 5  1e+03   0.5  0.11 0.07378648
+## 6  1e-01   1.0  0.22 0.16193277
+## 7  1e+00   1.0  0.07 0.08232726
+## 8  1e+01   1.0  0.09 0.07378648
+## 9  1e+02   1.0  0.12 0.12292726
+## 10 1e+03   1.0  0.11 0.11005049
+## 11 1e-01   2.0  0.27 0.15670212
+## 12 1e+00   2.0  0.07 0.08232726
+## 13 1e+01   2.0  0.11 0.07378648
+## 14 1e+02   2.0  0.12 0.13165612
+## 15 1e+03   2.0  0.16 0.13498971
+## 16 1e-01   3.0  0.27 0.15670212
+## 17 1e+00   3.0  0.07 0.08232726
+## 18 1e+01   3.0  0.08 0.07888106
+## 19 1e+02   3.0  0.13 0.14181365
+## 20 1e+03   3.0  0.15 0.13540064
+## 21 1e-01   4.0  0.27 0.15670212
+## 22 1e+00   4.0  0.07 0.08232726
+## 23 1e+01   4.0  0.09 0.07378648
+## 24 1e+02   4.0  0.13 0.14181365
+## 25 1e+03   4.0  0.15 0.13540064
+</code></pre><h3 id="963-roc-curves">9.6.3. ROC Curves<a hidden class="anchor" aria-hidden="true" href="#963-roc-curves">#</a></h3>
+<p><code>ROCR</code> 패키지 사용</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ROCR)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># numerical score (pred)와 class label (truth)를 입력받아</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ROC 커브를 그리는 함수</span>
+</span></span><span style="display:flex;"><span>rocplot <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(pred, truth, <span style="color:#66d9ef">...</span>){
+</span></span><span style="display:flex;"><span>  predob <span style="color:#f92672">=</span> <span style="color:#a6e22e">prediction</span>(pred, truth)
+</span></span><span style="display:flex;"><span>  perf <span style="color:#f92672">=</span> <span style="color:#a6e22e">performance</span>(predob, <span style="color:#e6db74">&#34;tpr&#34;</span>, <span style="color:#e6db74">&#34;fpr&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">plot</span>(perf, <span style="color:#66d9ef">...</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Support vector regressor와 support vector machine</strong></p>
+<ul>
+<li>support vector regressor는 <em>$\beta$</em><del>0</del> + <em>$\beta$</em><del>1</del><em>X</em><del><em>1</em></del> + <em>$\beta$</em><del>1</del><em>X</em><del><em>2</em></del> + &hellip; + <em>$\beta$</em><del>1</del><em>X</em>~<em>p</em>~를 predicted value로 사용한다.</li>
+<li>support vector machine은 위 값의 부호를 이용해 class label을 부여한다.</li>
+<li><code>svm()</code>에 입력하는 response variable이 numeric이면 svr, factor면 svm</li>
+</ul>
+<p><code>svm()</code>에서는&hellip;</p>
+<ul>
+<li>decision.values = TRUE로 두면, class가 아닌 fitted value를 얻을 수 있다</li>
+<li><code>predict()</code> 결과 중 decision.values 속성에 fitted value가 나타나 있다</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit.opt <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>                 data <span style="color:#f92672">=</span> dat[train, ],
+</span></span><span style="display:flex;"><span>                 kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
+</span></span><span style="display:flex;"><span>                 gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>                 cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>                 decision.values <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>fitted <span style="color:#f92672">=</span> <span style="color:#a6e22e">attributes</span>(<span style="color:#a6e22e">predict</span>(svmfit.opt, 
+</span></span><span style="display:flex;"><span>                            dat[train, ], 
+</span></span><span style="display:flex;"><span>                            decision.values <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))<span style="color:#f92672">$</span>decision.values
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted, dat[train , <span style="color:#e6db74">&#34;y&#34;</span>],
+</span></span><span style="display:flex;"><span>        main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Training Data&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-13-1.png"></p>
+<p>꽤 잘 맞추는 듯하다. 여기서 $\lambda$를 높이면(more non-linear) training fitness를 더 높일 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit.flex <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>                  data <span style="color:#f92672">=</span> dat[train, ],
+</span></span><span style="display:flex;"><span>                  kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
+</span></span><span style="display:flex;"><span>                  gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>,
+</span></span><span style="display:flex;"><span>                  cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>                  decision.values <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>fitted.flex <span style="color:#f92672">=</span> <span style="color:#a6e22e">attributes</span>(<span style="color:#a6e22e">predict</span>(svmfit.flex,
+</span></span><span style="display:flex;"><span>                                 dat[train, ],
+</span></span><span style="display:flex;"><span>                                 decision.values <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))<span style="color:#f92672">$</span>decision.values
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted, dat[train , <span style="color:#e6db74">&#34;y&#34;</span>],
+</span></span><span style="display:flex;"><span>        main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Training Data&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted.flex, dat[train, <span style="color:#e6db74">&#34;y&#34;</span>],
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-14-1.png"></p>
+<p>$\lambda$를 높였을 때 훨씬 정확한 것처럼 보인다.<br>
+그러나 test error는&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>fitted.test <span style="color:#f92672">=</span> <span style="color:#a6e22e">attributes</span>(<span style="color:#a6e22e">predict</span>(svmfit.opt,
+</span></span><span style="display:flex;"><span>                                 dat[<span style="color:#f92672">-</span>train, ],
+</span></span><span style="display:flex;"><span>                                 decision.values <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))<span style="color:#f92672">$</span>decision.values
+</span></span><span style="display:flex;"><span>fitted.flex.test <span style="color:#f92672">=</span> <span style="color:#a6e22e">attributes</span>(<span style="color:#a6e22e">predict</span>(svmfit.flex,
+</span></span><span style="display:flex;"><span>                                      dat[<span style="color:#f92672">-</span>train, ], 
+</span></span><span style="display:flex;"><span>                                      decision.values <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))<span style="color:#f92672">$</span>decision.values
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted.test, dat[<span style="color:#f92672">-</span>train, <span style="color:#e6db74">&#34;y&#34;</span>],
+</span></span><span style="display:flex;"><span>        main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Test Data&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted.flex.test, dat[<span style="color:#f92672">-</span>train, <span style="color:#e6db74">&#34;y&#34;</span>],
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-15-1.png"></p>
+<h3 id="964-svm-with-multiple-classes">9.6.4. SVM with Multiple Classes<a hidden class="anchor" aria-hidden="true" href="#964-svm-with-multiple-classes">#</a></h3>
+<p>Class가 세 개 이상이면 <code>svm()</code>은 기본값으로 one-versus-one approach를 사용한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#a6e22e">rbind</span>(x, 
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">matrix</span>(<span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(y, <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">50</span>))
+</span></span><span style="display:flex;"><span>x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>] <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x , y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(y))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, col <span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>))
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-16-1.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
+</span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>             gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-16-2.png"></p>
+<h3 id="965-application-to-gene-expression-data">9.6.5. Application to Gene Expression Data<a hidden class="anchor" aria-hidden="true" href="#965-application-to-gene-expression-data">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ISLR)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">names</span>(Khan)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] &#34;xtrain&#34; &#34;xtest&#34;  &#34;ytrain&#34; &#34;ytest&#34;
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">str</span>(Khan)
+</span></span></code></pre></div><pre tabindex="0"><code>## List of 4
+##  $ xtrain: num [1:63, 1:2308] 0.7733 -0.0782 -0.0845 0.9656 0.0757 ...
+##   ..- attr(*, &#34;dimnames&#34;)=List of 2
+##   .. ..$ : chr [1:63] &#34;V1&#34; &#34;V2&#34; &#34;V3&#34; &#34;V4&#34; ...
+##   .. ..$ : NULL
+##  $ xtest : num [1:20, 1:2308] 0.14 1.164 0.841 0.685 -1.956 ...
+##   ..- attr(*, &#34;dimnames&#34;)=List of 2
+##   .. ..$ : chr [1:20] &#34;V1&#34; &#34;V2&#34; &#34;V4&#34; &#34;V6&#34; ...
+##   .. ..$ : NULL
+##  $ ytrain: num [1:63] 2 2 2 2 2 2 2 2 2 2 ...
+##  $ ytest : num [1:20] 3 2 4 2 1 3 4 2 3 1 ...
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(Khan<span style="color:#f92672">$</span>ytrain)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+##  1  2  3  4 
+##  8 23 12 20
+</code></pre><p>feature 개수(2308)가 train 데이터 개수(63)에 비해 훨씬 많다.<br>
+이런 경우 굳이 non-linear kernel을 사용할 필요 없다.</p>
+<ul>
+<li>데이터가 적고 feature가 많으면 hyperplane을 찾기 쉽다(고 한다&hellip;).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> Khan<span style="color:#f92672">$</span>xtrain,
+</span></span><span style="display:flex;"><span>                 y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(Khan<span style="color:#f92672">$</span>ytrain))
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span>          data <span style="color:#f92672">=</span> dat,
+</span></span><span style="display:flex;"><span>          kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span>          cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(out)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## svm(formula = y ~ ., data = dat, kernel = &#34;linear&#34;, cost = 10)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  linear 
+##        cost:  10 
+## 
+## Number of Support Vectors:  58
+## 
+##  ( 20 20 11 7 )
+## 
+## 
+## Number of Classes:  4 
+## 
+## Levels: 
+##  1 2 3 4
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(out<span style="color:#f92672">$</span>fitted, dat<span style="color:#f92672">$</span>y) <span style="color:#75715e"># no training error</span>
+</span></span></code></pre></div><pre tabindex="0"><code>##    
+##      1  2  3  4
+##   1  8  0  0  0
+##   2  0 23  0  0
+##   3  0  0 12  0
+##   4  0  0  0 20
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dat.te <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> Khan<span style="color:#f92672">$</span>xtest,
+</span></span><span style="display:flex;"><span>                    y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(Khan<span style="color:#f92672">$</span>ytest))
+</span></span><span style="display:flex;"><span>pred.te <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(out, newdata <span style="color:#f92672">=</span> dat.te)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(pred.te, dat.te<span style="color:#f92672">$</span>y) <span style="color:#75715e"># test error: 20개 중 2개 틀렸다</span>
+</span></span></code></pre></div><pre tabindex="0"><code>##        
+## pred.te 1 2 3 4
+##       1 3 0 0 0
+##       2 0 6 2 0
+##       3 0 0 4 0
+##       4 0 0 0 5
+</code></pre>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+      <li><a href="http://localhost:1313/tags/book-review/">Book Review</a></li>
+      <li><a href="http://localhost:1313/tags/r/">R</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

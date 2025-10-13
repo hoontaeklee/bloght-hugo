@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Paper Review: Zhang et al., (2018). domimant_timescales_and_regions_of_global_NEE | My New Hugo Site</title>
+<meta name="keywords" content="2022, Research, Paper review">
+<meta name="description" content="24 April, 2022 (Zhang, gcb, domimant_timescales_and_regions_of_global_NEE)
+Zhang, X., Wang, Y.-P., Peng, S., Rayner, P. J., Ciais, P., Silver, J. D., Piao, S., Zhu, Z., Lu, X., &amp; Zheng, X. (2018). Dominant regions and drivers of the variability of the global land carbon sink across timescales. Global Change Biology, 24(9), 3954–3968. https://doi.org/10.1111/gcb.14275
+Zhang et al. used the Fourier transformation to attribute variance of carbon cycle components to multiple time scales (from interannual to multi-decadal scales). Their study is based on mathematics, making the results very sound. A three-pools box model was formulated using the matrix representation by Prof. Luo to simplify the carbon cycle in ecosystem models of the Trendy project.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/paper_review/p042_2018_global_nee_timescale_and_regions/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/paper_review/p042_2018_global_nee_timescale_and_regions/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Paper Review: Zhang et al., (2018). domimant_timescales_and_regions_of_global_NEE
+    </h1>
+    <div class="post-meta"><span title='2022-04-24 16:44:33 +0200 +0200'>April 24, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="24-april-2022-zhang-gcb-domimant_timescales_and_regions_of_global_nee">24 April, 2022 (Zhang, gcb, domimant_timescales_and_regions_of_global_NEE)<a hidden class="anchor" aria-hidden="true" href="#24-april-2022-zhang-gcb-domimant_timescales_and_regions_of_global_nee">#</a></h2>
+<p>Zhang, X., Wang, Y.-P., Peng, S., Rayner, P. J., Ciais, P., Silver, J. D., Piao, S., Zhu, Z., Lu, X., &amp; Zheng, X. (2018). Dominant regions and drivers of the variability of the global land carbon sink across timescales. <em>Global Change Biology</em>, <em>24</em>(9), 3954–3968. <a href="https://doi.org/10.1111/gcb.14275">https://doi.org/10.1111/gcb.14275</a></p>
+<p>Zhang et al. used the Fourier transformation to attribute variance of carbon cycle components to multiple time scales (from interannual to multi-decadal scales). Their study is based on mathematics, making the results very sound. A three-pools box model was formulated using the matrix representation by Prof. Luo to simplify the carbon cycle in ecosystem models of the Trendy project.</p>
+<h2 id="message-semi-arid-regions-and-npp-dominate-the-global-nee-variability-at-the-interannual-scale-2-10-yrs-while-tropical-regions-and-rh-dominate-at-the-multi-decadal-scale-over-30-yrs">Message: Semi-arid regions and NPP dominate the global NEE variability at the interannual scale (2-10 yrs), while Tropical regions and Rh dominate at the multi-decadal scale (over 30 yrs).<a hidden class="anchor" aria-hidden="true" href="#message-semi-arid-regions-and-npp-dominate-the-global-nee-variability-at-the-interannual-scale-2-10-yrs-while-tropical-regions-and-rh-dominate-at-the-multi-decadal-scale-over-30-yrs">#</a></h2>
+<p>At the interannual scale, semi-arid regions popped up, like many other studies support its importance. <strong>Tropical regions also contributed significantly</strong> or even as much as semi-arid regions did for an inversion product.</p>
+<p>At the multi-decadal scale, tropical regions emerged as the strongest contributor. The large contribution of tropical regions at the multi-decadal scale was partly attributed to the effect of multi-decadal climate mode (i.e., the Pacific Decadal Oscillation, PDO).</p>
+<p>In terms of the dominant NEE component, NPP drove the interannual NEE variation, while Rh drove the multi-decadal NEE.</p>
+<p>Globally, the CO2 growth rate was dominated by terrestrial ecosystems, according to a result of comparing variability of CO2 growth rate, the global carbon project (an independent estimate of global land carbon sink), and a land carbon CO2 inversion product.</p>
+<p>The increase of atmospheric CO2 concentration affected the variability of NPP and Rh at long-term time scales (&gt;10 yr).</p>
+<h2 id="etc">etc<a hidden class="anchor" aria-hidden="true" href="#etc">#</a></h2>
+<p>I liked that their theory was based on mathematics.</p>
+<p>Their method can attribute the variability of target variables to multiple time scales. Can this method be used to attribute to each timestep or pixel?</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2022/">2022</a></li>
+      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
+      <li><a href="http://localhost:1313/tags/paper-review/">Paper Review</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>In Jena: Week 160 (르라보&amp;차이나타운) | My New Hugo Site</title>
+<meta name="keywords" content="2023, Daily Life, Jena">
+<meta name="description" content="이번 주는&hellip;
+
+run and learn CARDAMOM
+Write draft of the 2nd study
+LA downtown
+
+Le Labo &amp; Fashion district
+Chinatown
+
+
+
+연구
+
+describe VEGPP manuscript attribution figures
+attribute the global NEE MSC and IAV variance to GPP and RECO and map the results
+CARDAMOM paper reading &amp; scitech meeting
+processes to use the HPC for CARDAMOM multi-point run
+
+2023. 09. 28. 목요일
+테니스. JPL 커뮤니티에 테니스 채널이 있길래 조인했다. 장소는 JPL 근처에 미식축구 구장&#43; 테니스 코트 여러 개 &#43; &hellip; 를 가진 으리으리한 고등학교. 인도 친구 두 명, 스페인 친구 한 명이랑 복식 게임했다. 타이브레이크 끝에 패배했지만 오랜만에 재밌게 쳤다. 확실히 서브가 미숙해서 약점이 되고 있는 듯.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20231001_jena_wk160/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20231001_jena_wk160/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      In Jena: Week 160 (르라보&amp;차이나타운)
+    </h1>
+    <div class="post-meta"><span title='2023-10-01 16:39:03 -0700 -0700'>October 1, 2023</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="이번-주는">이번 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#이번-주는">#</a></h2>
+<ul>
+<li>run and learn CARDAMOM</li>
+<li>Write draft of the 2nd study</li>
+<li>LA downtown
+<ul>
+<li>Le Labo &amp; Fashion district</li>
+<li>Chinatown</li>
+</ul>
+</li>
+</ul>
+<h2 id="연구">연구<a hidden class="anchor" aria-hidden="true" href="#연구">#</a></h2>
+<ul>
+<li>describe VEGPP manuscript attribution figures</li>
+<li>attribute the global NEE MSC and IAV variance to GPP and RECO and map the results</li>
+<li>CARDAMOM paper reading &amp; scitech meeting</li>
+<li>processes to use the HPC for CARDAMOM multi-point run</li>
+</ul>
+<h2 id="2023-09-28-목요일">2023. 09. 28. 목요일<a hidden class="anchor" aria-hidden="true" href="#2023-09-28-목요일">#</a></h2>
+<p>테니스. JPL 커뮤니티에 테니스 채널이 있길래 조인했다. 장소는 JPL 근처에 미식축구 구장+ 테니스 코트 여러 개 + &hellip; 를 가진 으리으리한 고등학교. 인도 친구 두 명, 스페인 친구 한 명이랑 복식 게임했다. 타이브레이크 끝에 패배했지만 오랜만에 재밌게 쳤다. 확실히 서브가 미숙해서 약점이 되고 있는 듯.</p>
+<p>덧, LA에서 테니스 코트는 무료다. 여기저기 있다. 사람만 구하면 됨. 단점은 레슨비가 무지 비싸다. 한 시간에 100달러(14만 원?) 정도. 독일은 코트가 유료인 반면 레슨이 이렇게 비싸지는 않다. 물론, 개인 레슨 가격은 안 찾아봤다&hellip; 비슷할 수도?</p>
+<h2 id="2023-09-30-토요일">2023. 09. 30. 토요일<a hidden class="anchor" aria-hidden="true" href="#2023-09-30-토요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+  </tbody>
+</table>
+<p>LA 시내 구경. 딱히 가고 싶은 곳은 없고 르라보랑 바이레도 매점이 있길래 시향하러 가보기로 했다. 바이레도는 거리가 좀 멀어서 르라보만 갔다. 단시간에 훑어본 바로는 전체적으로 흥미로운 향이 많았지만 꼭 사고 싶다는 느낌이 팍 드는 향수는 없었다.</p>
+<ul>
+<li>Figure 15: 녹즙?</li>
+<li>Pin 12: 표현이 안 됨. 시원, 흙, 시트러스</li>
+<li>Another 13: 향이 거의 안 난다? 찾아보니 살냄새 머스크란다.</li>
+<li>Bergamotte 22: 마른 라임 껍질.</li>
+<li>The noir 29: 약간 풀냄새? (다른 후기 보면 홍차, 베르가못, 무화과, 스모키, 토바코, 우디, 드라이)</li>
+<li>Vetiver 46: the noir 29랑 살짝 비슷하게 느껴짐</li>
+<li>Iris 39: 칼국수면냄새</li>
+<li>Baie 19: 은단</li>
+<li>Matcha 26: 말라가는 한 조각 귤</li>
+<li>Cuir 28 (Dubai): 한방보리차</li>
+<li>Limette 37 (San Franscisco): 오렌지</li>
+<li>Seoul: ?</li>
+<li>Berlin: ?</li>
+</ul>
+<p>집에 돌아와서 영상 보고 흥미 생긴 몇 개 더&hellip;</p>
+<ul>
+<li>Fleur d&rsquo;oranger 27: 오렌지블라썸</li>
+<li>Patchouli 24: 축축한 우디&amp;스모키, 잔향</li>
+<li>Rose 31: 큐민, 드라이우디, 장미</li>
+<li>Santal 33: 샌달우드, 크리미, 잔향. 정말 유명한 작품인데 막상 나는 흥미를 못 느꼈다. 리뷰 보고 다시 흥미 생김&hellip;</li>
+</ul>
+<p>베르가못이랑 베티버 1.5 ml 구매했다. 두바이도 사고 싶었으나 품절.</p>
+<p>다음 향수 매장은 여러 브랜드 취급하는 곳인 듯했다. 30분정도 걸어가야 했다. 구경할 겸 걸었다. LA의 진면모를 봤다. 그 매장이 위치한 곳은 <a href="https://maps.app.goo.gl/7mYAgBudd4oexkVY9">Fashion district</a>라는 곳이다. 르라보 매장에서 그곳까지 대부분이 홈리스 캠핑 구역 &amp; 마약 용품 구역인 듯했다. 걷는 내내 불쾌함. 그렇게 도착한 Fashin district는 규모가 큰 전통시장 느낌이었는데, 라틴계 사람들이 주로 이용하는 곳 같았다. 가려했던 향수 매장은 시향 불가. 더 시간 보내지 않고 집에 가기로 했&hellip;으나 지도에서 집 가는 방향에 위치한 차이나타운을 봤다.</p>
+<p>차이나타운은 말 그대로 마을이었다. 런던에서 봤던 것처럼 중국 식당이 모여있는 곳이 아니라, 그냥 중국인이 많이 살고 있는 구역. 이 날은 추석 연휴라 문을 많이 닫은 듯한데, 그래도 볼만큼은 본 것 같다. 내가 좋아하는 달팽이쌀국수(뤄쓰펀)를 파는 곳이 있길래 한 번 시도해봤다. 인스턴트랑 비교했을 때 국물이 많아서 맛이 너무 약했다. 춘휘에게 물어보니 이건 오리지널이 아니었던 듯.</p>
+<h2 id="그-외">그 외&hellip;<a hidden class="anchor" aria-hidden="true" href="#그-외">#</a></h2>
+<h3 id="먹은-것a">먹은 것+a<a hidden class="anchor" aria-hidden="true" href="#먹은-것a">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>자주 가는 중국식당에서 시도한 다른 국수. 선지해장국 국물이랑 비슷하다.</li>
+<li>구내식당에서 새로 찾은 도시락. 꽤 괜찮다.</li>
+<li>일본 커리집. 커리가 저거보다 두 배는 많아야 하겠다. 평범한 맛.</li>
+<li>새로 찾은 밀크티가게. 가성비가 꽝이다. 양도 적음. 대신 맛은 중상.</li>
+<li>일요일에 테니스 라켓 사러 매장에 갔으나 내 라켓만큼 비싼 것 밖에 없었다. 세컨 라켓이라 이리 비싼 건 살 생각이 없어서 그냥 나왔다. 점심은 엘 살바도르 식당(처음 봤다)에서 먹었다. 라틴아메리칸 국가라 그런지 멕시칸 음식도 같이 팔았다. 적당해 보이는 걸 시켰는데 꽤 괜찮았다. 소고기 부드럽게 잘 구웠고 볶음밥도 고슬고슬하고 양도 괜찮고 가격은 평범함. 엘살바도르 음식은 중동 음식과 비슷한 면이 있었다. 가장 큰 차이점은 소스. 여기는 살사소스, 과카몰리, 등인데 중동음식은 하얀색 사워크리미한 소스가 있다.</li>
+<li>200일!</li>
+</ul>
+<h3 id="한-달-동안">한 달 동안<a hidden class="anchor" aria-hidden="true" href="#한-달-동안">#</a></h3>
+<p>2023년 09월은&hellip;</p>
+<ul>
+<li>보트@잘레강</li>
+<li>LA&amp;Pasadena 도착</li>
+<li>JPL 방문 연구 시작</li>
+<li>Pasadena, LA, Alhambra 구경</li>
+<li>경라 이모&amp;이모부 만남+할리우드 구경</li>
+</ul>
+<h2 id="다음-주는">다음 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#다음-주는">#</a></h2>
+<ul>
+<li>run and learn CARDAMOM</li>
+<li>Write draft of the 2nd study</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2023/">2023</a></li>
+      <li><a href="http://localhost:1313/tags/daily-life/">Daily Life</a></li>
+      <li><a href="http://localhost:1313/tags/jena/">Jena</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

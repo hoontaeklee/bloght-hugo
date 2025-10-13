@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Customizing on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/customizing/</link>
+    <description>Recent content in Customizing on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jan 2020 20:33:22 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/customizing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그에 Google analytics 추가하기</title>
+      <link>http://localhost:1313/posts/20200103_add_google_analytics/</link>
+      <pubDate>Fri, 03 Jan 2020 20:33:22 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200103_add_google_analytics/</guid>
+      <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
+&lt;p&gt;블로그는 사막에서 혼자 지낸다는 마음가짐으로 하는 것이지만, 그래도 누가누가 내 블로그에 오는지는 알고 싶은 법이다. 이를 위해 Google Analytics (GA)를 설치한다. &lt;a href=&#34;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&#34;&gt;이 글&lt;/a&gt;의 내용을 따라했다. 웹사이트에 GA를 추가하려면 두 가지가 필요하다:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Analytics 계정&lt;/li&gt;
+&lt;li&gt;Google Analytics를 추가할 Hugo 웹사이트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;google-analytics-계정-및-추적-id-생성&#34;&gt;Google Analytics 계정 및 추적 ID 생성&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://marketingplatform.google.com/about/analytics/&#34;&gt;여기&lt;/a&gt;에서 Google Analytics 계정을 생성한다.&lt;/p&gt;
+&lt;p&gt;GA는 웹사이트나 어플리케이션 등에 대한 데이터를 수집해주는 도구이다. 웹사이트의 경우 수집하는 데이터 종류는 방문한 사람 수, 방문한 사람의 유형, 유입 경로, 취한 행동(회원가입, 다운로드 등)에 따른 방문자 유형 등이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 블로그 댓글 기능 추가: utterances</title>
+      <link>http://localhost:1313/posts/20200101_add_utterances/</link>
+      <pubDate>Wed, 01 Jan 2020 15:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200101_add_utterances/</guid>
+      <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
+&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
+이 글에는 utterrances 소개는 관두고&amp;hellip; 설치 관련 내용만 적었다.&lt;/p&gt;
+&lt;h2 id=&#34;utterances-설치&#34;&gt;utterances 설치&lt;/h2&gt;
+&lt;h3 id=&#34;1-utterances-사이트-접속&#34;&gt;1. utterances 사이트 접속&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://utteranc.es/&#34;&gt;여기&lt;/a&gt;로 이동해서 &lt;code&gt;configuration&lt;/code&gt; 부분을 따라한다.&lt;/p&gt;
+&lt;h3 id=&#34;2-public-저장소-생성&#34;&gt;2. Public 저장소 생성&lt;/h3&gt;
+&lt;p&gt;나는 &lt;strong&gt;bloght-comments&lt;/strong&gt; 라고 만들었다.&lt;/p&gt;
+&lt;h3 id=&#34;3-blog-post--issue-mapping-theme-선택&#34;&gt;3. Blog Post ↔️ Issue Mapping, Theme 선택&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Blog Post ↔️ Issue Mapping&lt;/code&gt;은 세 번째 옵션을(Title 기준 매칭),&lt;br&gt;
+&lt;code&gt;Theme&lt;/code&gt;은 내 블로그가 밝으니 &lt;code&gt;Github Light&lt;/code&gt;를 선택했다.&lt;/p&gt;
+&lt;h3 id=&#34;4-enable-utterances&#34;&gt;4. Enable Utterances&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Enable Utterances&lt;/code&gt; 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.&lt;br&gt;
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 &lt;code&gt;Hugo&lt;/code&gt;가 어떻게 작동하는지 잘 모르니까 &lt;code&gt;hugo server&lt;/code&gt;로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 &lt;code&gt;footer.html&lt;/code&gt;에 담겨있었던 것 같으니 거기부터 시도.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 테마 커스터마이징 - 게시 날짜 및 시간</title>
+      <link>http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/</link>
+      <pubDate>Wed, 01 Jan 2020 13:31:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/</guid>
+      <description>&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%EB%AC%B8%EC%9D%98-%EC%82%AC%ED%95%AD&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#1-darklight-%EB%B2%84%ED%8A%BC-%EC%9C%84%EC%B9%98-%EB%B3%80%EA%B2%BD&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-%ED%8F%AC%EC%8A%A4%ED%8C%85-%EB%82%A0%EC%A7%9C-%EB%B0%8F-%EC%8B%9C%EA%B0%84-%EC%A0%95%EB%B3%B4-%EC%B6%94%EA%B0%80&#34;&gt;2. &lt;strong&gt;포스팅 날짜 및 시간 정보 추가&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-md-%ED%8C%8C%EC%9D%BC-%EB%82%B4-%EA%B2%8C%EC%8B%9C-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%A4%EC%A0%9C-%EB%82%A0%EC%A7%9C%EA%B0%80-%EA%B0%99%EC%9C%BC%EB%A9%B4-%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4-%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EB%AC%B8%EC%A0%9C&#34;&gt;3. &lt;strong&gt;.md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#4-%EC%8B%9C%EA%B0%84-%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C-%EC%A0%95%EB%A0%AC&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%ED%9B%84%EA%B8%B0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;블로그 테마로 &lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme&#34;&gt;Cupper&lt;/a&gt;를 선택했다.
+기본 세팅에서 네 가지 고치고 싶은 사항이 있어 &lt;a href=&#34;https://discourse.gohugo.io/t/four-issues-about-the-cupper-theme-dark-button-posting-time-and-an-error/22523&#34;&gt;Hugo Forum에 문의했다.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;문의-사항&#34;&gt;문의 사항&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Four issues about the cupper theme (dark button, posting time, and an error)
+I am building a static website using the Cupper theme (&lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme)&#34;&gt;https://github.com/zwbetz-gh/cupper-hugo-theme)&lt;/a&gt;.
+I have four issues:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

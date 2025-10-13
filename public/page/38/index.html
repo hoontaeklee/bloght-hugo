@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.150.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>My New Hugo Site</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>설치 Git 설치 Git 홈페이지 오른쪽 아래 초록 링크 cmd에서 버전 잘 나오나 확인 $ git --version Hugo 설치 Hugo 웹페이지 참고
+C드라이브에 Hugo 폴더 생성(블로그 관련 파일 저장용) Hugo 폴더 안에 bin 폴더 생성(Hugo 관련 파일 저장) Hugo 깃허브 저장소에서 최신 릴리즈 압축파일 다운로드 C:/Hugo/bin에 압축 해제 환경변수에 C:/Hugo/bin추가 윈도우 10: 여기를 참고 윈도우키 - “환경” 검색 - “계정의 환경 변수 편집” - 유저 변수에서 Path 더블클릭 - 새로만들기 - C:/Hugo/bin입력 - 확인 환경변수를 추가하면 C:/Hugo/bin 외의 경로에서도 C:/Hugo/bin의 hugo.exe 사용 가능(= Hugo 사용 가능) 설치 확인 cmd에서 버전 정보 나오는지 확인 Hugo version 웹사이트 생성 블로그 담을 폴더 생성(\C:\Users\Owner\Dropbox\bloght)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-29 04:17:00 +0900 +0900'>December 29, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기" href="http://localhost:1313/posts/20191229_blogging_with_hugo/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">우리 몸이 세계라면
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 우리 몸이 세계라면 – 과학이 삐뚤어질 수 있는 방법 Intro 우리에게 필요한 지식을 만드는 일에 관하여
+뒷표지에서 이 문구를 본 후 나는 이 책을 집어들어 서점을 나왔다. 이전에 김대식 교수의 “어떻게 질문할 것인가”를 읽을 때 기대했던 것처럼 혹시 “질문하는 방법”에 대한 내용이 담겨있을까 생각했다. 비록 이런 내용은 없었지만, 올해 읽은 최고의 책으로 꼽겠다.
+김승섭 교수가 전공하는 역학(Epidemiology)은 인구집단에서 질병의 원인을 탐구하는 학문(p. 252)이다. 이 책 전반에는 1) 사회의 부조리함이 어떻게 특정 인구집단의 질병 발생에 영향을 미치는지에 대한 이야기가 담겨있다. 이 이야기의 중심에는 지식 생산의 주요 수단인 과학이 있다. 김승섭 교수가 소개하는 사례 중 다수는 이해 관계, 사회적 분위기 등이 과학하기와 콜라보하여 잘못된 방식으로 연구가 진행된 것이 원인이었다. 김승섭 교수는 과학이 어떻게 잘못 진행되었는지를 밝히면서 2) 올바르게 과학하는 방법에 대한 이야기를 함께 들려준다. 첫 번째 이야기는 PD수첩 등 사회 고발 프로그램을 보는 듯 흥미로우면서도 공감할 수 있는 부분이 많다. 특히 이 부조리가 다른 나라, 다른 인종뿐만 아니라 우리나라에서도 진행되고 있음을 보여주기에 스스로를 돌아보게 한다. 두 번째 이야기는 과학을 잘못된 길로 인도할 수 있는 요소가 무엇인지를 알려준다는 점에서 나처럼 과학을 하는 사람은 물론 과학 지식에 노출되고 소비하는 모든 사람들에게 유익할 내용이다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-22 15:33:05 +0900 +0900'>December 22, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to 우리 몸이 세계라면" href="http://localhost:1313/posts/20191222_%EC%9A%B0%EB%A6%AC%EB%AA%B8%EC%9D%B4%EC%84%B8%EA%B3%84%EB%9D%BC%EB%A9%B4/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Fisher (2010). JULES-ED. NPH
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>18 December, 2019 (Fisher, NPH, JULES-ED) Fisher, R., McDowell, N., Purves, D., Moorcroft, P., Sitch, S., Cox, P., Huntingford, C., Meir, P. and Ian Woodward, F. (2010), Assessing uncertainties in a second‐generation dynamic vegetation model caused by ecological scale limitations. New Phytologist, 187: 666-681. doi:10.1111/j.1469-8137.2010.03340.x
+Question:
+How demographic processes of two-dimensional spatial scales influence simulations of community structure, and responses of ecosystems to climate change? Context:
+Recently second-generation DGVMs have become advanced in their capability to simulate short-term surface gas and energy exchanges and atmospheric CO2. However, the 2nd gen. DGVMs are still lack in representation of demographic processes because of insufficient observations. This poor representations of competition and coexistence may bring uncertainties in simulation of the community structure and responses of ecosystem to climate change. Answer
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-18 20:00:00 +0900 +0900'>December 18, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Fisher (2010). JULES-ED. NPH" href="http://localhost:1313/posts/paper_review/p014_2010_fisher_nph_jules-ed/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to develop a research question
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>under conceiving
+Useful Links Asking good questions: A well-structured and -explained essay Developing-research-questions: Contains real examples How can I choose a good topic for my research paper?: Contains a video How to write a research question: Contains visual contents and is easy to read Developing strong research questions: Contains summary tables </p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-17 21:28:25 +0900 +0900'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to How to develop a research question" href="http://localhost:1313/posts/20191219_how_to_develop_a_research_question/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Smith-Martin (2019). Liana. NPH
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>17 December, 2019 (Smith-Martin, NPH, Liana) Smith‐Martin, C.M., Xu, X., Medvigy, D., Schnitzer, S.A. and Powers, J.S. (2019), Allometric scaling laws linking biomass and rooting depth vary across ontogeny and functional groups in tropical dry forest lianas and trees. New Phytologist. doi:10.1111/nph.16275
+Question:
+Do mature lianas invest less biomass in stems compared to trees? The authors tried to compare the investment strategy between lianas and trees. Do juveniles follow the same allocation patterns as mature individuals? Is either leaf phenology of life form a predictor of rooting depth? Context:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-17 20:00:00 +0900 +0900'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Smith-Martin (2019). Liana. NPH" href="http://localhost:1313/posts/paper_review/p013_2019_smith-martin_nph_liana/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to outline a paper
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Which information do I have to mine from a paper for developing a research question? Every day, I receive email alerts from journals or paper-searching websites. I skim through the title list in the alerts and select ones including keywords that I am interested in. In turn, I read the abstract to grasp what the paper is about and add it to my read-later folder if I feel it is interesting. After cycling the routine a lot, several problems have occurred:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-17 19:46:25 +0900 +0900'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to How to outline a paper" href="http://localhost:1313/posts/20191217_how_to_outline_a_paper/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dropbox - RStudio- Github 연동 : 더 편해졌을까?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2019. 12. 08. 하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 옮기는 방식은 다음과 같다 :
+Git의 블로그 저장소에 .md 파일 생성 옮기려는 워드 파일을 열어서 내용 복붙 오타, 문장 수정 &amp; Preview를 보며 문장, 문단 배치 수정 표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가 Medium Story로 Publish 조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-08 16:42:00 +0900 +0900'>December 8, 2019</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Dropbox - RStudio- Github 연동 : 더 편해졌을까?" href="http://localhost:1313/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">블로그 시작과 플랫폼 선택
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>블로그를 시작한다. 서평, 논문 리뷰, 생각 등 남겨두고 싶은 것들을 그냥 흘려보내지 않기 위함이 첫째다.
+그리고 기록을 함으로써 생각을 구체적으로 정리할 수 있을 것 같고,
+글쓰는 취미를 가지는 것은 직업에도 도움이 될 것 같다.
+이렇게 남겨둔 글 하나하나가 모여서 하나의 완전한 창작물이 될 수 있다면 좋겠다.
+플랫폼 - 고려사항 어떤 플랫폼으로 블로그를 할지 고민을 (or 고민만) 오래 했다.
+염두에 둔 후보는
+R의 Blogdown 라이브러리 Medium Gitgub Pages or Netlify &#43; Hugo 이렇게 세 가지다. 플랫폼 결정에 고려한 사항은 네 가지다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-08 15:49:00 +0900 +0900'>December 8, 2019</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to 블로그 시작과 플랫폼 선택" href="http://localhost:1313/posts/20191208_blogstart_platform/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Bar (2019). Fire. NPH
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>7 December, 2019 (Bar, NPH, Fire) Bär, A., Michaletz, S.T. and Mayr, S. (2019), Fire effects on tree physiology. New Phytologist, 223: 1728-1741. doi:10.1111/nph.15871
+My research group at NIFOS was invited to write a research paper for a special issue of a journal. We decided to write a paper about the lagged browning after the forest fire at April 2019. I wrote about how forest fire affects an individual tree’s physiology, referring majorly to this paper.
+This paper, as other Tansley reviews often do, includes excellent visual summaries like Figure 3 which compiles the physiological responses of plant organs to fire injuries. In short, dreadful heat and drastic drying are the major causes of burning up NSCs, malfunctioning of the hydraulic system, and increasing susceptibility to insect attacks. After reading this, I felt that the mechanism behind the fire-caused tree dieback is the same as the one behind general tree dieback. Fire is just one of the triggers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-07 20:00:00 +0900 +0900'>December 7, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Bar (2019). Fire. NPH" href="http://localhost:1313/posts/paper_review/p012_2019_bar_nph_fire/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">과학자의 글쓰기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Intro 이 책은 좋은 국내 과학 저서를 여러 권 소개해준다는 점에서 가치 있다. 또한 글 쓸 때 고려해볼만한 기본적이면서도 유용한 지침들도 함께 담겨있다.
+그냥 지나칠 수 없는 제목이었다. 작년에 읽었던 “기자의 글쓰기”가 생각나기도 했다. 곧바로 구매한 후 내 독서 대기 목록에 올려뒀다.
+나는 보통 글쓰기 책을 읽을 때는 문장을 쓰는 방법, 문단을 구성하는 방법 등 글쓰는 것 자체에 도움이 되는 방법을 얻고자 하는 마음이 있다. 하지만 이 책에 그런 팁은 담겨있지 않다. 대신, 본격적으로 글 쓰기에 돌입하기 전에 발생할 수 있는 여러 질문에 대답해주고 있다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-11-30 19:01:40 +0900 +0900'>November 30, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to 과학자의 글쓰기" href="http://localhost:1313/posts/20191130_%EA%B3%BC%ED%95%99%EC%9E%90%EC%9D%98%EA%B8%80%EC%93%B0%EA%B8%B0/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/37/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/39/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

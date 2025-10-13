@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>2020 | My New Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/2020/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/2020/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/2020/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    2020
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo 블로그에 Google analytics 추가하기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>서론 블로그는 사막에서 혼자 지낸다는 마음가짐으로 하는 것이지만, 그래도 누가누가 내 블로그에 오는지는 알고 싶은 법이다. 이를 위해 Google Analytics (GA)를 설치한다. 이 글의 내용을 따라했다. 웹사이트에 GA를 추가하려면 두 가지가 필요하다:
+Google Analytics 계정 Google Analytics를 추가할 Hugo 웹사이트 Google Analytics 계정 및 추적 ID 생성 여기에서 Google Analytics 계정을 생성한다.
+GA는 웹사이트나 어플리케이션 등에 대한 데이터를 수집해주는 도구이다. 웹사이트의 경우 수집하는 데이터 종류는 방문한 사람 수, 방문한 사람의 유형, 유입 경로, 취한 행동(회원가입, 다운로드 등)에 따른 방문자 유형 등이다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-01-03 20:33:22 +0900 +0900'>January 3, 2020</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo 블로그에 Google analytics 추가하기" href="http://localhost:1313/posts/20200103_add_google_analytics/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo 블로그 댓글 기능 추가: utterances
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>서론 댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.
+이 글에는 utterrances 소개는 관두고… 설치 관련 내용만 적었다.
+utterances 설치 1. utterances 사이트 접속 여기로 이동해서 configuration 부분을 따라한다.
+2. Public 저장소 생성 나는 bloght-comments 라고 만들었다.
+3. Blog Post ↔️ Issue Mapping, Theme 선택 Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),
+Theme은 내 블로그가 밝으니 Github Light를 선택했다.
+4. Enable Utterances Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-01-01 15:35:00 +0900 +0900'>January 1, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo 블로그 댓글 기능 추가: utterances" href="http://localhost:1313/posts/20200101_add_utterances/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo 테마 커스터마이징 - 게시 날짜 및 시간
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>목차 문의 사항 1. Dark/Light 버튼 위치 변경 2. 포스팅 날짜 및 시간 정보 추가 3. .md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제 4. 시간 내림차순 정렬 후기 블로그 테마로 Cupper를 선택했다. 기본 세팅에서 네 가지 고치고 싶은 사항이 있어 Hugo Forum에 문의했다.
+문의 사항 Four issues about the cupper theme (dark button, posting time, and an error) I am building a static website using the Cupper theme (https://github.com/zwbetz-gh/cupper-hugo-theme). I have four issues:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-01-01 13:19:00 +0900 +0900'>January 1, 2020</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo 테마 커스터마이징 - 게시 날짜 및 시간" href="http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to develop a research question
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>under conceiving
+Useful Links Asking good questions: A well-structured and -explained essay Developing-research-questions: Contains real examples How can I choose a good topic for my research paper?: Contains a video How to write a research question: Contains visual contents and is easy to read Developing strong research questions: Contains summary tables </p>
+  </div>
+  <footer class="entry-footer"><span title='2019-12-17 21:28:25 +0900 +0900'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to How to develop a research question" href="http://localhost:1313/posts/20191219_how_to_develop_a_research_question/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ISLR Note
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2. Statistical Learning 2.1. What Is Statistical Learning? Y = f(X) &#43; e
+여기서 함수 f는 X가 담고 있는 Y에 대한 systematic information이다.
+e는 f가 표현하지 못하는 random error term이다.
+e는 X에 독립이고 평균값은 0이다.
+Statistical learning은 위의 함수 f를 찾는 다양한 방법을 모두 일컫는다.
+2.1.1. Why Estimate f? prediction
+측정값 X로 Y 값을 예측한다(Y = f(X)). f는 black box로 남아도 상관 없다(Y만 잘 맞추면 된다). 이 때 발생하는 에러는 두 가지: reducible, irreducible. reducible: f를 더 잘 예측하면 줄일 수 있다. irreducible: 측정 항목에서 어떤 중요한 변수를 놓치고 있거나,
+혹은 측정 불가능한 요소(예: 약물 투여 때 환자의 심리)가 개입하기 때문에 발생한다. inference
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-04-05 16:00:00 +0900 +0900'>April 5, 2018</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to ISLR Note" href="http://localhost:1313/posts/20200516_islr/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/tags/2020/page/11/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>프로그래머를 위한 선형대수 | My New Hugo Site</title>
+<meta name="keywords" content="Book Review, 2019">
+<meta name="description" content="
+선형대수 학점을 높이고 싶거나 선형대수에 관한 직관을 키우고 싶다면 꼭 읽어야 할 책이다.
+논문을 읽다 보면 가끔 어려운 수학 표현이 등장하는데, 이를 이해하지 못하는 경우가 있다. 이해하지 못하면 써먹을 수도 없으므로 내가 손을 뻗을 수 있는 참고 문헌의 범위가 수학 때문에 줄어들게 되는 것이다. 그리고 통계 관련 자료도 조금 깊이 있는 설명을 원하면 어려운 수학이 꼭 등장하고 비슷한 어려움을 겪는다. 이런 일 때문에 수학을 공부할 필요성을 느낀다.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20190519_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%84%A0%EB%8C%80/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20190519_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%84%A0%EB%8C%80/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      프로그래머를 위한 선형대수
+    </h1>
+    <div class="post-meta"><span title='2019-05-19 21:27:18 +0900 +0900'>May 19, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><!-- raw HTML omitted -->
+<p>선형대수 학점을 높이고 싶거나 선형대수에 관한 직관을 키우고 싶다면 꼭 읽어야 할 책이다.</p>
+<p>논문을 읽다 보면 가끔 어려운 수학 표현이 등장하는데, 이를 이해하지 못하는 경우가 있다. 이해하지 못하면 써먹을 수도 없으므로 내가 손을 뻗을 수 있는 참고 문헌의 범위가 수학 때문에 줄어들게 되는 것이다. 그리고 통계 관련 자료도 조금 깊이 있는 설명을 원하면 어려운 수학이 꼭 등장하고 비슷한 어려움을 겪는다. 이런 일 때문에 수학을 공부할 필요성을 느낀다.</p>
+<p>먼저 잡힌 건 선형대수학이다. 내가 선형대수학을 공부할 때 힘들었던 건 교재의 설명을 뚜렷하게 상상할 수 없었다는 것이다. 다른 도움이 될 만한 자료를 찾다가 “coding the matrix”라는 책을 발견했다. 시각화를 해주기 때문에 이해가 수월할 것 같으면서도 파이썬 공부도 겸할 수 있을 것 같았다. 하지만 막상 책을 보니 쓸데없이 크고 묵직했다. 속지 또한 출판사에서 하나도 다듬지 않은 미완의 강의 자료 같았다. 사서 볼 의욕이 뚝 떨어졌다.</p>
+<p>그 후 발견한 책이 이 책이다. 계산 방법, 정의 같은 게 아닌 진짜 의미를 알려주겠다는 표지 광고도 마음에 들었고 책 디자인도 괜찮았다. 그리고 잠깐 살펴보니 Ruby로 만든 애니메이션도 제공해준다. 보기로 결정했다.</p>
+<p>공부할 시간까지는 없었기에 주말에 지하철에서 꺼내 읽었다. 책 광고처럼 증명을 자세히 하지 않고 의미 위주로 설명해주는 방식으로 내가 필요한 부분을 잘 채워줬다. 슥 한 번 읽었을 뿐인데도 선형대수가 무엇을 하는 과목인지 그리고 각 용어가 왜 존재했던 것인지도 어렴풋이나마 정리가 되는 것 같다.</p>
+<p>책 구성은 단순하다. 이론 관련 세 챕터, 코딩 관련 두 챕터, 그리고 부록이다. 이 중 이론 관련 세 챕터만 읽었다. 첫 번째는 이야기를 풀기 위한 배경지식을 입혀주는 단계로 보인다. 선형공간이 무엇인지, 행렬을 곱하는 게 무엇을 뜻하는지 등이다. 행렬을 곱하는 것이 무엇인지 잘 보여주는 단어는 mapping(사상)이다. 한 선형공간에서 다른 선형공간으로 벡터를 옮기는 것이다. 이 두 선형공간은 좌표 표현 방식이 서로 달라서 같은 벡터라도 mapping 후에는 방향과 크기가 바뀌게 된다. 어떤 행렬은 방향 변환 없이 벡터를 잡아 늘리기만 하고, 어떤 행렬은 벡터를 한쪽 축으로 찌그러뜨린다. 이런 표현 자체도 이 책에서 mapping을 시각적으로 보여주기 때문에 가능하다. 또한 찌그러뜨리는 행렬은 역행렬을 구할 수 없다는 것도 같은 찌그러진 벡터를 만드는… mapping 이전의 벡터가 무수히 많을 수 있다는 점에서 직관적으로 이해할 수 있었다.</p>
+<p>두 번째는 배경 지식이면서 동시에 그 자체로 하나의 결과일 수 있을 것 같다. 큰 주제는 역행렬이다. Mapping 전의 벡터와 mapping하는 행렬을 보고 벡터가 어떻게 바뀔지 맞추는 게 순방향의 문제라면, 역행렬은 역방향 문제와 관련된다. 즉, mapping된 벡터 이전의 벡터를 구하는 문제다. 역행렬이 존재하는지 판단하는 수단으로 kernel, image, rank가 이 챕터에 들어있다.</p>
+<p>마지막 챕터의 주제는 연립방정식이다. 선형대수의 목적 중 하나가 연립방정식을 푸는 것이라 한다. 연립방정식으로 표현한 시스템을 행렬 표현으로 바꾼다. 현 상태에서 행렬을 한 번 곱하면 t=t+1의 상태가 얻어지는 것이다. 여담으로 여기서 선형대수는 비연속적 시간(이산시간)의 흐름을 다룬다면, 미분방정식은 시간이 연속적으로 흐르는 상황을 고려한다는 점으로 두 과목의 관계를 소개한다. 보통은 앞으로 이 시스템이 어떤 상태로 치닫을 것인지 궁금해한다고 한다. 시스템이 폭주할 수 있고 계속 안정적일 수도 있다. 이 시스템을 표현하는 행렬이 대각행렬이면 이를 쉽게 판단할 수 있다. 대각행렬의 거듭제곱은 대각성분의 제곱으로 쉽게 구할 수 있기 때문이다. 여기서 대각화가 등장한다. 대각화는 시스템이 폭주할 것인지 판단하기 쉽도록 시스템의 표현 방식을 바꾸는 작업이다. 챕터 1에서 행렬을 곱하는 것은 다른 선형공간으로 mapping하는 것이라 했는데, 시스템의 행렬을 잘 바꾸면(=대각행렬로 바꾸면) mapping이 벡터를 방향 변화 없이 잡아 늘리거나 줄이는 변화만 일으키게 된다. 대각화와 관련해 고유벡터와 고윳값이 등장한다. 시스템의 행렬을 대각행렬로 잘 바꾸기 위해 필요한 요소들이다. 대각화가 가능할 것인지 판단하는 데 쓰이고, 대각화에 성공한 시스템이 폭주할지 아닐지 판단하는 기준이 되기도 한다(고윳값의 절댓값). 그리고 이 시스템 변화 방향을 정량적으로 보여주기도 한다(고윳값 만큼 잡아 늘리거나 줄인다). 만약 대각화가 불가능하다면? 이때 요르단 표준형이 등장한다. 요르단 표준형은 대각화했을 때만큼 간단하게 시스템을 파악할 수는 없지만, 대신 모든 시스템에 사용 가능하다는 장점이 있다. 즉 모든 시스템의 행렬은 적어도 요르단 표준형으로는 변환이 가능하고 일부 축복받은 경우 대각화가 가능한 것이다. 학부 때 선형대수 교수님이 교재 새 에디션에서 요르단 표준형이 없어졌음에도 왜 굳이 따로 인쇄해서 나눠주고 공부를 시켰는지, 왜 요르단 표준형은 교재에 꼭 있어야 한다고 하셨는지 그제서야 알 것 같았다.</p>
+<p>두서 없지만 대략 이런 흐름이었다. 다시 정리하면 행렬을 곱하는 건 mapping. 역행렬이 존재하는가에 kernel, image, rank 사용. 어떤 연립방정식 시스템을 행렬로 표현. 이 시스템의 폭주 여부를 대각화로 판단. 대각화 가능 여부는 고윳값, 고유벡터로 판단. 대각화가 불가능하면 요르단 표준형 사용. 이 정도가 큰 맥락이고 나머지는 각 개념 관련 배경지식, 계산법, 정리&amp;증명이다.</p>
+<p>그냥 지하철에서 읽기만 했는데 이렇게 정리가 가능해졌다. 진작에 읽었다면 내 선형대수 성적이 좀 높았을텐데…라지만 그땐 이 책이 없었구나. 어쩔 수 없었나 보다.</p>
+<p>이 책 말고도 칸아카데미의 동영상 강의도 좋은 자료다. 이 두 자료와 교과서 한 권을 같이 공부하면 선형대수 공부하는 데 큰 어려움 없겠다(제발).</p>
+<table>
+  <thead>
+      <tr>
+          <th>제목</th>
+          <th>저자</th>
+          <th>출판사</th>
+          <th>판</th>
+          <th>출간</th>
+          <th>완독</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>프로그래머를 위한 선형대수</td>
+          <td>히라오카 카즈유키</td>
+          <td>길벗</td>
+          <td>1</td>
+          <td>2017. 03.</td>
+          <td>2019. 05. 11.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/book-review/">Book Review</a></li>
+      <li><a href="http://localhost:1313/tags/2019/">2019</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

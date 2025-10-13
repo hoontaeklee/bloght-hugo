@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Paper Review: Humphrey (2021). smcAtmFeedback_NeeIav. Nature. | My New Hugo Site</title>
+<meta name="keywords" content="2021, Research, Paper review">
+<meta name="description" content="07 April, 2021 (Humphrey, Nature, smcAtmFeedback_NeeIav)
+Humphrey, V., Berg, A., Ciais, P. et al. Soil moisture–atmosphere feedback dominates land carbon uptake variability. Nature 592, 65–69 (2021). https://doi.org/10.1038/s41586-021-03325-5
+Message: Soil moisture–atmosphere feedback dominates land carbon uptake variability
+The same as the title.
+Novelty: putting the feedback concept in the discussion
+Many studies have reported various factors such as SMC, Tair, and VPD, as the driving the global NEE IAV. This study reconciles these conflicting results by introducing a new common label to the candidates. SMC labeled as the direct effect while Tair and VPD had the indirect effect, as they are the spread of the SMC effect via land-atmosphere coupling (i.e. SMC &ndash;&gt; LE &ndash;&gt; Tair, Rh, VPD). This labeling related the factors, which shifted the problem from finding the dominant driver to locating relevant drivers properly, which functioned as the reconciliation.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/paper_review/p037_2021_humphrey_nature_smcatmfeedback_landneeiav/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/paper_review/p037_2021_humphrey_nature_smcatmfeedback_landneeiav/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Paper Review: Humphrey (2021). smcAtmFeedback_NeeIav. Nature.
+    </h1>
+    <div class="post-meta"><span title='2021-04-07 17:21:12 +0100 +0100'>April 7, 2021</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="07-april-2021-humphrey-nature-smcatmfeedback_neeiav">07 April, 2021 (Humphrey, Nature, smcAtmFeedback_NeeIav)<a hidden class="anchor" aria-hidden="true" href="#07-april-2021-humphrey-nature-smcatmfeedback_neeiav">#</a></h2>
+<p>Humphrey, V., Berg, A., Ciais, P. <em>et al.</em> Soil moisture–atmosphere feedback dominates land carbon uptake variability. <em>Nature</em> 592, 65–69 (2021). <a href="https://doi.org/10.1038/s41586-021-03325-5">https://doi.org/10.1038/s41586-021-03325-5</a></p>
+<h2 id="message-soil-moistureatmosphere-feedback-dominates-land-carbon-uptake-variability">Message: Soil moisture–atmosphere feedback dominates land carbon uptake variability<a hidden class="anchor" aria-hidden="true" href="#message-soil-moistureatmosphere-feedback-dominates-land-carbon-uptake-variability">#</a></h2>
+<p>The same as the title.</p>
+<h2 id="novelty-putting-the-feedback-concept-in-the-discussion">Novelty: putting the feedback concept in the discussion<a hidden class="anchor" aria-hidden="true" href="#novelty-putting-the-feedback-concept-in-the-discussion">#</a></h2>
+<p>Many studies have reported various factors such as SMC, Tair, and VPD, as the driving the global NEE IAV. This study reconciles these conflicting results by introducing a new common label to the candidates. SMC labeled as the <strong>direct</strong> effect while Tair and VPD had <strong>the indirect</strong> effect, as they are the spread of the SMC effect via <strong>land-atmosphere coupling</strong> (i.e. SMC &ndash;&gt; LE &ndash;&gt; Tair, Rh, VPD). <strong>This labeling related the factors, which shifted the problem from finding the dominant driver to locating relevant drivers properly, which functioned as the reconciliation.</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h2 id="some-questions">Some questions<a hidden class="anchor" aria-hidden="true" href="#some-questions">#</a></h2>
+<ul>
+<li>
+<p>Generality</p>
+<ul>
+<li>Does the SMC-atm feedback drive <strong>the global TWS IAV (and TWS-NEE IAV)</strong>, too? If not, how much contribution from the feedback and what another dominator(s)?
+<ul>
+<li>apply the same analysis process to TWS (or TWS-NEE correlation) IAV data?</li>
+</ul>
+</li>
+<li>Can the same conclusion be drawn <strong>at the regional scale</strong>?
+<ul>
+<li>For example, the direct effect may be stronger than the indirect effect in snow regions (according to the figure 2b, c)</li>
+</ul>
+</li>
+<li>How does this conclusion change <strong>in the future</strong>? Does it remain as the dominator, too, or another dominator?</li>
+<li>Can <strong>ML (or Hybrid) models</strong> reproduce the same result?</li>
+</ul>
+</li>
+<li>
+<p><strong>The closure of a negative land-atmosphere feedback??</strong></p>
+<ul>
+<li>SMC dec &ndash;&gt; LE dec &ndash;&gt; Tair, Rh, VPD inc (&ndash;&gt; Photosynthesis dec) &ndash;&gt; NEE dec &ndash;&gt; TWS inc &ndash;&gt; SMC inc (?)</li>
+<li>Does the TWS  increase as NEE decreases? (expected, yes, as they are negatively correlated).</li>
+<li><strong>Does the increased TWS result in the increase in SMC?</strong> (we don&rsquo;t know how the TWS will be partitioned)</li>
+<li><strong>How can we detect</strong> this closure? (maybe, using historical time series?)</li>
+<li><strong>Does this feedback affect the NEE (or TWS) IAV?</strong> If yes, how and how much?</li>
+<li>Is this related to the <strong>tipping point of the Earth system</strong>? (i.e. one feedback = one tipping, too strong feedback = never tipping again)</li>
+</ul>
+</li>
+</ul>
+<h2 id="some-phrases">Some phrases<a hidden class="anchor" aria-hidden="true" href="#some-phrases">#</a></h2>
+<blockquote>
+<p>ET is the most efficient surface cooling flux</p></blockquote>
+<blockquote>
+<p>Improving ESMs &hellip; is essential for building confidence in projections of the long-term response of the carbon cycle to a warming and changing climate. &hellip; it remains unclear whether temperature or soil moisture is the dominant driver of the inter-annual variability (IAV) in land carbon uptake at the global scale</p></blockquote>
+<blockquote>
+<p>&hellip; variability in soil moisture drives 90 per cent of the inter-annual variability in global land carbon uptake, mainly through its impact on photosynthesis. We find that most of this ecosystem response occurs <strong>indirectly as soil moisture–atmosphere feedback</strong>.</p></blockquote>
+<blockquote>
+<p>&hellip; NBP variability tends to be larger where LAC is stronger. These known <strong>hotspots of LAC</strong> match well with earlier studies that suggested that <strong>semi-arid regions dominate global NBP IAV</strong>&hellip;</p></blockquote>
+<ul>
+<li>Other components in the feedback circle: ENSO and SST
+<ul>
+<li><strong>ENSO &amp; SST</strong> &ndash;&gt; Tair and PPT &ndash;&gt; SMC &ndash;&gt; LE &ndash;&gt; Tair, Rh, VPD &ndash;&gt; Photosynthesis &ndash;&gt; NEE</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>The <strong>El Niño Southern Oscillation and SST</strong> in general may be the confounding driver of both tropicalmean temperature and the precipitation patterns that cause the soil moisture anomalies leading to NBP variability.</p></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2021/">2021</a></li>
+      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
+      <li><a href="http://localhost:1313/tags/paper-review/">Paper Review</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

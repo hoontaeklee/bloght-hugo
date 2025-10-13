@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>In Jena: Week 198 (EURO2024@라이프치히) | My New Hugo Site</title>
+<meta name="keywords" content="2024, Daily Life, Jena">
+<meta name="description" content="이번 주는&hellip;
+
+developing tws_nee_in_model
+EURO2024 FRAvs.NED@Leipzig
+
+&hellip; 혹시나 TWS NEE IAV correlation이 나아질 수 있으니 모델을 다시 한 번 돌려봤다.
+화요일부터 몸살이 났다. 평소처럼 열도 났고, 평소보다 며칠 더 지속됐다. 보통 첫날 열나고 다다음날 아침이면 떨어지는데, 이번에는 잔열이 토요일까지 지속됐다. 첫 날만 37.5도였고, 토요일까지는 37도 정도. 그래도 점점 열 나는 빈도가 줄었다.
+2024. 06. 21. 금요일
+
+  
+      
+          
+          
+          
+      
+  
+  
+      
+          
+          
+          
+      
+      
+          
+          
+          
+      
+  
+
+유로 2024 프랑스vs.네덜란드. 라이프치히에서 춘휘, 첸웨이랑 직관했다. 두어 시간 일찍 가서 구경을 좀 하고 저녁 첸웨이랑 먹었다. 오렌지색, 파란색 옷을 입은 사람들이 많이 보였다. 저녁은 지나가다 발견한 한국 식당에서 먹었다. 운영은 베트남 사람들이 하는 듯했다. 치킨, 해물파전, 비빔밥을 시켜봤다 치킨은 그럭저럭 먹을만했지만 재방문 의사는 없다.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20240623_jena_wk198/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20240623_jena_wk198/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      In Jena: Week 198 (EURO2024@라이프치히)
+    </h1>
+    <div class="post-meta"><span title='2024-06-23 19:48:14 +0200 +0200'>June 23, 2024</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="이번-주는">이번 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#이번-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model</li>
+<li>EURO2024 FRAvs.NED@Leipzig</li>
+</ul>
+<p>&hellip; 혹시나 TWS NEE IAV correlation이 나아질 수 있으니 모델을 다시 한 번 돌려봤다.</p>
+<p>화요일부터 몸살이 났다. 평소처럼 열도 났고, 평소보다 며칠 더 지속됐다. 보통 첫날 열나고 다다음날 아침이면 떨어지는데, 이번에는 잔열이 토요일까지 지속됐다. 첫 날만 37.5도였고, 토요일까지는 37도 정도. 그래도 점점 열 나는 빈도가 줄었다.</p>
+<h2 id="2024-06-21-금요일">2024. 06. 21. 금요일<a hidden class="anchor" aria-hidden="true" href="#2024-06-21-금요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+  </tbody>
+</table>
+<p>유로 2024 프랑스vs.네덜란드. 라이프치히에서 춘휘, 첸웨이랑 직관했다. 두어 시간 일찍 가서 구경을 좀 하고 저녁 첸웨이랑 먹었다. 오렌지색, 파란색 옷을 입은 사람들이 많이 보였다. 저녁은 지나가다 발견한 한국 식당에서 먹었다. 운영은 베트남 사람들이 하는 듯했다. 치킨, 해물파전, 비빔밥을 시켜봤다 치킨은 그럭저럭 먹을만했지만 재방문 의사는 없다.</p>
+<p>경기는 내용은 참담했다. 이빨빠진 사자들의 대결. 프랑스는 전 경기에 당한 코뼈 골절로 결장한 음바페 공백이 느껴졌다. 제대로 된 마무리가 안 됐다. 두 번의 빅찬스들을 모두 놓쳤다. 뎀벨레는 평소처럼 돌파 잘 해놓고 슛이나 크로스는 삽질했다. 네덜란드는 간간히 매섭게 반격을 했다. 양팀 유일하게 멀쩡한 공격수 각포가 위협적인 슈팅을 몇 번 만들었으나, 팀이 밀리는 와중이라 횟수가 부족했다. 경기 시작하자 마자 가져간 회심의 역습은 아쉽게 무산됐고, 유일하게 만든 골은 오프사이드로 취소됐다. 시간이 갈 수록 양팀의 패스미스가 많아져서 서로 역습 찬스를 제공하는 꼴이 됐다. 그렇게 0:0으로 마무리 됐다.</p>
+<p>경기 내용은 별로였지만, 응원 열기가 뜨거워서 은근한 재미는 있었다. 네덜란드 팬이 프랑스 팬보다 두 배 이상은 많아 보였다. 덕분에 네덜란드 홈 경기 느낌. 오프사이드로 취소된 골이 나왔을 때는 여기저기 컵+맥주 방울이 날아다녔다. 젠틀하게 생겼지만 결국은 술주정뱅이들이다.</p>
+<p>버스타고 새벽 한 시에 예나로 돌아왔다.</p>
+<h2 id="그-외">그 외&hellip;<a hidden class="anchor" aria-hidden="true" href="#그-외">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>요즘 아침마다 우리 이불로 기어 올라오는 모찌</li>
+<li>춘휘 사진 필터링</li>
+</ul>
+<h2 id="다음-주는">다음 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#다음-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2024/">2024</a></li>
+      <li><a href="http://localhost:1313/tags/daily-life/">Daily Life</a></li>
+      <li><a href="http://localhost:1313/tags/jena/">Jena</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

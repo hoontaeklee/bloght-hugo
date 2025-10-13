@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>In Jena: Week 207 (보드게임카페-Everdell) | My New Hugo Site</title>
+<meta name="keywords" content="2024, Daily Life, Jena">
+<meta name="description" content="이번 주는&hellip;
+
+developing tws_nee_in_model
+
+
+tried a new opti. that Martin suggested: to calculate costNEEIAV using a global time series calculated from the 904 grid cells; this made a difference in the case of Zavud.
+
+
+the new opti. really made a difference: TWS IAV-NEE IAV correlation improved by 0.1 and, more importantly, the NEE IAV magnitude by SINDBAD became as similar as one by Jena Inversion. Great!
+
+
+met Satiago who is an expert of Amazonian land CO2 cycle. I invited him to the weekly meeting with Sujan and Martin.">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20240825_jena_wk207/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20240825_jena_wk207/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      In Jena: Week 207 (보드게임카페-Everdell)
+    </h1>
+    <div class="post-meta"><span title='2024-08-25 14:52:32 +0200 +0200'>August 25, 2024</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="이번-주는">이번 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#이번-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model
+<ul>
+<li>
+<p>tried a new opti. that Martin suggested: to calculate costNEEIAV using a global time series calculated from the 904 grid cells; this made a difference in the case of Zavud.</p>
+</li>
+<li>
+<p>the new opti. really made a difference: TWS IAV-NEE IAV correlation improved by 0.1 and, more importantly, the NEE IAV magnitude by SINDBAD became as similar as one by Jena Inversion. Great!</p>
+</li>
+<li>
+<p>met Satiago who is an expert of Amazonian land CO<!-- raw HTML omitted -->2<!-- raw HTML omitted --> cycle. I invited him to the weekly meeting with Sujan and Martin.</p>
+</li>
+<li>
+<p>the invitation triggered a nice discussion. I got many points</p>
+</li>
+<li>
+<p><strong>two driving factors of Amazonian NEE</strong> (or photosynthesis): <strong>water</strong> in the first half and <strong>radiation</strong> (and leaf demography) in the second half</p>
+</li>
+<li>
+<p>WTD and NEE resilience (Fan, Gaucho - guess, .. recent paper)</p>
+</li>
+<li>
+<p><strong>another Jeni including ATTO and airborne obs.</strong> Compare with Jeni that I have (esp. in TRANSCOM region 3) -&gt; Santiago</p>
+</li>
+<li>
+<p>another regional mask that details Amazonia -&gt; Santiago</p>
+</li>
+<li>
+<p>Riverine CO<!-- raw HTML omitted -->2<!-- raw HTML omitted --> efflux and NEE IAV?: either from river water or organic matters transported via river channel</p>
+</li>
+<li>
+<p>Different rate of response of GPP and RECO to clim. (e.g.., a dry year, gpp decreased, but reco deceased more, so more sinky)</p>
+</li>
+<li>
+<p><strong>Repeat the comparison of NEE IAV (errors) (in Amazonia) with surface (lateral) water proxies?</strong></p>
+<ul>
+<li>as River CO<!-- raw HTML omitted -->2<!-- raw HTML omitted --> is a significant but missed components</li>
+<li>this is a very different way to go from one below</li>
+</ul>
+</li>
+<li>
+<p><strong>Repeat the linear regression and gridding by Jung et al. (2017)?</strong></p>
+<ul>
+<li>reco vs. gpp to nee</li>
+<li>semi-arid vs. wet tropics</li>
+<li>wSoil vs. temp. vs. radiation</li>
+<li>need to better understand the motivation</li>
+<li>think that I can get code from Martin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>보드게임카페 Everdell</li>
+</ul>
+<h2 id="2024-08-23-금요일">2024. 08. 23. 금요일<a hidden class="anchor" aria-hidden="true" href="#2024-08-23-금요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>조지가 토요일부터 3달 간 휴가를 갈 예정이다. 그 전에 한 번 만나서 보드게임하며 놀기로 했다. 나, 춘휘, 조지, 디 넷이서 보드게임카페에 갔다.</p>
+<p>이번에 새로 해본 게임은 <a href="https://boardgamegeek.com/boardgame/199792/everdell">에버델</a>. 춘휘랑 봐뒀던 게임이다. 동화같은 느낌을 주는 디자인이 마음에 든다. 게임 평도 아주 좋다. 룰은 처음 익히기 조금 복잡했다. 세븐 원더스랑 컨셉은 비슷하다. 각자의 계절 혹은 시대가 지나는 동안 각자의 도시를 지으며 최종 승점을 많이 쌓는 플레이어가 우승한다. 다만, 세븐원더스보다는 각각의 카드 내용이 복잡하다. 그림만 보면 되는 게 아니라, 각자의 효과를 잘 읽어봐야 한다. TCG 게임을 섞어놓은 듯한 세븐 원더스다.</p>
+<p>원래 40~80분 걸린다고 적혀 있었지만, 우리의 첫 판은 거의 4시간이 걸렸다. 결과는 나의 극적인 승리. 조지는 각 카드의 효과를 잘 배합해서 파워풀한 도시를 구상했으나, 내가 서로의 카드패를 바꾸는 효과를 조지에게 적용해서 물거품으로 만들었다. 내 카드패는 0장이었기에 조지는 한 순간에 손에 들고 있던 카드를 다 잃었다. 조지는 나에게 복수했다. 도시에 놓을 수 있는 카드는 총 15장인데, 내 도시에 남은 마지막 자리를 &ldquo;남의 도시에 지어서 승점 -2점을 부여합니다&quot;라는 효과를 가진 카드로 채워 넣었다. 덕분에 내 막바지 승점 쌓기 계획이 물거품되고, 10점을 잃었다. 춘휘랑 디는 조지랑 나보다 시즌이 먼저 종료돼서 우리를 기다리고 있었다. 다 끝내고 승점을 계산해보니, 나랑 춘휘가 60점으로 동점이었지만, 춘휘가 &ldquo;한 도시에 같은 유니크 카드를 두 장 놓을 수 없다&quot;는 룰을 위반한 게 발견돼서 내 승리로 정해졌다. 조지는 도시의 기능은 우리들 중 가장 좋았으나, 기능성 카드들이 많았던 탓에 정작 승점은 많이 얻지 못했다. 첫 판이었지만 아주 재미있게 즐겼다.</p>
+<p>에버델 첫 판을 끝낸 후, 모인 기념으로 폴라로이드 사진을 찍었다. 조지만 밝게 나오고, 나는 특히 어둡게 나왔다.</p>
+<p>조지는 약속했던 저녁 8시는 이미 지났기에 더 놀다 가려고 마음을 먹었다. 우리 모두 새로운 게임을 배우기엔 지쳤기에 나랑 춘휘가 알고 있는 스플렌더를 같이 했다. 룰이 아주 쉽고 게임도 20~30분 정도로 빠르게 끝난다. 총 세 판을 했고, 나, 조지, 디가 한 번씩 이겼다. 첫 판은 내가 운 좋게 이겼다. 두 판째부터는 조지랑 디도 룰에 익숙해져서 견제성 플레이를 더 많이 했다. 서로 무얼 원하고 언제쯤 목표 승점을 쌓을 수 있을지 계산이 더 이르게 됐다. 마지막 판, 나와 조지와 춘휘는 디가 이기는 걸 어떻게든 막아보려 했고, 디가 살 수 있는 게 없도록 거의 봉쇄를 했지만, 새로 뒤집은 카드가 하필 디가 살 수 있는 카드에 승점까지 달려있어서 결국 디가 이기는 걸로 마무리 됐다.</p>
+<p>밤 12시 넘어서 카페를 나왔다. 조지는 자기 휴가 전에 모인 것이기 때문이라면서 계산을 다 했다. 다음에 만나면 우리가 내야지.</p>
+<h2 id="2024-08-24-토요일">2024. 08. 24. 토요일<a hidden class="anchor" aria-hidden="true" href="#2024-08-24-토요일">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>춘휘가 만든 그리스식(?) 시금치치즈파이. 조지네 집에서 애들이 만드는 걸 잘 보고 레시피를 기억해뒀다고 한다. 간단하면서 꽤 맛있다.</p>
+<h2 id="그-외">그 외&hellip;<a hidden class="anchor" aria-hidden="true" href="#그-외">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+          <th><!-- raw HTML omitted --></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+      </tr>
+      <tr>
+          <td><!-- raw HTML omitted --></td>
+          <td><!-- raw HTML omitted --></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>마우스 정확도 테스트. 마우스가 아니라 내 손 영향이 더 큰 테스트지만, 재미삼아 해봤다. 왼쪽부터 순서대로 Razer Pro Click Mini, Logitech M650L, Logitech M720. M720으로 빠른 무빙 중 정확하게 클릭하기가 Razer Pro Click Mini보다는 조금 어려웠다. 물론 셋 모두 내가 연구하면서 쓰기에는 부족함 없다.</li>
+<li>춘휘 기타 연주할 때 옆에 누운 모찌. 춘휘 머리띠를 씌워줘봤다. 바보같은 표정.</li>
+<li>최근 한두달 모찌는 침대 맡에서 잔다. 덕분에 나는 약간 사선으로 누워 자는 중.</li>
+<li>한 식물이 개수대에 싹을 틔웠다. 어디서 온 씨앗일까. 우리가 모찌 장난감으로 가져온 풀때기는 아니다.</li>
+</ul>
+<h2 id="다음-주는">다음 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#다음-주는">#</a></h2>
+<ul>
+<li>developing tws_nee_in_model</li>
+<li>paper review</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2024/">2024</a></li>
+      <li><a href="http://localhost:1313/tags/daily-life/">Daily Life</a></li>
+      <li><a href="http://localhost:1313/tags/jena/">Jena</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

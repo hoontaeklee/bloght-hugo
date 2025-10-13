@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Book Review on My New Hugo Site</title>
+    <link>http://localhost:1313/categories/book-review/</link>
+    <description>Recent content in Book Review on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Mar 2020 19:58:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/book-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>최무영 교수의 물리학 강의</title>
+      <link>http://localhost:1313/posts/20200112_%EB%AC%BC%EB%A6%AC%ED%95%99%EA%B0%95%EC%9D%98/</link>
+      <pubDate>Sun, 12 Jan 2020 11:11:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200112_%EB%AC%BC%EB%A6%AC%ED%95%99%EA%B0%95%EC%9D%98/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image.aladin.co.kr/product/17915/72/cover500/8979661584_1.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;가벼우면서-탄탄한-물리학-입문서&#34;&gt;가벼우면서 탄탄한 물리학 입문서&lt;/h1&gt;
+&lt;p&gt;생태계 모델링을 실제로 공부하기 전에는 숲과 나무에 관한 지식이 주로 필요할 줄 알았지만 착각이었다. 생태계 모델은 자연의 생태계를 프로그램으로 모사한 것이다. 영화 &lt;strong&gt;마션&lt;/strong&gt;에서 주인공이 우주에서 살아남기 위해 가장 먼저 한 일이 기압 조절하기인 것처럼, 자연을 표현하기 위해서는 &lt;strong&gt;프로그래밍&lt;/strong&gt;뿐만 아니라 숲과 나무뿐만 아니라 일사, 바람, 에너지 등 주변 환경에 대한 &lt;strong&gt;물리 지식&lt;/strong&gt; 역시 많이 필요했다. 나는 고등학교 때 물리1을 배웠지만 수능 때도, 대학 와서도 공부하지 않았기 때문에 기억이 희미하다. 이 책이 내 연구를 위한 물리 지식을 채워줄 수는 없겠지만, 적어도 교양서 수준의 배경지식은 채워줄 수 있을 것이다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

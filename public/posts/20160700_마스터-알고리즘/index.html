@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>마스터 알고리즘 | My New Hugo Site</title>
+<meta name="keywords" content="Book Review, 2019">
+<meta name="description" content="
+머신러닝에 대해 알고 싶은 마음이 생겼다.
+내가 이를 어떻게 활용할 수 있을 지와는 별개로, 그저 개괄만이라도 알아두면 좋겠다 싶었다.
+유명한 무료 인터넷 강의도 있고, 누군가 그리 길지 않은 글로 정리한 것도 있겠지만 나는 책을 읽어보기로 했다.
+지하철에서 읽을 책도 정할 필요가 있으니.
+머신러닝을 소개하는 책은 수학 기본서와 같은 느낌을 주는 것이 많았다.
+배경 이론을 설명한 후 박스 하나가 나오는데 그 안에는 Theorem 1. 블라블라~~ 다음 문단에 추가설명&hellip;
+이 책도 결국은 이론을 쭉 설명해주는 책에 불과하지만 특별한 점은 이야기를 풀어놓듯이 설명했다는 것이다.
+이 책에 대한 찬사가 많기는 하지만, 그와 별개로 이해가 잘 안 된다는 의견도 많아서 볼까 말까 고민을 좀 했다.
+하지만 머신러닝 자체가 원래 배경지식이 많이 필요한 난해한 분야이기 때문에
+구입하면서는 이것 한 권 읽는다고 이해는 되지 않겠지만 첫걸음을 떼보자는 생각을 하였다.">
+<meta name="author" content="HoonTaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20160700_%EB%A7%88%EC%8A%A4%ED%84%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20160700_%EB%A7%88%EC%8A%A4%ED%84%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      마스터 알고리즘
+    </h1>
+    <div class="post-meta"><span title='2017-01-28 23:37:00 +0900 +0900'>January 28, 2017</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><img alt="&hellip;" loading="lazy" src="http://image.yes24.com/momo/TopCate1232/MidCate002/123118223.jpg"></p>
+<p>머신러닝에 대해 알고 싶은 마음이 생겼다.<br>
+내가 이를 어떻게 활용할 수 있을 지와는 별개로, 그저 개괄만이라도 알아두면 좋겠다 싶었다.<br>
+유명한 무료 인터넷 강의도 있고, 누군가 그리 길지 않은 글로 정리한 것도 있겠지만 나는 책을 읽어보기로 했다.<br>
+지하철에서 읽을 책도 정할 필요가 있으니.</p>
+<p>머신러닝을 소개하는 책은 수학 기본서와 같은 느낌을 주는 것이 많았다.<br>
+배경 이론을 설명한 후 박스 하나가 나오는데 그 안에는 Theorem 1. 블라블라~~ 다음 문단에 추가설명&hellip;<br>
+이 책도 결국은 이론을 쭉 설명해주는 책에 불과하지만 특별한 점은 이야기를 풀어놓듯이 설명했다는 것이다.<br>
+이 책에 대한 찬사가 많기는 하지만, 그와 별개로 이해가 잘 안 된다는 의견도 많아서 볼까 말까 고민을 좀 했다.<br>
+하지만 머신러닝 자체가 원래 배경지식이 많이 필요한 난해한 분야이기 때문에<br>
+구입하면서는 이것 한 권 읽는다고 이해는 되지 않겠지만 첫걸음을 떼보자는 생각을 하였다.</p>
+<p>이 생각은 무섭도록 잘 맞아떨어졌다.<br>
+분명히 설명을 구절구절 보면 전문용어가 마구 나오는 것도 아니다.<br>
+또한 친숙한 언어로 비유를 들어 이해하기 쉽게&hellip; 쉬울 것 같이 쓰여 있다.<br>
+그런데도 읽다 보면 당최 무슨 말인지는 잘 모르겠다.<br>
+어느새 작가는 &lsquo;이제 설명은 됐다. 한 번 활용 예시를 살펴봅시다.&rsquo; 하고 있는데, 나는 아직도 무념 무상한 상태였다.<br>
+다섯 개의 종족이 각각 어떤 생각을 하고 있는지 대략 살펴본 정도.<br>
+유전알고리즘, 퍼센트론 등 머신러닝과 관련된 용어를 들어보게 된 것. 이 정도다. 딱 내가 목적한 정도이다. 기뻐해야 할까.</p>
+<p>이 책은 머신러닝 알고리즘을 어느 정도 공부 한 사람이 이해를 탄탄하게 하기 위한 목적으로 읽기에 좋다는 생각이 들었다.<br>
+그래야 저자가 쉬운 말로 풀어 놓은 비유가 빛을 볼 것 같았다.<br>
+이런 이유로 쉽게 설명했다는 찬사와 읽어도 잘 이해가 되지 않는다는 의견을 동시에 받았을 것이다.<br>
+그래도 머신러닝이라는 분야가 많은 배경지식을 필요로 하기 때문에<br>
+책 한 권으로 이렇게까지 설명한 것은 분명히 잘 썼다고 할 수 있겠다. (그래도 난 이해 못 하겠다)</p>
+<table>
+  <thead>
+      <tr>
+          <th>제목</th>
+          <th>저자</th>
+          <th>출판사</th>
+          <th>판</th>
+          <th>출간</th>
+          <th>완독</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>마스터 알고리즘</td>
+          <td>페드로 도밍고스</td>
+          <td>비즈니스북스</td>
+          <td>1</td>
+          <td>2016. 07.</td>
+          <td>2016. 07.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/book-review/">Book Review</a></li>
+      <li><a href="http://localhost:1313/tags/2019/">2019</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

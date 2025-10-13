@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>2024 on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/2024/</link>
+    <description>Recent content in 2024 on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Dec 2024 17:28:15 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In Jena: Week 225</title>
+      <link>http://localhost:1313/posts/20241229_jena_wk225/</link>
+      <pubDate>Sun, 29 Dec 2024 17:28:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241229_jena_wk225/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;li&gt;크리스마스&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-12-23-월요일&#34;&gt;2024. 12. 23. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;크리스마스 때 갖고 놀 에버델 확장판, Spirecrest. 전에 춘휘 예나에 왔을 때 보드게임 카페에서 같이 해봤었고, 둘 다 마음에 든 것 같다. 명목상 춘휘 크리스마스 선물이고, 내가 먼저 언박싱해서 해보는 걸로 :)&lt;/p&gt;
+&lt;p&gt;크리스마스 휴가 동안 하루 한 번 정도 플레이했다. 기본판+Mistwood+Spirecrest. 초심자의 운이 자주 있는 듯, 첫 두 판은 내 최고기록을 내리 경신해서 이겼다. 127점. 세 번째 판은 상대방 거미가 운이 좋아서 졌다. Spirecrest를 추가하면 내가 유리할까 거미가 유리할까. 결국 운 싸움인 것 같다. 거미는 가져가는 지도의 점수가 얼마나 큰 지가 중요하고, 나는 계절 제약이 얼마나 귀찮은지+발견 카드가 얼마나 값어치 있는지가 중요. 그 중에서도 내 발견 카드가 얼마나 좋은지, 거미의 특성 카드가 무엇인 지가 가장 큰 요소인 것 같다. Spirecrest 추가하고 좀 더 재밌는 것 같다. 세팅은 더 귀찮아졌지만.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 224</title>
+      <link>http://localhost:1313/posts/20241222_jena_wk224/</link>
+      <pubDate>Sun, 22 Dec 2024 14:30:27 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241222_jena_wk224/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-12-13-금요일&#34;&gt;2024. 12. 13. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;BGI 크리스마스. 마쿠스가 불쇼를 보여준다고 했던 것 같은데, 놓쳐버렸다. 글루와인+독일식 탁구.&lt;/p&gt;
+&lt;h2 id=&#34;그-외&#34;&gt;그 외&amp;hellip;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;돼지목살+무+된장. 쉽고 맛있다.&lt;/li&gt;
+&lt;li&gt;지아신이 쓰던 기계식 키보드를 빌려서 써봤다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;다음-주는&#34;&gt;다음 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;li&gt;크리스마스&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 223 (MDI Day 2024)</title>
+      <link>http://localhost:1313/posts/20241215_jena_wk223/</link>
+      <pubDate>Sun, 15 Dec 2024 14:25:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241215_jena_wk223/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;li&gt;MDI day 2024&lt;/li&gt;
+&lt;li&gt;쓰위안과 운전 연습&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;두 번째 논문 리비전. 가장 큰 문제를 해결했다. 나머지는 수월하겠지.&lt;/p&gt;
+&lt;h2 id=&#34;2024-12-13-금요일&#34;&gt;2024. 12. 13. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;올해의 MDI day. 아침부터 저녁까지 이어지는 미팅 + 크리스마스 마켓에서 저녁+와인 + 펍. 피곤한 일정이기는 하지만, 꽤 재미있었다. 누노가 준비를 많이 해왔다. 감사.&lt;/p&gt;
+&lt;p&gt;누노가 우리 그룹에 대해 발표하는 게 큰 틀이다. 중간중간에 해당 토픽과 관련된 멤버가 발표할 수 있게 순서를 마련해놨다. 발표는 5분으로 짧아서 부담없고, 서로 알아가기도 좋았다. 누노의 발표 전후로는 온라인 실시간 포맷을 이용해 설문 게임을 했다. 발표 전에는 아이스브레이커로 그룹의 현재까지 총 멤버 수 등을 맞추는 간단한 게임을 했고, 발표 후에는 연구와 관련된 질문에 각자 생각해보고 서로 교류하는 시간을 가졌다. 질문이 꽤 좋은 것들이었다. 내가 가진 질문, 가지고 있지만 하고 있지는 않은 질문, 내 연구의 어려운 점과 더 필요한 것, 단기&amp;amp;중기&amp;amp;장기 목표 등.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 222 (춘휘@프라이부르크, 저녁&amp;포커@쓰위안&amp;신, Everdell Mistwood)</title>
+      <link>http://localhost:1313/posts/20241208_jena_wk222/</link>
+      <pubDate>Sun, 08 Dec 2024 15:30:56 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241208_jena_wk222/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;리비전 진행 중. 그림 두 개 더 그리고, 글에 반영했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-12-05-목요일&#34;&gt;2024. 12. 05. 목요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 시내에서 저녁 먹고 보드게임 카페에 갔다. 저녁 먹기 전에 예나 크리스마스 마켓 둘러봤다. 새로운 디자인의 컵이 있긴 했지만, 전에 얻었던 것보다는 별로였다. 저녁은 독일 식당에서 먹었다. 춘휘가 시킨 음식이 신기했다. 차갑게 먹는 음식이라 기름이 굳어 젤리처럼 고기와 야채를 싸고 있었다. 모찌 밥 같이 생겼다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 221 (춘휘@예나)</title>
+      <link>http://localhost:1313/posts/20241201_jena_wk221/</link>
+      <pubDate>Sun, 01 Dec 2024 18:16:40 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241201_jena_wk221/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;두 번째 논문 리비전 기한 연장을 요청했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-11-30-토요일&#34;&gt;2024. 11. 30. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;신, 쓰위안, 밍, 디를 초대해서 같이 저녁 먹었다. 쓰위안은 드디어 독일 운전면허 시험에 합격했다. 굳.&lt;/p&gt;
+&lt;h2 id=&#34;그-외&#34;&gt;그 외&amp;hellip;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;오랜만에 춘휘랑 에버델&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;한-달-동안&#34;&gt;한 달 동안&lt;/h3&gt;
+&lt;p&gt;2024년 11월은&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;developing tws_nee_in_model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;방향이 아직 불분명한 것 같다. 다행히 옵션은 있다.
+&lt;ul&gt;
+&lt;li&gt;attributing NEE IAV to different factors (VPD, Tair, wSoil, SWDN, &amp;hellip;) across spatial scales
+&lt;ul&gt;
+&lt;li&gt;need another GPP formulation that includes a direct Tair effect? Can I use Tair as an attributing factor for GPP and NEE without a GPP formulation with a direct Tair effect on GPP?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;attributing/analyzing NEE_wSoil&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vegpp_eval&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 220</title>
+      <link>http://localhost:1313/posts/20241124_jena_wk220/</link>
+      <pubDate>Sun, 24 Nov 2024 13:00:18 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241124_jena_wk220/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;vegpp_eval revision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;두 번째 논문 리비전을 대략 끝냈어야 했는데, 뭔가 집중이 잘 되지 않았다. 리프레시.&lt;/p&gt;
+&lt;h2 id=&#34;2024-11-20-수요일&#34;&gt;2024. 11. 20. 수요일&lt;/h2&gt;
+&lt;p&gt;오랜만에 MDI 미팅에서 발표를 했다. 내용은 요즘 진행중인 미완성 세 번째 챕터. 뭐 하고 있는지는 전달이 된 것 같다. 누노가 관심을 보이는 것 같아 기분이 좋았다. 날카로운 코멘트도 있었는데, 어떻게 할 지는 아직 잘 모르겠다. 다음 주에 한 번더 보기로 했다.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;슈퍼마켓과 DM에서 배달을 시켜봤다. DM은 DHL이 대행으로 배달해줘서 몇 시에 도착할 지 모르는 게 단점이지만, 주문 최소 금액이 59유로로 슈퍼마켓보다 적고 이를 넘으면 배달비가 무료인 게 장점이다. 슈퍼마켓은 그 반대. 직접 배달해줘서 몇 시에 올지도 알려주는 게 좋지만, 주문 최소 금액이 75유로에다가 이를 넘어도 배달이 가능해질 뿐, 배달비 10유로는 줘야 한다. 추가로 고기나 야채 등은 품질 상 배달이 불가피해질 수 있다. 식료품이기에 어쩔 수 없는 부분. 대신 배달원이 내가 주문한 것 중 무엇이 못 왔는지 같이 체크해주고, 환불도 해준다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 219 (예나로 복귀)</title>
+      <link>http://localhost:1313/posts/20241124_jena_wk219/</link>
+      <pubDate>Sun, 24 Nov 2024 13:00:14 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241124_jena_wk219/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;누나 생일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;두 번째 논문 리뷰어들이 마이너 리비전을 요청했다. 나쁘지 않다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-11-11-월요일&#34;&gt;2024. 11. 11. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;예나로 돌아가기 전날. 춘휘가 저녁을 만들어줬다. 돼지 립+콩자반+감자. 맛있다.&lt;/p&gt;
+&lt;p&gt;저녁 먹고는 둘이 에버델을 했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-11-12-화요일&#34;&gt;2024. 11. 12. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;예나로 출발했다. 운이 나쁜 것 같다가도 좋았던 날이다.&lt;/p&gt;
+&lt;p&gt;아침에 기차 출발 시간이 지연 됐다는 소식을 받았다. 집에서 조금 더 머물다가 시간 맞춰 나가려는데, 너무 딱 맞추려 하다가 오히려 조금 늦어지게 됐다. 내가 캐리어 끌고 나오는 걸 본 어떤 아주머니가 다가오시더니 기차 역까지 태워주겠다고 하셨다. 덕분에 프라이부르크 가는 기차를 무리 없이 탔다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 218 (유로파 파크, 콜마르, Ravennaschlucht&amp;Titisee)</title>
+      <link>http://localhost:1313/posts/20241110_jena_wk218/</link>
+      <pubDate>Sun, 10 Nov 2024 20:52:22 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241110_jena_wk218/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;유로파 파크&lt;/li&gt;
+&lt;li&gt;콜마르&lt;/li&gt;
+&lt;li&gt;하이킹@Ravennaschlucht + Titisee 구경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-11-04-월요일&#34;&gt;2024. 11. 04. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 &lt;a href=&#34;https://maps.app.goo.gl/tChoMncztJfBMDPi6&#34;&gt;유로파 파크&lt;/a&gt;에 놀러갔다. 프랑크푸르트에서 기차+버스타고 1시간 좀 넘는 북쪽에 위치해 있다. 여러 유럽 국가의 테마로 꾸며놓은 놀이공원이다. 예보에는 없었지만, 안개가 아주 짙어서 살짝 이슬비가 내리는 것처럼 느껴지는 날씨였다. 우리가 놀이공원에 가는 날은 항상 뭐가 떨어진다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 217 (프라이부르크)</title>
+      <link>http://localhost:1313/posts/20241103_jena_wk217/</link>
+      <pubDate>Sun, 03 Nov 2024 22:45:18 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241103_jena_wk217/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;프라이부르크&lt;/li&gt;
+&lt;li&gt;춘휘 그룹 친구들 점심 초대&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-28-월요일&#34;&gt;2024. 10. 28. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;새 청소기를 구매했다. 몇년 동안 쓴 청소기는 본체와의 연결부가 부러져서 먼지통이  느적 거리는 상태다. 청소를 할 수는 있지만 한 손으로 먼지통을 계속 붙들고 있어야 해서 꽤 비효율적이다.&lt;/p&gt;
+&lt;p&gt;새 청소기는 전반적으로 마음에 든다. 가격이 싸고 (35유로 정도), 먼지필터 청소하기 쉽고, 재질 튼튼하고, 빨아들이는 힘도 세다. 단점은 조금 짧다는 정도. 길이 조절도 가능하기에 50cm 정도는 더 길게 만들어도 되지 않았을까. 아무튼 만족.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 216</title>
+      <link>http://localhost:1313/posts/20241027_jena_wk216/</link>
+      <pubDate>Sun, 27 Oct 2024 10:29:55 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20241027_jena_wk216/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-18-금요일&#34;&gt;2024. 10. 18. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;마틴과 미팅. 세 번째 챕터의 스토리라인이 어느 정도 정해지는 것 같다. 두세 가지 정도 더 보고 싶다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stronger sensitivity to Tair of GPP than of RECO at 40~60N? why? f(dGPP) term in RA? RH? Can this also explain very similar Tair sensitivities of GPP and RECO outside 40-60N?&lt;/li&gt;
+&lt;li&gt;VPD as an additional independent variable?&lt;/li&gt;
+&lt;li&gt;another optimization with a cost term for NEE_wSoil?
+&lt;ul&gt;
+&lt;li&gt;can the optimizer increase NEE_wSoil dominance than one in the current simulation?&lt;/li&gt;
+&lt;li&gt;if no, may suggest the robustness of the current results&lt;/li&gt;
+&lt;li&gt;if yes, may suggest 1) how uncertain the NEE_wSoil is under the current modeling structure and set up, and 2) which parameters and processes and where the uncertainty appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;그-외&#34;&gt;그 외&amp;hellip;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;맛있는 목살 고르는 방법. 등쪽으로 갈 수록 퍽퍽해진다. 같이 놓고 보면 쉽지만&amp;hellip;&lt;/li&gt;
+&lt;li&gt;목살&amp;amp;감자찜. 실수로 양파 등을 안 넣었는데도 맛있음&lt;/li&gt;
+&lt;li&gt;길 가다 본 검은 고양이 &amp;amp; 할로윈 준비 중인 호박.&lt;/li&gt;
+&lt;li&gt;처음 보는 고양이, 그리고 같이 누워있는 모찌. 둘이 친구인 줄 알았지만, 모찌는 이번에도 위협 받았다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;다음-주는&#34;&gt;다음 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;dissertation writing&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 215</title>
+      <link>http://localhost:1313/posts/20241020_jena_wk215/</link>
+      <pubDate>Sun, 20 Oct 2024 22:18:35 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20241020_jena_wk215/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(running the code&amp;hellip;)&lt;/p&gt;
+&lt;h2 id=&#34;2024-10-14-월요일&#34;&gt;2024. 10. 14. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘는 화요일 점심 먹고 내려갈 예정. 김치찌개와 함께 먹고 싶다던 것 중 하나인 부대찌개를 끓여줬다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-10-18-금요일&#34;&gt;2024. 10. 18. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;친구들과 웨이지에 졸업 모자를 만들었다. 나는 웨이지에가 플럭스타워의 에너지 (임)밸런스를 다룬 것을 생각해서 에너지 밸런스 텀들을 재는 시소를 만들었다. 약간 평형이 어긋나 있는 것이 포인트(=에너지 임밸런스). 로라와 수슌이 만든 플럭스 타워랑 같이 두고 한 컷.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 214 (춘휘@예나)</title>
+      <link>http://localhost:1313/posts/20241019_jena_wk214/</link>
+      <pubDate>Sat, 19 Oct 2024 20:20:52 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20241019_jena_wk214/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;춘휘@예나&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-11-금요일&#34;&gt;2024. 10. 11. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;목요일 밤에 춘휘가 프라이부르크의 방 계약을 마치고 돌아왔다. 1주일 머물고 돌아갈 예정. 먹고 싶다던 김치찌개를 끓여줬다.&lt;/p&gt;
+&lt;p&gt;수잔, 마틴과 미팅을 했다. 너무 복잡하게 돌아가지 말고, 확실한 것부터 해보기로 했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-10-12-토요일&#34;&gt;2024. 10. 12. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;오랜만에 춘휘랑 보드게임 했다. 에버델 두 게임을 해서 서로 한 번씩 이겼다. 첫 에버델 게임에서 서로 기다리던 키 카드가 춘휘에게 넘어가서 승기가 기울었다. 운 좋게도 두 번째 판에서는 어찌어찌 이기게 됐다. 7원더스:듀얼은 세 번을 했다. 첫 번째는 처참하게 졌지만 두, 세 번쨰는 역시 운 좋게 어찌어찌 이기게 됐다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 213 (춘휘@프라이부르크, 에버델@쓰위안&amp;신)</title>
+      <link>http://localhost:1313/posts/20241006_jena_wk213/</link>
+      <pubDate>Sun, 06 Oct 2024 18:56:52 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20241006_jena_wk213/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;춘휘@프라이부르크&lt;/li&gt;
+&lt;li&gt;에버델@쓰위안&amp;amp;신&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Developing an idea I got from the figure drawn by Sujan. When do I actually start writing the dissertation?&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;2024-09-30-월요일&#34;&gt;2024. 09. 30. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;일요일 밤에 춘휘랑 했던 세븐 원더스:듀얼. 춘휘가 압도적이었다. 전쟁으로 빠르게 안락사 당했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-10-05-토요일&#34;&gt;2024. 10. 05. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;쓰위안&amp;amp;신 집에서 저녁 먹고 에버델 플레이했다. 지아신, 밍까지 다섯 명.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 212 (신 생일파티@바이마르, 저녁@자이드, 보드게임)</title>
+      <link>http://localhost:1313/posts/20240929_jena_wk212/</link>
+      <pubDate>Sun, 29 Sep 2024 18:05:37 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240929_jena_wk212/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;신 생일파티@바이마르&lt;/li&gt;
+&lt;li&gt;저녁@자이드&lt;/li&gt;
+&lt;li&gt;보드게임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A figure Sujan drew during a short discussion to illustrate how I would quantify the effect of a factor in the model and its propagation to other variables. I see a large potential to address key questions of my third study or my phd project: driving factors of water-carbon coupling among GPP vs. RECO, wet vs. semi-arid, and so on. Let&amp;rsquo;s see how I could make use of this idea&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 211 (사그라다 5-6인 확장, 보드게임 카페, 에버델 잉린&amp;디)</title>
+      <link>http://localhost:1313/posts/20240922_jena_wk211/</link>
+      <pubDate>Sun, 22 Sep 2024 10:58:26 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240922_jena_wk211/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;보드게임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I tried a new SINDBAD opti. run with a Jena inversion with ATTO observations provided by Santiago. This run showed a weaker match with the new observations, while there seems to be significant uncertainty in the observations themselves (e.g., the difference w/ and w/o the moisture correction). So, may decide not to use this inversion. By the way, this may also imply that there is an observational signal that the current model structure cannot capture, although it&amp;rsquo;s unlikely true, given the obs. uncertainties and their spatial coverage (i.e., ATTO tower vs. Amazonia).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 210 (크로아티아 여행)</title>
+      <link>http://localhost:1313/posts/20240922_jena_wk210/</link>
+      <pubDate>Sun, 22 Sep 2024 10:58:24 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240922_jena_wk210/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;크로아티아 여행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;여행 일정: 출발 전에 골자만 정해놓고, 날씨나 선호도에 따라 다음 날 일정을 확정했다. 덕분에 이번에도 춘휘는 차 안에서 신나게 검색을 해야 했다.&lt;/p&gt;
+&lt;p&gt;09월 05일: 모찌 혜인 씨 집에 맡겨놓기&lt;/p&gt;
+&lt;p&gt;09월 06일: 출국, 자다르 구경, 호수공원 근처 호텔에서 숙박&lt;/p&gt;
+&lt;p&gt;09월 07일: &lt;a href=&#34;https://maps.app.goo.gl/vbspYsSxYUsQGiqv6&#34;&gt;플리트비체 호수공원&lt;/a&gt; 구경, &lt;a href=&#34;https://maps.app.goo.gl/qFSVDcHYPwXNQucC6&#34;&gt;브로다리카&lt;/a&gt;에서 캠핑&lt;/p&gt;
+&lt;p&gt;09월 08일: 오전 스플리트 올드타운 구경, 오후에 브라크 섬 북쪽으로 배타고 이동. 브라크섬 남쪽으로 운전해서 이동. &lt;a href=&#34;https://maps.app.goo.gl/SdDfobHtN7mfuse98&#34;&gt;경치 구경&lt;/a&gt;, &lt;a href=&#34;https://maps.app.goo.gl/TjLYrBGvzVrKKEaa6&#34;&gt;수영&lt;/a&gt;, &lt;a href=&#34;https://maps.app.goo.gl/NecRRTqC5TnHGgZU8&#34;&gt;캠핑&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;09월 09일: 브라크섬 올리브 오일 박물관 구경, 크로아티아 본토로 배타고 이동, &lt;a href=&#34;https://maps.app.goo.gl/iqQDfiBX2CARKTVC9&#34;&gt;해질녘 풍경 구경&lt;/a&gt;, 마카스카 호텔에서 숙박&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 209 (크로아티아 여행)</title>
+      <link>http://localhost:1313/posts/20240922_jena_wk209/</link>
+      <pubDate>Sun, 22 Sep 2024 10:58:20 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240922_jena_wk209/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;크로아티아 여행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;여행 일정: 출발 전에 골자만 정해놓고, 날씨나 선호도에 따라 다음 날 일정을 확정했다. `&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;09월 05일: 모찌 혜인 씨 집에 맡겨놓기&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;09월 06일: 출국, 자다르 구경, 호수공원 근처 호텔에서 숙박&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;09월 07일: &lt;a href=&#34;https://maps.app.goo.gl/vbspYsSxYUsQGiqv6&#34;&gt;플리트비체 호수공원&lt;/a&gt; 구경, &lt;a href=&#34;https://maps.app.goo.gl/qFSVDcHYPwXNQucC6&#34;&gt;브로다리카&lt;/a&gt;에서 캠핑&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;09월 08일: 오전 스플리트 올드타운 구경, 오후에 브라크 섬 북쪽으로 배타고 이동. 브라크섬 남쪽으로 운전해서 이동. &lt;a href=&#34;https://maps.app.goo.gl/SdDfobHtN7mfuse98&#34;&gt;경치 구경&lt;/a&gt;, &lt;a href=&#34;https://maps.app.goo.gl/TjLYrBGvzVrKKEaa6&#34;&gt;수영&lt;/a&gt;, &lt;a href=&#34;https://maps.app.goo.gl/NecRRTqC5TnHGgZU8&#34;&gt;캠핑&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;09월 09일: 브라크섬 올리브 박물관 구경, 크로아티아 본토로 배타고 이동, &lt;a href=&#34;https://maps.app.goo.gl/iqQDfiBX2CARKTVC9&#34;&gt;해질녘 풍경 구경&lt;/a&gt;, 마카스카 호텔에서 숙박&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 207 (보드게임카페-Everdell)</title>
+      <link>http://localhost:1313/posts/20240825_jena_wk207/</link>
+      <pubDate>Sun, 25 Aug 2024 14:52:32 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240825_jena_wk207/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;tried a new opti. that Martin suggested: to calculate costNEEIAV using a global time series calculated from the 904 grid cells; this made a difference in the case of Zavud.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the new opti. really made a difference: TWS IAV-NEE IAV correlation improved by 0.1 and, more importantly, the NEE IAV magnitude by SINDBAD became as similar as one by Jena Inversion. Great!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;met Satiago who is an expert of Amazonian land CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; cycle. I invited him to the weekly meeting with Sujan and Martin.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 206 (모찌 3살, 보드게임카페-7 Wonders, 저녁@조지)</title>
+      <link>http://localhost:1313/posts/20240824_jena_wk206/</link>
+      <pubDate>Sat, 24 Aug 2024 09:28:45 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240824_jena_wk206/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;review a paper: got a review request&amp;hellip; finally start reading the paper ~2 weeks before the deadline&lt;/li&gt;
+&lt;li&gt;developing tws_nee_in_model: shared what I have done in July with Sujan and Martin. Got some comments&amp;hellip; and a suggestion on a new opti. experiment: calculate costNEEIAV using a global time series calculated from the 904 grid cells; this made a difference in the case of Zavud.&lt;/li&gt;
+&lt;li&gt;모찌 3살 생일&lt;/li&gt;
+&lt;li&gt;보드게임카페 - 완통, 디&lt;/li&gt;
+&lt;li&gt;저녁@조지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-08-12-월요일&#34;&gt;2024. 08. 12. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;모찌 3살. 벌써 3살이다. 기념으로 모찌 사진을 몇개 모아서 스티커로 만들었다. 춘휘 아이디어. 어디에 붙일까.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 205 (보드게임카페-7 Wonders:Duel)</title>
+      <link>http://localhost:1313/posts/20240811_jena_wk205/</link>
+      <pubDate>Sun, 11 Aug 2024 16:40:07 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240811_jena_wk205/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;the literature survey:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;leaf phenology/demography/ontogeny during dry season in Amazon &amp;lt;&amp;ndash; the lack of these info in SINDBAD may cause the underestimated 1) NEE IAV magnitude and 2) the coupling between TWS IAV and NEE IAV&amp;hellip;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-08-09-금요일&#34;&gt;2024. 08. 09. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;저녁을 시내에서 해결한 후, 춘휘랑 즉흥적으로 보드게임 카페에 갔다. 예나 유일의 보드게임 카페이면서 펍 외에는 (아마) 유일하게 늦게까지 문을 여는 가게일 것이다 (오전 1시까지 함). 한 명에 4유로씩만 내면 시간 무제한, 게임 종류 무제한으로 즐길 수 있다. 점원들이 여유가 있다면 룰을 알려주기도 한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 204 (새 마우스 고르기, 중고 프로젝터 스크린)</title>
+      <link>http://localhost:1313/posts/20240804_jena_wk204/</link>
+      <pubDate>Sun, 04 Aug 2024 15:03:42 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240804_jena_wk204/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;continuing the literature survey&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;2024-08-03-토요일&#34;&gt;2024. 08. 03. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘가 중고 매장에서 발견한 중고 무료나눔 프로젝터 스크린. 1960년대산? 동독 시대 생산품이라고 한다. 쓸만해보여서 냉큼 가져왔다.&lt;/p&gt;
+&lt;p&gt;직접보니 생각보다 무겁다. 스크린을 받치는 나무대 한 곳이 부러져서 조심히 써야 한다. 생김새나 냄새 모두 골동품 느낌이 난다. 나름 멋이 있다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 203 (테일러 스위프트 콘서트@함부르크, 마농,핀신,조지 저녁 초대)</title>
+      <link>http://localhost:1313/posts/20240729_jena_wk203/</link>
+      <pubDate>Mon, 29 Jul 2024 20:51:09 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240729_jena_wk203/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;테일러 스위프트 콘서트@함부르크&lt;/li&gt;
+&lt;li&gt;마농&amp;amp;핀신 식사 초대&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;was doing a literature survey to get a sense of driving mechanisms and CO2 flux modeling error cases in tropics. To be continued in the next week&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;2024-07-2425-수목요일&#34;&gt;2024. 07. 24&lt;del&gt;25. 수&lt;/del&gt;목요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;테일러 스위프트 콘서트. 몇달 전에 춘휘가 예약 잡았다. 디는 우연히 아침 9시 반 기차를 같이 타게 됐고, 잉린은 포츠담에서 먼저 함부르크에 가 있기로 했다. 테일러 스위프트 무대의상이 화려하고 파격적인 모양인데, 함부르크에 도착하지 않았는데도 기차에서 비슷한 무대의상을 입고 콘서트 보러 가는 무리를 많이 봤다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 202 (닐스 란드그렌 콘서트)</title>
+      <link>http://localhost:1313/posts/20240721_jena_wk202/</link>
+      <pubDate>Sun, 21 Jul 2024 09:40:14 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240721_jena_wk202/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;닐스 란드그렌 콘서트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A similar tws-nee correlation value, even though I increased the weight of the newly added nee iav cost component&amp;hellip; :(&lt;/p&gt;
+&lt;p&gt;&amp;hellip;redirected the study question to exploring the regional contributions to the underestimation of 1) nee iav magnitude and 2) tws-nee iav correlation.&lt;/p&gt;
+&lt;h2 id=&#34;2024-07-18-목요일&#34;&gt;2024. 07. 18. 목요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘가 &lt;a href=&#34;https://en.wikipedia.org/wiki/Nils_Landgren_(musician)&#34;&gt;닐스 란드그렌&lt;/a&gt;이 예나에 콘서트를 하러 올 거라고 같이 가고 했다. 나는 모르는 사람이지만, 재즈 음악 들어서 나쁠 건 없다. 완통과 웨이지에도 어찌어찌 티켓을 구해서 같이 왔다. 밴드 구성은 트롬본, 색소폰, 피아노, 드럼, 기타, 베이스. 나름 괜찮았다. 베이스 연주자 겉모습이 조금 파격적이라 재미있었다. 애쉬그레이 모히칸+건설 노동자 복장. 심지어 그 옷은 형광이었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 201 (모찌 목욕, 유로2024 결승)</title>
+      <link>http://localhost:1313/posts/20240720_jena_wk201/</link>
+      <pubDate>Sat, 20 Jul 2024 10:29:05 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240720_jena_wk201/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;모찌 비 맞고 목욕&lt;/li&gt;
+&lt;li&gt;유로 2024 결승&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A similar tws-nee correlation value, even though I added a new cost component for nee iav&amp;hellip; :(&lt;/p&gt;
+&lt;h2 id=&#34;2024-07-11-목요일&#34;&gt;2024. 07. 11. 목요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;요즘 간간히 천둥번개 소나기 혹은 강력한 우박 (유로2024에서 봤듯이&amp;hellip;)이 내린다. 평소처럼 모찌가 밖에서 노는 동안 강한 소나기가 내려서 쫄딱 젖었다. 그동안 운이 좋았었지. 젖은 김에 목욕을 시켰다. 모찌 데려오고 세 번째 목욕. 그래도 이번엔 전과 다르게 춘휘를 때리지 않았다. 헤어드라이어도 무서워하긴 했지만 나름대로 잘 견뎠다. 끝나고 드라이어를 확인해보니 모찌 털로 덮여있었다 (&amp;hellip;).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 200 (독일어 수업 저녁 파티)</title>
+      <link>http://localhost:1313/posts/20240707_jena_wk200/</link>
+      <pubDate>Sun, 07 Jul 2024 17:36:37 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240707_jena_wk200/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;독일어 수업 저녁 파티&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;cost function 버그 발생 이유를 드디어 찾았다. 파이썬과 매트랩 간 reshape 함수 작동 방식이 서로 달랐다. 버그 수정 수 다시 모델을 돌려봤다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-07-05-금요일&#34;&gt;2024. 07. 05. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;요즘 듣고 있는 독일어 수업반 선생님이 저녁 파티를 개최했다. 장소는 수업 듣는 연구소 (다른 막스플랑크 연구소) 도서관. 여러 국가 친구들이 모여있는데, 각자 요리 하나씩 해오기로 했다. 그리고 간단한 게임을 준비했다. 게임 후 유로 2024 8강 독일 vs. 스페인 경기를 같이 보기로 했다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 199 (웨이지에 프로포즈, 라이프치히)</title>
+      <link>http://localhost:1313/posts/20240707_jena_wk199/</link>
+      <pubDate>Sun, 07 Jul 2024 17:36:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240707_jena_wk199/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;웨이지에 프로포즈 도와주기&lt;/li&gt;
+&lt;li&gt;뱃놀이&amp;amp;유로2024@라이프치히&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-06-25-화요일&#34;&gt;2024. 06. 25. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;새로 산 웍. 값싸고 맘에 든다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-06-28-금요일&#34;&gt;2024. 06. 28. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;슈에안과 하오를 초대했다. 수요일에 있던 예카테리나 디펜스에 참여하느라 그룹원들이 모두 프라이부르크에서 예나로 왔다. 춘휘는 그룹원들과 목요일~금요일 1박 2일 그룹 엠티를 갔다 왔고, 어찌어찌해서 이 둘을 금요일 저녁에 초대하기로 했나보다. 메뉴는 훠궈. 슈에안이 목감기에 걸렸기 때문에 맵지 않게 토마토 소스로 준비했다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 198 (EURO2024@라이프치히)</title>
+      <link>http://localhost:1313/posts/20240623_jena_wk198/</link>
+      <pubDate>Sun, 23 Jun 2024 19:48:14 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240623_jena_wk198/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;EURO2024 FRAvs.NED@Leipzig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;hellip; 혹시나 TWS NEE IAV correlation이 나아질 수 있으니 모델을 다시 한 번 돌려봤다.&lt;/p&gt;
+&lt;p&gt;화요일부터 몸살이 났다. 평소처럼 열도 났고, 평소보다 며칠 더 지속됐다. 보통 첫날 열나고 다다음날 아침이면 떨어지는데, 이번에는 잔열이 토요일까지 지속됐다. 첫 날만 37.5도였고, 토요일까지는 37도 정도. 그래도 점점 열 나는 빈도가 줄었다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-06-21-금요일&#34;&gt;2024. 06. 21. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;유로 2024 프랑스vs.네덜란드. 라이프치히에서 춘휘, 첸웨이랑 직관했다. 두어 시간 일찍 가서 구경을 좀 하고 저녁 첸웨이랑 먹었다. 오렌지색, 파란색 옷을 입은 사람들이 많이 보였다. 저녁은 지나가다 발견한 한국 식당에서 먹었다. 운영은 베트남 사람들이 하는 듯했다. 치킨, 해물파전, 비빔밥을 시켜봤다 치킨은 그럭저럭 먹을만했지만 재방문 의사는 없다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 197 (EURO2024@쓰위안&amp;신, 저녁 훠궈@지아신)</title>
+      <link>http://localhost:1313/posts/20240616_jena_wk197/</link>
+      <pubDate>Sun, 16 Jun 2024 11:34:11 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240616_jena_wk197/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;developing tws_nee_in_model&lt;/li&gt;
+&lt;li&gt;EURO2024 Germany vs. Scotland@쓰위안&amp;amp;신&lt;/li&gt;
+&lt;li&gt;저녁 훠궈@지아신&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;세 번째 주제 조금씩 진행 중&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;2024-06-14-금요일&#34;&gt;2024. 06. 14. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;유로 2024 개막전 독일vs.스코틀랜드. 쓰위안&amp;amp;신 집에서 친구들이랑 치킨&amp;amp;피자 먹으면서 봤다. 결과는 생각보다 컸던 독일의 대승. 탄탄하게 잘 했지만, 역시나 전반에 한 명 퇴장 당한 것도 컸다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-06-15-토요일&#34;&gt;2024. 06. 15. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;지아신이 GDM그룹 멤버들을 초대했다. 지아신, 나, 웨이지에 외에 자이드, 자부드, 제이크가 조인했다. 춘휘, 완통, 티아나는 참석 못 했다. 저녁으로 훠궈 먹을 예정. 웨이지에와 나는 조금 일찍 가서 준비를 도와줬다. 양고기는 훠궈에 넣는 건 포기. 실수로 뼈 있는 걸 샀다고 한다. 그래도 먹을 건 많다. 소시지, 감자, 버섯, 당면 등. 그리고 훠궈 외에도 양고기 요리가 하나 더 있다. 굳. 같이 먹으면서 이야기 나누고, 스위치 스포츠 게임 조금 하고 헤어졌다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 196 (중국 친구들 저녁 초대, Friedrichroda 캠핑&amp;하이킹)</title>
+      <link>http://localhost:1313/posts/20240609_jena_wk196/</link>
+      <pubDate>Sun, 09 Jun 2024 18:25:37 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240609_jena_wk196/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;the 4th PAC meeting&lt;/li&gt;
+&lt;li&gt;신, 쓰위안, 디, 지아신 저녁 초대&lt;/li&gt;
+&lt;li&gt;캠핑@Friedrichroda&amp;amp;Finsterbergen + Marienglashöhle cave 구경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-06-03-월요일&#34;&gt;2024. 06. 03. 월요일&lt;/h2&gt;
+&lt;p&gt;네 번째 PAC 미팅. 세 번째 주제 방향에 대해 주로 논의했다. 내가 미팅 중에 제시한 것도 좋았지만 졸업준비도 병행해야 하기 때문에 더 간단하게 해야 할 것 같다. 그리고 마티아스가 졸업 요건 변경이 있을 예정이라는 좋은 정보도 줬다. 나쁘지 않다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-06-07-금요일&#34;&gt;2024. 06. 07. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;신, 쓰위안, 디, 지아신을 저녁 식사에 초대했다. 특별한 이유는 없다. 그냥 초대.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 195 (vegpp_eval submitted)</title>
+      <link>http://localhost:1313/posts/20240609_jena_wk195/</link>
+      <pubDate>Sun, 09 Jun 2024 18:02:12 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240609_jena_wk195/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;submit vegpp_eval&lt;/li&gt;
+&lt;li&gt;getting preliminary results of the 3rd study and preparing for PAC&lt;/li&gt;
+&lt;li&gt;엄마 생일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vegpp_eval submitted! 곧바로 다음 주 월요일에 있을 PAC 미팅 준비를 시작했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-05-28-화요일&#34;&gt;2024. 05. 28. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;쓰위안이 중국에서 돌아왔다. 춘휘 생일선물 + 모찌 장난감도 사왔다. 생일 선물은 젤다에 나오는 캐릭터 인형 손가방. 모찌 장난감은 쥐 로봇. 두 가지 모드가 있다. 직접 조종하거나 알아서 움직이게 하기. 청소 로봇처럼 벽에 부딪힐 것 같으면 알아서 방향을 바꾼다. 굳. 안타깝게도 모찌는 장난감 취급하지 않고 크게 신경을 쓰지 않는다. 아무튼 감사!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 194 (볼링, 드래곤 고지)</title>
+      <link>http://localhost:1313/posts/20240526_jena_wk194/</link>
+      <pubDate>Sun, 26 May 2024 19:17:57 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240526_jena_wk194/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;revising vegpp_eval&lt;/li&gt;
+&lt;li&gt;볼링&lt;/li&gt;
+&lt;li&gt;드래곤 고지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;한 번 더 공저자들과 공유했고, 앤써니, 마틴 등이 코멘트를 달아줬다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-05-24-금요일&#34;&gt;2024. 05. 24. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 둘이 볼링치러 갔다. 춘휘도 나도 5번 미만 해본 초보자. 한 손, 두 손으로 열심히 굴려봤다. 그 날 밤부터 팔과 손가락에 휴유증이 왔다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-05-25-토요일&#34;&gt;2024. 05. 25. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 당일치기 하이킹. 목적지는 &lt;a href=&#34;https://maps.app.goo.gl/qcNKR8uH9sCnauwY6&#34;&gt;드래곤 고지&lt;/a&gt; (Dragon Gorge). 좁게 나 있는 협곡으로 물이 흐르는 지형을 Gorge라고 한단다.  예나에서 기차타고 서쪽으로 2시간 반정도 가면 Eisenach라는 동네가 나온다. 드래곤 고지 등 하이킹 코스가 사방으로 있고, 동네 자체도 작곡가 바흐가 살던 동네라서 둘러볼만한 곳이 있다. &lt;a href=&#34;https://maps.app.goo.gl/ZjQ5sdRe4DE7QbWg8&#34;&gt;햄버거집&lt;/a&gt; 하나 찾아서 점심 해결하고 자전거 타고 남쪽 드래곤 고지 입구로 갔다. 거기까지 버스로 가면 30분이 넘게 걸리지만 자전거로는 15분 정도면 된다. 그래서 일부러 자전거를 가지고 왔다. 드래곤고지로 가는 길에 예쁜 호숫가를 하나 발견했다. 오리들이 잘 쉬고 있었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 193 (춘휘 생일@Belantis)</title>
+      <link>http://localhost:1313/posts/20240519_jena_wk193/</link>
+      <pubDate>Sun, 19 May 2024 10:56:32 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240519_jena_wk193/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;home office &amp;amp; revising vegpp_eval&lt;/li&gt;
+&lt;li&gt;춘휘 생일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;마티아스가 준 코멘트 기반으로 보완했다. 수잔이랑 이야기 나누고, 한 가지 더 해보기로 했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-05-16-목요일&#34;&gt;2024. 05. 16. 목요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘 생일. 놀이공원에 가고 싶다고 해서 전에 한 번 갔었더 라이프치히에 있는 &lt;a href=&#34;https://maps.app.goo.gl/ayj5awH2MuaU3pVH8&#34;&gt;Belantis&lt;/a&gt;에서 시간을 보냈다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 192 (오로라)</title>
+      <link>http://localhost:1313/posts/20240512_jena_wk192/</link>
+      <pubDate>Sun, 12 May 2024 12:12:38 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240512_jena_wk192/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;home office &amp;amp; revising vegpp_eval&lt;/li&gt;
+&lt;li&gt;오로라&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;효율이 좋진 않지만, 그럭저럭 마티아스가 준 코멘트 기반으로 보완하고 있다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-05-10-금요일&#34;&gt;2024. 05. 10. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;초강력 태양 폭풍이 발생하면서 하루이틀 동안 곳곳에서 오로라를 관측할 수 있게 됐다. &lt;a href=&#34;https://www.independent.co.uk/space/northern-lights-uk-solar-storm-b2542767.html&#34;&gt;유럽도 마찬가지&lt;/a&gt;. 급하게 소식을 듣고 창문 밖 사진을 찍었다. 보라색. 다른 곳에서 찍은 애들은 빨강&lt;del&gt;초록&lt;/del&gt;보라 그라데이션도 보인다. 찾아보니, 플라스마가 충돌하는 대기권의 높이에 따라 색깔이 달라진다고 한다. 높으면 빨강~초록, 지면 가까운 곳은 보라색. 이번 폭풍은 강력한 편이어서 보라색도 보이는 듯하다. 오로라를 본 건 처음이다. 조금 실망했다. 맨 눈으로 보일 거라 생각했는데, 사진을 찍어야만 저 색깔이 보인다. 맨눈으로 보이는 풍경은 평범하다. 아무튼 좋은 구경 했다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 191 (훠궈@신, 쓰위안 생일 비비큐@파라다이스 파크)</title>
+      <link>http://localhost:1313/posts/20240505_jena_wk191/</link>
+      <pubDate>Sun, 05 May 2024 12:14:01 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240505_jena_wk191/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;revising vegpp_eval&lt;/li&gt;
+&lt;li&gt;신&amp;amp;쓰위안 집에서 훠궈&amp;amp;챔스 관전&lt;/li&gt;
+&lt;li&gt;쓰위안 생일 기념 비비큐@파라다이스파크&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;마티아스가 절반 정도 읽고 코멘트를 달아줬다. 크리티컬.&lt;/p&gt;
+&lt;h2 id=&#34;2024-04-30-화요일&#34;&gt;2024. 04. 30. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;챔스리그 준결승 1차전 바이에른 뮌헨 vs. 레알마드리드. 신&amp;amp;쓰위안 집에서 첸웨이랑 지아신 등과 같이 저녁으로 훠궈 먹고 경기 관전했다.&lt;/p&gt;
+&lt;p&gt;결과는 2:2 무승부. 바이에른 뮌헨이 초반에 몰아 붙였으나 허접한 마무리로 다 날려먹고, 오히려 크루스의 슈퍼 스루패스+비니주니오르의 깔끔한 마무리로 한 방 얻어 맞았다.&lt;/p&gt;
+&lt;p&gt;그래도 후반에는 전반 초반 기회를 다 말아먹던 자네가 드디어 한 건 해줬다. 돌파 후 시원한 왼발 슛으로 마무리. 그리고 또 다른 돌파 머신 무지알라가 얻어낸 피케이를 케인이 마무리했다. 내내 조용하던 로드리고가 피케이를 얻어냈고, 비니주니오르가 마무리하면서 2:2로 종료.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 190 (치안@예나, 탁구연습, 비비큐with고우화)</title>
+      <link>http://localhost:1313/posts/20240428_jena_wk190/</link>
+      <pubDate>Sun, 28 Apr 2024 14:59:31 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240428_jena_wk190/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;revising vegpp_eval&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;MSC vs. ESV &amp;ndash;&amp;gt; ESV 사용해서 다시 작성하기로 했다. 그리고 KG5ns - MSC plot 관련 내용 몇 가지 추가할 예정이다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-04-23-월요일&#34;&gt;2024. 04. 23. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;치안이 예나에 왔다. 지난 주 EGU 참여 후 일주일 동안 예나에서 지낸다고 한다. 중국 친구들과 같이 저녁 먹었다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-04-24-화요일&#34;&gt;2024. 04. 24. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 탁구 연습했다. 나는 백핸드 스매시, 춘휘는 백핸드 리시브+포핸드 스매시를 번갈아가며 연습했다. 살짝 감을 익혔다. 실전에서 쓰려면 더 연습이 필요하다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 189 (김치전, 독일어 수업반 저녁)</title>
+      <link>http://localhost:1313/posts/20240421_jena_wk189/</link>
+      <pubDate>Sun, 21 Apr 2024 14:25:26 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240421_jena_wk189/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;revising vegpp_eval&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;앤써니, 마쿠스 등의 코멘트 반영해서 수정했다. 이제 라텍스로 옮기기+마티아스 코멘트 기다리기&lt;/p&gt;
+&lt;p&gt;갑자기 날씨가 추워졌다. 밤에는 5&lt;del&gt;7도 정도, 낮에는 10도 초반 정도. 대부분 흐림+바람+비. 저번 주는 낮에 25&lt;/del&gt;26도를 왔다갔다해서 여름이 벌써 오나 했지만 다시 변덕을 부리고 있다. 다음 주는 더 추울 예정.&lt;/p&gt;
+&lt;h2 id=&#34;2024-04-16-화요일&#34;&gt;2024. 04. 16. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;오랜만에 김치전을 만들어봤다. 한국 갔을 때 엄마가 알려준대로 해보려 했다. 튀김가루는 있지만, 부침가루가 없어서 중력분을 대신 사용했다. 맛있게 완성됐다. 춘휘가 만든 호박죽이랑 오븐에 구운 흰살생선+마늘이랑 같이 잘 먹었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 188 (시내 구경, 춘휘 자전거 수리 시도)</title>
+      <link>http://localhost:1313/posts/20240414_jena_wk188/</link>
+      <pubDate>Sun, 14 Apr 2024 20:46:43 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240414_jena_wk188/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;conceptualizing the 3rd topic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-04-10-수요일&#34;&gt;2024. 04. 10. 수요일&lt;/h2&gt;
+&lt;p&gt;1년 만에 축구를 했다. 승부욕 없는 그룹이라서 편하게 재활하면서 플레이했다. 이전보다 체력이 많이 약해졌지만 그래도 그럭저럭 뛰었다. 굳. 끝날 무렵에 구경온 춘휘랑 같이 걸어서 돌아갔다. 돌아가는 길에 풀 뜯고 있는 야생(?) 토끼를 두세 마리 봤다. 여기 토끼가 있었나?&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2024-04-12-금요일&#34;&gt;2024. 04. 12. 금요일&lt;/h2&gt;
+&lt;p&gt;저녁에 중국 친구들과 자주 가는 그리스 식당 &amp;lt;포세이돈&amp;gt;에서 저녁 먹었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 187 (모찌 봄놀이, 푸흐스 타워 하이킹, 저녁@첸웨이)</title>
+      <link>http://localhost:1313/posts/20240407_jena_wk187/</link>
+      <pubDate>Sun, 07 Apr 2024 14:42:11 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240407_jena_wk187/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;오랜만의 하이킹. 푸흐스 타워 (&lt;a href=&#34;https://maps.app.goo.gl/Y2ep1ki4CnvpFyEX6&#34;&gt;Fuchstorm Jena&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;첸웨이 집에서 저녁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이번 주는 vegpp_eval은 제쳐두고 다음 연구할 주제를 생각해봤다. 작년에 Humphrey et al. (2018)과 Humphrey et al. (2021)을 다시 읽고 생각해둔 질문이 하나 있다. 이걸 다음 주제로 삼아보면 어떨까.&lt;/p&gt;
+&lt;h2 id=&#34;2024-04-06-토요일&#34;&gt;2024. 04. 06. 토요일&lt;/h2&gt;
+&lt;p&gt;오후에 중국 친구들-지아신, 디, 쓰위안, 첸나, 유에단-과 푸흐스 타워로 하이킹하고, 첸웨이네서 저녁을 먹었다. 오랜만의 하이킹도 좋고, 밥도 잘 먹었고, 포커도 재밌게 했다.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;푸흐스 타워 하이킹. 날이 좋아져서 사람들이 많이 나왔다. 개를 데려오는 건 물론이고, 말을 타고 다니는 사람도 봤다. 중턱에서 만난 잔디밭 근처에서 무궁화꽃이 피었습니다하면서 잠시 쉬었다. 오징어 게임 덕분에 중국 친구들도 놀이의 존재는 아는 듯. 저 발음을 나밖에 몰라서 내가 술래로 시작했다. 이후엔 중국 버전으로. 이얼싼 무퉁화(?) 하나둘셋 무궁화 정도 되는 느낌. 무궁화꽃이 피었습니다보다 훨씬 음절이 짧아서 전진하기가 힘들었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 186 (캠핑@Saalburg)</title>
+      <link>http://localhost:1313/posts/20240401_jena_wk186/</link>
+      <pubDate>Mon, 01 Apr 2024 15:35:08 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240401_jena_wk186/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;캠핑용 백팩 구입&lt;/li&gt;
+&lt;li&gt;캠핑@Saalburg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vegpp_eval manuscript 초안을 공저자들에게 공유했다. 공유한 당일 마커스와 앤써니가 1~2시간만에 피드백을 줬다. 내 논문을 나보다 빠르게 읽다니&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;2024-03-26-화요일&#34;&gt;2024. 03. 26. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;백팩 보러 에어푸어트로 갔다. 월요일에 예나 아웃도어 매장도 들러봤지만, 거기는 Deute 브랜드 위주이기 때문에 다른 옵션도 살피고 싶었다. 모든 가방을 각각 매보고 춘휘는 Deute 중에 하나로 결정했다. 나는 Deute 가방 중 하나와 Osprey 가방 중 하나가 내 몸에 그나마 잘 맞았고, 고민 끝에 Osprey 것으로 결정했다. 지금은 둘 다 후회하지 않지만, 이 날은 둘 다 기분이 썩 좋지 않았다. 에어푸어트 가는 기차도 지연돼서 생각보다 늦게 도착했고, 그래서 고민할 시간이  충분하지 않게 느껴졌다. 게다가 각자가 원하는 가방과 몸에 맞는 가방이 서로 달랐다. 춘휘는 Osprey나 Gregory 중에 하나를 좋아했던 것 같은데, 몸에 안 맞았다. 나는 Deute 중 하나 색깔이 마음에 들었지만 내 몸에 너무 컸다. 그리고 독일 브랜드를 고르고 싶었지만 어쩌다보니 미국 가방을 사게 됐다. 그래도 둘 다 거의 최선의 선택을 했다는 건 인지하고 있고, 결국 고른 가방도 좋은 것들이라는 것도 알고 있었다. 그냥 기분이 뭔가 찝찝했다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 185 (SAB, 슈에이안 초대, 영화 &lt;서울의 봄&gt;)</title>
+      <link>http://localhost:1313/posts/20240331_jena_wk185/</link>
+      <pubDate>Sun, 31 Mar 2024 22:22:52 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20240331_jena_wk185/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SAB&lt;/li&gt;
+&lt;li&gt;슈에이안 초대 &amp;amp; &amp;lt;서울의 봄&amp;gt;&lt;/li&gt;
+&lt;li&gt;트레킹 백팩 구경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SAB. 3년마다 있는 연구소 평가 날이다. 외부 과학자들을 심사위원으로 초대해서 학회할 때 하는 것처럼 우리가 하는 연구를 소개하고, 선정된 몇몇은 심사위원들과 인터뷰도 진행한다. 이를 기반으로 심사위원들은 우리 연구소의 점수를 매긴다. 이 점수는 연구소 예산 책정 때 반영된다나? 아무튼 연구소 입장에서는 중요한 행사다. 지난 2021년과 같이 이번에도 스무스하게 넘어갈 듯.&lt;/p&gt;
+&lt;h2 id=&#34;2024-03-22-금요일&#34;&gt;2024. 03. 22. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘와 같은 학부를 나와서 지금은 같은 그룹에 박사 과정으로 들어온 슈에이안. IMPRS 행사 등을 겸해서 이번 3월 동안 프라이부르크에서 예나로 와서 머물고 있다. 저녁 초대해서 같이 밥 배부르게 먹고 영화 봤다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 184 (양떼 구경, 더비 매치 에어푸어트 vs. 예나, 바이마르)</title>
+      <link>http://localhost:1313/posts/20240317_jena_wk184/</link>
+      <pubDate>Sun, 17 Mar 2024 21:32:43 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240317_jena_wk184/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SAB 포스터 연습&lt;/li&gt;
+&lt;li&gt;양떼 구경&lt;/li&gt;
+&lt;li&gt;축구 더비 매치: 에어푸어트@예나&lt;/li&gt;
+&lt;li&gt;독일어 수업@바이마르&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이번주는 병원에 자주 갔다. 양 손바닥에 습진이 나서 크림을 받아 왔고, 기침하는 게 천식은 아닌지 확인해봤다. 피검사+폐활량 검사+x-ray 촬영을 했다. 일단 천식은 아니다. 피검사 이상 없고, 폐활량이 많이 줄었지만 천식 환자들보다는 훨씬 좋은 상태다. 일단 뭔가를 받아왔다. 기침 심할 때마다 목에 뿌리는 용도. 다음 주에 촬영 결과 확인 겸 경과 확인 겸 들를 예정.&lt;/p&gt;
+&lt;h2 id=&#34;2024-03-15-금요일&#34;&gt;2024. 03. 15. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;SAB 포스터 연습이 있는 날. 아침에 병원 들렀다가 점심 먹고 연구소로 왔다. 연구소 뒤 잔디밭에 누군가 양떼를 풀어서 풀을 먹이고 있었다. 포스터 연습 끝나고 춘휘랑 양 구경하러 갔다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 183 (아이스 스케이트, 여성의 날, 에어푸어트)</title>
+      <link>http://localhost:1313/posts/20240317_jena_wk183/</link>
+      <pubDate>Sun, 17 Mar 2024 20:13:54 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240317_jena_wk183/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;아이스 스케이트&lt;/li&gt;
+&lt;li&gt;세계 여성의 날&lt;/li&gt;
+&lt;li&gt;에어푸어트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-03-07-목요일&#34;&gt;2024. 03. 07. 목요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;이번 주말에 아이스 스케이트 시즌이 종료된다. 그 전에 좀 더 즐기러 춘휘와 에어푸어트로 갔다. 포르투갈 카페에서 저녁 간단히 먹었다. 아이스 링크에는 사람이 많지 않았다. 줄 안 서고 입장한 건 처음이다. 주중에 온 것도 처음이지만. 이번에도 하키 스탑을 연습하고, 춘휘에게는 내가 인라인 스케이트 탈 때 쓰는 브레이크 방법을 알려줬다. 대략 방법은 익힌 듯.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 182 (예나 도착)</title>
+      <link>http://localhost:1313/posts/20240316_jena_wk182/</link>
+      <pubDate>Sat, 16 Mar 2024 23:07:37 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240316_jena_wk182/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;예나 도착&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-02-26-월요일&#34;&gt;2024. 02. 26. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;프랑크푸르트 도착. 비가 내렸다. 기차타고 예나 도착. 짐 풀고, 청소도 좀 하고, 혜인 씨네 들러서 모찌를 집으로 데려왔다. 우리가 데리러 온 걸 아는 듯 혜인 씨에게 자주 몸을 비비는 게 마치 인사하는 것 같았다.&lt;/p&gt;
+&lt;p&gt;편지함에 쌓인 편지 중에는 고지서 하나가 있었다. 50km 구역인데 57km로 갔으니 벌금 30유로 내라는 내용이었다. 운전 중인 내 사진이랑 차 번호 사진도 있었다. 징한 것들.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 181 (춘휘@한국, 독일로 출국, 베이징 경유)</title>
+      <link>http://localhost:1313/posts/20240302_jena_wk181/</link>
+      <pubDate>Sat, 02 Mar 2024 18:11:27 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240302_jena_wk181/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;춘휘@한국&lt;/li&gt;
+&lt;li&gt;독일로 출국&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-02-19-월요일&#34;&gt;2024. 02. 19. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 홍대가서 정연쌤 만나기로 한 날. 우리를 위해 반차를 써주셨다. 엄마가 차려준 아침을 먹고 갔다. 아주 큰 계란말이, 국물이 시원한 굴+무 국, 김치, 갈비 등. 아침 치고는 매우 잘 먹었다. 집에 있을 때는 원래 저렇게 아침부터 푸짐하게 먹었긴 했다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 180 (사람들 만나기@한국, 춘휘@한국)</title>
+      <link>http://localhost:1313/posts/20240223_jena_wk180/</link>
+      <pubDate>Fri, 23 Feb 2024 03:52:50 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240223_jena_wk180/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;사람들 만나기&lt;/li&gt;
+&lt;li&gt;춘휘 한국 입국&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-02-12-월요일&#34;&gt;2024. 02. 12. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;명동 근처에서 우람이, 준서, 배성이 만났다. 메뉴는 내가 정한대로 김치찌개 :) 먹고 오랜만에 같이 피시방 가서 피파하고 스타했다.&lt;/p&gt;
+&lt;p&gt;저녁밥은 집에서. 해물생선찌개 (?).&lt;/p&gt;
+&lt;h2 id=&#34;2024-02-13-화요일&#34;&gt;2024. 02. 13. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;왕십리에서 양훈이, 상민이 형, 현세 형 만났다. 아구찜 먹고, 맥주집에서 이야기 나누고 헤어졌다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 179 (베이징, 춘휘네, 한국 입국, 가게 도와드리기)</title>
+      <link>http://localhost:1313/posts/20240223_jena_wk179/</link>
+      <pubDate>Fri, 23 Feb 2024 03:52:46 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240223_jena_wk179/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;중국: 춘휘 부모님&amp;amp;삼촌 식구와 저녁 훠궈, 다른 가족들과 점심 식사&lt;/li&gt;
+&lt;li&gt;한국: 도착, 가게 일 도와드리기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-02-05-월요일&#34;&gt;2024. 02. 05. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;베이징으로 날아갔다. 이번 비행 중에는 웬일로 잠을 별로 안 잤다. 대신 오랜만의 스도쿠. 새로운 스킬을 익혀서 난이도 하드 문제도 시간이 좀 걸리지만 풀 수 있게 되었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 178 (저녁@혜인씨네, 중국으로)</title>
+      <link>http://localhost:1313/posts/20240210_jena_wk178/</link>
+      <pubDate>Sat, 10 Feb 2024 08:50:50 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240210_jena_wk178/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Write draft of the 2nd study&lt;/li&gt;
+&lt;li&gt;출국 준비&lt;/li&gt;
+&lt;li&gt;저녁@혜인씨네&lt;/li&gt;
+&lt;li&gt;중국으로 출국&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-01-30-화요일&#34;&gt;2024. 01. 30. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;화요일, 토요일 쇼핑. DM과 뮬러에서 한국 중국에 가져갈 기념품을 좀 샀다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-01-31-수요일&#34;&gt;2024. 01. 31. 수요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;대중교통 월간티켓 마지막 날. 에어푸어트로 갔다. 아이스스케이팅을 하려 했으나, 대회 경기가 있어서 쓸 수 없었다. 저녁 먹고 오는 걸로 만족. 스페인 식당에 가서 타파스 (에피타이저?) 중에 연어&amp;amp;망고&amp;amp;아보카도를 먹고 메인으로 칵테일이랑 같이 빠에야 먹었다. 바게뜨랑 같이 나온 마늘향 나는 소스가 꽤 맛있었다. 타파스도 재료만큼 맛있었다. 저 조합은 처음이었는데, 꽤 괜찮음.  저번에 한 번 와봤던 춘휘가 해물빠에야는 좀 짜다고 해서 고기빠에야를 시켰다. 밥보다 고기가 많았다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 177 (스키@체코)</title>
+      <link>http://localhost:1313/posts/20240210_jena_wk177/</link>
+      <pubDate>Sat, 10 Feb 2024 08:50:44 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240210_jena_wk177/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Write draft of the 2nd study&lt;/li&gt;
+&lt;li&gt;스키@체코&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;휴가 가기 전에 최대한 드래프트 작성 중&amp;hellip;&lt;/p&gt;
+&lt;p&gt;날씨가 영아 10도 이하로 엄청 춥다가 갑자기 영상 10도 가까이로 변했다. 그 많던 눈은 하루이틀만에 녹아버렸다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-01-2628-금일요일&#34;&gt;2024. 01. 26&lt;del&gt;28. 금&lt;/del&gt;일요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;2박 3일 스키. 독일 동쪽 국경 근처 &lt;a href=&#34;https://maps.app.goo.gl/cUZpPTG161KuuquQ9&#34;&gt;체코의 한 스키장&lt;/a&gt;에 갔다. 스페인 슈퍼컴퓨터 센터 연구원인 스테파노와 라파엘이 우리 연구소를 방문 중이었는데, 방문객이 있는 김에 마쿠스가 이 스키캠프를 기획했다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 176 (춘휘 치과, RB라이프치히vs레버쿠젠, 모찌 출사)</title>
+      <link>http://localhost:1313/posts/20240121_jena_wk176/</link>
+      <pubDate>Sun, 21 Jan 2024 20:21:16 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240121_jena_wk176/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Write draft of the 2nd study&lt;/li&gt;
+&lt;li&gt;분데스리가: 레버쿠젠@라이프치히&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-01-15-월요일&#34;&gt;2024. 01. 15. 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘 치과가는 날. 지난 검진 때 잇몸 질환이 발견됐어서 날짜를 잡아놨었다. 원인은 박테리아. 잇몸의 박테리아(층?)를 긁어내는 시술을 했다. 시술 후에는 뜨겁거나 매운 것을 먹지 못 하기 때문에 가기 전에 돼지 목살이랑 야채로 뜨겁고 매운 음식을 만들어줬다. 시술은 나쁘지 않게 끝난 듯하다. 마취 후에 고통도 별로 없던 듯하다. 굳. 회복 상황 보러 종종 다시 갈 예정.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 175 (모찌 예방접종, 아이스 스케이팅@에어푸어트, 게임 나이트)</title>
+      <link>http://localhost:1313/posts/20240121_jena_wk175/</link>
+      <pubDate>Sun, 21 Jan 2024 20:21:06 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240121_jena_wk175/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Write draft of the 2nd study&lt;/li&gt;
+&lt;li&gt;모찌 예방접종&lt;/li&gt;
+&lt;li&gt;아이스 스케이팅@에어푸어트&lt;/li&gt;
+&lt;li&gt;게임 나이트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;오랜만에 예나 연구소로 출근. 사람들 잊어버렸을까봐 그룹 미팅때마다 발표를 했다.&lt;/p&gt;
+&lt;h2 id=&#34;2024-01-10-수요일&#34;&gt;2024. 01. 10. 수요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;모찌 예방접종. 새로 산 케이지는 들어가길 많이 꺼려한다. 며칠 전부터 거실에 두고 익숙해지게 했다.&lt;/p&gt;
+&lt;p&gt;오랜만의 잰 무게는 6.2kg. 집에서 쟀을 때보다 0.2kg 빠졌다. 굳.&lt;/p&gt;
+&lt;h2 id=&#34;2023-01-13-토요일&#34;&gt;2023. 01. 13. 토요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;월말에 연구소 사람들과 체코로 스키타러 갈 예정이다. 필요할 물품 보러 샵에들러 구경했다. 원래 목적과는 달리 마침 할인하던 아이스 스케이트를 하나씩 샀다. 몇 번만 가면 본전일 듯! 이 외 안에 껴입을 쫄쫄이 상하의, 아주 괜찮아보이는 백팩, 작은 커피 보온병 등이 눈에 들어왔다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Jena: Week 174 (암벽등반, 혜인&amp;근배 저녁, 일두형 결혼)</title>
+      <link>http://localhost:1313/posts/20240117_jena_wk174/</link>
+      <pubDate>Sun, 07 Jan 2024 15:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20240117_jena_wk174/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Write draft of the 2nd study&lt;/li&gt;
+&lt;li&gt;암벽등반&lt;/li&gt;
+&lt;li&gt;수영, 달리기&lt;/li&gt;
+&lt;li&gt;혜인&amp;amp;근배 저녁 초대&lt;/li&gt;
+&lt;li&gt;일두형 결혼&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-01-02-화요일&#34;&gt;2024. 01. 02. 화요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘랑 실내 암벽등반했다. 나는 아직 요령이 부족해서 등근육도 안 쓰고 팔힘으로만 하는 것 같다. 그래도 처음 갔을 때보다는 좀 더 나은 듯. 춘휘도 두 번째 오는 거였는데, 처음으로 정상 정복했다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

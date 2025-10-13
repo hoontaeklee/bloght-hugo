@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Research on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/research/</link>
+    <description>Recent content in Research on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Apr 2022 16:44:33 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper Review: Zhang et al., (2018). domimant_timescales_and_regions_of_global_NEE</title>
+      <link>http://localhost:1313/posts/paper_review/p042_2018_global_nee_timescale_and_regions/</link>
+      <pubDate>Sun, 24 Apr 2022 16:44:33 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p042_2018_global_nee_timescale_and_regions/</guid>
+      <description>&lt;h2 id=&#34;24-april-2022-zhang-gcb-domimant_timescales_and_regions_of_global_nee&#34;&gt;24 April, 2022 (Zhang, gcb, domimant_timescales_and_regions_of_global_NEE)&lt;/h2&gt;
+&lt;p&gt;Zhang, X., Wang, Y.-P., Peng, S., Rayner, P. J., Ciais, P., Silver, J. D., Piao, S., Zhu, Z., Lu, X., &amp;amp; Zheng, X. (2018). Dominant regions and drivers of the variability of the global land carbon sink across timescales. &lt;em&gt;Global Change Biology&lt;/em&gt;, &lt;em&gt;24&lt;/em&gt;(9), 3954–3968. &lt;a href=&#34;https://doi.org/10.1111/gcb.14275&#34;&gt;https://doi.org/10.1111/gcb.14275&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zhang et al. used the Fourier transformation to attribute variance of carbon cycle components to multiple time scales (from interannual to multi-decadal scales). Their study is based on mathematics, making the results very sound. A three-pools box model was formulated using the matrix representation by Prof. Luo to simplify the carbon cycle in ecosystem models of the Trendy project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Green et al., (2022). LST/Tair, a remote sensing-based indicator of vegetation water stress</title>
+      <link>http://localhost:1313/posts/paper_review/p041_2022_green_gcb_lst_over_tair/</link>
+      <pubDate>Wed, 20 Apr 2022 21:56:26 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p041_2022_green_gcb_lst_over_tair/</guid>
+      <description>&lt;h2 id=&#34;23-april-2022-green-gcb-lst_over_tair&#34;&gt;23 April, 2022 (Green, gcb, lst_over_tair)&lt;/h2&gt;
+&lt;p&gt;Green, J. K., Ballantyne, A., Abramoff, R., Gentine, P., Makowski, D., &amp;amp; Ciais, P. (2022). Surface temperatures reveal the patterns of vegetation water stress and their environmental drivers across the tropical Americas. &lt;em&gt;Global Change Biology&lt;/em&gt;, &lt;em&gt;28&lt;/em&gt;(9), 2940–2955. &lt;a href=&#34;https://doi.org/10.1111/gcb.16139&#34;&gt;https://doi.org/10.1111/gcb.16139&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Green et al. introduced the ratio of land surface temperature (LST; temperature of the top canopy) to air temperature as an indicator of vegetation water stress. I was particularly interested in their analysis using &lt;strong&gt;random forest and the Shapley value&lt;/strong&gt; to quantify the effect (e.g., pushing to above the mean) of each timestep on the target variable (i.e., LST/Tair). This paper was interesting to read, as the indicator is not only based on (satellite) observations but also based on a solid theory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Stocker et al., (2019). Underestimated GPP by RS models under dry soils</title>
+      <link>http://localhost:1313/posts/paper_review/p040_2019_stocker_underestimated_drysoil_gpp/</link>
+      <pubDate>Sat, 19 Feb 2022 14:46:17 +0100</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p040_2019_stocker_underestimated_drysoil_gpp/</guid>
+      <description>&lt;h2 id=&#34;19-february-2022-stocker-ngeo-underestimated_drysoil_gpp&#34;&gt;19 February, 2022 (Stocker, ngeo, underestimated_drysoil_gpp)&lt;/h2&gt;
+&lt;p&gt;Stocker, B.D., Zscheischler, J., Keenan, T.F. &lt;em&gt;et al.&lt;/em&gt; Drought impacts on terrestrial primary production underestimated by satellite monitoring. &lt;em&gt;Nat. Geosci.&lt;/em&gt; &lt;strong&gt;12,&lt;/strong&gt; 264–270 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41561-019-0318-6Introduction&#34;&gt;https://doi.org/10.1038/s41561-019-0318-6Introduction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stocker et al. investigated the effect of dry soil on GPP across scales after isolating from the effect of VPD. I read this paper, wondering the global error distribution is associated with my global TWS IAV error map.&lt;/p&gt;
+&lt;h2 id=&#34;message-soil-moisture-should-be-included-as-a-gpp-estimator-as-vpd-alone-cannot-account-for-dry-soil-impact-on-gpp&#34;&gt;Message: Soil moisture should be included as a GPP estimator as VPD alone cannot account for dry soil impact on GPP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dry soil effect reduces the global annual GPP by 15%&lt;/li&gt;
+&lt;li&gt;The effect of dry soil decreases with increasing spatial scale, due to compensation from different regions.
+&lt;ul&gt;
+&lt;li&gt;validated by symmetric pattern of histogram of soil moisture effect across the globe.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;it was interesting that the compensatory perspective is applied here as well&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;global-distribution-of-soil-moisture-effect-on-the-global-gpp-iav&#34;&gt;Global distribution of soil moisture effect on the global GPP IAV&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Values were calculated following Ahlstrom et al. (2015)&lt;/li&gt;
+&lt;li&gt;I can see that most of hotspots of the global TWS IAV errors have strong amplification of GPP IAV by dry soil (e.g., the Parana basin).&lt;/li&gt;
+&lt;li&gt;But also some of hotspots didn&amp;rsquo;t show a clear sign (e.g., lower Mekong basin).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Again, semi-arid regions pop up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;flue-a-metric-to-quantify-the-bias-from-soil-moisture-effect&#34;&gt;&lt;em&gt;fLUE&lt;/em&gt;, a metric to quantify the bias from soil moisture effect&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1111/nph.15123&#34;&gt;Stocker et al. (2018)&lt;/a&gt; separated SM effect on GPP from VPM effect on GPP using neural network (NN), a magical blackbox.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Syed (2008). GRACE_GLDAS. wr.</title>
+      <link>http://localhost:1313/posts/paper_review/p039_2008_syed_grace_gldas/</link>
+      <pubDate>Tue, 22 Jun 2021 19:18:55 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p039_2008_syed_grace_gldas/</guid>
+      <description>&lt;h2 id=&#34;21-june-2021-syed-wr-grace_gldas&#34;&gt;21 June, 2021 (Syed, wr, GRACE_GLDAS)&lt;/h2&gt;
+&lt;p&gt;Syed, T. H., Famiglietti, J. S., Rodell, M., Chen, J., and Wilson, C. R. (2008), Analysis of terrestrial water storage changes from GRACE and GLDAS, &lt;em&gt;Water Resour. Res.&lt;/em&gt;, 44, W02433, doi:&lt;a href=&#34;https://doi.org/10.1029/2006WR005779&#34;&gt;10.1029/2006WR005779&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This paper seemed like one of early TWS studies using the GRACE observation. I felt it as a classical one, so decided to read through, focusing on figures and the conclusion.&lt;/p&gt;
+&lt;h2 id=&#34;message-latitudinal-dominant-tws-component&#34;&gt;Message: latitudinal dominant TWS component&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;Dominant TWS pool&lt;/th&gt;
+          &lt;th&gt;Dominant TWS flux&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;High latitudes&lt;/td&gt;
+          &lt;td&gt;Snow water equivalent&lt;/td&gt;
+          &lt;td&gt;Snowmelt-derived runoff&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mid latitudes&lt;/td&gt;
+          &lt;td&gt;Soil moisture&lt;/td&gt;
+          &lt;td&gt;Evaporation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Low latitudes&lt;/td&gt;
+          &lt;td&gt;Soil moisture&lt;/td&gt;
+          &lt;td&gt;Precipitation&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Their message can be summarized with this table.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Vishwakarma (2021). the_TVR_metric. erl.</title>
+      <link>http://localhost:1313/posts/paper_review/p038_2021_vishwakarma_erl_tvr_metric/</link>
+      <pubDate>Mon, 12 Apr 2021 14:31:56 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p038_2021_vishwakarma_erl_tvr_metric/</guid>
+      <description>&lt;h2 id=&#34;12-april-2021-vishwakarma-erl-the_tvr_metric&#34;&gt;12 April, 2021 (Vishwakarma, erl, the_TVR_metric)&lt;/h2&gt;
+&lt;p&gt;Vishwakarma, B. D., Bates, P., Sneeuw, N., Westaway, R. M., &amp;amp; Bamber, J. L. (2021). Re-assessing global water storage trends from GRACE time series. &lt;em&gt;Environmental Research Letters&lt;/em&gt;, &lt;em&gt;16&lt;/em&gt;(3), 034005. &lt;a href=&#34;https://doi.org/10.1088/1748-9326/abd4a9&#34;&gt;https://doi.org/10.1088/1748-9326/abd4a9&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;message-the-variability-should-be-considered-together-with-trend&#34;&gt;Message: the variability should be considered together with trend.&lt;/h2&gt;
+&lt;p&gt;The authors suggested to use a new metric, named &lt;strong&gt;trend to variability ratio (TVR)&lt;/strong&gt;, when evaluating the severity of the change in the terrestrial water storage observations from GRACE satellite.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Humphrey (2021). smcAtmFeedback_NeeIav. Nature.</title>
+      <link>http://localhost:1313/posts/paper_review/p037_2021_humphrey_nature_smcatmfeedback_landneeiav/</link>
+      <pubDate>Wed, 07 Apr 2021 17:21:12 +0100</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p037_2021_humphrey_nature_smcatmfeedback_landneeiav/</guid>
+      <description>&lt;h2 id=&#34;07-april-2021-humphrey-nature-smcatmfeedback_neeiav&#34;&gt;07 April, 2021 (Humphrey, Nature, smcAtmFeedback_NeeIav)&lt;/h2&gt;
+&lt;p&gt;Humphrey, V., Berg, A., Ciais, P. &lt;em&gt;et al.&lt;/em&gt; Soil moisture–atmosphere feedback dominates land carbon uptake variability. &lt;em&gt;Nature&lt;/em&gt; 592, 65–69 (2021). &lt;a href=&#34;https://doi.org/10.1038/s41586-021-03325-5&#34;&gt;https://doi.org/10.1038/s41586-021-03325-5&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;message-soil-moistureatmosphere-feedback-dominates-land-carbon-uptake-variability&#34;&gt;Message: Soil moisture–atmosphere feedback dominates land carbon uptake variability&lt;/h2&gt;
+&lt;p&gt;The same as the title.&lt;/p&gt;
+&lt;h2 id=&#34;novelty-putting-the-feedback-concept-in-the-discussion&#34;&gt;Novelty: putting the feedback concept in the discussion&lt;/h2&gt;
+&lt;p&gt;Many studies have reported various factors such as SMC, Tair, and VPD, as the driving the global NEE IAV. This study reconciles these conflicting results by introducing a new common label to the candidates. SMC labeled as the &lt;strong&gt;direct&lt;/strong&gt; effect while Tair and VPD had &lt;strong&gt;the indirect&lt;/strong&gt; effect, as they are the spread of the SMC effect via &lt;strong&gt;land-atmosphere coupling&lt;/strong&gt; (i.e. SMC &amp;ndash;&amp;gt; LE &amp;ndash;&amp;gt; Tair, Rh, VPD). &lt;strong&gt;This labeling related the factors, which shifted the problem from finding the dominant driver to locating relevant drivers properly, which functioned as the reconciliation.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Ahlstrom (2015). Semi-Arid_to_NBP_IAV. Science.</title>
+      <link>http://localhost:1313/posts/paper_review/p036_2015_ahlstrom_science_semi-arid_to_nbp_iav/</link>
+      <pubDate>Mon, 08 Mar 2021 21:41:12 +0100</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p036_2015_ahlstrom_science_semi-arid_to_nbp_iav/</guid>
+      <description>&lt;h2 id=&#34;05-march-2021-ahlstrom-science-nbp-iav-dominator&#34;&gt;05 March, 2021 (Ahlstrom, science, NBP IAV dominator)&lt;/h2&gt;
+&lt;p&gt;Ahlstrom A, Raupach MR, Schurgers G, Smith B, Arneth A, Jung M, et al. The dominant role of semi-arid ecosystems in the trend and variability of the land CO2 sink. Science. 2015 May 22;348(6237):895–9. &lt;a href=&#34;https://doi.org/10.1126/science.aaa1668&#34;&gt;https://doi.org/10.1126/science.aaa1668&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;message-semi-arid-regions-dominate-the-land-carbon-sink-variability&#34;&gt;Message: Semi-arid regions dominate the land-carbon-sink variability&lt;/h2&gt;
+&lt;p&gt;The take-home message was simple and strong. Semi-arid regions dominated the global variability of land carbon sink variability (both long-term trend and interannual variability).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Pineiro (2008). OP vs. PO. ecolmodel.</title>
+      <link>http://localhost:1313/posts/paper_review/p035_2008_pineiro_ecolmodel_op_vs_po/</link>
+      <pubDate>Sun, 24 Jan 2021 16:42:12 +0100</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p035_2008_pineiro_ecolmodel_op_vs_po/</guid>
+      <description>&lt;h2 id=&#34;27-december-2020-jung-bg-fluxcom-carbon&#34;&gt;27 December, 2020 (Jung, bg, FLUXCOM carbon)&lt;/h2&gt;
+&lt;p&gt;Gervasio Piñeiro, Susana Perelman, Juan P. Guerschman, José M. Paruelo, How to evaluate models: Observed vs. predicted or predicted vs. observed?, Ecological Modelling, Volume 216, Issues 3–4, 2008, Pages 316-322, ISSN 0304-3800, &lt;a href=&#34;https://doi.org/10.1016/j.ecolmodel.2008.05.006&#34;&gt;https://doi.org/10.1016/j.ecolmodel.2008.05.006&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;prediction-x-axis-vs-observation-y-axis&#34;&gt;Prediction (x-axis) vs. Observation (y-axis)&lt;/h2&gt;
+&lt;p&gt;Martin added a comment to my proposal. He said that I should put prediction on the x-axis, referring to a paper:&lt;/p&gt;
+&lt;p&gt;I have just look over the &lt;strong&gt;conclusion&lt;/strong&gt; of the paper. It says that:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Robust linear regression</title>
+      <link>http://localhost:1313/posts/20210124_rlm/</link>
+      <pubDate>Sun, 24 Jan 2021 16:42:03 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20210124_rlm/</guid>
+      <description>&lt;h1 id=&#34;robust-linear-regression&#34;&gt;Robust linear regression&lt;/h1&gt;
+&lt;p&gt;Sujan recommended me to use the robust regression models (RLM) instead of the standard OLS (ordinary least squares). What are the differences?&lt;/p&gt;
+&lt;h2 id=&#34;robust-less-affected-by-outliers&#34;&gt;Robust: less affected by outliers&lt;/h2&gt;
+&lt;p&gt;A drawback of OLS is that the resulted regression line can be significantly altered by some outliers. As the OLS try to find a best line of the minimum SS, the optimum would likely to have more focus on outliers which have large SS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Jung (2020). FLUXCOM evaluation: carbon. bg.</title>
+      <link>http://localhost:1313/posts/paper_review/p034_2020_jung_bg_fluxcom_carbon/</link>
+      <pubDate>Sat, 26 Dec 2020 22:45:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p034_2020_jung_bg_fluxcom_carbon/</guid>
+      <description>&lt;h2 id=&#34;27-december-2020-jung-bg-fluxcom-carbon&#34;&gt;27 December, 2020 (Jung, bg, FLUXCOM carbon)&lt;/h2&gt;
+&lt;p&gt;Jung, M., Schwalm, C., Migliavacca, M., Walther, S., Camps-Valls, G., Koirala, S., Anthoni, P., Besnard, S., Bodesheim, P., Carvalhais, N., Chevallier, F., Gans, F., Goll, D. S., Haverd, V., Köhler, P., Ichii, K., Jain, A. K., Liu, J., Lombardozzi, D., Nabel, J. E. M. S., Nelson, J. A., O&amp;rsquo;Sullivan, M., Pallandt, M., Papale, D., Peters, W., Pongratz, J., Rödenbeck, C., Sitch, S., Tramontana, G., Walker, A., Weber, U., and Reichstein, M.: Scaling carbon fluxes from eddy covariance sites to globe: synthesis and evaluation of the FLUXCOM approach, Biogeosciences, 17, 1343–1365, &lt;a href=&#34;https://doi.org/10.5194/bg-17-1343-2020&#34;&gt;https://doi.org/10.5194/bg-17-1343-2020&lt;/a&gt;, 2020.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Isolation Forest</title>
+      <link>http://localhost:1313/posts/20201122_isolation_forest/</link>
+      <pubDate>Sun, 22 Nov 2020 20:53:43 +0100</pubDate>
+      <guid>http://localhost:1313/posts/20201122_isolation_forest/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;knitr&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;opts_chunk&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(eval &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRUE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      echo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRUE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      warning &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;solitude: &lt;a href=&#34;https://github.com/talegari/solitude&#34;&gt;https://github.com/talegari/solitude&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;isofor: &lt;a href=&#34;https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest&#34;&gt;https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install.packages(&amp;#34;mvoutlier&amp;#34;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install.packages(&amp;#34;remotes&amp;#34;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# remotes::install_github(&amp;#34;Zelazny7/isofor&amp;#34;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#import libraries&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(ggplot2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(ggpubr)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(solitude)  &lt;span style=&#34;color:#75715e&#34;&gt;# hereafter, &amp;#34;sol&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(isofor)  &lt;span style=&#34;color:#75715e&#34;&gt;# hereafter, &amp;#34;iso&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(viridis)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;packageVersion&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;solitude&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#create sample data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;humus&amp;#34;&lt;/span&gt;, package &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mvoutlier&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 2-dimensional&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;columns_required &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; humus[ , columns_required]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# multi-dimensional&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;columns_required_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setdiff&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;colnames&lt;/span&gt;(humus)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                               , &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cond&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ID&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;XCOO&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;YCOO&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LOI&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                               )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; humus[ , columns_required_mul]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;(humus2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;(humus_mul)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#plot data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;(shape &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, alpha &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(alpha &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;, colour&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Legend&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# solitude library&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# sample (50%)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set.seed&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sample&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;nrow&lt;/span&gt;(humus2) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sample&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;nrow&lt;/span&gt;(humus_mul) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# initiate an isolation forest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; isolationForest&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt;(sample_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(index))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol_mul &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; isolationForest&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt;(sample_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(index))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# fit an isolation forest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fit&lt;/span&gt;(humus2[index, ])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_sol_mul&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fit&lt;/span&gt;(humus_mul[index, ])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# isofor library&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;iForest&lt;/span&gt;(humus2,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  phi &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nrow&lt;/span&gt;(humus2) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# sample size&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  )
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Obtain anomaly scores&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; if_sol&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(humus2)&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;anomaly_score
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus_mul&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; if_sol_mul&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(humus_mul)&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;anomaly_score
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(if_iso,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            newdata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; humus2[, &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# decision: outlier if score &amp;gt; 0.6 (threshold could vary by users)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;is_outlier_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.6&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;is_outlier_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.55&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# create grid values for contour plot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bi_seq &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Bi),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#a6e22e&#34;&gt;max&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Bi),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              length.out &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Cd_seq &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Cd),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#a6e22e&#34;&gt;max&lt;/span&gt;(humus2&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Cd),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              length.out &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2_grid &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;expand.grid&lt;/span&gt;(Bi &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi_seq,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                           Cd &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd_seq)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; if_sol&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(humus2_grid)&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;anomaly_score
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(if_iso,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                 newdata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; humus2_grid[, &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# scatter plot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sca_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_sol)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; is_outlier_sol)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;scale_color_viridis&lt;/span&gt;(discrete &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      direction &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sca_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_iso)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; is_outlier_iso)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;scale_color_viridis&lt;/span&gt;(discrete &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      direction &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# contour plot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gmin &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol, humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gmax &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;max&lt;/span&gt;(humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_sol, humus2_grid&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;score_iso)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gbreaks &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;round&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(gmin, gmax, length.out &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cont_sol &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2_grid, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_sol)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_contour_filled&lt;/span&gt;(breaks &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; gbreaks) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cont_iso &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(humus2_grid, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Bi, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Cd, z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; score_iso)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_contour_filled&lt;/span&gt;(breaks &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; gbreaks) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bi&amp;#34;&lt;/span&gt;, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# aggregate ggplots&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;theme_set&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt;(legend.position &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_plot &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;ggarrange&lt;/span&gt;(sca_sol, sca_iso, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            cont_sol, cont_iso,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            labels &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;solitude&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iso&amp;#34;&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ncol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, nrow &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;if_plot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Two scatter plots are similar even if they use different threshold values for the decision.&lt;/li&gt;
+&lt;li&gt;Two contour plots look very different. This is because they have different range of scores. If we compare the regions with the same levels and colors, they show similar result.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Gentine (2019). Coupling between carbon and water cycles-a review. erl.</title>
+      <link>http://localhost:1313/posts/paper_review/p033_2019_gentine_erl_cw_coupling/</link>
+      <pubDate>Mon, 16 Nov 2020 22:32:26 +0100</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p033_2019_gentine_erl_cw_coupling/</guid>
+      <description>&lt;h2 id=&#34;14-october-2020-gentine-erl-cw-coupling&#34;&gt;14 October, 2020 (Gentine, erl, cw coupling)&lt;/h2&gt;
+&lt;p&gt;Gentine, P., Green, J.K., Guérin, M., Humphrey, V., Seneviratne, S.I., Zhang, Y., &lt;em&gt;et al.&lt;/em&gt; (2019). Coupling between the terrestrial carbon and water cycles—a review. &lt;em&gt;Environ. Res. Lett.&lt;/em&gt;, 19. &lt;a href=&#34;https://doi.org/10.1088/1748-9326/ab22d6&#34;&gt;https://doi.org/10.1088/1748-9326/ab22d6&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The right topic for my project.&lt;/p&gt;
+&lt;p&gt;The authors wrote that this paper would be an introduction of the coupling of carbon and water cycles to people who are not familiar with. Indeed I think they summarized the topics nicely with well-organized structure.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Liu (2020). More dominant SM dryness effect than VPD. ncomm.</title>
+      <link>http://localhost:1313/posts/paper_review/p032_2020_liu_ncomm_dominant_sm/</link>
+      <pubDate>Wed, 14 Oct 2020 16:59:44 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p032_2020_liu_ncomm_dominant_sm/</guid>
+      <description>&lt;h2 id=&#34;14-october-2020-liu-ncomm-dominant-sm-effect&#34;&gt;14 October, 2020 (Liu, ncomm, dominant SM effect)&lt;/h2&gt;
+&lt;p&gt;Liu, L., Gudmundsson, L., Hauser, M. &lt;em&gt;et al.&lt;/em&gt; Soil moisture dominates dryness stress on ecosystem production globally. &lt;em&gt;Nat Commun&lt;/em&gt; &lt;strong&gt;11,&lt;/strong&gt; 4892 (2020). &lt;a href=&#34;https://doi.org/10.1038/s41467-020-18631-1&#34;&gt;https://doi.org/10.1038/s41467-020-18631-1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Soil moisture (SM) and vapor pressure deficit (VPD) have been regarded as the major driver of dryness stress on the ecosystem productivity. However, it has been difficult to separate each effect due to the strong coupling between SM and VPD, which resulted in a number of model representation for the dryness stress. Here the authors show that &lt;strong&gt;the SM dominates the dryness stress over the 70% of vegetated land&lt;/strong&gt;. The methodology used was quite intuitive even though it lacks sound theoretical description.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Green (2017). Regional land-atmosphere Feedbacks. ng</title>
+      <link>http://localhost:1313/posts/paper_review/p031_2017_green_ng_regional_feedback/</link>
+      <pubDate>Mon, 12 Oct 2020 21:26:21 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p031_2017_green_ng_regional_feedback/</guid>
+      <description>&lt;h2 id=&#34;12-october-2020-green-ng-regional-feedbacks&#34;&gt;12 October, 2020 (Green, ng, regional feedbacks)&lt;/h2&gt;
+&lt;p&gt;Green, J., Konings, A., Alemohammad, S. &lt;em&gt;et al.&lt;/em&gt; Regionally strong feedbacks between the atmosphere and terrestrial biosphere. &lt;em&gt;Nature Geosci&lt;/em&gt; &lt;strong&gt;10,&lt;/strong&gt; 410–414 (2017). &lt;a href=&#34;https://doi.org/10.1038/ngeo2957&#34;&gt;https://doi.org/10.1038/ngeo2957&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Here &lt;strong&gt;the authors confirm land-atmosphere feedbacks&lt;/strong&gt; using satellite observations and a statistical method. The feedback from the biosphere to the atmosphere &lt;strong&gt;explains 30% of variations in precipitation and photosynthetically active radiation (PAR)&lt;/strong&gt;. They employed &lt;strong&gt;a multivariate conditional Granger Causality (MVGC) using vector autoregression models (VAR)&lt;/strong&gt; to decompose two directions in the feedbacks (i.e. atmosphere to biosphere and vice versa). Lastly, they explore how these feedbacks are represented in Earth system models (ESMs) and find that &lt;strong&gt;ESMs underestimate the feedbacks&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Bloom (2020). Legacy-(NBE IAV). bgd</title>
+      <link>http://localhost:1313/posts/paper_review/p030_2020_bloom_bgd_legacy-iav/</link>
+      <pubDate>Mon, 21 Sep 2020 15:49:32 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p030_2020_bloom_bgd_legacy-iav/</guid>
+      <description>&lt;h2 id=&#34;21-september-2020-bloom-bgd-legacy-nbe-iav&#34;&gt;21 September, 2020 (Bloom, bgd, Legacy-(NBE IAV))&lt;/h2&gt;
+&lt;p&gt;Bloom, A. A., Bowman, K. W., Liu, J., Konings, A. G., Worden, J. R., Parazoo, N. C., Meyer, V., Reager, J. T., Worden, H. M., Jiang, Z., Quetin, G. R., Smallman, T. L., Exbrayat, J.-F., Yin, Y., Saatchi, S. S., Williams, M., and Schimel, D. S.: Lagged effects dominate the inter-annual variability of the 2010–2015 tropical carbon balance, Biogeosciences Discuss., &lt;a href=&#34;https://doi.org/10.5194/bg-2019-459&#34;&gt;https://doi.org/10.5194/bg-2019-459&lt;/a&gt;, in review, 2020.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Humphrey (2018). TWS-[CO2]. Nature</title>
+      <link>http://localhost:1313/posts/paper_review/p029_2018_humphrey_nature_tws-co2/</link>
+      <pubDate>Fri, 18 Sep 2020 15:22:49 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p029_2018_humphrey_nature_tws-co2/</guid>
+      <description>&lt;h2 id=&#34;18-september-2020-humphrey-nature-tws-co2&#34;&gt;18 September, 2020 (Humphrey, nature, TWS-[CO2])&lt;/h2&gt;
+&lt;p&gt;Humphrey, V., Zscheischler, J., Ciais, P. &lt;em&gt;et al.&lt;/em&gt; Sensitivity of atmospheric CO2 growth rate to observed changes in terrestrial water storage. &lt;em&gt;Nature&lt;/em&gt; &lt;strong&gt;560,&lt;/strong&gt; 628–631 (2018). &lt;a href=&#34;https://doi.org/10.1038/s41586-018-0424-4&#34;&gt;https://doi.org/10.1038/s41586-018-0424-4&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This paper provides &lt;strong&gt;observational evidence&lt;/strong&gt; that &lt;strong&gt;the inter-annual variation (IAV) of CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; growth rate (CGR) is strongly coupled to changes in both terrestrial water storage (TWS) and temperature at the global scale.&lt;/strong&gt; It uses GRACE product, satellite observations of TWS, and measurements of CGR from NOAA. In addition, the authors compares their results with those by Jung et al. (2017), which is a root of my PhD project. The comparison reveals that &lt;strong&gt;the global CGR is more related to TWS rather than temperature, which counters Jung et al. (2017)&amp;rsquo;s results.&lt;/strong&gt; This contradictory is triggered by less sensitive response of DGVMs in the TRENDY project, calling further improvements.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Green (2019). SMC-NBP</title>
+      <link>http://localhost:1313/posts/paper_review/p028_2019_green_nature_smc-nbp/</link>
+      <pubDate>Fri, 11 Sep 2020 16:37:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p028_2019_green_nature_smc-nbp/</guid>
+      <description>&lt;h2 id=&#34;11-september-2020-green-nature-smc-nbp&#34;&gt;11 September, 2020 (Green, nature, SMC-&amp;gt;NBP)&lt;/h2&gt;
+&lt;p&gt;Green, J.K., Seneviratne, S.I., Berg, A.M. &lt;em&gt;et al.&lt;/em&gt; Large influence of soil moisture on long-term terrestrial carbon uptake. &lt;em&gt;Nature&lt;/em&gt; &lt;strong&gt;565,&lt;/strong&gt; 476–479 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41586-018-0848-x&#34;&gt;https://doi.org/10.1038/s41586-018-0848-x&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The authors concluded that soil moisture has substantial effect on long-term net biosphere productivity (NBP, a.k.a. NEE?) using a global satellite product of SIF and TWS (GRACE) and multi-model ensemble from the GLACE-CMIP5 project. They explained that the SMC effect was attributable to non-linear response of NBP to SMC. Also, &lt;strong&gt;they emphasized the need for better improvement representations of CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; fertilization effect in models&lt;/strong&gt;, as it is a basis of their results.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: McDowell (2020). Forest dynamics in the future</title>
+      <link>http://localhost:1313/posts/paper_review/p027_2020_mcdowell_science_pervasive/</link>
+      <pubDate>Sun, 26 Jul 2020 23:51:45 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p027_2020_mcdowell_science_pervasive/</guid>
+      <description>&lt;h2 id=&#34;26-july-2020-mcdowell-science-forest-dynamics-in-the-future&#34;&gt;26 July, 2020 (McDowell, science, Forest dynamics in the future)&lt;/h2&gt;
+&lt;p&gt;McDowell, N.G., Allen, C.D., Anderson-Teixeira, K., Aukema, B.H., Bond-Lamberty, B., Chini, L., &lt;em&gt;et al.&lt;/em&gt; (2020). Pervasive shifts in forest dynamics in a changing world. &lt;em&gt;Science&lt;/em&gt;, 368, eaaz9463.&lt;/p&gt;
+&lt;h2 id=&#34;shifts-toward-shorter-and-younger-forests&#34;&gt;Shifts toward shorter and younger forests.&lt;/h2&gt;
+&lt;p&gt;What will be the future state of forests and how will it be different from the current one?&lt;/p&gt;
+&lt;h2 id=&#34;uncertainties&#34;&gt;Uncertainties&lt;/h2&gt;
+&lt;p&gt;In the early stage of the climate change, trees assimilated more carbon than before the change.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Samuels-Crow (2020). SAM-&gt;NEE and ET. JGRBG</title>
+      <link>http://localhost:1313/posts/paper_review/p026_2020_samuelscrow_jgrbg_sam_nee_et/</link>
+      <pubDate>Thu, 23 Jul 2020 19:23:36 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p026_2020_samuelscrow_jgrbg_sam_nee_et/</guid>
+      <description>&lt;h2 id=&#34;23-july-2020-samuels-crow-jgrbg-sam-nee-and-et&#34;&gt;23 July, 2020 (Samuels-Crow, JGRBG, SAM-&amp;gt;NEE and ET)&lt;/h2&gt;
+&lt;p&gt;Samuels‐Crow, K. E., Ogle, K., &amp;amp; Litvak, M. E. (2020). Atmosphere‐Soil Interactions Govern Ecosystem Flux Sensitivity to Environmental Conditions in Semiarid Woody Ecosystems over Varying Timescales. &lt;em&gt;Journal of Geophysical Research: Biogeosciences&lt;/em&gt;, 125, e2019JG005554. &lt;a href=&#34;https://doi.org/10.1029/2019JG005554&#34;&gt;https://doi.org/10.1029/2019JG005554&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Samuels-Crow et al., in this paper, quantified environmental antecedent (past) memory of water (ET) and carbon (NEE) fluxes over two semi-arid sites where two different conifer species dominate each. They used flux datasets from a network of eddy covariance towers (i.e. Ameriflux), relevant environmental observations, and a hierarchical Bayesian framework (i.e. the SAM framework). In general, the results showed that NEE and ET negatively, and instantaneously, responded to changes in air temperature and VPD. Conversely, NEE and ET showed positive, and with longer temporal timescale, relationship with precipitation and soil moisture at deeper level. The authors reminded that the timescale of the environmental memory on NEE was highly variable with a longer scale for arid area. However, although they speculated the reason, &lt;strong&gt;it seems that the behind mechanism is remained unexplained.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Trautmann (2018). TWS variation across scales. HESS</title>
+      <link>http://localhost:1313/posts/paper_review/p025_2018_trautmann_hess_tws/</link>
+      <pubDate>Sun, 07 Jun 2020 16:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p025_2018_trautmann_hess_tws/</guid>
+      <description>&lt;h2 id=&#34;6-june-2020-trautmann-hess-tws-variation-across-scales&#34;&gt;6 June, 2020 (Trautmann, HESS, TWS variation across scales)&lt;/h2&gt;
+&lt;p&gt;Trautmann, T., Koirala, S., Carvalhais, N., Eicker, A., Fink, M., Niemann, C., &lt;em&gt;et al.&lt;/em&gt; (2018). Understanding terrestrial water storage variations in northern latitudes across scales. &lt;em&gt;Hydrology and Earth System Sciences&lt;/em&gt;, 22, 4061–4082.&lt;/p&gt;
+&lt;h2 id=&#34;why-did-i-read-this-paper&#34;&gt;Why did I read this paper?&lt;/h2&gt;
+&lt;p&gt;This paper contains the description and use of a hydrological model that a group I will join deals with.&lt;/p&gt;
+&lt;h2 id=&#34;what-they-did&#34;&gt;What they did?&lt;/h2&gt;
+&lt;p&gt;The hydrological model is relatively economic, or parsimonious, given small number of internal water storages (soil moisture, snowpack, and land run off), input variables (air temperature, precipitation, and net radiation), and parameters (10 params.).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Guo (2019). SAM-&gt;iso/anisohydry. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p024_2019_guo_nph_isohydry/</link>
+      <pubDate>Wed, 20 May 2020 21:16:35 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p024_2019_guo_nph_isohydry/</guid>
+      <description>&lt;h2 id=&#34;20-may-2020-guo-nph-sam-isoansiohydry&#34;&gt;20 May, 2020 (Guo, NPH, SAM-&amp;gt;iso/ansiohydry)&lt;/h2&gt;
+&lt;p&gt;Guo, J.S., Hultine, K.R., Koch, G.W., Kropp, H. and Ogle, K. (2020), Temporal shifts in iso/anisohydry revealed from daily observations of plant water potential in a dominant desert shrub. New Phytol, 225: 713-726. doi:&lt;a href=&#34;https://doi.org/10.1111/nph.16196&#34;&gt;10.1111/nph.16196&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;a-key-reference-for-applying-the-sam-framework&#34;&gt;A key reference for applying the SAM framework&lt;/h2&gt;
+&lt;p&gt;I have reviewed a &lt;a href=&#34;http://localhost:1313/posts/paper_review/p023_2019_liu_ele_SAM_NEE&#34;&gt;paper&lt;/a&gt; in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). &lt;strong&gt;However&lt;/strong&gt;, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Liu (2019). SAM-&gt;NEE across biomes. ELE</title>
+      <link>http://localhost:1313/posts/paper_review/p023_2019_liu_ele_sam_nee/</link>
+      <pubDate>Fri, 01 May 2020 13:43:04 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p023_2019_liu_ele_sam_nee/</guid>
+      <description>&lt;h2 id=&#34;1-may-2020-liu-ele-sam-nee-across-biomes&#34;&gt;1 May, 2020 (Liu, ELE, SAM-&amp;gt;NEE across biomes)&lt;/h2&gt;
+&lt;p&gt;Liu, Y., Schwalm, C.R., Samuels‐Crow, K.E. and Ogle, K. (2019), Ecological memory of daily carbon exchange across the globe and its importance in drylands. Ecol Lett, 22: 1806-1816. doi:&lt;a href=&#34;https://doi.org/10.1111/ele.13363&#34;&gt;10.1111/ele.13363&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;why-did-i-read-this-paper&#34;&gt;Why did I read this paper?&lt;/h2&gt;
+&lt;p&gt;To apply the SAM framework for my paper, I needed a reference. &lt;strong&gt;Professor Ogle recommended this paper&lt;/strong&gt; for me as I and Liu et al. have the same type of data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Advanced R (2nd ed.)</title>
+      <link>http://localhost:1313/posts/20200412_advr/</link>
+      <pubDate>Sun, 12 Apr 2020 17:19:53 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200412_advr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;log&#34;&gt;Log&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2020-04-12&lt;/strong&gt;: 23, 24.6&lt;/p&gt;
+&lt;p&gt;과학원에서 기상자료 QC하는 R 코드를 짰는데, 꽤 애먹었다.&lt;/p&gt;
+&lt;p&gt;컴퓨터 메모리는 8GB.&lt;/p&gt;
+&lt;p&gt;인풋으로 사용하는 csv 파일이 최대 2GB 정도로 크긴 했지만 메모리에는 문제가 없어 보였다.&lt;/p&gt;
+&lt;p&gt;하지만 분명 언뜻 보기에 8GB가 넘지 않을 것 같은데도 &lt;strong&gt;메모리 용량 부족으로 에러&lt;/strong&gt;가 자꾸 났다.&lt;/p&gt;
+&lt;p&gt;읽어들인 파일을 수동으로 쪼갠 후 열심히 QC를 진행했지만&amp;hellip; 결국 친구가 말해준 기한을 넘겨버렸다.&lt;/p&gt;
+&lt;p&gt;내 추측에&amp;hellip; 함수가 작동하는 과정에서 내부적으로 변수를 복사하기 때문에 메모리 사용량이 내 예상을 넘는 것 같다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ecological Forecasting</title>
+      <link>http://localhost:1313/posts/20200311_ecological_forecasting/</link>
+      <pubDate>Wed, 11 Mar 2020 20:35:43 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200311_ecological_forecasting/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://ecoforecast.org&#34;&gt;Near-term Ecological Forecasting Initiative (NEFI) Summer Course 2020&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;책 저자이자 보스턴 대학교(Boston University)에 재직중인 Dietze 교수는 매년 Bayesian application to ecological forecasting을 가르치는 summer course를 진행하고 있다. NEFI 2019에는 선발되지 못했지만, 올해는 고맙게도 나를 초대해줬다.&lt;/p&gt;
+&lt;p&gt;이 책을 교재로 사용하는데, 가서 잘 배우려면 한 번 예습은 해야 하지 않을까&amp;hellip;해서 구입했다.&lt;/p&gt;
+&lt;p&gt;내 toolbox에 담을 수 있을만한 주제이니 잘 공부해두면 도움이 많이 되겠다. 챕터마다 요약도 잘 돼 있고, &lt;a href=&#34;https://github.com/EcoForecast/EF_Activities&#34;&gt;Github&lt;/a&gt;에 exercise 코드도 정리돼있고, 중간중간 기억해둘만한 표현도 꽤 있다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Kallestinova (2011). How to write your first research paper</title>
+      <link>http://localhost:1313/posts/paper_review/p022_2011_kallestinova_yale_write-1st-paper/</link>
+      <pubDate>Fri, 28 Feb 2020 19:48:52 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p022_2011_kallestinova_yale_write-1st-paper/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3178846/pdf/yjbm_84_3_181.pdf&#34;&gt;Kallestinova E. D. (2011). How to write your first research paper. &lt;em&gt;The Yale journal of biology and medicine&lt;/em&gt;, &lt;em&gt;84&lt;/em&gt;(3), 181–190.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Confused&lt;/strong&gt; &lt;em&gt;by now&lt;/em&gt; with encountering the start of a new research, I read this paper to seek for avenues. The author, Elena D. Kallestinova, provided some pragmatic &lt;strong&gt;rules&lt;/strong&gt; with the relevant explanation. &lt;em&gt;Rather than procastinating&lt;/em&gt;, it might be more helpful for my writing to dive directly into my data, models, and codes. However, I believe that keeping advices from this paper in mind would also guide me to &lt;em&gt;sifting my ideas&lt;/em&gt; and finishing the draft.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Holgate (2016). SMC. RSE</title>
+      <link>http://localhost:1313/posts/paper_review/p021_2016_holgate_rse_smc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p021_2016_holgate_rse_smc/</guid>
+      <description>&lt;h2 id=&#34;27-february-2020-holgate-rse-smc&#34;&gt;27 February, 2020 (Holgate, RSE, SMC)&lt;/h2&gt;
+&lt;p&gt;Holgate, C.M., De Jeu, R.A., van Dijk, A.I.J.M., Liu, Y.Y., Renzullo, L.J., Dharssi, I., Parinussa, R.M., Van Der Schalie, R., Gevaert, A., Walker, J., 2016. Comparison of remotely sensed and modelled soil moisture data sets across Australia. Remote Sensing of Environment 186, 479–500.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;This paper compared time series pattern and temporal anomaly of diverse soil moisture content (SMC) products with in-situ measurements. The methodologies included the Pearson correlation coefficient, an anomaly index and the cluster analysis. By comparing in a common frame, this study could provide a glimpse of the performances of the SMC products. &lt;strong&gt;I would probably refer to this paper&lt;/strong&gt;, as I would like to compare many ET and SMC products.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Eller (2020). JULES-SOX. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p020_2020_eller_nph_jules-sox/</link>
+      <pubDate>Sun, 01 Mar 2020 16:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p020_2020_eller_nph_jules-sox/</guid>
+      <description>&lt;h2 id=&#34;22-february-2020-eller-nph-jules-sox&#34;&gt;22 February, 2020 (Eller, NPH, JULES-SOX)&lt;/h2&gt;
+&lt;p&gt;Eller, C.B., Rowland, L., Mencuccini, M., Rosas, T., Williams, K., Harper, A., Medlyn, B.E., Wagner, Y., Klein, T., Teodoro, G.S., Oliveira, R.S., Matos, I.S., Rosado, B.H.P., Fuchs, K., Wohlfahrt, G., Montagnani, L., Meir, P., Sitch, S. and Cox, P.M. (2020), Stomatal optimization based on xylem hydraulics (SOX) improves land surface model simulation of vegetation responses to climate. New Phytol. doi:&lt;a href=&#34;https://doi.org/10.1111/nph.16419&#34;&gt;10.1111/nph.16419&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;Many researchers, including me, who use ecosystem models have recognized that the beta function approach for representing the change in plant photosynthesis to soil moisture stress needs improvement. In my case, I saw that the ET simulation by JULES was too sensitive to drought, resulting in underestimation. Eller et al. (2020) did a great work for developing an improved alternative method, especially considering xylem hydraulics. By a global evaluation for many biomes, the authors showed that the JULES-SOX outperformed the default JULES for most of evaluations. This improvement spreads out to more accurate estimates of global GPP and ET, predicting plant-physiological response mechanism under the drought condition, the demographic consequences resulted from the more competitive soil moisture use, and possibly replacing the PFT approach in LSMs and DGVMs to represent the large diversity of ecological strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Ogle (2019). SAM. CHANCE</title>
+      <link>http://localhost:1313/posts/paper_review/p019_2016_ogle_chance_sam/</link>
+      <pubDate>Sun, 01 Mar 2020 16:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p019_2016_ogle_chance_sam/</guid>
+      <description>&lt;h2 id=&#34;15-february-2020-ogle-chance-sam&#34;&gt;15 February, 2020 (Ogle, CHANCE, SAM)&lt;/h2&gt;
+&lt;p&gt;Kiona Ogle &amp;amp; Jarrett J. Barber (2016) Plant and Ecosystem Memory, CHANCE, 29:2, 16-22, DOI: 10.1080/09332480.2016.1181961&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why did I read this paper?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;It is often easier to get knowledge&lt;/strong&gt; (i.e., model, concept, equation, and so forth) not from the original descriptive paper, &lt;strong&gt;but from other papers using the knowledge&lt;/strong&gt; because they introduce the knowledge after masticating it, not as it is.&lt;/p&gt;
+&lt;p&gt;This paper masticates &lt;strong&gt;the stochastic antecedent modelling (SAM) framework&lt;/strong&gt; for beginners. This study describes what SAM does and how SAM does it, and why SAM does it with a simple example and without complicated equations. Whereas, the original paper (Ogle et al., 2015&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;) provides in-depth explanation about the SAM, but the mathematical expressions cover here and there, making readers terrified even though the two studies exemplified the same case.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Reichstein (2019). Deep learning. Nature</title>
+      <link>http://localhost:1313/posts/paper_review/p018_2019_reichstein_nature_deep-learning/</link>
+      <pubDate>Sun, 01 Mar 2020 16:44:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p018_2019_reichstein_nature_deep-learning/</guid>
+      <description>&lt;h2 id=&#34;7-february-2020-reichstein-nature-deep-learning&#34;&gt;7 February, 2020 (Reichstein, Nature, Deep learning)&lt;/h2&gt;
+&lt;p&gt;Reichstein, M., Camps-Valls, G., Stevens, B. et al. Deep learning and process understanding for data-driven Earth system science. &lt;em&gt;&lt;strong&gt;Nature&lt;/strong&gt;&lt;/em&gt; 566, 195–204 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41586-019-0912-1&#34;&gt;https://doi.org/10.1038/s41586-019-0912-1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How have machine learning algorithms, especially deep learning, been applied to Earth system science and what is the future direction of the application?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Our ability to produce a deluge of data outpaces our ability to assimilate the information.&lt;/li&gt;
+&lt;li&gt;The advance in computing system, statistical and machine learning modeling have combined with the plethora of Earth system data to create a new avenue of modeling: deep learning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Jung (2017). Compensatory. Nature</title>
+      <link>http://localhost:1313/posts/paper_review/p017_2017_jung_nature_compensatory/</link>
+      <pubDate>Sun, 01 Mar 2020 16:43:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p017_2017_jung_nature_compensatory/</guid>
+      <description>&lt;h2 id=&#34;4-february-2020-jung-nature-compensatory&#34;&gt;4 February, 2020 (Jung, Nature, Compensatory)&lt;/h2&gt;
+&lt;p&gt;Jung, M., Reichstein, M., Schwalm, C. et al. Compensatory water effects link yearly global land CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; sink changes to temperature. &lt;em&gt;&lt;strong&gt;Nature&lt;/strong&gt;&lt;/em&gt; 541, 516-520 (2017). &lt;a href=&#34;https://doi.org/10.1038/nature20780&#34;&gt;https://doi.org/10.1038/nature20780&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How do changes in temperature and water availability effect on gross primary productivity (GPP), terrestrial ecosystem respiration (TER), and net ecosystem exchange (NEE) at local and global scales?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Despite&lt;/strong&gt; temperature is known to contribute to the inter annual variation (IAV) of the terrestrial carbon cycle, several studies propose that &lt;strong&gt;water availability play an important role&lt;/strong&gt; in the carbon cycle relates such as the carbon balance of semi-tropics and the sensitivity to IAV.&lt;/li&gt;
+&lt;li&gt;An understanding of the process behind &lt;strong&gt;the climatic control of terrestrial carbon cycle&lt;/strong&gt; on interannual timescales and across spatial scales is &lt;strong&gt;still lacking&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why do a PhD abroad? - 박사 (유학)하는 이유</title>
+      <link>http://localhost:1313/posts/20200122_whyphd/</link>
+      <pubDate>Wed, 22 Jan 2020 13:45:55 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200122_whyphd/</guid>
+      <description>&lt;h1 id=&#34;why-do-a-phd&#34;&gt;Why do a PhD?&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I like to do the PhD-related activities.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying&lt;/li&gt;
+&lt;li&gt;Working in nature
+&lt;ul&gt;
+&lt;li&gt;Analyzing and computing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Writing&lt;/li&gt;
+&lt;li&gt;Presenting&lt;/li&gt;
+&lt;li&gt;Educating&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I want to learn the ecosystem modeling at a deep level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I like the liberal atmosphere of academic community.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open discussion&lt;/li&gt;
+&lt;li&gt;Less strict working time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I like jobs with a PhD than ones with a bachelor&amp;rsquo;s or Master&amp;rsquo;s degree.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;why-do-a-phd-abroad&#34;&gt;Why do a PhD &lt;!-- raw HTML omitted --&gt;abroad&lt;!-- raw HTML omitted --&gt;?&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;There are potential advisors whose experience well aligns with what I want to study.&lt;/li&gt;
+&lt;li&gt;They have established programs for training young researchers.&lt;/li&gt;
+&lt;li&gt;They have a pleasant research environment. I can more concentrate on my own research, not on irritating stuffs such as administrative works.&lt;/li&gt;
+&lt;li&gt;I could be more connected to the international research community.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: di Porcia e Brugnera (2019). Liana. GCB</title>
+      <link>http://localhost:1313/posts/paper_review/p016_2019_brugnera_gcb_liana/</link>
+      <pubDate>Sun, 01 Mar 2020 16:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p016_2019_brugnera_gcb_liana/</guid>
+      <description>&lt;h2 id=&#34;21-january-2020-brugnera-gcb-liana&#34;&gt;21 January, 2020 (Brugnera, GCB, Liana)&lt;/h2&gt;
+&lt;p&gt;di Porcia e Brugnera, M, Meunier, F, Longo, M, et al. Modeling the impact of liana infestation on the demography and carbon cycle of tropical forests. &lt;strong&gt;&lt;em&gt;Global Change Biology&lt;/em&gt;&lt;/strong&gt;, 2019; 25: 3767– 3780. &lt;a href=&#34;https://doi.org/10.1111/gcb.14769&#34;&gt;https://doi.org/10.1111/gcb.14769&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How much does integrating lianas into the ED2 influence the estimates of forest carbon cycle?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;The authors &lt;strong&gt;hypothesized&lt;/strong&gt; that the impact of lianas on carbon uptake by forest would be &lt;strong&gt;larger in the secondary forests&lt;/strong&gt; than in the old-growth forests since lianas showed high density in young forests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Piao (2019). Phenology. GCB</title>
+      <link>http://localhost:1313/posts/paper_review/p015_2019_piao_gcb_phenology/</link>
+      <pubDate>Sun, 01 Mar 2020 16:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p015_2019_piao_gcb_phenology/</guid>
+      <description>&lt;h2 id=&#34;11-january-2020-piao-gcb-phenology&#34;&gt;11 January, 2020 (Piao, GCB, Phenology)&lt;/h2&gt;
+&lt;p&gt;Piao S, Liu Q, Chen A, et al. Plant phenology and global climate change: Current progresses and challenges. &lt;em&gt;&lt;strong&gt;Global Change Biology&lt;/strong&gt;&lt;/em&gt;, 2019;00:1–19. &lt;a href=&#34;https://doi.org/10.1111/gcb.14619&#34;&gt;https://doi.org/10.1111/gcb.14619&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Piao et al. (2019) reviewed the current understanding of leaf phenological processes&lt;/strong&gt;. They suggested that &lt;strong&gt;four key factors&lt;/strong&gt; are driving the phenological processes: 1) temperature, 2) photoperiod, 3) nutrient and water availability, and 4) interseasonal phenological correlations (i.e. the positive spring and autumn phenological intercorrelation).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Fisher (2010). JULES-ED. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p014_2010_fisher_nph_jules-ed/</link>
+      <pubDate>Sun, 01 Mar 2020 16:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p014_2010_fisher_nph_jules-ed/</guid>
+      <description>&lt;h2 id=&#34;18-december-2019-fisher-nph-jules-ed&#34;&gt;18 December, 2019 (Fisher, NPH, JULES-ED)&lt;/h2&gt;
+&lt;p&gt;Fisher, R., McDowell, N., Purves, D., Moorcroft, P., Sitch, S., Cox, P., Huntingford, C., Meir, P. and Ian Woodward, F. (2010), Assessing uncertainties in a second‐generation dynamic vegetation model caused by ecological scale limitations. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;, 187: 666-681. doi:10.1111/j.1469-8137.2010.03340.x&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How demographic processes of two-dimensional spatial scales influence simulations of community structure, and responses of ecosystems to climate change?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recently second-generation DGVMs have become advanced in their capability to simulate short-term surface gas and energy exchanges and atmospheric CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;However, the 2&lt;!-- raw HTML omitted --&gt;nd&lt;!-- raw HTML omitted --&gt; gen. DGVMs are still lack in representation of demographic processes because of insufficient observations.&lt;/li&gt;
+&lt;li&gt;This poor representations of competition and coexistence may bring uncertainties in simulation of the community structure and responses of ecosystem to climate change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to develop a research question</title>
+      <link>http://localhost:1313/posts/20191219_how_to_develop_a_research_question/</link>
+      <pubDate>Sun, 23 Feb 2020 16:54:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191219_how_to_develop_a_research_question/</guid>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;under conceiving&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.williamcronon.net/researching/questions.htm&#34;&gt;Asking good questions&lt;/a&gt;: A well-structured and -explained essay&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.monash.edu/rlo/research-writing-assignments/understanding-the-assignment/developing-research-questions&#34;&gt;Developing-research-questions&lt;/a&gt;: Contains real examples&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://emory.libanswers.com/faq/44525&#34;&gt;How can I choose a good topic for my research paper?&lt;/a&gt;: Contains a video&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wikihow.com/Write-a-Research-Question&#34;&gt;How to write a research question&lt;/a&gt;: Contains visual contents and is easy to read&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scribbr.com/research-process/research-questions/&#34;&gt;Developing strong research questions&lt;/a&gt;: Contains summary tables&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Smith-Martin (2019). Liana. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p013_2019_smith-martin_nph_liana/</link>
+      <pubDate>Sun, 01 Mar 2020 16:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p013_2019_smith-martin_nph_liana/</guid>
+      <description>&lt;h2 id=&#34;17-december-2019-smith-martin-nph-liana&#34;&gt;17 December, 2019 (Smith-Martin, NPH, Liana)&lt;/h2&gt;
+&lt;p&gt;Smith‐Martin, C.M., Xu, X., Medvigy, D., Schnitzer, S.A. and Powers, J.S. (2019), Allometric scaling laws linking biomass and rooting depth vary across ontogeny and functional groups in tropical dry forest lianas and trees. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;. doi:10.1111/nph.16275&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do mature lianas invest less biomass in stems compared to trees? The authors tried to compare the investment strategy between lianas and trees.&lt;/li&gt;
+&lt;li&gt;Do juveniles follow the same allocation patterns as mature individuals?&lt;/li&gt;
+&lt;li&gt;Is either leaf phenology of life form a predictor of rooting depth?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to outline a paper</title>
+      <link>http://localhost:1313/posts/20191217_how_to_outline_a_paper/</link>
+      <pubDate>Sun, 23 Feb 2020 16:53:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191217_how_to_outline_a_paper/</guid>
+      <description>&lt;h3 id=&#34;which-information-do-i-have-to-mine-from-a-paper-for-developing-a-research-question&#34;&gt;Which information do I have to mine from a paper for developing a research question?&lt;/h3&gt;
+&lt;p&gt;Every day, I receive email alerts from journals or paper-searching websites. I skim through the title list in the alerts and select ones including keywords that I am interested in. In turn, I read the abstract to grasp what the paper is about and add it to my read-later folder if I feel it is interesting. After cycling the routine a lot, several problems have occurred:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Bar (2019). Fire. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p012_2019_bar_nph_fire/</link>
+      <pubDate>Sun, 01 Mar 2020 16:36:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p012_2019_bar_nph_fire/</guid>
+      <description>&lt;h2 id=&#34;7-december-2019-bar-nph-fire&#34;&gt;7 December, 2019 (Bar, NPH, Fire)&lt;/h2&gt;
+&lt;p&gt;Bär, A., Michaletz, S.T. and Mayr, S. (2019), Fire effects on tree physiology. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;, 223: 1728-1741. doi:10.1111/nph.15871&lt;/p&gt;
+&lt;p&gt;My research group at NIFOS was invited to write a research paper for a special issue of a journal. We decided to write a paper about the lagged browning after the forest fire at April 2019. I wrote about how forest fire affects an individual tree&amp;rsquo;s physiology, referring majorly to this paper.&lt;br&gt;
+This paper, as other Tansley reviews often do, includes excellent visual summaries like Figure 3 which compiles the physiological responses of plant organs to fire injuries. In short, dreadful heat and drastic drying are the major causes of burning up NSCs, malfunctioning of the hydraulic system, and increasing susceptibility to insect attacks.
+After reading this,  I felt that the mechanism behind the fire-caused tree dieback is the same as the one behind general tree dieback. Fire is just one of the triggers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Resco de Dios (2019). FMC. AFM</title>
+      <link>http://localhost:1313/posts/paper_review/p011_2015_rescodedios_afm_fmc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:35:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p011_2015_rescodedios_afm_fmc/</guid>
+      <description>&lt;h2 id=&#34;12-august-2019-resco-de-dios-afm-fmc&#34;&gt;12 August, 2019 (Resco de Dios, AFM, FMC)&lt;/h2&gt;
+&lt;p&gt;Resco de Dios, V., Fellows, A.W., Nolan, R.H., Boer, M.M., Bradstock, R.A., Domingo, F. and Goulden, M.L. (2015). A semi-mechanistic model for predicting the moisture content of fine litter. &lt;strong&gt;&lt;em&gt;Agricultural and Forest Meteorology&lt;/em&gt;&lt;/strong&gt;, 203, 64-73.&lt;/p&gt;
+&lt;p&gt;I read this paper to get some hints for my fuel moisture research at NIFOS. This paper developed a semi-mechanistic model in which fuel moisture content (FMC) and vapor pressure deficit (VPD) were exponentially related. This model is able to be easily applied to other researches once VPD for target sites is known. Hence, contrary to my model, this model can be synergized with remote sensing VPD data sets to broaden the spatial scope of the model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Vinodkumar (2019). SMC. AFM</title>
+      <link>http://localhost:1313/posts/paper_review/p010_2019_vinodkumar_afm_smc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p010_2019_vinodkumar_afm_smc/</guid>
+      <description>&lt;h2 id=&#34;22-june-2019-vinodkumar-afm-smc&#34;&gt;22 June, 2019 (Vinodkumar, AFM, SMC)&lt;/h2&gt;
+&lt;p&gt;Vinodkumar and Dharssi (2019). Evaluation and calibration of a high-resolution soil moisture product for wildfire prediction and management. &lt;strong&gt;&lt;em&gt;Agricultural and Forest Meteorology&lt;/em&gt;&lt;/strong&gt;, 264, 27-39.&lt;/p&gt;
+&lt;p&gt;This paper can be a good guide for both of my researches at SNU and NIFOS. This paper used the JULES to predict soil moisture deficit (SMD), which is similar to the object of the study at SNU. On the other hand, the purpose of SMD prediction was to imporve a fire danger index, which is the same as my research at NIFOS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Berry (2019). FWU. PCE</title>
+      <link>http://localhost:1313/posts/paper_review/p009_2019_berry_pce_fwu/</link>
+      <pubDate>Sun, 01 Mar 2020 16:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p009_2019_berry_pce_fwu/</guid>
+      <description>&lt;h2 id=&#34;15-june-2019-berry-pce-fwu&#34;&gt;15 June, 2019 (Berry, pce, FWU)&lt;/h2&gt;
+&lt;p&gt;Berry, Z.C., Emery, N.C., Gotsch, S.G., Goldsmith, G.R. (2019). Foliar water uptake: Processes, pathways, and integration into plant water budgets. &lt;strong&gt;&lt;em&gt;Plant, Cell and Environment&lt;/em&gt;&lt;/strong&gt;, 42, 410-423.&lt;/p&gt;
+&lt;p&gt;As I saw foliar water uptake (FWU) in alert lists sometimes, I became curious about the process. So I read this paper. FWU was observed about 400 years ago (1727), but it seems like relatively new and immatured field. Some knowledge chunks have been made, but the field lacks many details. Roughly, FWU occurs when leaves are wet, the main gate of water movement is stomata, most of biomes shows this phenomenon, and the amount is up tp 10% of transpiration. But, further studies such as details about water movement, methodologies to observe the pathway, and species-specific physiological responses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Hartmann (2018). Mortality. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p008_2018_hartmann_nph_mortality/</link>
+      <pubDate>Sun, 01 Mar 2020 16:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p008_2018_hartmann_nph_mortality/</guid>
+      <description>&lt;h2 id=&#34;8-june-2019-hartmann-nph-mortality&#34;&gt;8 June, 2019 (Hartmann, NPH, Mortality)&lt;/h2&gt;
+&lt;p&gt;Hartmann, H., Moura, C.F., Anderegg, W.R.L., Ruehr, N.K., Salmon, Y., Allen, C.D., Arndt, S.K., Breshears, D.D., Davi, H. and Galbraith, D. (2018). Research frontiers for improving our understanding of drought-induced tree and forest mortality. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt;, 218(1), 15-28.&lt;/p&gt;
+&lt;p&gt;This paper suggests some research frontiers (questions) about plant responses to drought. But, rather than the suggestions, I was interested in the topic of Box 1: definition of death for plants. Plants are different to animals, physiologically. Plants lack the nervous system, can easily resprout from a organ, and maintain their lifes with only a few parts of them. These features make a complex issue in defining the death of plant, and this propagates to a hardness in understanding and predicting plant motality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Li (2018). SIF. GCB</title>
+      <link>http://localhost:1313/posts/paper_review/p007_2018_li_gcb_sif/</link>
+      <pubDate>Sun, 01 Mar 2020 16:32:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p007_2018_li_gcb_sif/</guid>
+      <description>&lt;h2 id=&#34;26-may-2019-li-gcb-sif&#34;&gt;26 May, 2019 (Li, GCB, SIF)&lt;/h2&gt;
+&lt;p&gt;Li, X., Xiao, J., He, B., Altaf Arain, M., Beringer, J., Desai, A.R., Emmel, C., Hollinger, D.Y., Krasnova, A., Mammarella, I., Noe, S.M., Ortiz, P.S., Rey-Sanchez, A.C., Rocha, A.V. and Varlagin, A. (2018). Solar-induced chlorophyll fluorescence is strongly correlated with terrestrial photosynthesis for a wide variety of biomes: First global analysis based on OCO-2 and flux tower observations. &lt;strong&gt;&lt;em&gt;Global Change Biology&lt;/em&gt;&lt;/strong&gt;, 24(9), 3990-4008.&lt;/p&gt;
+&lt;p&gt;This paper demonstrates that SIF is a strong proxy of terrestrial GPP using different point of view. Also, it shows that SIF is more strongly correlated with GPP than VIs (EVI, NDVI) and GPP estimates from LUE methods.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Fisher (2014). TBM. ANN</title>
+      <link>http://localhost:1313/posts/paper_review/p006_2014_fisher_ann_tbm/</link>
+      <pubDate>Sun, 01 Mar 2020 16:31:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p006_2014_fisher_ann_tbm/</guid>
+      <description>&lt;h2 id=&#34;18-may-2019-fisher-ann-tbm&#34;&gt;18 May, 2019 (Fisher, ANN, TBM)&lt;/h2&gt;
+&lt;p&gt;Fisher, J.B., Huntzinger, D.N., Schwalm, C.R. and Sitch, S. (2014). Modeling the terrestrial biosphere. &lt;strong&gt;&lt;em&gt;Annual Review of Environment and Resources&lt;/em&gt;&lt;/strong&gt;, 39, 91-123.&lt;/p&gt;
+&lt;p&gt;This paper synthesized in what context the terrestrial biosphere model (TBM) appeared, which processes TBMs included, and what&amp;rsquo;s next. It was interesting that actually many part of the TBM was studied and developed separately around the world, and the development was accelerated after the parts were incorporated into a type of model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Zhang (2019). CLM4.5. JGRBG</title>
+      <link>http://localhost:1313/posts/paper_review/p005_2019_zhang_jgrbg_clm45/</link>
+      <pubDate>Sun, 01 Mar 2020 16:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p005_2019_zhang_jgrbg_clm45/</guid>
+      <description>&lt;h2 id=&#34;11-may-2019-zhang-jgrbg-clm45&#34;&gt;11 May, 2019 (Zhang, JGRBG, CLM4.5)&lt;/h2&gt;
+&lt;p&gt;Zhang, L., Lei, H., Shen, H., Cong, Z., Yang, D. and Liu, T. (2019). Evaluating the representation of vegetation phenology in the Community Land model 4.5 in a temperate grassland. &lt;strong&gt;&lt;em&gt;Journal of Geophysical Research: Biogeosciences&lt;/em&gt;&lt;/strong&gt; 124.&lt;/p&gt;
+&lt;p&gt;This was a key paper for the first revision of my paper. This paper had its focus on improving phenology module in CLM 4.5 by comparing MODIS LAI. Two problem were issued and resolved. &lt;strong&gt;First&lt;/strong&gt;, EOS in the CLM 4.5 was too late compared with that of MODIS LAI. The authors showed that too low threshold soil temperature for leaf offset caused this problem; the temperature was increased. &lt;strong&gt;Second&lt;/strong&gt;, the model sometimes showed zero LAI during summer, which caused multiple growing cycles. This problem was resulted from too high rate of leaf onset. By adjusting the rate, this problem could be solved. And then the authors confirmed that how these improvements affected GPP and ET simulations at stand and national levels.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Xu (2016). ED-Hydro. NPH</title>
+      <link>http://localhost:1313/posts/paper_review/p004_2016_xu_nph_ed-hydro/</link>
+      <pubDate>Sun, 01 Mar 2020 16:29:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p004_2016_xu_nph_ed-hydro/</guid>
+      <description>&lt;h2 id=&#34;5-may-2019-xu-nph-ed-hydro&#34;&gt;5 May, 2019 (Xu, NPH, ED-Hydro)&lt;/h2&gt;
+&lt;p&gt;Xu, X., Medvigy, D., Powers, J.S., Becknell, J.M. and Guan, K. (2016). Diversity in plant hydraulic traits explains seasonal and inter‐annual variations of vegetation dynamics in seasonally dry tropical forests. &lt;strong&gt;&lt;em&gt;New Phytologist&lt;/em&gt;&lt;/strong&gt; 212(1), 80-95.&lt;/p&gt;
+&lt;p&gt;This paper incoporated hydraulic module into the ED2. This module accounted for hydraulic traits such as tugor loss point (TLP), saturated xylem conductivity, 50% xylem conductivity loss water potential, and area-based A&lt;del&gt;net&lt;/del&gt; under sufficient water supply. These traits were estimated using a meta analysis in which relationships between the traits and wood density (WD) or SLA were retrieved. Also, four new PFTs, which were classified based on the SLA-WD space, were introduced to the model. And then finally some simulations were conducted to investigate the effect of adding the new module and PFTs by comparing with in-situ observation and MODIS data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Van den Hoof (2016). JULES. JGRBG</title>
+      <link>http://localhost:1313/posts/paper_review/p003_2016_vandenhoof_jgrbg_jules/</link>
+      <pubDate>Sun, 01 Mar 2020 16:28:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p003_2016_vandenhoof_jgrbg_jules/</guid>
+      <description>&lt;h2 id=&#34;27-april-2019-van-den-hoof-jgrbg-jules&#34;&gt;27 April, 2019 (Van den Hoof, JGRBG, JULES)&lt;/h2&gt;
+&lt;p&gt;Van den Hoof, C. and Lambert, F. (2016). Mitigation of drought negative effect of ecosystem productivity by vegetation mixing. &lt;strong&gt;&lt;em&gt;Journal of Geophysical Research: Biogeosciences&lt;/em&gt;&lt;/strong&gt;, 121, 2667–2683.&lt;/p&gt;
+&lt;p&gt;This paper conducted an interesting numerical experiment to investigate changes in SMC and Carbon &amp;amp; Water fluxes by vegetation mixing. This vegetation mixing was represented by adjusting PFT cover ratios of grid in the JULES model. Results show that NPP and LE flux were increased and SMC was decreased, especially during drought period. This was because multiple PFTs could better exploit ecosystem resources than the sole PFT does, which was related to differences in niche classified by phenology, WUE, and rooting depth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Dietze (2014). NSC. ANN</title>
+      <link>http://localhost:1313/posts/paper_review/p002_2014_dietze_ann_nsc/</link>
+      <pubDate>Sun, 01 Mar 2020 16:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p002_2014_dietze_ann_nsc/</guid>
+      <description>&lt;h2 id=&#34;20-april-2019-dietze-ann-nsc&#34;&gt;20 April, 2019 (Dietze, ANN, NSC)&lt;/h2&gt;
+&lt;p&gt;Dietze, M. C. (2014). Nonstructural Carbon in Woody Plants. &lt;strong&gt;&lt;em&gt;Annual Review of Plant Biology&lt;/em&gt;&lt;/strong&gt;, 65, 667–687.&lt;/p&gt;
+&lt;p&gt;NSC is important for tree plants because it acts as an physiological insurance budget for them. I expected that this paper would be organized as a chapter about NSC in a textbook and I can get basic knowledge about NSC. Although this paper is not organized as I expected, it provides well-summarized review about NSC related research results which contain interesting knowledge about NSC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Review: Bonan (2016). Climate. ANN</title>
+      <link>http://localhost:1313/posts/paper_review/p001_2016_bonan_ann_climate/</link>
+      <pubDate>Sun, 01 Mar 2020 16:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/paper_review/p001_2016_bonan_ann_climate/</guid>
+      <description>&lt;h2 id=&#34;13-april-2019-bonan-ann-climate&#34;&gt;13 April, 2019 (Bonan, ANN, Climate)&lt;/h2&gt;
+&lt;p&gt;Bonan, G. B. (2016). Forests, climate, and public policy: A 500-year interdisciplinary odyssey. &lt;strong&gt;&lt;em&gt;Annual Review of Ecology, Evolution, and Systematics&lt;/em&gt;&lt;/strong&gt;, 47, 97–121.&lt;/p&gt;
+&lt;p&gt;I anticipated that this paper explains how the results from forest-climate research have been deployed to public policy. However, this paper had its focus to forest-climate relationships, and &amp;ldquo;these relationships should be understood well to be properly applied to policy&amp;rdquo; was all about the public policy.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

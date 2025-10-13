@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Isolation Forest | My New Hugo Site</title>
+<meta name="keywords" content="2020, R, Research">
+<meta name="description" content="knitr::opts_chunk$set(eval = TRUE, 
+                      echo = TRUE, 
+                      warning = FALSE)
+References:
+
+solitude: https://github.com/talegari/solitude
+isofor: https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest
+
+# install.packages(&#34;mvoutlier&#34;))
+# install.packages(&#34;remotes&#34;))
+# remotes::install_github(&#34;Zelazny7/isofor&#34;)
+
+#import libraries
+library(ggplot2)
+library(ggpubr)
+library(solitude)  # hereafter, &#34;sol&#34;
+library(isofor)  # hereafter, &#34;iso&#34;
+library(viridis)
+packageVersion(&#34;solitude&#34;)
+#create sample data
+data(&#34;humus&#34;, package = &#34;mvoutlier&#34;)
+
+# 2-dimensional
+columns_required &lt;- c(&#34;Bi&#34;, &#34;Cd&#34;)
+humus2 &lt;- humus[ , columns_required]
+
+# multi-dimensional
+columns_required_mul &lt;- setdiff(colnames(humus)
+                               , c(&#34;Cond&#34;, &#34;ID&#34;, &#34;XCOO&#34;, &#34;YCOO&#34;, &#34;LOI&#34;)
+                               )
+humus_mul &lt;- humus[ , columns_required_mul]
+
+str(humus2)
+str(humus_mul)
+#plot data
+ggplot(humus2, aes(x = Bi, y = Cd)) &#43; 
+  geom_point(shape = 1, alpha = 0.5) &#43;
+  labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43;
+  labs(alpha = &#34;&#34;, colour=&#34;Legend&#34;) &#43;
+  theme_bw()
+# solitude library
+
+# sample (50%)
+set.seed(1)
+index &lt;- sample(ceiling(nrow(humus2) * 0.5))
+index_mul &lt;- sample(ceiling(nrow(humus_mul) * 0.5))
+
+# initiate an isolation forest
+if_sol &lt;- isolationForest$new(sample_size = length(index))
+if_sol_mul &lt;- isolationForest$new(sample_size = length(index))
+
+# fit an isolation forest
+if_sol$fit(humus2[index, ])
+if_sol_mul$fit(humus_mul[index, ])
+# isofor library
+if_iso &lt;- iForest(humus2,
+                  phi = nrow(humus2) * 0.5  # sample size
+                  )
+# Obtain anomaly scores
+humus2$score_sol &lt;- if_sol$predict(humus2)$anomaly_score
+
+humus_mul$score &lt;- if_sol_mul$predict(humus_mul)$anomaly_score
+humus2$score_iso &lt;- predict(if_iso,
+                            newdata = humus2[, c(1, 2)])
+# decision: outlier if score &gt; 0.6 (threshold could vary by users)
+humus2$is_outlier_sol &lt;- ifelse(humus2$score_sol &gt; 0.6, 1, 0)
+humus2$is_outlier_iso &lt;- ifelse(humus2$score_iso &gt; 0.55, 1, 0)
+# create grid values for contour plot
+Bi_seq &lt;- seq(min(humus2$Bi),
+              max(humus2$Bi),
+              length.out = 100)
+Cd_seq &lt;- seq(min(humus2$Cd),
+              max(humus2$Cd),
+              length.out = 100)
+humus2_grid &lt;- expand.grid(Bi = Bi_seq,
+                           Cd = Cd_seq)
+humus2_grid$score_sol &lt;- if_sol$predict(humus2_grid)$anomaly_score
+humus2_grid$score_iso &lt;- predict(if_iso,
+                                 newdata = humus2_grid[, c(1, 2)])
+# scatter plot
+
+sca_sol &lt;-
+  ggplot(humus2, aes(x = Bi, y = Cd, z = score_sol)) &#43; 
+  geom_point(aes(color = is_outlier_sol)) &#43;
+  labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43;
+  scale_color_viridis(discrete = FALSE, 
+                      direction = -1) &#43;
+  theme_bw()
+
+sca_iso &lt;-
+  ggplot(humus2, aes(x = Bi, y = Cd, z = score_iso)) &#43; 
+  geom_point(aes(color = is_outlier_iso)) &#43;
+  labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43;
+  scale_color_viridis(discrete = FALSE, 
+                      direction = -1) &#43;
+  theme_bw()
+# contour plot
+gmin &lt;- min(humus2_grid$score_sol, humus2_grid$score_iso)
+gmax &lt;- max(humus2_grid$score_sol, humus2_grid$score_iso)
+gbreaks &lt;- round(seq(gmin, gmax, length.out = 9), 2)
+  
+cont_sol &lt;-
+  ggplot(humus2_grid, aes(x = Bi, y = Cd, z = score_sol)) &#43; 
+  geom_contour_filled(breaks = gbreaks) &#43;
+  
+  labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43;
+  theme_bw()
+
+cont_iso &lt;-
+  ggplot(humus2_grid, aes(x = Bi, y = Cd, z = score_iso)) &#43; 
+  geom_contour_filled(breaks = gbreaks) &#43;
+  labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43;
+  theme_bw()
+# aggregate ggplots
+theme_set(
+  theme_bw() &#43;
+    theme(legend.position = &#34;top&#34;)
+  )
+
+if_plot &lt;-
+  ggarrange(sca_sol, sca_iso, 
+            cont_sol, cont_iso,
+            labels = rep(c(&#34;solitude&#34;, &#34;iso&#34;), 2),
+            ncol = 2, nrow = 2)
+if_plot
+
+Two scatter plots are similar even if they use different threshold values for the decision.
+Two contour plots look very different. This is because they have different range of scores. If we compare the regions with the same levels and colors, they show similar result.
+">
+<meta name="author" content="Hoontaek Lee">
+<link rel="canonical" href="http://localhost:1313/posts/20201122_isolation_forest/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20201122_isolation_forest/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Isolation Forest
+    </h1>
+    <div class="post-meta"><span title='2020-11-22 20:53:43 +0100 +0100'>November 22, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>knitr<span style="color:#f92672">::</span>opts_chunk<span style="color:#f92672">$</span><span style="color:#a6e22e">set</span>(eval <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, 
+</span></span><span style="display:flex;"><span>                      echo <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, 
+</span></span><span style="display:flex;"><span>                      warning <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span></code></pre></div><p>References:</p>
+<ul>
+<li>solitude: <a href="https://github.com/talegari/solitude">https://github.com/talegari/solitude</a></li>
+<li>isofor: <a href="https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest">https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># install.packages(&#34;mvoutlier&#34;))</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># install.packages(&#34;remotes&#34;))</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># remotes::install_github(&#34;Zelazny7/isofor&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#import libraries</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggpubr)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(solitude)  <span style="color:#75715e"># hereafter, &#34;sol&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(isofor)  <span style="color:#75715e"># hereafter, &#34;iso&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(viridis)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">packageVersion</span>(<span style="color:#e6db74">&#34;solitude&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#create sample data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">data</span>(<span style="color:#e6db74">&#34;humus&#34;</span>, package <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mvoutlier&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2-dimensional</span>
+</span></span><span style="display:flex;"><span>columns_required <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Bi&#34;</span>, <span style="color:#e6db74">&#34;Cd&#34;</span>)
+</span></span><span style="display:flex;"><span>humus2 <span style="color:#f92672">&lt;-</span> humus[ , columns_required]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># multi-dimensional</span>
+</span></span><span style="display:flex;"><span>columns_required_mul <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">setdiff</span>(<span style="color:#a6e22e">colnames</span>(humus)
+</span></span><span style="display:flex;"><span>                               , <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Cond&#34;</span>, <span style="color:#e6db74">&#34;ID&#34;</span>, <span style="color:#e6db74">&#34;XCOO&#34;</span>, <span style="color:#e6db74">&#34;YCOO&#34;</span>, <span style="color:#e6db74">&#34;LOI&#34;</span>)
+</span></span><span style="display:flex;"><span>                               )
+</span></span><span style="display:flex;"><span>humus_mul <span style="color:#f92672">&lt;-</span> humus[ , columns_required_mul]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str</span>(humus2)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str</span>(humus_mul)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#plot data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ggplot</span>(humus2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> Bi, y <span style="color:#f92672">=</span> Cd)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(shape <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bi&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cd&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(alpha <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, colour<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Legend&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_bw</span>()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># solitude library</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sample (50%)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>index <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">ceiling</span>(<span style="color:#a6e22e">nrow</span>(humus2) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>))
+</span></span><span style="display:flex;"><span>index_mul <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">ceiling</span>(<span style="color:#a6e22e">nrow</span>(humus_mul) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># initiate an isolation forest</span>
+</span></span><span style="display:flex;"><span>if_sol <span style="color:#f92672">&lt;-</span> isolationForest<span style="color:#f92672">$</span><span style="color:#a6e22e">new</span>(sample_size <span style="color:#f92672">=</span> <span style="color:#a6e22e">length</span>(index))
+</span></span><span style="display:flex;"><span>if_sol_mul <span style="color:#f92672">&lt;-</span> isolationForest<span style="color:#f92672">$</span><span style="color:#a6e22e">new</span>(sample_size <span style="color:#f92672">=</span> <span style="color:#a6e22e">length</span>(index))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fit an isolation forest</span>
+</span></span><span style="display:flex;"><span>if_sol<span style="color:#f92672">$</span><span style="color:#a6e22e">fit</span>(humus2[index, ])
+</span></span><span style="display:flex;"><span>if_sol_mul<span style="color:#f92672">$</span><span style="color:#a6e22e">fit</span>(humus_mul[index, ])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># isofor library</span>
+</span></span><span style="display:flex;"><span>if_iso <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">iForest</span>(humus2,
+</span></span><span style="display:flex;"><span>                  phi <span style="color:#f92672">=</span> <span style="color:#a6e22e">nrow</span>(humus2) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>  <span style="color:#75715e"># sample size</span>
+</span></span><span style="display:flex;"><span>                  )
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Obtain anomaly scores</span>
+</span></span><span style="display:flex;"><span>humus2<span style="color:#f92672">$</span>score_sol <span style="color:#f92672">&lt;-</span> if_sol<span style="color:#f92672">$</span><span style="color:#a6e22e">predict</span>(humus2)<span style="color:#f92672">$</span>anomaly_score
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>humus_mul<span style="color:#f92672">$</span>score <span style="color:#f92672">&lt;-</span> if_sol_mul<span style="color:#f92672">$</span><span style="color:#a6e22e">predict</span>(humus_mul)<span style="color:#f92672">$</span>anomaly_score
+</span></span><span style="display:flex;"><span>humus2<span style="color:#f92672">$</span>score_iso <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(if_iso,
+</span></span><span style="display:flex;"><span>                            newdata <span style="color:#f92672">=</span> humus2[, <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># decision: outlier if score &gt; 0.6 (threshold could vary by users)</span>
+</span></span><span style="display:flex;"><span>humus2<span style="color:#f92672">$</span>is_outlier_sol <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ifelse</span>(humus2<span style="color:#f92672">$</span>score_sol <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.6</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>humus2<span style="color:#f92672">$</span>is_outlier_iso <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ifelse</span>(humus2<span style="color:#f92672">$</span>score_iso <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.55</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># create grid values for contour plot</span>
+</span></span><span style="display:flex;"><span>Bi_seq <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">seq</span>(<span style="color:#a6e22e">min</span>(humus2<span style="color:#f92672">$</span>Bi),
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">max</span>(humus2<span style="color:#f92672">$</span>Bi),
+</span></span><span style="display:flex;"><span>              length.out <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>Cd_seq <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">seq</span>(<span style="color:#a6e22e">min</span>(humus2<span style="color:#f92672">$</span>Cd),
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">max</span>(humus2<span style="color:#f92672">$</span>Cd),
+</span></span><span style="display:flex;"><span>              length.out <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>humus2_grid <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">expand.grid</span>(Bi <span style="color:#f92672">=</span> Bi_seq,
+</span></span><span style="display:flex;"><span>                           Cd <span style="color:#f92672">=</span> Cd_seq)
+</span></span><span style="display:flex;"><span>humus2_grid<span style="color:#f92672">$</span>score_sol <span style="color:#f92672">&lt;-</span> if_sol<span style="color:#f92672">$</span><span style="color:#a6e22e">predict</span>(humus2_grid)<span style="color:#f92672">$</span>anomaly_score
+</span></span><span style="display:flex;"><span>humus2_grid<span style="color:#f92672">$</span>score_iso <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(if_iso,
+</span></span><span style="display:flex;"><span>                                 newdata <span style="color:#f92672">=</span> humus2_grid[, <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># scatter plot</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sca_sol <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(humus2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> Bi, y <span style="color:#f92672">=</span> Cd, z <span style="color:#f92672">=</span> score_sol)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(<span style="color:#a6e22e">aes</span>(color <span style="color:#f92672">=</span> is_outlier_sol)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bi&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cd&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_color_viridis</span>(discrete <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, 
+</span></span><span style="display:flex;"><span>                      direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_bw</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sca_iso <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(humus2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> Bi, y <span style="color:#f92672">=</span> Cd, z <span style="color:#f92672">=</span> score_iso)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(<span style="color:#a6e22e">aes</span>(color <span style="color:#f92672">=</span> is_outlier_iso)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bi&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cd&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_color_viridis</span>(discrete <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, 
+</span></span><span style="display:flex;"><span>                      direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_bw</span>()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># contour plot</span>
+</span></span><span style="display:flex;"><span>gmin <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">min</span>(humus2_grid<span style="color:#f92672">$</span>score_sol, humus2_grid<span style="color:#f92672">$</span>score_iso)
+</span></span><span style="display:flex;"><span>gmax <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">max</span>(humus2_grid<span style="color:#f92672">$</span>score_sol, humus2_grid<span style="color:#f92672">$</span>score_iso)
+</span></span><span style="display:flex;"><span>gbreaks <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">seq</span>(gmin, gmax, length.out <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>), <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>cont_sol <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(humus2_grid, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> Bi, y <span style="color:#f92672">=</span> Cd, z <span style="color:#f92672">=</span> score_sol)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_contour_filled</span>(breaks <span style="color:#f92672">=</span> gbreaks) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bi&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cd&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_bw</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cont_iso <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(humus2_grid, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> Bi, y <span style="color:#f92672">=</span> Cd, z <span style="color:#f92672">=</span> score_iso)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_contour_filled</span>(breaks <span style="color:#f92672">=</span> gbreaks) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bi&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cd&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_bw</span>()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># aggregate ggplots</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme_set</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_bw</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;top&#34;</span>)
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>if_plot <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggarrange</span>(sca_sol, sca_iso, 
+</span></span><span style="display:flex;"><span>            cont_sol, cont_iso,
+</span></span><span style="display:flex;"><span>            labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;solitude&#34;</span>, <span style="color:#e6db74">&#34;iso&#34;</span>), <span style="color:#ae81ff">2</span>),
+</span></span><span style="display:flex;"><span>            ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, nrow <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>if_plot
+</span></span></code></pre></div><ul>
+<li>Two scatter plots are similar even if they use different threshold values for the decision.</li>
+<li>Two contour plots look very different. This is because they have different range of scores. If we compare the regions with the same levels and colors, they show similar result.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+      <li><a href="http://localhost:1313/tags/r/">R</a></li>
+      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

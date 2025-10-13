@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GitHub on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/github/</link>
+    <description>Recent content in GitHub on My New Hugo Site</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2020 17:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그 댓글 기능 추가: utterances</title>
+      <link>http://localhost:1313/posts/20200101_add_utterances/</link>
+      <pubDate>Wed, 01 Jan 2020 15:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20200101_add_utterances/</guid>
+      <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
+&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
+이 글에는 utterrances 소개는 관두고&amp;hellip; 설치 관련 내용만 적었다.&lt;/p&gt;
+&lt;h2 id=&#34;utterances-설치&#34;&gt;utterances 설치&lt;/h2&gt;
+&lt;h3 id=&#34;1-utterances-사이트-접속&#34;&gt;1. utterances 사이트 접속&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://utteranc.es/&#34;&gt;여기&lt;/a&gt;로 이동해서 &lt;code&gt;configuration&lt;/code&gt; 부분을 따라한다.&lt;/p&gt;
+&lt;h3 id=&#34;2-public-저장소-생성&#34;&gt;2. Public 저장소 생성&lt;/h3&gt;
+&lt;p&gt;나는 &lt;strong&gt;bloght-comments&lt;/strong&gt; 라고 만들었다.&lt;/p&gt;
+&lt;h3 id=&#34;3-blog-post--issue-mapping-theme-선택&#34;&gt;3. Blog Post ↔️ Issue Mapping, Theme 선택&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Blog Post ↔️ Issue Mapping&lt;/code&gt;은 세 번째 옵션을(Title 기준 매칭),&lt;br&gt;
+&lt;code&gt;Theme&lt;/code&gt;은 내 블로그가 밝으니 &lt;code&gt;Github Light&lt;/code&gt;를 선택했다.&lt;/p&gt;
+&lt;h3 id=&#34;4-enable-utterances&#34;&gt;4. Enable Utterances&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Enable Utterances&lt;/code&gt; 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.&lt;br&gt;
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 &lt;code&gt;Hugo&lt;/code&gt;가 어떻게 작동하는지 잘 모르니까 &lt;code&gt;hugo server&lt;/code&gt;로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 &lt;code&gt;footer.html&lt;/code&gt;에 담겨있었던 것 같으니 거기부터 시도.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기</title>
+      <link>http://localhost:1313/posts/20191229_blogging_with_hugo/</link>
+      <pubDate>Wed, 01 Jan 2020 13:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/20191229_blogging_with_hugo/</guid>
+      <description>&lt;h2 id=&#34;설치&#34;&gt;설치&lt;/h2&gt;
+&lt;h4 id=&#34;git-설치&#34;&gt;Git 설치&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/&#34;&gt;Git 홈페이지&lt;/a&gt; 오른쪽 아래 초록 링크&lt;/li&gt;
+&lt;li&gt;cmd에서 버전 잘 나오나 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git --version
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;hugo-설치&#34;&gt;Hugo 설치&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#windows&#34;&gt;Hugo 웹페이지&lt;/a&gt; 참고&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;C드라이브에 Hugo 폴더 생성(블로그 관련 파일 저장용)&lt;/li&gt;
+&lt;li&gt;Hugo 폴더 안에 bin 폴더 생성(Hugo 관련 파일 저장)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo 깃허브 저장소&lt;/a&gt;에서 최신 릴리즈 압축파일 다운로드&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C:/Hugo/bin&lt;/code&gt;에 압축 해제&lt;/li&gt;
+&lt;li&gt;환경변수에 &lt;code&gt;C:/Hugo/bin&lt;/code&gt;추가&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;윈도우 10: &lt;a href=&#34;https://gohugo.io/getting-started/installing/#for-windows-10-users&#34;&gt;여기&lt;/a&gt;를 참고
+&lt;ul&gt;
+&lt;li&gt;윈도우키 - &amp;ldquo;환경&amp;rdquo; 검색 - &amp;ldquo;계정의 환경 변수 편집&amp;rdquo; - 유저 변수에서 &lt;code&gt;Path&lt;/code&gt; 더블클릭 - 새로만들기 - &lt;code&gt;C:/Hugo/bin&lt;/code&gt;입력 - 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;환경변수를 추가하면 &lt;code&gt;C:/Hugo/bin&lt;/code&gt; 외의 경로에서도 &lt;code&gt;C:/Hugo/bin&lt;/code&gt;의 &lt;code&gt;hugo.exe&lt;/code&gt; 사용 가능(= Hugo 사용 가능)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;설치 확인&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cmd&lt;/code&gt;에서 버전 정보 나오는지 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;웹사이트-생성&#34;&gt;웹사이트 생성&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;블로그 담을 폴더 생성(&lt;code&gt;\C:\Users\Owner\Dropbox\bloght&lt;/code&gt;)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

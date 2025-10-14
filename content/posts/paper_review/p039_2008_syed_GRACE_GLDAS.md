@@ -3,6 +3,8 @@ title: "Paper Review: Syed (2008). GRACE_GLDAS. wr."
 author: "Hoontaek Lee"
 date: 2021-06-22T19:18:55+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

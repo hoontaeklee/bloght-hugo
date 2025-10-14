@@ -3,6 +3,8 @@ title: "Paper Review: Liu (2019). SAM->NEE across biomes. ELE"
 author: "Hoontaek Lee"
 date: 2020-05-01T13:43:04+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

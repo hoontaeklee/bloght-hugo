@@ -3,6 +3,8 @@ title: "Paper Review: Samuels-Crow (2020). SAM->NEE and ET. JGRBG"
 author: "Hoontaek Lee"
 date: 2020-07-23T19:23:36+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

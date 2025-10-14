@@ -3,7 +3,9 @@ title: "Recipe - 시작"
 author: "Hoontaek Lee"
 date: 2020-07-11T17:07:07+09:00
 description:
-image: images/posts/meta/Recipe_페이지_1.jpg
+cover: 
+  relative: true
+  image: posts/meta/Recipe_페이지_1.jpg
 draft: false
 hideToc: false
 enableToc: true

@@ -4,7 +4,9 @@ author: "Hoontaek Lee"
 date: 2020-01-19 21:32:00+09:00
 publishdate: 2020-01-19 22:27:00+09:00
 lastmod: 2020-05-25 20:21:00+09:00
-image: images/posts/meta/20200119_ratatouille.jpg
+cover:
+  relative: true
+  image: posts/meta/20200119_ratatouille.jpg
 tags:
 - Movie Review
 - 2020

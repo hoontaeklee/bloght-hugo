@@ -4,7 +4,9 @@ author: "Hoontaek Lee"
 date: 2020-01-05 23:12:00+09:00
 publishdate: 2020-01-19 16:11:00+09:00
 lastmod: 2020-01-19 16:23:00+09:00
-image: images/posts/meta/20200105_abouttime.jpg
+cover:
+  relative: true
+  image: posts/meta/20200105_abouttime.jpg
 tags:
 - Movie Review
 - 2020

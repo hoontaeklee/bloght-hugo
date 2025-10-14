@@ -3,6 +3,8 @@ title: "Paper Review: Ahlstrom (2015). Semi-Arid_to_NBP_IAV. Science."
 author: "Hoontaek Lee"
 date: 2021-03-08T21:41:12+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

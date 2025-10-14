@@ -3,6 +3,8 @@ title: "외국어 공부의 감각"
 author: "Hoontaek Lee"
 date: 2020-04-26T15:00:25+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

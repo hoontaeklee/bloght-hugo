@@ -605,7 +605,9 @@ Title: What The Package Does (one line, title case required)
 Version: 0.1
 Authors@R: person(&#34;First&#34;, &#34;Last&#34;, email = &#34;first.last@example.com&#34;,
                   role = c(&#34;aut&#34;, &#34;cre&#34;))
-Description: What the package does (one paragraph)
+description:
+cover: 
+  relative: true What the package does (one paragraph)
 Depends: R (&gt;= 3.1.0)
 License: What license is it under?
 LazyData: true
@@ -613,12 +615,16 @@ LazyData: true
 <code>devtools.desc.license</code>, <code>devtools.desc.suggests</code>, <code>devtools.desc</code>).</p>
 <p><code>DESCRIPTION</code> 파일은 DCF(the Debian control format) 형식을 사용한다. 각 줄은 <strong>필드이름: 값</strong>으로
 이뤄지고, 값이 두 줄 이상이면 들여쓰기한다.</p>
-<pre tabindex="0"><code>Description: The description of a package is usually long,
+<pre tabindex="0"><code>description:
+cover: 
+  relative: true The description of a package is usually long,
     spanning multiple lines. The second and subsequent lines
     should be indented, usually with four spaces.
 </code></pre><p>본 챕터에서는 주요 필드 몇 가지를 소개하려 한다.</p>
 <h3 id="dependencies-what-does-your-package-need">Dependencies: What does your package need?<a hidden class="anchor" aria-hidden="true" href="#dependencies-what-does-your-package-need">#</a></h3>
-<h3 id="title-and-description-what-does-your-package-do">Title and description: What does your package do?<a hidden class="anchor" aria-hidden="true" href="#title-and-description-what-does-your-package-do">#</a></h3>
+<h3 id="title-and-description">Title and description:<a hidden class="anchor" aria-hidden="true" href="#title-and-description">#</a></h3>
+<p>cover:
+relative: true What does your package do?</p>
 <h3 id="author-who-are-you">Author: who are you?<a hidden class="anchor" aria-hidden="true" href="#author-who-are-you">#</a></h3>
 <h3 id="license-who-can-use-your-package">License: Who can use your package?<a hidden class="anchor" aria-hidden="true" href="#license-who-can-use-your-package">#</a></h3>
 <h3 id="version">Version<a hidden class="anchor" aria-hidden="true" href="#version">#</a></h3>

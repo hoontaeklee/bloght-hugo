@@ -3,6 +3,8 @@ title: "Paper Review: Green (2019). SMC-NBP"
 author: "Hoontaek Lee"
 date: 2020-09-11T16:37:00+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

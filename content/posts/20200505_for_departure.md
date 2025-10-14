@@ -3,6 +3,8 @@ title: "독일 유학 - 출국 준비"
 author: "Hoontaek Lee"
 date: 2020-05-05T18:19:28+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

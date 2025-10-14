@@ -3,6 +3,8 @@ title: "Science Research Writing"
 author: "Hoontaek Lee"
 date: 2019-01-15T00:02:07+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

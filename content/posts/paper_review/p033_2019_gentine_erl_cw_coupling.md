@@ -3,6 +3,8 @@ title: "Paper Review: Gentine (2019). Coupling between carbon and water cycles-a
 author: "Hoontaek Lee"
 date: 2020-11-16T22:32:26+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

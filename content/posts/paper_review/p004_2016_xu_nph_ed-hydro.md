@@ -4,6 +4,8 @@ author: "Hoontaek Lee"
 date: 2019-05-05T20:00:00+09:00
 publishdate: 2020-03-01T16:29:00+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

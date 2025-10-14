@@ -3,6 +3,8 @@ title: "A Study Plan for German"
 author: "Hoontaek Lee"
 date: 2020-04-30T15:46:35+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

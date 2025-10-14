@@ -3,6 +3,8 @@ title: "초보자를 위한 RStudio 마스터"
 author: "Hoontaek Lee"
 date: 2019-03-19T17:15:06+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

@@ -3,7 +3,9 @@ title: "시원스쿨 독일어 발음 강의"
 author: "Hoontaek Lee"
 date: 2020-09-13T16:51:20+02:00
 description:
-image: images/posts/meta/German_siwon_phonics_페이지_01.png
+cover: 
+  relative: true
+  image: posts/meta/German_siwon_phonics_페이지_01.png
 draft: false
 hideToc: false
 enableToc: true

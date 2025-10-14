@@ -3,6 +3,8 @@ title: "Ubuntu에서 블로그 - 이미지 처리"
 author: "Hoontaek Lee"
 date: 2021-02-28T20:26:17+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

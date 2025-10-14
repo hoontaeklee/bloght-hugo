@@ -3,6 +3,8 @@ title: "Paper Review: Humphrey (2021). smcAtmFeedback_NeeIav. Nature."
 author: "Hoontaek Lee"
 date: 2021-04-07T17:21:12+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

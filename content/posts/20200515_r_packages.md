@@ -4,6 +4,8 @@ author: "Hoontaek Lee"
 date: 2020-05-12T10:00:00+09:00
 lastmod: 2020-05-15T19:18:00+09:00  
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true
@@ -524,7 +526,9 @@ Title: What The Package Does (one line, title case required)
 Version: 0.1
 Authors@R: person("First", "Last", email = "first.last@example.com",
                   role = c("aut", "cre"))
-Description: What the package does (one paragraph)
+description:
+cover: 
+  relative: true What the package does (one paragraph)
 Depends: R (>= 3.1.0)
 License: What license is it under?
 LazyData: true
@@ -536,7 +540,9 @@ LazyData: true
 `DESCRIPTION` 파일은 DCF(the Debian control format) 형식을 사용한다. 각 줄은 **필드이름: 값**으로
 이뤄지고, 값이 두 줄 이상이면 들여쓰기한다.
 ```
-Description: The description of a package is usually long,
+description:
+cover: 
+  relative: true The description of a package is usually long,
     spanning multiple lines. The second and subsequent lines
     should be indented, usually with four spaces.
 ```
@@ -545,7 +551,9 @@ Description: The description of a package is usually long,
 
 ### Dependencies: What does your package need?
 
-### Title and description: What does your package do?
+### Title and description:
+cover: 
+  relative: true What does your package do?
 
 ### Author: who are you?
 

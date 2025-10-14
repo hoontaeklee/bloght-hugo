@@ -3,6 +3,8 @@ title: "Paper Review: Vishwakarma (2021). the_TVR_metric. erl."
 author: "Hoontaek Lee"
 date: 2021-04-12T14:31:56+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

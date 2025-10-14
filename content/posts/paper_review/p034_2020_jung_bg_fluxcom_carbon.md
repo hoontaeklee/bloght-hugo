@@ -3,6 +3,8 @@ title: "Paper Review: Jung (2020). FLUXCOM evaluation: carbon. bg."
 author: "Hoontaek Lee"
 date: 2020-12-26T22:45:07+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

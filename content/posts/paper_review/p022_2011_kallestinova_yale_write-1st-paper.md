@@ -4,6 +4,8 @@ author: "Hoontaek Lee"
 date: 2020-02-28T19:48:52+09:00
 lastmod: 2020-03-08T16:55:52+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

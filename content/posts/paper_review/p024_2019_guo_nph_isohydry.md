@@ -3,6 +3,8 @@ title: "Paper Review: Guo (2019). SAM->iso/anisohydry. NPH"
 author: "Hoontaek Lee"
 date: 2020-05-20T21:16:35+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

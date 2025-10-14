@@ -3,6 +3,8 @@ title: "Paper Review: Bloom (2020). Legacy-(NBE IAV). bgd"
 author: "Hoontaek Lee"
 date: 2020-09-21T15:49:32+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

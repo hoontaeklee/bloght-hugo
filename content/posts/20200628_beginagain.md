@@ -3,7 +3,9 @@ title: "Begin again (비긴어게인)"
 date: 2020-06-28T21:38:43+09:00
 author: "Hoontaek Lee"
 description:
-image: images/posts/meta/20200628_비긴어게인.jpg
+cover: 
+  relative: true
+  image: posts/meta/20200628_비긴어게인.jpg
 draft: false
 hideToc: false
 enableToc: true

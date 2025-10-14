@@ -3,6 +3,8 @@ title: "Paper Review: Green et al., (2022). LST/Tair, a remote sensing-based ind
 author: "Hoontaek Lee"
 date: 2022-04-20T21:56:26+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

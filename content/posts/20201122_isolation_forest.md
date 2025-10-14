@@ -3,6 +3,8 @@ title: "Isolation Forest"
 author: "Hoontaek Lee"
 date: 2020-11-22T20:53:43+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

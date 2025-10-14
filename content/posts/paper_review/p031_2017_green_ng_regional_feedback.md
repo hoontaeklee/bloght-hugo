@@ -3,6 +3,8 @@ title: "Paper Review: Green (2017). Regional land-atmosphere Feedbacks. ng"
 author: "Hoontaek Lee"
 date: 2020-10-12T21:26:21+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

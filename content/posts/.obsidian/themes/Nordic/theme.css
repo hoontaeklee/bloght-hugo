@@ -70,7 +70,9 @@ settings:
     - 
         id: nordic-theme-flavors
         title: Flavor
-        description: Variations on the base nord theme
+        description:
+cover: 
+  relative: true Variations on the base nord theme
         type: class-select
         allowEmpty: false
         default: nordic-base
@@ -81,12 +83,16 @@ settings:
     - 
         id: nordic-colored-headers
         title: Colored Headers (Rainbow Headers)
-        description: adds different colors for each of the headings
+        description:
+cover: 
+  relative: true adds different colors for each of the headings
         type: class-toggle
     - 
         id: nordic-darken
         title: Darker Dark Theme
-        description: prefer things a little darker? mix the base colors with this percentage of black
+        description:
+cover: 
+  relative: true prefer things a little darker? mix the base colors with this percentage of black
         type: variable-number-slider
         format: '%'
         default: 0

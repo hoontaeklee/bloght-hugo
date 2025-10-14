@@ -3,6 +3,8 @@ title: "Paper Review: Humphrey (2018). TWS-[CO2]. Nature"
 author: "Hoontaek Lee"
 date: 2020-09-18T15:22:49+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

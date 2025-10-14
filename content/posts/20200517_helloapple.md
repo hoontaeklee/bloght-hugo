@@ -4,7 +4,9 @@ author: "Hoontaek Lee"
 date: 2020-05-17T14:16:27+09:00
 lastmod: 2020-05-31T13:12:27+09:00 
 description:
-image: images/posts/meta/아이폰_fig1.jpg
+cover: 
+  relative: true
+  image: posts/meta/아이폰_fig1.jpg
 draft: false
 hideToc: false
 enableToc: true

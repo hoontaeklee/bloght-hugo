@@ -3,6 +3,8 @@ title: "Paper Review: Trautmann (2018). TWS variation across scales. HESS"
 author: "Hoontaek Lee"
 date: 2020-06-07T16:27:00+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

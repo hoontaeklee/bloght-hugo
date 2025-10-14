@@ -3,6 +3,8 @@ title: "Machine Learning with R"
 author: "Hoontaek Lee"
 date: 2019-02-15T00:04:09+09:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

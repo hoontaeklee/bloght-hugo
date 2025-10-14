@@ -3,6 +3,8 @@ title: "Paper Review: Zhang et al., (2018). domimant_timescales_and_regions_of_g
 author: "Hoontaek Lee"
 date: 2022-04-24T16:44:33+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

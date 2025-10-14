@@ -3,6 +3,8 @@ title: "Paper Review: Stocker et al., (2019). Underestimated GPP by RS models un
 author: "Hoontaek Lee"
 date: 2022-02-19T14:46:17+01:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

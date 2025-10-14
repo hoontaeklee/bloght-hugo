@@ -3,6 +3,8 @@ title: "Paper Review: Liu (2020). More dominant SM dryness effect than VPD. ncom
 author: "Hoontaek Lee"
 date: 2020-10-14T16:59:44+02:00
 description:
+cover: 
+  relative: true
 draft: false
 hideToc: false
 enableToc: true

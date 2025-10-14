@@ -5,25 +5,72 @@
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Blog on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 21 Sep 2025 21:59:18 +0200</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Sep 2025 21:59:19 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>In Paris: Week 009 (르 아브르 여행)</title>
-      <link>http://localhost:1313/posts/20250928_paris_wk009/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250928_paris_wk009/</guid>
+      <title>In Paris: Week 013 (프라이부르크, 프라이싱)</title>
+      <link>http://localhost:1313/posts/20251006_paris_wk013/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:19 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20251006_paris_wk013/</guid>
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;춘휘랑 모찌 공원 산책&lt;/li&gt;
-&lt;li&gt;르 아브르 여행&lt;/li&gt;
+&lt;li&gt;춘휘 졸업발표@프라이싱&lt;/li&gt;
+&lt;li&gt;신 졸업발표@인스부르크&lt;/li&gt;
+&lt;li&gt;중국 방문&lt;/li&gt;
+&lt;li&gt;thesis: wait for the clearance certificate&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2025-09-29-월요일&#34;&gt;2025. 09. 29 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘 디펜스 날. 오후 한 시에 시작한다. 나랑 춘휘는 아침에 카페에 들러 간단히 아침을 먹고 춘휘는 카페에서 나를 기다렸다. 나는 차를 빌려서 슈예얀과 춘휘를 차례대로 픽업했다. 춘휘는 대학에 내려주고, 나랑 슈예얀은 마실 것, 과자 등 장을 봤다. 로컬 맥주는 다행히, 그리고 예상대로 마트에서도 구할 수 있었다. 간단한 점심 거리도 같이 샀다. 다과 등은 대학에 내려서 세미나룸에 옮기고, 나는 차 반납 후 걸어서 대학으로 돌아왔다. 챠오링 등 뮌헨에서 공부하는 친구들도 디펜스 준비하는 데 도움을 줬다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk012/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk012/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xfires - VIIRS Active Fire data download&lt;/li&gt;
+&lt;li&gt;thesis: wait for the clearance certificate&lt;/li&gt;
+&lt;li&gt;프라이부르크&lt;/li&gt;
+&lt;li&gt;프라이싱&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Tried to plot a response curve of fire occurrence to distance to roads. Hard to extract an expected response pattern, maybe because the fire occurrence only shows &amp;ldquo;yes or no&amp;rdquo;. Thinking that it would be better with more information such as counts, tried to download VIIRS active fire dataset. As the trade-off, the spatial resolution of analyses will become coarser from 30 m to &amp;gt;=375 m, which wouldn&amp;rsquo;t matter.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>In Paris: Week 011 (러닝화)</title>
+      <link>http://localhost:1313/posts/20250921_paris_wk011/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:17 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250921_paris_wk011/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xfires - visual inspect of road and burned area data&lt;/li&gt;
+&lt;li&gt;thesis: apply for the clearance certificate&lt;/li&gt;
+&lt;li&gt;러닝화 구경 및 구입&lt;/li&gt;
+&lt;li&gt;축구&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the CALIPSO-Fire meeting, I shared maps of roads and burned area. I got some comments such as 1) add road vs non-road in addition to burned vs. unburned, 2) to set hypotheses and create relevant plots, 3) to consider buffers around roads as people move, and 4) to consider other attributes like land cover type and population size. Chunhui also gave the same comment as 1).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>In Paris: Week 010 (르 아브르 여행)</title>
       <link>http://localhost:1313/posts/20250928_paris_wk010/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <pubDate>Sun, 21 Sep 2025 21:59:16 +0200</pubDate>
       <guid>http://localhost:1313/posts/20250928_paris_wk010/</guid>
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
@@ -67,63 +114,16 @@
 &lt;p&gt;팔리주로 돌아가는 날이다. 돌아가는 길에 우리는 모찌에게 바다와 해변 구경을 시켜주고 싶었다. 르 아브르 해안은 바람이 세서? 사람이 많아서? 항구 같아서? 아무튼 적합한 것 같지가 않았고, 다른 곳에 가기로 했다. 르 아브르 건너편 해안마을 &lt;a href=&#34;https://maps.app.goo.gl/MskM15MohYhCCDLa9&#34;&gt;트로빌레&lt;/a&gt;(?)로 갔다.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>In Paris: Week 011 (러닝화)</title>
-      <link>http://localhost:1313/posts/20250921_paris_wk011/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250921_paris_wk011/</guid>
+      <title>In Paris: Week 009 (르 아브르 여행)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk009/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:15 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk009/</guid>
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Xfires - visual inspect of road and burned area data&lt;/li&gt;
-&lt;li&gt;thesis: apply for the clearance certificate&lt;/li&gt;
-&lt;li&gt;러닝화 구경 및 구입&lt;/li&gt;
-&lt;li&gt;축구&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the CALIPSO-Fire meeting, I shared maps of roads and burned area. I got some comments such as 1) add road vs non-road in addition to burned vs. unburned, 2) to set hypotheses and create relevant plots, 3) to consider buffers around roads as people move, and 4) to consider other attributes like land cover type and population size. Chunhui also gave the same comment as 1).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
-      <link>http://localhost:1313/posts/20250928_paris_wk012/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250928_paris_wk012/</guid>
-      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Xfires - VIIRS Active Fire data download&lt;/li&gt;
-&lt;li&gt;thesis: wait for the clearance certificate&lt;/li&gt;
-&lt;li&gt;프라이부르크&lt;/li&gt;
-&lt;li&gt;프라이싱&lt;/li&gt;
+&lt;li&gt;춘휘랑 모찌 공원 산책&lt;/li&gt;
+&lt;li&gt;르 아브르 여행&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Tried to plot a response curve of fire occurrence to distance to roads. Hard to extract an expected response pattern, maybe because the fire occurrence only shows &amp;ldquo;yes or no&amp;rdquo;. Thinking that it would be better with more information such as counts, tried to download VIIRS active fire dataset. As the trade-off, the spatial resolution of analyses will become coarser from 30 m to &amp;gt;=375 m, which wouldn&amp;rsquo;t matter.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
-      <link>http://localhost:1313/posts/20251006_paris_wk013/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20251006_paris_wk013/</guid>
-      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;춘휘 졸업발표@프라이싱&lt;/li&gt;
-&lt;li&gt;신 졸업발표@인스부르크&lt;/li&gt;
-&lt;li&gt;중국 방문&lt;/li&gt;
-&lt;li&gt;thesis: wait for the clearance certificate&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2025-09-29-월요일&#34;&gt;2025. 09. 29 월요일&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;춘휘 디펜스 날. 오후 한 시에 시작한다. 나랑 춘휘는 아침에 카페에 들러 간단히 아침을 먹고 춘휘는 카페에서 나를 기다렸다. 나는 차를 빌려서 슈예얀과 춘휘를 차례대로 픽업했다. 춘휘는 대학에 내려주고, 나랑 슈예얀은 마실 것, 과자 등 장을 봤다. 로컬 맥주는 다행히, 그리고 예상대로 마트에서도 구할 수 있었다. 간단한 점심 거리도 같이 샀다. 다과 등은 대학에 내려서 세미나룸에 옮기고, 나는 차 반납 후 걸어서 대학으로 돌아왔다. 챠오링 등 뮌헨에서 공부하는 친구들도 디펜스 준비하는 데 도움을 줬다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Paris: Week 008 (춘휘@Palaiseau, 파리, 짜오휘 초대)</title>
@@ -2137,7 +2137,7 @@ I still stuck with the subsection about observations of water and carbon cycles.
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;춘휘가 &lt;a href=&#34;https://en.wikipedia.org/wiki/Nils_Landgren_(musician)&#34;&gt;닐스 란드그렌&lt;/a&gt;이 예나에 콘서트를 하러 올 거라고 같이 가고 했다. 나는 모르는 사람이지만, 재즈 음악 들어서 나쁠 건 없다. 완통과 웨이지에도 어찌어찌 티켓을 구해서 같이 왔다. 밴드 구성은 트롬본, 색소폰, 피아노, 드럼, 기타, 베이스. 나름 괜찮았다. 베이스 연주자 겉모습이 조금 파격적이라 재미있었다. 애쉬그레이 모히칸+건설 노동자 복장. 심지어 그 옷은 형광이었다.&lt;/p&gt;</description>
+&lt;p&gt;춘휘가 &lt;a href=&#34;https://en.wikipedia.org/wiki/Nils_Landgren_%28musician%29&#34;&gt;닐스 란드그렌&lt;/a&gt;이 예나에 콘서트를 하러 올 거라고 같이 가고 했다. 나는 모르는 사람이지만, 재즈 음악 들어서 나쁠 건 없다. 완통과 웨이지에도 어찌어찌 티켓을 구해서 같이 왔다. 밴드 구성은 트롬본, 색소폰, 피아노, 드럼, 기타, 베이스. 나름 괜찮았다. 베이스 연주자 겉모습이 조금 파격적이라 재미있었다. 애쉬그레이 모히칸+건설 노동자 복장. 심지어 그 옷은 형광이었다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 201 (모찌 목욕, 유로2024 결승)</title>
@@ -11432,7 +11432,7 @@ Spatial interpolation하기에는 격자 수가 모자라 보였는데&amp;helli
       <pubDate>Sun, 31 May 2020 14:44:13 +0900</pubDate>
       <guid>http://localhost:1313/posts/20200531_%EB%8F%85%EC%9D%BC%EC%96%B4%EA%B3%B5%EB%B6%80%ED%98%84%ED%99%A9/</guid>
       <description>&lt;h2 id=&#34;인강---계획-변경&#34;&gt;인강 - 계획 변경?&lt;/h2&gt;
-&lt;p&gt;원래는 &lt;a href=&#34;http://localhost:1313/posts/20200430_german_plan&#34;&gt;이런&lt;/a&gt; 계획을 가지고 있었다. 발음하는 방법을 익힌 후 필수 단어&amp;amp;표현인 20030을 정리 및 암기하고 반복&amp;amp;숙달하는.&lt;/p&gt;
+&lt;p&gt;원래는 &lt;a href=&#34;http://localhost:1313/posts/20200430_german_plan/&#34;&gt;이런&lt;/a&gt; 계획을 가지고 있었다. 발음하는 방법을 익힌 후 필수 단어&amp;amp;표현인 20030을 정리 및 암기하고 반복&amp;amp;숙달하는.&lt;/p&gt;
 &lt;p&gt;아무것도 모르고 저렇게 하는 게 쉽지 않았다.&lt;/p&gt;
 &lt;p&gt;마침 독일어 공부하는 친구가 인강 하나를 공유해줬고, 내가 익숙한 방법이라 그런지 잘 되고 있다. 아이패드로 정리하면서.&lt;/p&gt;
 &lt;p&gt;꼭 원래 계획을 고집하라는 법고, 공부를 하고 있다는 게 중요한 것이니까 긍정적이라 볼 수 있다.&lt;/p&gt;
@@ -11517,7 +11517,7 @@ Spatial interpolation하기에는 격자 수가 모자라 보였는데&amp;helli
       <description>&lt;h2 id=&#34;20-may-2020-guo-nph-sam-isoansiohydry&#34;&gt;20 May, 2020 (Guo, NPH, SAM-&amp;gt;iso/ansiohydry)&lt;/h2&gt;
 &lt;p&gt;Guo, J.S., Hultine, K.R., Koch, G.W., Kropp, H. and Ogle, K. (2020), Temporal shifts in iso/anisohydry revealed from daily observations of plant water potential in a dominant desert shrub. New Phytol, 225: 713-726. doi:&lt;a href=&#34;https://doi.org/10.1111/nph.16196&#34;&gt;10.1111/nph.16196&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;a-key-reference-for-applying-the-sam-framework&#34;&gt;A key reference for applying the SAM framework&lt;/h2&gt;
-&lt;p&gt;I have reviewed a &lt;a href=&#34;http://localhost:1313/posts/paper_review/p023_2019_liu_ele_SAM_NEE&#34;&gt;paper&lt;/a&gt; in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). &lt;strong&gt;However&lt;/strong&gt;, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.&lt;/p&gt;</description>
+&lt;p&gt;I have reviewed a &lt;a href=&#34;http://localhost:1313/posts/paper_review/p023_2019_liu_ele_sam_nee/&#34;&gt;paper&lt;/a&gt; in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). &lt;strong&gt;However&lt;/strong&gt;, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Notebook</title>
@@ -11682,7 +11682,7 @@ Spatial interpolation하기에는 격자 수가 모자라 보였는데&amp;helli
 &lt;p&gt;여기에 찬찬히 정리해보자.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;MPI에서는 외국인을 위한 &lt;a href=&#34;https://www.mpg.de/4311252/Living_working_Germany.pdf&#34;&gt;기초 가이드&lt;/a&gt;를 제공하니 한 번 읽어보자.&lt;/li&gt;
-&lt;li&gt;University of Jena에서도 &lt;a href=&#34;http://www.jga.uni-jena.de/en/Doctoral+candidates/Incoming+_+Outgoing/Arrival+in+Germany/Non_EU_Citizens.html&#34;&gt;좋은 가이드&lt;/a&gt;를 제공한다.&lt;/li&gt;
+&lt;li&gt;University of Jena에서도 &lt;a href=&#34;http://www.jga.uni-jena.de/en/Doctoral&amp;#43;candidates/Incoming&amp;#43;_&amp;#43;Outgoing/Arrival&amp;#43;in&amp;#43;Germany/Non_EU_Citizens.html&#34;&gt;좋은 가이드&lt;/a&gt;를 제공한다.&lt;/li&gt;
 &lt;li&gt;&lt;u&gt;독일 유학 공통적인 것, MPI-bgc 한정적인 내용이 섞여있다.&lt;/u&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
@@ -11740,7 +11740,7 @@ Spatial interpolation하기에는 격자 수가 모자라 보였는데&amp;helli
 &lt;p&gt;두 번째 욕심은 독일어 능력 인증하기.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;단어와 문법을 이렇게 많이 외우고 시험에도 합격했는데 말 한마디 제대로 할 수 없다니&amp;quot;와 같은 한탄은 없기를 바란다.&lt;/p&gt;
 &lt;h2 id=&#34;주-커리큘럼-20030&#34;&gt;주 커리큘럼: 20030&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/20200426_languagestudy&#34;&gt;외국어 공부의 감각&lt;/a&gt;에서 소개한 방법을 사용하려 한다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/20200426_languagestudy/&#34;&gt;외국어 공부의 감각&lt;/a&gt;에서 소개한 방법을 사용하려 한다.&lt;/p&gt;
 &lt;p&gt;필수 단어 200개와 표현 30개를 정리하고,&lt;/p&gt;
 &lt;p&gt;어플(HelloTalk) 및 일상(in Germany)에서 연습한다.&lt;/p&gt;</description>
     </item>
@@ -11756,7 +11756,7 @@ Spatial interpolation하기에는 격자 수가 모자라 보였는데&amp;helli
 
 &lt;h1 id=&#34;외국어-공부의-감각---손에-닿을-듯한-높이의-열매&#34;&gt;외국어 공부의 감각 - 손에 닿을 듯한 높이의 열매&lt;/h1&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/20200418_morningroutine&#34;&gt;지난 번&lt;/a&gt;에 서점에 들러 산 두 권 중 하나이다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/20200418_morningroutine/&#34;&gt;지난 번&lt;/a&gt;에 서점에 들러 산 두 권 중 하나이다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;모닝루틴&lt;/strong&gt;이 아침시간을 활용하는 습관에 대해 말해줬다면, 이 책은 내 첫 모닝루틴이 될 외국어 공부에 대해 말해준다.&lt;/p&gt;
 &lt;p&gt;요즘 집에서 맨몸운동할 때 땅끄 부부의 영상을 참고하고 있다. &lt;strong&gt;집에서 n분만에 끝내는 어디어디 운동&lt;/strong&gt;과 같이 &lt;strong&gt;이정도는 나도 매일 할 수 있겠다&lt;/strong&gt;라고 자신감이 들게 하는 간단한 루틴을 담고 있다.&lt;/p&gt;</description>
     </item>
@@ -12410,7 +12410,7 @@ Spatial interpolation하기에는 격자 수가 모자라 보였는데&amp;helli
       <description>&lt;h2 id=&#34;lets-coming-out&#34;&gt;Let&amp;rsquo;s coming out&lt;/h2&gt;
 &lt;p&gt;블로그를 검색 엔진에 노출 시켜보자. 아주 간단하다.&lt;br&gt;
 게다가 참고할만한 &lt;a href=&#34;https://tinnia.github.io/blog/post4/&#34;&gt;좋은 글&lt;/a&gt;도 발견했다.&lt;/p&gt;
-&lt;p&gt;현재는 내 &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances&#34;&gt;utterance 게시글&lt;/a&gt;을 구글에서 찾아볼 수 없다.&lt;/p&gt;
+&lt;p&gt;현재는 내 &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances/&#34;&gt;utterance 게시글&lt;/a&gt;을 구글에서 찾아볼 수 없다.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C_fig1.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;앞으로 어떻게 바뀔지 지켜보자.&lt;/p&gt;
 &lt;h2 id=&#34;google&#34;&gt;Google&lt;/h2&gt;
@@ -12572,7 +12572,7 @@ c9
       <pubDate>Wed, 01 Jan 2020 15:37:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/20200101_add_utterances/</guid>
       <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
-&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
+&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances/#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
 이 글에는 utterrances 소개는 관두고&amp;hellip; 설치 관련 내용만 적었다.&lt;/p&gt;
 &lt;h2 id=&#34;utterances-설치&#34;&gt;utterances 설치&lt;/h2&gt;
 &lt;h3 id=&#34;1-utterances-사이트-접속&#34;&gt;1. utterances 사이트 접속&lt;/h3&gt;
@@ -12594,12 +12594,12 @@ c9
       <description>&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
 &lt;!-- TOC --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%EB%AC%B8%EC%9D%98-%EC%82%AC%ED%95%AD&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#1-darklight-%EB%B2%84%ED%8A%BC-%EC%9C%84%EC%B9%98-%EB%B3%80%EA%B2%BD&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-%ED%8F%AC%EC%8A%A4%ED%8C%85-%EB%82%A0%EC%A7%9C-%EB%B0%8F-%EC%8B%9C%EA%B0%84-%EC%A0%95%EB%B3%B4-%EC%B6%94%EA%B0%80&#34;&gt;2. &lt;strong&gt;포스팅 날짜 및 시간 정보 추가&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-md-%ED%8C%8C%EC%9D%BC-%EB%82%B4-%EA%B2%8C%EC%8B%9C-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%A4%EC%A0%9C-%EB%82%A0%EC%A7%9C%EA%B0%80-%EA%B0%99%EC%9C%BC%EB%A9%B4-%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4-%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EB%AC%B8%EC%A0%9C&#34;&gt;3. &lt;strong&gt;.md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#4-%EC%8B%9C%EA%B0%84-%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C-%EC%A0%95%EB%A0%AC&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%ED%9B%84%EA%B8%B0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#%eb%ac%b8%ec%9d%98-%ec%82%ac%ed%95%ad&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#1-darklight-%eb%b2%84%ed%8a%bc-%ec%9c%84%ec%b9%98-%eb%b3%80%ea%b2%bd&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#2-%ed%8f%ac%ec%8a%a4%ed%8c%85-%eb%82%a0%ec%a7%9c-%eb%b0%8f-%ec%8b%9c%ea%b0%84-%ec%a0%95%eb%b3%b4-%ec%b6%94%ea%b0%80&#34;&gt;2. &lt;strong&gt;포스팅 날짜 및 시간 정보 추가&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#3-md-%ed%8c%8c%ec%9d%bc-%eb%82%b4-%ea%b2%8c%ec%8b%9c-%eb%82%a0%ec%a7%9c%ec%99%80-%ec%8b%a4%ec%a0%9c-%eb%82%a0%ec%a7%9c%ea%b0%80-%ea%b0%99%ec%9c%bc%eb%a9%b4-%ea%b2%8c%ec%8b%9c%ea%b8%80%ec%9d%b4-%ec%82%ac%eb%9d%bc%ec%a7%80%eb%8a%94-%eb%ac%b8%ec%a0%9c&#34;&gt;3. &lt;strong&gt;.md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#4-%ec%8b%9c%ea%b0%84-%eb%82%b4%eb%a6%bc%ec%b0%a8%ec%88%9c-%ec%a0%95%eb%a0%ac&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#%ed%9b%84%ea%b8%b0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /TOC --&gt;
 &lt;p&gt;블로그 테마로 &lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme&#34;&gt;Cupper&lt;/a&gt;를 선택했다.
@@ -12607,7 +12607,7 @@ c9
 &lt;h2 id=&#34;문의-사항&#34;&gt;문의 사항&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Four issues about the cupper theme (dark button, posting time, and an error)
-I am building a static website using the Cupper theme (&lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme)&#34;&gt;https://github.com/zwbetz-gh/cupper-hugo-theme)&lt;/a&gt;.
+I am building a static website using the Cupper theme (&lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme%29&#34;&gt;https://github.com/zwbetz-gh/cupper-hugo-theme)&lt;/a&gt;.
 I have four issues:&lt;/p&gt;</description>
     </item>
     <item>

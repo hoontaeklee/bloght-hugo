@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.150.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Bloght</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">확률적 프로그래밍 기초 원리
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Intro 요즘 종종 베이지안 네트워크(Bayesian network, BN)를 활용하는 논문이 보인다. 예를 들어 산불관련 논문에서는 산불 발생과 관련된 인위적, 자연적 인자를 나열한 후 각 인자 및 인자간 조합에 따른 산불 발생 확률을 분석했다.
+베이지안 네트워크에 흥미를 조금씩 가져가던 차에 과학원 도서관에서 이 책을 발견했다. 총 4부 중 실습과 관련된 3, 4부를 제외하고 1, 2부만 읽어보기로 했다. 개략적으로 살펴보는 게 목적이니까.
+Bayesian network Description 간단히 정리하면
+베이지안 네트워크란 특정 상황에 대한 지식들을 원인과 결과의 형태로 표기하는 그래프를 말한다. 베이지안 네트워크는 명제를 벽돌삼는 몇 가지 형태(순차, 발산, 수렴)의 노드로 이루어져 있다. 이 벽돌을 구성하는 개념(확률, 조건부 확률, 진리표, 주관적 확률 등)은 1장~8장에서 설명하고 있다. 네트워크를 이루는 각 노드의 발생 확률을 정량적으로 구해서 이해하기 쉽게 표현하고 예측 및 추론에 사용할 수 있는 도구다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-02-25 20:54:40 +0900 KST'>February 25, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to 확률적 프로그래밍 기초 원리" href="http://localhost:1313/posts/20200225_probprog/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Eller (2020). JULES-SOX. NPH
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>22 February, 2020 (Eller, NPH, JULES-SOX) Eller, C.B., Rowland, L., Mencuccini, M., Rosas, T., Williams, K., Harper, A., Medlyn, B.E., Wagner, Y., Klein, T., Teodoro, G.S., Oliveira, R.S., Matos, I.S., Rosado, B.H.P., Fuchs, K., Wohlfahrt, G., Montagnani, L., Meir, P., Sitch, S. and Cox, P.M. (2020), Stomatal optimization based on xylem hydraulics (SOX) improves land surface model simulation of vegetation responses to climate. New Phytol. doi:10.1111/nph.16419
+Summary Many researchers, including me, who use ecosystem models have recognized that the beta function approach for representing the change in plant photosynthesis to soil moisture stress needs improvement. In my case, I saw that the ET simulation by JULES was too sensitive to drought, resulting in underestimation. Eller et al. (2020) did a great work for developing an improved alternative method, especially considering xylem hydraulics. By a global evaluation for many biomes, the authors showed that the JULES-SOX outperformed the default JULES for most of evaluations. This improvement spreads out to more accurate estimates of global GPP and ET, predicting plant-physiological response mechanism under the drought condition, the demographic consequences resulted from the more competitive soil moisture use, and possibly replacing the PFT approach in LSMs and DGVMs to represent the large diversity of ecological strategies.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-02-22 20:00:00 +0900 KST'>February 22, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Eller (2020). JULES-SOX. NPH" href="http://localhost:1313/posts/paper_review/p020_2020_eller_nph_jules-sox/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">R에서 Open API 사용하기 - 카카오 지도
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Intro 연구실에서 여러 장소의 주소 –&gt; 경위도 좌표 변환을 할 일이 있다.
+하나하나 웹페이지에서 하기는 많으므로 코딩을 하기로 했다.
+API를 사용하면 되는 듯하다.
+API? Application Programming Interface.
+구글에 검색하면 잘 설명한 글을 여럿 찾아 볼 수 있지만, 나름대로 한 번 적어보고 넘어가려 한다.
+나는 API를 술집 종업원에 비유하려 한다. 술집에서는 여러 안주요리나 술을 팔고 있다. 손님들은 술집에 들어가면 종업원에게 신분증을 보여줘 미성년자가 아님을 확인한다. 그리고 종업원을 통해 술과 먹태를 주문하면, 종업원은 주문 내용을 조리실에 전달해 요리를 손님에게 전달해준다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-02-17 19:46:25 +0900 KST'>February 17, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to R에서 Open API 사용하기 - 카카오 지도" href="http://localhost:1313/posts/20200217_using_api_in_r/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Ogle (2019). SAM. CHANCE
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>15 February, 2020 (Ogle, CHANCE, SAM) Kiona Ogle &amp; Jarrett J. Barber (2016) Plant and Ecosystem Memory, CHANCE, 29:2, 16-22, DOI: 10.1080/09332480.2016.1181961
+Why did I read this paper? It is often easier to get knowledge (i.e., model, concept, equation, and so forth) not from the original descriptive paper, but from other papers using the knowledge because they introduce the knowledge after masticating it, not as it is.
+This paper masticates the stochastic antecedent modelling (SAM) framework for beginners. This study describes what SAM does and how SAM does it, and why SAM does it with a simple example and without complicated equations. Whereas, the original paper (Ogle et al., 20151) provides in-depth explanation about the SAM, but the mathematical expressions cover here and there, making readers terrified even though the two studies exemplified the same case.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-02-15 20:00:00 +0900 KST'>February 15, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Ogle (2019). SAM. CHANCE" href="http://localhost:1313/posts/paper_review/p019_2016_ogle_chance_sam/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to switch to another Hugo theme (Hugo 테마 변경하기)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Intro Hugo theme 목록에 마음에 드는 테마가 올라왔다. 기존에 사용하던 Cupper 테마에서 Zzo 테마로 바꾸기로 했다. 이유는 굳이 따지지 않는다. 그냥 바꾸고 싶은 거다.
+Zzo 테마는 예쁘고, 기능도 있을 것 다 있고(맨 위로 가는 버튼, 이전/다음 게시글 이동 버튼 등), 없을 기능도 있고(Resume page, publication page, …), 메뉴얼도 잘 돼있다.
+어떻게 바꿔야 할까.
+Plan 처음에는 Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. 삽질한 게 얼만데.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-02-15 15:09:56 +0900 KST'>February 15, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to How to switch to another Hugo theme (Hugo 테마 변경하기)" href="http://localhost:1313/posts/20200215_switch_theme/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/69/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/71/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

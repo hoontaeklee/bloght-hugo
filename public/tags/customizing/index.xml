@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/customizing/</link>
     <description>Recent content in Customizing on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Fri, 03 Jan 2020 20:33:22 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/customizing/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -29,7 +29,7 @@
       <pubDate>Wed, 01 Jan 2020 15:37:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/20200101_add_utterances/</guid>
       <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
-&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
+&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances/#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
 이 글에는 utterrances 소개는 관두고&amp;hellip; 설치 관련 내용만 적었다.&lt;/p&gt;
 &lt;h2 id=&#34;utterances-설치&#34;&gt;utterances 설치&lt;/h2&gt;
 &lt;h3 id=&#34;1-utterances-사이트-접속&#34;&gt;1. utterances 사이트 접속&lt;/h3&gt;
@@ -51,12 +51,12 @@
       <description>&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
 &lt;!-- TOC --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%EB%AC%B8%EC%9D%98-%EC%82%AC%ED%95%AD&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#1-darklight-%EB%B2%84%ED%8A%BC-%EC%9C%84%EC%B9%98-%EB%B3%80%EA%B2%BD&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-%ED%8F%AC%EC%8A%A4%ED%8C%85-%EB%82%A0%EC%A7%9C-%EB%B0%8F-%EC%8B%9C%EA%B0%84-%EC%A0%95%EB%B3%B4-%EC%B6%94%EA%B0%80&#34;&gt;2. &lt;strong&gt;포스팅 날짜 및 시간 정보 추가&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-md-%ED%8C%8C%EC%9D%BC-%EB%82%B4-%EA%B2%8C%EC%8B%9C-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%A4%EC%A0%9C-%EB%82%A0%EC%A7%9C%EA%B0%80-%EA%B0%99%EC%9C%BC%EB%A9%B4-%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4-%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EB%AC%B8%EC%A0%9C&#34;&gt;3. &lt;strong&gt;.md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#4-%EC%8B%9C%EA%B0%84-%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C-%EC%A0%95%EB%A0%AC&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%ED%9B%84%EA%B8%B0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#%eb%ac%b8%ec%9d%98-%ec%82%ac%ed%95%ad&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#1-darklight-%eb%b2%84%ed%8a%bc-%ec%9c%84%ec%b9%98-%eb%b3%80%ea%b2%bd&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#2-%ed%8f%ac%ec%8a%a4%ed%8c%85-%eb%82%a0%ec%a7%9c-%eb%b0%8f-%ec%8b%9c%ea%b0%84-%ec%a0%95%eb%b3%b4-%ec%b6%94%ea%b0%80&#34;&gt;2. &lt;strong&gt;포스팅 날짜 및 시간 정보 추가&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#3-md-%ed%8c%8c%ec%9d%bc-%eb%82%b4-%ea%b2%8c%ec%8b%9c-%eb%82%a0%ec%a7%9c%ec%99%80-%ec%8b%a4%ec%a0%9c-%eb%82%a0%ec%a7%9c%ea%b0%80-%ea%b0%99%ec%9c%bc%eb%a9%b4-%ea%b2%8c%ec%8b%9c%ea%b8%80%ec%9d%b4-%ec%82%ac%eb%9d%bc%ec%a7%80%eb%8a%94-%eb%ac%b8%ec%a0%9c&#34;&gt;3. &lt;strong&gt;.md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#4-%ec%8b%9c%ea%b0%84-%eb%82%b4%eb%a6%bc%ec%b0%a8%ec%88%9c-%ec%a0%95%eb%a0%ac&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/#%ed%9b%84%ea%b8%b0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /TOC --&gt;
 &lt;p&gt;블로그 테마로 &lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme&#34;&gt;Cupper&lt;/a&gt;를 선택했다.
@@ -64,7 +64,7 @@
 &lt;h2 id=&#34;문의-사항&#34;&gt;문의 사항&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Four issues about the cupper theme (dark button, posting time, and an error)
-I am building a static website using the Cupper theme (&lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme)&#34;&gt;https://github.com/zwbetz-gh/cupper-hugo-theme)&lt;/a&gt;.
+I am building a static website using the Cupper theme (&lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme%29&#34;&gt;https://github.com/zwbetz-gh/cupper-hugo-theme)&lt;/a&gt;.
 I have four issues:&lt;/p&gt;</description>
     </item>
   </channel>

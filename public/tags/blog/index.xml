@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/blog/</link>
     <description>Recent content in Blog on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 28 Feb 2021 20:43:17 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -76,7 +76,7 @@
       <description>&lt;h2 id=&#34;lets-coming-out&#34;&gt;Let&amp;rsquo;s coming out&lt;/h2&gt;
 &lt;p&gt;블로그를 검색 엔진에 노출 시켜보자. 아주 간단하다.&lt;br&gt;
 게다가 참고할만한 &lt;a href=&#34;https://tinnia.github.io/blog/post4/&#34;&gt;좋은 글&lt;/a&gt;도 발견했다.&lt;/p&gt;
-&lt;p&gt;현재는 내 &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances&#34;&gt;utterance 게시글&lt;/a&gt;을 구글에서 찾아볼 수 없다.&lt;/p&gt;
+&lt;p&gt;현재는 내 &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances/&#34;&gt;utterance 게시글&lt;/a&gt;을 구글에서 찾아볼 수 없다.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C_fig1.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;앞으로 어떻게 바뀔지 지켜보자.&lt;/p&gt;
 &lt;h2 id=&#34;google&#34;&gt;Google&lt;/h2&gt;
@@ -121,7 +121,7 @@
       <pubDate>Wed, 01 Jan 2020 15:37:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/20200101_add_utterances/</guid>
       <description>&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
-&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
+&lt;p&gt;댓글 기능이 꼭 필요할 것 같지는 않지만, &lt;a href=&#34;http://localhost:1313/posts/20200101_add_utterances/#reference&#34;&gt;좋은 레퍼런스&lt;/a&gt;를 찾았기 때문에 일단 시도했다.&lt;br&gt;
 이 글에는 utterrances 소개는 관두고&amp;hellip; 설치 관련 내용만 적었다.&lt;/p&gt;
 &lt;h2 id=&#34;utterances-설치&#34;&gt;utterances 설치&lt;/h2&gt;
 &lt;h3 id=&#34;1-utterances-사이트-접속&#34;&gt;1. utterances 사이트 접속&lt;/h3&gt;

@@ -99,6 +99,16 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/search/" title="Search">
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -195,89 +205,6 @@ Tina, Basil에게 global TWS decomposiiton estimates를, Ulrich에게 global for
   </div>
   <footer class="entry-footer"><span title='2020-12-06 17:16:22 +0100 +0100'>December 6, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to In Jena: Week 14" href="http://localhost:1313/posts/20201206_jena_wk14/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk13%20%287%29.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">In Jena: Week 13
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>이번 주는… TWS-NEE discussion with Sujan, Martin, Nuno, and Markus 밥 &amp; 술 2020. 11. 26. 목요일 TWS-NEE discussion with Sujan, Martin, Nuno, and Markus
-9월부터 11월까지 내 연구를 어떻게 진행해 왔고 어떻게 해나가면 좋을지 토의하는 자리다.
-내 발표는 Sujan이 만들어준 C-W coupled SINDBAD configuration을 테스트하는 것 위주로 진행됐다. Global run 시행 전에 site-level에서 잘 맞는지 확인해보는 단계. 그리고 몇몇 논문 요약.
-Martin과 Markus는 장기 전략에 대해 조언을 많이 해줬다. 내 프로젝트의 주요 질문인 TWS-NEE IAV relationship은 바로 해결하기 어렵다. 때문에 잘게 쪼개서 쉬운 것 먼저 진행하는 것이다(divide&amp;conquer). TWS IAV 혹은 NEE IAV를 먼저 살펴봐서 각각 component가 다른 것에 어떻게 반응하는지, 어떤 게 가장 영향력 있는지 등을 먼저 살피면 좀 더 내 질문을 명확하게 느낄 수 있을 것 같다. 미팅 후 Martin이 코멘트를 정리해서 메일로 보내줬다.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-11-29 20:46:04 +0100 +0100'>November 29, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to In Jena: Week 13" href="http://localhost:1313/posts/20201129_jena_wk13/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Isolation Forest
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>knitr::opts_chunk$set(eval = TRUE, echo = TRUE, warning = FALSE) References:
-solitude: https://github.com/talegari/solitude isofor: https://campus.datacamp.com/courses/anomaly-detection-in-r/isolation-forest # install.packages(&#34;mvoutlier&#34;)) # install.packages(&#34;remotes&#34;)) # remotes::install_github(&#34;Zelazny7/isofor&#34;) #import libraries library(ggplot2) library(ggpubr) library(solitude) # hereafter, &#34;sol&#34; library(isofor) # hereafter, &#34;iso&#34; library(viridis) packageVersion(&#34;solitude&#34;) #create sample data data(&#34;humus&#34;, package = &#34;mvoutlier&#34;) # 2-dimensional columns_required &lt;- c(&#34;Bi&#34;, &#34;Cd&#34;) humus2 &lt;- humus[ , columns_required] # multi-dimensional columns_required_mul &lt;- setdiff(colnames(humus) , c(&#34;Cond&#34;, &#34;ID&#34;, &#34;XCOO&#34;, &#34;YCOO&#34;, &#34;LOI&#34;) ) humus_mul &lt;- humus[ , columns_required_mul] str(humus2) str(humus_mul) #plot data ggplot(humus2, aes(x = Bi, y = Cd)) &#43; geom_point(shape = 1, alpha = 0.5) &#43; labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43; labs(alpha = &#34;&#34;, colour=&#34;Legend&#34;) &#43; theme_bw() # solitude library # sample (50%) set.seed(1) index &lt;- sample(ceiling(nrow(humus2) * 0.5)) index_mul &lt;- sample(ceiling(nrow(humus_mul) * 0.5)) # initiate an isolation forest if_sol &lt;- isolationForest$new(sample_size = length(index)) if_sol_mul &lt;- isolationForest$new(sample_size = length(index)) # fit an isolation forest if_sol$fit(humus2[index, ]) if_sol_mul$fit(humus_mul[index, ]) # isofor library if_iso &lt;- iForest(humus2, phi = nrow(humus2) * 0.5 # sample size ) # Obtain anomaly scores humus2$score_sol &lt;- if_sol$predict(humus2)$anomaly_score humus_mul$score &lt;- if_sol_mul$predict(humus_mul)$anomaly_score humus2$score_iso &lt;- predict(if_iso, newdata = humus2[, c(1, 2)]) # decision: outlier if score &gt; 0.6 (threshold could vary by users) humus2$is_outlier_sol &lt;- ifelse(humus2$score_sol &gt; 0.6, 1, 0) humus2$is_outlier_iso &lt;- ifelse(humus2$score_iso &gt; 0.55, 1, 0) # create grid values for contour plot Bi_seq &lt;- seq(min(humus2$Bi), max(humus2$Bi), length.out = 100) Cd_seq &lt;- seq(min(humus2$Cd), max(humus2$Cd), length.out = 100) humus2_grid &lt;- expand.grid(Bi = Bi_seq, Cd = Cd_seq) humus2_grid$score_sol &lt;- if_sol$predict(humus2_grid)$anomaly_score humus2_grid$score_iso &lt;- predict(if_iso, newdata = humus2_grid[, c(1, 2)]) # scatter plot sca_sol &lt;- ggplot(humus2, aes(x = Bi, y = Cd, z = score_sol)) &#43; geom_point(aes(color = is_outlier_sol)) &#43; labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43; scale_color_viridis(discrete = FALSE, direction = -1) &#43; theme_bw() sca_iso &lt;- ggplot(humus2, aes(x = Bi, y = Cd, z = score_iso)) &#43; geom_point(aes(color = is_outlier_iso)) &#43; labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43; scale_color_viridis(discrete = FALSE, direction = -1) &#43; theme_bw() # contour plot gmin &lt;- min(humus2_grid$score_sol, humus2_grid$score_iso) gmax &lt;- max(humus2_grid$score_sol, humus2_grid$score_iso) gbreaks &lt;- round(seq(gmin, gmax, length.out = 9), 2) cont_sol &lt;- ggplot(humus2_grid, aes(x = Bi, y = Cd, z = score_sol)) &#43; geom_contour_filled(breaks = gbreaks) &#43; labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43; theme_bw() cont_iso &lt;- ggplot(humus2_grid, aes(x = Bi, y = Cd, z = score_iso)) &#43; geom_contour_filled(breaks = gbreaks) &#43; labs(x = &#34;Bi&#34;, y = &#34;Cd&#34;) &#43; theme_bw() # aggregate ggplots theme_set( theme_bw() &#43; theme(legend.position = &#34;top&#34;) ) if_plot &lt;- ggarrange(sca_sol, sca_iso, cont_sol, cont_iso, labels = rep(c(&#34;solitude&#34;, &#34;iso&#34;), 2), ncol = 2, nrow = 2) if_plot Two scatter plots are similar even if they use different threshold values for the decision. Two contour plots look very different. This is because they have different range of scores. If we compare the regions with the same levels and colors, they show similar result. </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-11-22 20:53:43 +0100 +0100'>November 22, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Isolation Forest" href="http://localhost:1313/posts/20201122_isolation_forest/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk12%20%285%29.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">In Jena: Week 12
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>이번 주는… 통계학 수업 2020. 11. 16. ~ 20. 월~금요일 Advanced statistics &amp; machine learning for data analysis (ASDA)
-통계학 수업. 수업 방식이 대학원 수업에 잘 맞던 것 같다.
-학생들은 익숙하지 않은 통계 기법 한 가지씩 골라서 발표한다. 학생들이 고른 주제를 관련된 것끼리 같은 날에 모으고, 그 날 시작 순서로 배경지식이 될 만한 강의를 해준다. 중간중간 그 기법을 사용한 다른 연구원의 사례 강연이 있고, 코드를 돌려보는 시간으로 끝난다.
-이 강의의 장점은…
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-11-22 20:37:53 +0100 +0100'>November 22, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to In Jena: Week 12" href="http://localhost:1313/posts/20201122_jena_wk12/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Gentine (2019). Coupling between carbon and water cycles-a review. erl.
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>14 October, 2020 (Gentine, erl, cw coupling) Gentine, P., Green, J.K., Guérin, M., Humphrey, V., Seneviratne, S.I., Zhang, Y., et al. (2019). Coupling between the terrestrial carbon and water cycles—a review. Environ. Res. Lett., 19. https://doi.org/10.1088/1748-9326/ab22d6
-Overview The right topic for my project.
-The authors wrote that this paper would be an introduction of the coupling of carbon and water cycles to people who are not familiar with. Indeed I think they summarized the topics nicely with well-organized structure.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-11-16 22:32:26 +0100 +0100'>November 16, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Gentine (2019). Coupling between carbon and water cycles-a review. erl." href="http://localhost:1313/posts/paper_review/p033_2019_gentine_erl_cw_coupling/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk11%20%289%29.JPG" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">In Jena: Week 11
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>이번 주는… 랩미팅 - Naixin 발표 하이킹 2020. 11. 13. 금요일 이번주 MDI 미팅에서는 Naixin이 연구 결과를 공유했다. 다음 주에 S-talk을 할 예정인데, 대략 맛을 먼저 보자는 취지였다.
-아주 흥미로웠다. 특히 마지막 두 그림. Carbon turnover rate의 global pattern과 관련 driving factors의 영향을 정량화 했다. 북미, 유럽, 등 지리적인 구분이 아니라 Climate zone별로 구분하면 더 흥미로울 것 같다. 측정 자료가 충분히 있었다면 carbon pool 마다의 영향도 정량화 할 수 있었을텐데 그러지 못한 것은 아쉽다. 우리는 이 발표로만 1시간 30분동안 토론했다. 좋은 결과가 나올 것 같다. 나도 이런 토론 거리가 될 만한 결과를 공유할 수 있겠지?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-11-15 12:18:53 +0100 +0100'>November 15, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to In Jena: Week 11" href="http://localhost:1313/posts/20201115_jena_wk11/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

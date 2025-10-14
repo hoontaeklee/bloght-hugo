@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -100,182 +101,110 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk82_011.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">글감
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+    <h2 class="entry-hint-parent">In Jena: Week 82 (500)
     </h2>
   </header>
   <div class="entry-content">
-    <p>독일 생활 관련 병원 시스템
-면허증 교환
-집 구하기
-페이퍼 리뷰 책 리뷰 영화 리뷰 신세계
-인터스텔라
-수상한 고객들
-오징어게임
-쿵푸팬더
-리눅스? ftp 다운로드 스크립트
-파일 검색
-freeze 에러
-게임 리뷰 바람의나라 라그하임 네닥 거상 겟엠 노바 스톤 트릭 테일즈
-메이플
-글체
-웜즈
-카르마 카오스
-강진 피파 서든 쉐이크 카트
-얍카
-마영전 열강 c9 아이스랜드 우뿌 건스터 드네 퍼피006 뿌요뿌요
-배가세
-</p>
+    <p>이번 주는… 연구연구 -plan the next topic 첫 번째 토픽에 쓰던 방법을 다른 목적으로 쓸 수 있게 조금 개조하는 데 성공했다. 굳.
+2022. 03. 21. 월요일 500
+Sujan과 미팅. 그의 스타일은 “쉬운 거 먼저 ㄱㄱ&#34;로 요약.
+2022. 03. 25. 금요일 젤다의 전설 야숨. 왜 극찬하는지 알겠다. &#43; 나름 괜찮았던 갤러리에 있는 베트남 식당.
+그 외… 먹은 것 김치찌개! 춘휘가 만든 해물크림파스타 굳. 모찌 다음 주 프라하 여행을 대비해서 하네스 착용을 훈련 중이다. 착용 시킨 후 불편&#43;언짢아 하지만 간식으로 회유한다. 점점 나아지는 중. 가끔 예전 잠자리를 쓴다. 넘쳐 흐를 것 같다. 다음 주는… 연구연구 - Meeting with Sk and Mj, 프라하 </p>
   </div>
-  <footer class="entry-footer"><span title='2020-01-05 11:11:00 +0900 KST'>January 5, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 글감" href="http://localhost:1313/posts/%EA%B8%80%EA%B0%90/"></a>
+  <footer class="entry-footer"><span title='2022-03-27 15:36:46 +0200 +0200'>March 27, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 82 (500)" href="http://localhost:1313/posts/20220327_jena_wk82/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk81_014.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo 블로그에 Google analytics 추가하기
+    <h2 class="entry-hint-parent">In Jena: Week 81 (닌텐도 스위치)
     </h2>
   </header>
   <div class="entry-content">
-    <p>서론 블로그는 사막에서 혼자 지낸다는 마음가짐으로 하는 것이지만, 그래도 누가누가 내 블로그에 오는지는 알고 싶은 법이다. 이를 위해 Google Analytics (GA)를 설치한다. 이 글의 내용을 따라했다. 웹사이트에 GA를 추가하려면 두 가지가 필요하다:
-Google Analytics 계정 Google Analytics를 추가할 Hugo 웹사이트 Google Analytics 계정 및 추적 ID 생성 여기에서 Google Analytics 계정을 생성한다.
-GA는 웹사이트나 어플리케이션 등에 대한 데이터를 수집해주는 도구이다. 웹사이트의 경우 수집하는 데이터 종류는 방문한 사람 수, 방문한 사람의 유형, 유입 경로, 취한 행동(회원가입, 다운로드 등)에 따른 방문자 유형 등이다.
+    <p>이번 주는… 연구연구 - TWS IAV hotspots manuscript revision, plan the next topic 2022. 03. 15. 화요일 Christian gave an S-talk, about reproducing Humphrey et al. (2021) using available datasets. He got different numbers, but the same conclusion. Nice work, and nice slides for the problem setting.
+2022. 03. 16. 수요일 첫 번째 드래프트는 공저자들한테 보냈다. 시간을 많이 주면 별로 안 급한가보다 하고 늦게 답해주니 문제고, 적게 주면 부담 될 것 같아서 또 문제다. 넉넉히 한 달 주기는 했지만 그냥 1주일만 줄 걸 그랬다. 유럽 마인드.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-01-03 20:33:22 +0900 KST'>January 3, 2020</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo 블로그에 Google analytics 추가하기" href="http://localhost:1313/posts/20200103_add_google_analytics/"></a>
+  <footer class="entry-footer"><span title='2022-03-20 16:55:43 +0100 +0100'>March 20, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 81 (닌텐도 스위치)" href="http://localhost:1313/posts/20220320_jena_wk81/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk80_003.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo 블로그 댓글 기능 추가: utterances
+    <h2 class="entry-hint-parent">In Jena: Week 80
     </h2>
   </header>
   <div class="entry-content">
-    <p>서론 댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.
-이 글에는 utterrances 소개는 관두고… 설치 관련 내용만 적었다.
-utterances 설치 1. utterances 사이트 접속 여기로 이동해서 configuration 부분을 따라한다.
-2. Public 저장소 생성 나는 bloght-comments 라고 만들었다.
-3. Blog Post ↔️ Issue Mapping, Theme 선택 Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),
-Theme은 내 블로그가 밝으니 Github Light를 선택했다.
-4. Enable Utterances Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.
-각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.
+    <p>이번 주는… 연구연구 - TWS IAV hotspots manuscript revision, plan the next topic 2022. 03. 06. 일요일 일요일에 춘휘랑 만두 만들어 먹었다. 피가 아랫 부분이 조금 두껍게 해서 오래 굽는 종류. 맛있다.
+2022. 03. 08. 화요일 Basil의 S-talk. 슬라이드 디자인이 깔끔하다.
+2022. 03. 09. 수요일 모찌용품 도착.
+2022. 03. 11. 금요일 오랜만에 춘휘랑 훠궈 &#43; 패치워크. 춘휘가 44점 신기록을 냈다.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-01-01 15:35:00 +0900 KST'>January 1, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo 블로그 댓글 기능 추가: utterances" href="http://localhost:1313/posts/20200101_add_utterances/"></a>
+  <footer class="entry-footer"><span title='2022-03-13 15:58:47 +0100 +0100'>March 13, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 80" href="http://localhost:1313/posts/20220313_jena_wk80/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk79_010.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo 테마 커스터마이징 - 게시 날짜 및 시간
+    <h2 class="entry-hint-parent">In Jena: Week 79
     </h2>
   </header>
   <div class="entry-content">
-    <p>목차 문의 사항 1. Dark/Light 버튼 위치 변경 2. 포스팅 날짜 및 시간 정보 추가 3. .md 파일 내 게시 날짜와 실제 날짜가 같으면 게시글이 사라지는 문제 4. 시간 내림차순 정렬 후기 블로그 테마로 Cupper를 선택했다. 기본 세팅에서 네 가지 고치고 싶은 사항이 있어 Hugo Forum에 문의했다.
-문의 사항 Four issues about the cupper theme (dark button, posting time, and an error) I am building a static website using the Cupper theme (https://github.com/zwbetz-gh/cupper-hugo-theme). I have four issues:
+    <p>이번 주는… 연구연구 - TWS IAV hotspots manuscript revision, plan the next topic 첫 번째 드래프트가 대략 마무리 됐다.
+2022. 03. 01. 화요일 샤닝 저녁 3. 이번엔 그룹 멤버 &#43; 원하는 사람. 장소는 뮐러 근처에 있는 호텔이어는데, 꽤 괜찮았다. 립이 유명한 곳이라 들어서 나랑 나이신은 메뉴에서 립만 찾고 있었는데, 이제 안 만든다고 한다… 실망. 다른 거 시켰다. 내가 시킨 소고기말이(?)는 비추. Schitzel은 다른 곳보다 괜찮아 보였다.
+그 외… 먹은 것 파프리카 안에 자란 파프리카. 파프리카 맛이다(…) 패티 같이 생긴 소고기. 소금 간이 돼 있었다. 새로 가본 베트남 식당. 왼쪽 국수 맛이 괜찮았다. 모찌 거인의 어깨 위에서 한 달 동안 2022년 2월은…
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-01-01 13:19:00 +0900 KST'>January 1, 2020</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo 테마 커스터마이징 - 게시 날짜 및 시간" href="http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/"></a>
+  <footer class="entry-footer"><span title='2022-03-06 17:37:10 +0100 +0100'>March 6, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 79" href="http://localhost:1313/posts/20220306_jena_wk79/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk78_010.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기
+    <h2 class="entry-hint-parent">In Jena: Week 78
     </h2>
   </header>
   <div class="entry-content">
-    <p> 설치 Git 설치 Git 홈페이지 오른쪽 아래 초록 링크 cmd에서 버전 잘 나오나 확인 $ git --version Hugo 설치 Hugo 웹페이지 참고
-C드라이브에 Hugo 폴더 생성(블로그 관련 파일 저장용) Hugo 폴더 안에 bin 폴더 생성(Hugo 관련 파일 저장) Hugo 깃허브 저장소에서 최신 릴리즈 압축파일 다운로드 C:/Hugo/bin에 압축 해제 환경변수에 C:/Hugo/bin추가 윈도우 10: 여기를 참고 윈도우키 - “환경” 검색 - “계정의 환경 변수 편집” - 유저 변수에서 Path 더블클릭 - 새로만들기 - C:/Hugo/bin입력 - 확인 환경변수를 추가하면 C:/Hugo/bin 외의 경로에서도 C:/Hugo/bin의 hugo.exe 사용 가능(= Hugo 사용 가능) 설치 확인 cmd에서 버전 정보 나오는지 확인 Hugo version 웹사이트 생성 블로그 담을 폴더 생성(\C:\Users\Owner\Dropbox\bloght)
-...</p>
+    <p>이번 주는… 연구연구 - TWS IAV hotspots manuscript revision 샤닝 저녁2 2022. 02. 22. 화요일 2022년 2월 22일! 200년만 더 살면 2222년 02월 22일도 보겠구나!
+2022. 02. 26. 토요일 락훈 씨가 Nuno 그룹에 포닥으로 왔다. 리트리버 한 마리 데려올 예정이라 집 구하기가 좀 복잡하다. 모찌랑 대면시키면 재밌을 것 같다 ㅎㅎ
+샤닝이 친구들 초대한 저녁 자리. 영어도 통하고, 엄청 멀지도 않고, 공간도 적당하고, 맛도 괜찮고.
+그 외… 먹은 것 춘휘가 볶은 무&amp;소고기가 적당히 잘 볶아졌다. 춘휘가 만든 돼지갈비찜 비슷한 것 &#43; 토마토계란두부버섯넣은 국. 굳. 모찌 길쭉한 모찌. 큰 자리가 더 편한가보다. 하나 더 사서 주방 거실에 하나씩 달아줘야겠다. 다음 주는… 연구연구 - TWS IAV hotspots manuscript revision </p>
   </div>
-  <footer class="entry-footer"><span title='2019-12-29 04:17:00 +0900 KST'>December 29, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo를 이용해 Github 저장소에서 블로그용 정적 웹페이지 만들기" href="http://localhost:1313/posts/20191229_blogging_with_hugo/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">우리 몸이 세계라면
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>우리 몸이 세계라면 – 과학이 삐뚤어질 수 있는 방법 Intro 우리에게 필요한 지식을 만드는 일에 관하여
-뒷표지에서 이 문구를 본 후 나는 이 책을 집어들어 서점을 나왔다. 이전에 김대식 교수의 “어떻게 질문할 것인가”를 읽을 때 기대했던 것처럼 혹시 “질문하는 방법”에 대한 내용이 담겨있을까 생각했다. 비록 이런 내용은 없었지만, 올해 읽은 최고의 책으로 꼽겠다.
-김승섭 교수가 전공하는 역학(Epidemiology)은 인구집단에서 질병의 원인을 탐구하는 학문(p. 252)이다. 이 책 전반에는 1) 사회의 부조리함이 어떻게 특정 인구집단의 질병 발생에 영향을 미치는지에 대한 이야기가 담겨있다. 이 이야기의 중심에는 지식 생산의 주요 수단인 과학이 있다. 김승섭 교수가 소개하는 사례 중 다수는 이해 관계, 사회적 분위기 등이 과학하기와 콜라보하여 잘못된 방식으로 연구가 진행된 것이 원인이었다. 김승섭 교수는 과학이 어떻게 잘못 진행되었는지를 밝히면서 2) 올바르게 과학하는 방법에 대한 이야기를 함께 들려준다. 첫 번째 이야기는 PD수첩 등 사회 고발 프로그램을 보는 듯 흥미로우면서도 공감할 수 있는 부분이 많다. 특히 이 부조리가 다른 나라, 다른 인종뿐만 아니라 우리나라에서도 진행되고 있음을 보여주기에 스스로를 돌아보게 한다. 두 번째 이야기는 과학을 잘못된 길로 인도할 수 있는 요소가 무엇인지를 알려준다는 점에서 나처럼 과학을 하는 사람은 물론 과학 지식에 노출되고 소비하는 모든 사람들에게 유익할 내용이다.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-12-22 15:33:05 +0900 KST'>December 22, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 우리 몸이 세계라면" href="http://localhost:1313/posts/20191222_%EC%9A%B0%EB%A6%AC%EB%AA%B8%EC%9D%B4%EC%84%B8%EA%B3%84%EB%9D%BC%EB%A9%B4/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Fisher (2010). JULES-ED. NPH
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>18 December, 2019 (Fisher, NPH, JULES-ED) Fisher, R., McDowell, N., Purves, D., Moorcroft, P., Sitch, S., Cox, P., Huntingford, C., Meir, P. and Ian Woodward, F. (2010), Assessing uncertainties in a second‐generation dynamic vegetation model caused by ecological scale limitations. New Phytologist, 187: 666-681. doi:10.1111/j.1469-8137.2010.03340.x
-Question:
-How demographic processes of two-dimensional spatial scales influence simulations of community structure, and responses of ecosystems to climate change? Context:
-Recently second-generation DGVMs have become advanced in their capability to simulate short-term surface gas and energy exchanges and atmospheric CO2. However, the 2nd gen. DGVMs are still lack in representation of demographic processes because of insufficient observations. This poor representations of competition and coexistence may bring uncertainties in simulation of the community structure and responses of ecosystem to climate change. Answer
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-12-18 20:00:00 +0900 KST'>December 18, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Fisher (2010). JULES-ED. NPH" href="http://localhost:1313/posts/paper_review/p014_2010_fisher_nph_jules-ed/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to develop a research question
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>under conceiving
-Useful Links Asking good questions: A well-structured and -explained essay Developing-research-questions: Contains real examples How can I choose a good topic for my research paper?: Contains a video How to write a research question: Contains visual contents and is easy to read Developing strong research questions: Contains summary tables </p>
-  </div>
-  <footer class="entry-footer"><span title='2019-12-17 21:28:25 +0900 KST'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to How to develop a research question" href="http://localhost:1313/posts/20191219_how_to_develop_a_research_question/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Smith-Martin (2019). Liana. NPH
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>17 December, 2019 (Smith-Martin, NPH, Liana) Smith‐Martin, C.M., Xu, X., Medvigy, D., Schnitzer, S.A. and Powers, J.S. (2019), Allometric scaling laws linking biomass and rooting depth vary across ontogeny and functional groups in tropical dry forest lianas and trees. New Phytologist. doi:10.1111/nph.16275
-Question:
-Do mature lianas invest less biomass in stems compared to trees? The authors tried to compare the investment strategy between lianas and trees. Do juveniles follow the same allocation patterns as mature individuals? Is either leaf phenology of life form a predictor of rooting depth? Context:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-12-17 20:00:00 +0900 KST'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Smith-Martin (2019). Liana. NPH" href="http://localhost:1313/posts/paper_review/p013_2019_smith-martin_nph_liana/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to outline a paper
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Which information do I have to mine from a paper for developing a research question? Every day, I receive email alerts from journals or paper-searching websites. I skim through the title list in the alerts and select ones including keywords that I am interested in. In turn, I read the abstract to grasp what the paper is about and add it to my read-later folder if I feel it is interesting. After cycling the routine a lot, several problems have occurred:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-12-17 19:46:25 +0900 KST'>December 17, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to How to outline a paper" href="http://localhost:1313/posts/20191217_how_to_outline_a_paper/"></a>
+  <footer class="entry-footer"><span title='2022-02-27 13:48:56 +0100 +0100'>February 27, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 78" href="http://localhost:1313/posts/20220227_jena_wk78/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

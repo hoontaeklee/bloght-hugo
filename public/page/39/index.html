@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -100,156 +101,108 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk77_028.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Dropbox - RStudio- Github 연동 : 더 편해졌을까?
+    <h2 class="entry-hint-parent">In Jena: Week 77 (중성화, 샤닝)
     </h2>
   </header>
   <div class="entry-content">
-    <p>2019. 12. 08. 하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 옮기는 방식은 다음과 같다 :
-Git의 블로그 저장소에 .md 파일 생성 옮기려는 워드 파일을 열어서 내용 복붙 오타, 문장 수정 &amp; Preview를 보며 문장, 문단 배치 수정 표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가 Medium Story로 Publish 조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.
+    <p>이번 주는… 연구연구 - TWS IAV hotspots manuscript revision 모찌 목욕시키기 중성화 수술 샤닝, WWW 초대 2022. 02. 14. 월요일 온수시설 교체!
+2022. 02. 17. 목요일 BGC seminar talk by Benjamin Stocker
+모찌 목욕 시키기. 일 년에 두 번 정도 시킬 예정. 춘휘를 한 대 때리기는 했지만 그래도 생각보다 얌전했다.
+2022. 02. 18. 금요일 모찌 중성화 수술 &#43; 내 발목 체크
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-12-08 16:42:00 +0900 KST'>December 8, 2019</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Dropbox - RStudio- Github 연동 : 더 편해졌을까?" href="http://localhost:1313/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/"></a>
+  <footer class="entry-footer"><span title='2022-02-21 19:40:53 +0100 +0100'>February 21, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 77 (중성화, 샤닝)" href="http://localhost:1313/posts/20220220_jena_wk77/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">블로그 시작과 플랫폼 선택
+    <h2 class="entry-hint-parent">Paper Review: Stocker et al., (2019). Underestimated GPP by RS models under dry soils
     </h2>
   </header>
   <div class="entry-content">
-    <p>블로그를 시작한다. 서평, 논문 리뷰, 생각 등 남겨두고 싶은 것들을 그냥 흘려보내지 않기 위함이 첫째다.
-그리고 기록을 함으로써 생각을 구체적으로 정리할 수 있을 것 같고,
-글쓰는 취미를 가지는 것은 직업에도 도움이 될 것 같다.
-이렇게 남겨둔 글 하나하나가 모여서 하나의 완전한 창작물이 될 수 있다면 좋겠다.
-플랫폼 - 고려사항 어떤 플랫폼으로 블로그를 할지 고민을 (or 고민만) 오래 했다.
-염두에 둔 후보는
-R의 Blogdown 라이브러리 Medium Gitgub Pages or Netlify &#43; Hugo 이렇게 세 가지다. 플랫폼 결정에 고려한 사항은 네 가지다.
+    <p>19 February, 2022 (Stocker, ngeo, underestimated_drysoil_gpp) Stocker, B.D., Zscheischler, J., Keenan, T.F. et al. Drought impacts on terrestrial primary production underestimated by satellite monitoring. Nat. Geosci. 12, 264–270 (2019). https://doi.org/10.1038/s41561-019-0318-6Introduction
+Stocker et al. investigated the effect of dry soil on GPP across scales after isolating from the effect of VPD. I read this paper, wondering the global error distribution is associated with my global TWS IAV error map.
+Message: Soil moisture should be included as a GPP estimator as VPD alone cannot account for dry soil impact on GPP Dry soil effect reduces the global annual GPP by 15% The effect of dry soil decreases with increasing spatial scale, due to compensation from different regions. validated by symmetric pattern of histogram of soil moisture effect across the globe. it was interesting that the compensatory perspective is applied here as well Global distribution of soil moisture effect on the global GPP IAV Values were calculated following Ahlstrom et al. (2015) I can see that most of hotspots of the global TWS IAV errors have strong amplification of GPP IAV by dry soil (e.g., the Parana basin). But also some of hotspots didn’t show a clear sign (e.g., lower Mekong basin). Again, semi-arid regions pop up. fLUE, a metric to quantify the bias from soil moisture effect Stocker et al. (2018) separated SM effect on GPP from VPM effect on GPP using neural network (NN), a magical blackbox.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-12-08 15:49:00 +0900 KST'>December 8, 2019</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 블로그 시작과 플랫폼 선택" href="http://localhost:1313/posts/20191208_blogstart_platform/"></a>
+  <footer class="entry-footer"><span title='2022-02-19 14:46:17 +0100 +0100'>February 19, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Stocker et al., (2019). Underestimated GPP by RS models under dry soils" href="http://localhost:1313/posts/paper_review/p040_2019_stocker_underestimated_drysoil_gpp/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk76_039.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Bar (2019). Fire. NPH
+    <h2 class="entry-hint-parent">In Jena: Week 76 (에어푸어트 동물원)
     </h2>
   </header>
   <div class="entry-content">
-    <p>7 December, 2019 (Bar, NPH, Fire) Bär, A., Michaletz, S.T. and Mayr, S. (2019), Fire effects on tree physiology. New Phytologist, 223: 1728-1741. doi:10.1111/nph.15871
-My research group at NIFOS was invited to write a research paper for a special issue of a journal. We decided to write a paper about the lagged browning after the forest fire at April 2019. I wrote about how forest fire affects an individual tree’s physiology, referring majorly to this paper.
-This paper, as other Tansley reviews often do, includes excellent visual summaries like Figure 3 which compiles the physiological responses of plant organs to fire injuries. In short, dreadful heat and drastic drying are the major causes of burning up NSCs, malfunctioning of the hydraulic system, and increasing susceptibility to insect attacks. After reading this, I felt that the mechanism behind the fire-caused tree dieback is the same as the one behind general tree dieback. Fire is just one of the triggers.
+    <p>이번 주는… 연구연구 - TWS IAV hotspots manuscript revision 에어푸어트 동물원 2022. 02. 07. 월요일 온수시설 점검. 배관 근처에 난 크랙으로 수증기가 누출되고 있더라.
+2022. 02. 09. 수요일 Active reading club 첫 미팅이 끝나고 Xin, Siyuan, 춘휘랑 독일 식당에서 밥 먹었다. 아주 괜찮았다. 영어도 잘 통하고.
+Xin에게 아주 중요했던 날.
+2022. 02. 11. 금요일 아빠 생신 축하드립니다! 까먹어서 죄송합니다!
+2022. 02. 12. 토요일 에어푸어트 소풍. 목적은 1) 내 백팩 찾기 2) 동물원 가기 &#43; 아이스 스케이팅
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-12-07 20:00:00 +0900 KST'>December 7, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Bar (2019). Fire. NPH" href="http://localhost:1313/posts/paper_review/p012_2019_bar_nph_fire/"></a>
+  <footer class="entry-footer"><span title='2022-02-13 15:24:14 +0100 +0100'>February 13, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 76 (에어푸어트 동물원)" href="http://localhost:1313/posts/20220213_jena_wk76/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk75_008.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">과학자의 글쓰기
+    <h2 class="entry-hint-parent">In Jena: Week 75 (설날2, 훠궈)
     </h2>
   </header>
   <div class="entry-content">
-    <p>Intro 이 책은 좋은 국내 과학 저서를 여러 권 소개해준다는 점에서 가치 있다. 또한 글 쓸 때 고려해볼만한 기본적이면서도 유용한 지침들도 함께 담겨있다.
-그냥 지나칠 수 없는 제목이었다. 작년에 읽었던 “기자의 글쓰기”가 생각나기도 했다. 곧바로 구매한 후 내 독서 대기 목록에 올려뒀다.
-나는 보통 글쓰기 책을 읽을 때는 문장을 쓰는 방법, 문단을 구성하는 방법 등 글쓰는 것 자체에 도움이 되는 방법을 얻고자 하는 마음이 있다. 하지만 이 책에 그런 팁은 담겨있지 않다. 대신, 본격적으로 글 쓰기에 돌입하기 전에 발생할 수 있는 여러 질문에 대답해주고 있다.
+    <p>이번 주는… 연구연구 - writing introduction and GRACE description 설날 훠궈 2022. 01. 31. 월요일 눈이 왔다. 휘&amp;치안 네 집에서 저녁 먹었다. 휘도 고양이를 키운다. 이름은 바오밥?(중국어로 아기…라네). 낯을 많이 가린다. 항상 어디 구석으로 숨어 들어간다. 모찌가 접근하려고 많이 시도했는데, 매번 강력하게 퇴짜 맞았다.
+2022. 02. 05. 토요일 축구 끝나고 훠궈 먹었다. 쓰완, 신, 첸웨이 초대. 일요일 첸웨이 생일파티 겸.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-11-30 19:01:40 +0900 KST'>November 30, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 과학자의 글쓰기" href="http://localhost:1313/posts/20191130_%EA%B3%BC%ED%95%99%EC%9E%90%EC%9D%98%EA%B8%80%EC%93%B0%EA%B8%B0/"></a>
+  <footer class="entry-footer"><span title='2022-02-06 17:32:24 +0100 +0100'>February 6, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 75 (설날2, 훠궈)" href="http://localhost:1313/posts/20220206_jena_wk75/"></a>
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/posts/meta/Jena_wk74_029.jpg" alt="">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">신이 내린 필력은 없지만 잘 쓰고 싶습니다
+    <h2 class="entry-hint-parent">In Jena: Week 74 (설날1)
     </h2>
   </header>
   <div class="entry-content">
-    <p>Intro 나는 여러 권의 글쓰기 관련 책을 읽었다. 그 중 한 권을 추천한다면 영문 도서는 Joshua Schimel의 “Writing Science”를, 한글 도서는 이 책을 추천하겠다. 두 책 모두 단순, 명확하면서도 특정 종류가 아닌 일반적인 글쓰기에 통용될 수 있는 원칙을 다루고 있다.
-글쓰기 질문은 문장-기계를 돌리는 연료다. 한 문장을 쓰고 적절한 질문을 한 후 답하면, 다음 문장이 나온다. 문장을 지배하려면 질문을 지배해야 한다. 질문이 멈추면 문장도 멈춘다. … 질문을 통해 문장을 이어나가는 방식은 아주 단순하면서도 강력하다. 그 문장을 왜 썼고 왜 그 자리에 위치시켰는지 대답을 줄 수 있으면서도, 반대로 글 쓸 때 자연스레 이를 고민하게 해준다. (61-62 pp)
+    <p>이번 주는… 연구연구 - setting structure and writing introduction 설날 2022. 01. 26. 수요일 향수 도착 ㅎㅎ 조말론-카라 콜라보 2기. 마드리드랑 상하이를 기대해본다…
+2022. 01. 28. 금요일 Good Scientific Practice 수업. 연구 내용 속이지 말자는 취지.
+모찌 (모니터링) 카메라 구입! 우리 없을 때나 잘 때 뭐하나 궁금해서 샀다. 폰으로 실시간 모니터링 가능… (범죄?…)
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-11-23 19:23:20 +0900 KST'>November 23, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 신이 내린 필력은 없지만 잘 쓰고 싶습니다" href="http://localhost:1313/posts/20191123_%EC%8B%A0%EC%9D%B4%EB%82%B4%EB%A6%B0%ED%95%84%EB%A0%A5/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Resco de Dios (2019). FMC. AFM
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>12 August, 2019 (Resco de Dios, AFM, FMC) Resco de Dios, V., Fellows, A.W., Nolan, R.H., Boer, M.M., Bradstock, R.A., Domingo, F. and Goulden, M.L. (2015). A semi-mechanistic model for predicting the moisture content of fine litter. Agricultural and Forest Meteorology, 203, 64-73.
-I read this paper to get some hints for my fuel moisture research at NIFOS. This paper developed a semi-mechanistic model in which fuel moisture content (FMC) and vapor pressure deficit (VPD) were exponentially related. This model is able to be easily applied to other researches once VPD for target sites is known. Hence, contrary to my model, this model can be synergized with remote sensing VPD data sets to broaden the spatial scope of the model.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-08-12 20:00:00 +0900 KST'>August 12, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Resco de Dios (2019). FMC. AFM" href="http://localhost:1313/posts/paper_review/p011_2015_rescodedios_afm_fmc/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Vinodkumar (2019). SMC. AFM
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>22 June, 2019 (Vinodkumar, AFM, SMC) Vinodkumar and Dharssi (2019). Evaluation and calibration of a high-resolution soil moisture product for wildfire prediction and management. Agricultural and Forest Meteorology, 264, 27-39.
-This paper can be a good guide for both of my researches at SNU and NIFOS. This paper used the JULES to predict soil moisture deficit (SMD), which is similar to the object of the study at SNU. On the other hand, the purpose of SMD prediction was to imporve a fire danger index, which is the same as my research at NIFOS.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-06-22 20:00:00 +0900 KST'>June 22, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Vinodkumar (2019). SMC. AFM" href="http://localhost:1313/posts/paper_review/p010_2019_vinodkumar_afm_smc/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Berry (2019). FWU. PCE
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>15 June, 2019 (Berry, pce, FWU) Berry, Z.C., Emery, N.C., Gotsch, S.G., Goldsmith, G.R. (2019). Foliar water uptake: Processes, pathways, and integration into plant water budgets. Plant, Cell and Environment, 42, 410-423.
-As I saw foliar water uptake (FWU) in alert lists sometimes, I became curious about the process. So I read this paper. FWU was observed about 400 years ago (1727), but it seems like relatively new and immatured field. Some knowledge chunks have been made, but the field lacks many details. Roughly, FWU occurs when leaves are wet, the main gate of water movement is stomata, most of biomes shows this phenomenon, and the amount is up tp 10% of transpiration. But, further studies such as details about water movement, methodologies to observe the pathway, and species-specific physiological responses.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-06-15 20:00:00 +0900 KST'>June 15, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Berry (2019). FWU. PCE" href="http://localhost:1313/posts/paper_review/p009_2019_berry_pce_fwu/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Hartmann (2018). Mortality. NPH
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>8 June, 2019 (Hartmann, NPH, Mortality) Hartmann, H., Moura, C.F., Anderegg, W.R.L., Ruehr, N.K., Salmon, Y., Allen, C.D., Arndt, S.K., Breshears, D.D., Davi, H. and Galbraith, D. (2018). Research frontiers for improving our understanding of drought-induced tree and forest mortality. New Phytologist, 218(1), 15-28.
-This paper suggests some research frontiers (questions) about plant responses to drought. But, rather than the suggestions, I was interested in the topic of Box 1: definition of death for plants. Plants are different to animals, physiologically. Plants lack the nervous system, can easily resprout from a organ, and maintain their lifes with only a few parts of them. These features make a complex issue in defining the death of plant, and this propagates to a hardness in understanding and predicting plant motality.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-06-08 20:00:00 +0900 KST'>June 8, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Hartmann (2018). Mortality. NPH" href="http://localhost:1313/posts/paper_review/p008_2018_hartmann_nph_mortality/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paper Review: Li (2018). SIF. GCB
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>26 May, 2019 (Li, GCB, SIF) Li, X., Xiao, J., He, B., Altaf Arain, M., Beringer, J., Desai, A.R., Emmel, C., Hollinger, D.Y., Krasnova, A., Mammarella, I., Noe, S.M., Ortiz, P.S., Rey-Sanchez, A.C., Rocha, A.V. and Varlagin, A. (2018). Solar-induced chlorophyll fluorescence is strongly correlated with terrestrial photosynthesis for a wide variety of biomes: First global analysis based on OCO-2 and flux tower observations. Global Change Biology, 24(9), 3990-4008.
-This paper demonstrates that SIF is a strong proxy of terrestrial GPP using different point of view. Also, it shows that SIF is more strongly correlated with GPP than VIs (EVI, NDVI) and GPP estimates from LUE methods.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-05-26 20:00:00 +0900 KST'>May 26, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Paper Review: Li (2018). SIF. GCB" href="http://localhost:1313/posts/paper_review/p007_2018_li_gcb_sif/"></a>
+  <footer class="entry-footer"><span title='2022-02-05 11:12:03 +0100 +0100'>February 5, 2022</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to In Jena: Week 74 (설날1)" href="http://localhost:1313/posts/20220130_jena_wk74/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>ISLR Note | My New Hugo Site</title>
+<title>ISLR Note | Bloght</title>
 <meta name="keywords" content="2020, Book Review, R">
 <meta name="description" content="2. Statistical Learning
 2.1. What Is Statistical Learning?
@@ -94,7 +94,7 @@ inference">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -148,7 +148,7 @@ inference">
 <ul>
 <li>측정값 <em>X</em>로 <em>Y</em> 값을 예측한다(<em>Y</em> = <em>f</em>(<em>X</em>)).</li>
 <li><em>f</em>는 <em>black box</em>로 남아도 상관 없다(<em>Y</em>만 잘 맞추면 된다).</li>
-<li>이 때 발생하는 에러는 두 가지: <!-- raw HTML omitted -->reducible<!-- raw HTML omitted -->, <!-- raw HTML omitted -->irreducible<!-- raw HTML omitted -->.</li>
+<li>이 때 발생하는 에러는 두 가지: <u>reducible</u>, <u>irreducible</u>.</li>
 <li>reducible: <em>f</em>를 더 잘 예측하면 줄일 수 있다.</li>
 <li>irreducible: 측정 항목에서 어떤 중요한 변수를 놓치고 있거나,<br>
 혹은 측정 불가능한 요소(예: 약물 투여 때 환자의 심리)가 개입하기 때문에 발생한다.</li>
@@ -179,8 +179,8 @@ inference">
 <li>parameter 값을 추정해서 <em>f</em>를 결정한다.</li>
 <li><em>f</em>를 찾는 문제가 몇개의 paraemters를 추정하는 문제로 바뀐다(쉬워진다).</li>
 <li><em>f</em>의 형태를 잘못 상정했다면 오차가 커질 수 있다.</li>
-<li>위의 경우를 방지하기 위해 <em>f</em>의 형태에 <!-- raw HTML omitted -->flexibility<!-- raw HTML omitted -->를 높이고자 한다면 더 많은 parameters가 필요하고,<br>
-따라서 <!-- raw HTML omitted -->overfitting<!-- raw HTML omitted -->이 발생할 확률도 높아진다.</li>
+<li>위의 경우를 방지하기 위해 <em>f</em>의 형태에 <u>flexibility</u>를 높이고자 한다면 더 많은 parameters가 필요하고,<br>
+따라서 <u>overfitting</u>이 발생할 확률도 높아진다.</li>
 </ul>
 </li>
 <li>non-parametric methods
@@ -221,7 +221,7 @@ parametric methods보다 훨씬 많은 관측 데이터가 필요하다.</li>
 정작 test MSE는 restrictive model보다 오히려 더 높아질 수 있다(<strong>overfitting</strong>).</li>
 </ol>
 <p>2의 U자형 관계로부터 <strong>test MSE에 최솟값이 존재</strong>함을 확인했는데,<br>
-<!-- raw HTML omitted -->최소 MSE를 가지는 model을 찾는 방법<!-- raw HTML omitted -->도 다루게 될 것이다(예: 5장의 cross-validation).</p>
+<u>최소 MSE를 가지는 model을 찾는 방법</u>도 다루게 될 것이다(예: 5장의 cross-validation).</p>
 <h3 id="222-the-bias-variance-trade-off">2.2.2. The Bias-Variance Trade-Off<a hidden class="anchor" aria-hidden="true" href="#222-the-bias-variance-trade-off">#</a></h3>
 <p>test MSE 기댓값 =  함숫값의 분산 + 함숫값의 bias 제곱 + 오차항 분산<br>
 우변의 세 항 모두 0 이상이기 때문에 좌변의 최솟값은 오차항 분산(irreducible error)이 된다.</p>
@@ -282,7 +282,7 @@ least square linear (or polynomial) regression에서는 CV~(<em>n</em>)~을 더 
 1^st^ 그룹을 제외한 나머지로 training, 남겨둔 그룹으로 error rate 계산(MSE<del>1</del>)
 <em>k</em>^th^ 그룹까지 진행(MSE~<em>k</em>~).</p>
 <p>test error rate = CV~(<em>k</em>)~ = Ave(MSE~<em>i</em>~)</p>
-<p><!-- raw HTML omitted -->LOOCV는 <em>k</em>=<em>n</em>인 <em>k</em>-Fold CV로 볼 수 있다.<!-- raw HTML omitted --><br>
+<p><u>LOOCV는 <em>k</em>=<em>n</em>인 <em>k</em>-Fold CV로 볼 수 있다.</u><br>
 보통 <em>k</em>는 5나 10을 사용한다.</p>
 <ul>
 <li>계산량이 줄어들기 때문</li>
@@ -333,7 +333,7 @@ alpha_hat을 참값 대신 사용하고, 각 alpha마다 bootstrap을 B번 실�
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((mpg <span style="color:#f92672">-</span> <span style="color:#a6e22e">predict</span>(lm.fit3, Auto))[<span style="color:#f92672">-</span>train] ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># compute MSE</span>
 </span></span></code></pre></div><pre tabindex="0"><code>## [1] 18.79401
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(horsepower, mpg) <span style="color:#75715e"># looks like a curve fit is better than a straight line</span>
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/5.3.1.-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/5.3.1.-1.png"><!-- --></p>
 <h3 id="532-leave-one-out-cross-validation">5.3.2. Leave-One-Out Cross-Validation<a hidden class="anchor" aria-hidden="true" href="#532-leave-one-out-cross-validation">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>lm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto)
 </span></span><span style="display:flex;"><span>glm.fit <span style="color:#f92672">=</span> <span style="color:#a6e22e">glm</span>(mpg <span style="color:#f92672">~</span> horsepower, data <span style="color:#f92672">=</span> Auto)
@@ -369,7 +369,7 @@ alpha_hat을 참값 대신 사용하고, 각 alpha마다 bootstrap을 B번 실�
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># still cubic or higher order terms don&#39;t seem superior</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.error.10, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/5.3.3.-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/5.3.3.-1.png"><!-- --></p>
 <h3 id="534-the-bootstrap">5.3.4. The Bootstrap<a hidden class="anchor" aria-hidden="true" href="#534-the-bootstrap">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## accuracy of regression model --&gt; standard error of parameter estimated</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## bootstrap can be applied to compute the se</span>
@@ -524,7 +524,7 @@ knot에서 각 곡선이 툭툭 끊어질 수 있다.</p>
 <li>세 구역 중 어느 구역을 어떤 <em>j</em>, <em>s</em>로 나눠야 네 구역의 RSS 합이 최소가 될지 결정한다.</li>
 <li>네 구역이 된다.</li>
 <li>&hellip;</li>
-<li><!-- raw HTML omitted -->특정 조건<!-- raw HTML omitted -->을 충족할 때까지 계속 구역을 나눈다.
+<li><u>특정 조건</u>을 충족할 때까지 계속 구역을 나눈다.
 <ul>
 <li>특정 조건의 예: 모든 구역의 관측값이 5개 미만이다</li>
 </ul>
@@ -536,9 +536,9 @@ knot에서 각 곡선이 툭툭 끊어질 수 있다.</p>
 이를 방지하기 위해 RSS가 일정값 이상 감소하지 않으면 구역을 나누지 않는다!는 규칙을 넣을 수도 있지만,<br>
 그 이후에 RSS가 확 감소하는 구획이 가능했었다면 이를 놓치게 된다.<br>
 따라서 <em>recursive binary splitting</em>으로 아주 큰 나무를 만든 후 **가지치기(pruning)**하는 방법을 택한다.<br>
-그렇다면 <!-- raw HTML omitted -->어떤 기준<!-- raw HTML omitted -->으로 가지를 쳐낼까?<br>
+그렇다면 <u>어떤 기준</u>으로 가지를 쳐낼까?<br>
 우리가 원하는 건 test error rate를 줄이는 건데, 그렇다면 모든 가능한 subtree에서 이를 계산한 후 비교해야 할까?</p>
-<p>&ndash;&gt; <!-- raw HTML omitted --><em>Cost complexity pruning</em> (or <em>weakest link pruning</em>)<!-- raw HTML omitted -->을 사용한다!<br>
+<p>&ndash;&gt; <u><em>Cost complexity pruning</em> (or <em>weakest link pruning</em>)</u>을 사용한다!<br>
 원래 목적함수(RSS)에 terminal node 갯수에 패널티를 주는 항($\alpha$|T|)을 추가했다.<br>
 |T|은 subtree의 terminal node 갯수를 의미한다.<br>
 $\alpha$마다 대응하는 subtree가 존재한다.<br>
@@ -553,7 +553,7 @@ $\alpha$가 0보다 클 수록 |T|에 목적함수값이 영향을 많이 받게
 <h3 id="812-classification-trees">8.1.2. Classification Trees<a hidden class="anchor" aria-hidden="true" href="#812-classification-trees">#</a></h3>
 <p>Regression tree와 다른 점</p>
 <ul>
-<li>반응변수가 범주형(<!-- raw HTML omitted -->설명변수도 범주형일 수 있다<!-- raw HTML omitted -->)</li>
+<li>반응변수가 범주형(<u>설명변수도 범주형일 수 있다</u>)</li>
 <li>terminal node에는 그 구역의 평균값이 아니라 가장 빈도가 높은 범주</li>
 <li>구역마다 계산할 criteron은 RSS 대신 다른 것
 <ul>
@@ -728,7 +728,7 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(tree.carseats) <span style="color:#75715e"># plot tree</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(tree.carseats, pretty <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) <span style="color:#75715e"># add text</span>
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## test error rate</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">2</span>)
 </span></span><span style="display:flex;"><span>train <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(Carseats), <span style="color:#ae81ff">200</span>)
@@ -769,7 +769,7 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.carseats<span style="color:#f92672">$</span>size, cv.carseats<span style="color:#f92672">$</span>dev, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.carseats<span style="color:#f92672">$</span>k, cv.carseats<span style="color:#f92672">$</span>dev, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-2.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-2.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># tree with 9 leaves is turned out to be the best tree</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># fit the tree explicitly</span>
 </span></span><span style="display:flex;"><span>prune.carseats <span style="color:#f92672">=</span> <span style="color:#a6e22e">prune.misclass</span>(tree.carseats, best <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>) 
@@ -782,7 +782,7 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(<span style="color:#a6e22e">table</span>(tree.pred, High.test))) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">table</span>(tree.pred, High.test))
 </span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.775
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># pruned tree has simpler structure and more accurate prediction</span>
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-3.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.1-3.png"><!-- --></p>
 <h3 id="832-fitting-regression-trees">8.3.2. Fitting Regression Trees<a hidden class="anchor" aria-hidden="true" href="#832-fitting-regression-trees">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## fit a regreession tree</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(MASS)
@@ -803,11 +803,11 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 ## -10.1800  -1.7770  -0.1775   0.0000   1.9230  16.5800
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(tree.boston)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(tree.boston)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## prune</span>
 </span></span><span style="display:flex;"><span>cv.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">cv.tree</span>(tree.boston)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(cv.boston<span style="color:#f92672">$</span>size, cv.boston<span style="color:#f92672">$</span>dev, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-2.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-2.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>prune.boston <span style="color:#f92672">=</span> <span style="color:#a6e22e">prune.tree</span>(tree.boston, best <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(prune.boston)
 </span></span></code></pre></div><pre tabindex="0"><code>## 
@@ -822,12 +822,12 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 ## -10.1800  -1.9770  -0.1775   0.0000   2.4230  16.5800
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(prune.boston)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">text</span>(prune.boston, pretty <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-3.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-3.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>yhat <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(tree.boston, newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ])
 </span></span><span style="display:flex;"><span>boston.test <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, <span style="color:#e6db74">&#34;medv&#34;</span>]
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(yhat, boston.test)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">abline</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-4.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.2-4.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># MSE</span>
 </span></span></code></pre></div><pre tabindex="0"><code>## [1] 35.28688
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># here, pruned tree has simpler structure but it has larger MSE</span>
@@ -859,7 +859,7 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </span></span><span style="display:flex;"><span>yhat.bag <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(bag.boston, newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ])
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(yhat.bag, boston.test)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">abline</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.3-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.3-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>((yhat.bag <span style="color:#f92672">-</span> boston.test) ^ <span style="color:#ae81ff">2</span>) 
 </span></span></code></pre></div><pre tabindex="0"><code>## [1] 23.59273
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># 13.50808 (bagging) vs 26.83413 (a regression tree)</span>
@@ -907,7 +907,7 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># IncNodePurity: 그 변수가 없을 때 Gini index가 줄어드는 정도(purity가 증가하는 정도)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># node impurity: regression은 RSS로, classification은 deviance로 계산</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">varImpPlot</span>(rf.boston)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.3-2.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.3-2.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># rm and lstat의 영향이 가장 크더라</span>
 </span></span></code></pre></div><h3 id="834-boosting">8.3.4. Boosting<a hidden class="anchor" aria-hidden="true" href="#834-boosting">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## fit a boosted model</span>
@@ -921,7 +921,7 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </span></span><span style="display:flex;"><span>                   interaction.depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#75715e"># depth (= # of node layer) of each tree</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(boost.boston)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-1.png"><!-- --></p>
 <pre tabindex="0"><code>##             var    rel.inf
 ## rm           rm 43.9919329
 ## lstat     lstat 33.1216941
@@ -940,9 +940,9 @@ Boosting에서 residual update는 왜 하지? 어떤 판정 기준으로 사용�
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(boost.boston, i <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rm&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-2.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-2.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(boost.boston, i <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lstat&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-3.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/8.3.4-3.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## predict</span>
 </span></span><span style="display:flex;"><span>yhat.boost <span style="color:#f92672">=</span> <span style="color:#a6e22e">predict</span>(boost.boston,
 </span></span><span style="display:flex;"><span>                     newdata <span style="color:#f92672">=</span> Boston[<span style="color:#f92672">-</span>train, ],
@@ -1139,8 +1139,8 @@ hyperplane과 margin을 그어서 데이터를 분류했을 때,</p>
 <li><em>f</em>(<em>x</em>) = $\beta$<del>0</del> + $\sum_{i=1}^{n}$$\alpha$<del>i</del>&lt;<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>&gt;</li>
 </ul>
 <p>여기서 $\alpha$<del>i</del>는 각 관측치마다 부여하는 weighting factor 정도의 의미가 된다.<br>
-<!-- raw HTML omitted -->support vector가 아니라면<!-- raw HTML omitted --> hyperplane 결정에 영향이 없으므로 $\alpha$<del>i</del> = 0이 되고,<br>
-<!-- raw HTML omitted -->support vector에서는<!-- raw HTML omitted --> 일정 값이 정해진다(원래 식에서는 이 값이 $\beta$ 계수들이 된다).</p>
+<u>support vector가 아니라면</u> hyperplane 결정에 영향이 없으므로 $\alpha$<del>i</del> = 0이 되고,<br>
+<u>support vector에서는</u> 일정 값이 정해진다(원래 식에서는 이 값이 $\beta$ 계수들이 된다).</p>
 <p>$\alpha$<del>i</del>를 추정하기 위해서는$\binom{n}{2}$개의 &lt;<em>x</em><del><em>i</em></del>, <em>x</em><del><em>i&rsquo;</em></del>&gt;를 계산하게 된다.</p>
 <ul>
 <li>margin을 결정하려면 가능한 모든 한 쌍의 관측치 조합마다 거리를 계산해서 비교해야 하기 때문</li>
@@ -1254,7 +1254,7 @@ logistic regressioin에서는 loss가 0인 경우는 없다).</li>
 </span></span><span style="display:flex;"><span>x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">=</span> x[y <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e"># add 1 for last 10 data</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, 
 </span></span><span style="display:flex;"><span>     col <span style="color:#f92672">=</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> y)) <span style="color:#75715e"># non-linear boundary </span>
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-1-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-1-1.png"><!-- --></p>
 <p>For classification problem,<br>
 class variable should be in <strong>factor type</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x, 
@@ -1266,7 +1266,7 @@ class variable should be in <strong>factor type</strong>.</p>
 </span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, 
 </span></span><span style="display:flex;"><span>             scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># don&#39;t do normalization</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-2-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-2-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># cross: support vector</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># circle: !(support vector)</span>
 </span></span><span style="display:flex;"><span>
@@ -1304,7 +1304,7 @@ tolerance가 더 높아지고 margin이 넓어지고 support vector가 더 많�
 </span></span><span style="display:flex;"><span>             scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-3-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-3-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit<span style="color:#f92672">$</span>index
 </span></span></code></pre></div><pre tabindex="0"><code>##  [1]  1  2  3  4  5  7  9 10 12 13 14 15 16 17 18 20
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
@@ -1427,7 +1427,7 @@ tolerance가 더 높아지고 margin이 넓어지고 support vector가 더 많�
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, 
 </span></span><span style="display:flex;"><span>     col <span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>,
 </span></span><span style="display:flex;"><span>     pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-6-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-6-1.png"><!-- --></p>
 <p>이제 linearly separable한 경우가 됐다.<br>
 cost를 높여서(= tolerance를 아주 낮춰서) 아주 철저하게 분류해보자.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x,
@@ -1457,7 +1457,7 @@ cost를 높여서(= tolerance를 아주 낮춰서) 아주 철저하게 분류해
 ## Levels: 
 ##  -1 1
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-7-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-7-1.png"><!-- --></p>
 <p>training 데이터를 완벽히 분류해냈지만,<br>
 margin이 매우 작다(파란색 support vector와 가장 가까운 동그라미 사이 거리가 매우 가깝다).<br>
 때문에 test error는 높을 수 있다.<br>
@@ -1488,7 +1488,7 @@ cost를 낮춰보자.</p>
 ##  -1 1
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit,
 </span></span><span style="display:flex;"><span>     dat)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-8-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-8-1.png"><!-- --></p>
 <p>분홍색 한 개가 하늘색으로 잘못 분류됐지만, 그 대신 margin이 더 커졌다.<br>
 cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 <h3 id="962-support-vector-machine">9.6.2. Support Vector Machine<a hidden class="anchor" aria-hidden="true" href="#962-support-vector-machine">#</a></h3>
@@ -1508,7 +1508,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x, 
 </span></span><span style="display:flex;"><span>                 y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(y))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, col <span style="color:#f92672">=</span> y) <span style="color:#75715e"># non-linear boundary</span>
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-9-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-9-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>train <span style="color:#f92672">=</span> <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">100</span>)
 </span></span><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
 </span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat[train, ],
@@ -1516,7 +1516,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>             gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
 </span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat[train, ])
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-9-2.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-9-2.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(svmfit)
 </span></span></code></pre></div><pre tabindex="0"><code>## 
 ## Call:
@@ -1549,7 +1549,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>             gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
 </span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e5</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat[train, ])
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-10-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-10-1.png"><!-- --></p>
 <p>SVC에서 헀던 것처럼,<br>
 <code>tune()</code> 함수(10-fold cross validation 수행해준다)를 이용해<br>
 최적의 $\lambda$와 cost값을 찾아보자.</p>
@@ -1636,7 +1636,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted, dat[train , <span style="color:#e6db74">&#34;y&#34;</span>],
 </span></span><span style="display:flex;"><span>        main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Training Data&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-13-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-13-1.png"><!-- --></p>
 <p>꽤 잘 맞추는 듯하다. 여기서 $\lambda$를 높이면(more non-linear) training fitness를 더 높일 수 있다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit.flex <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
 </span></span><span style="display:flex;"><span>                  data <span style="color:#f92672">=</span> dat[train, ],
@@ -1653,7 +1653,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>        main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Training Data&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted.flex, dat[train, <span style="color:#e6db74">&#34;y&#34;</span>],
 </span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-14-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-14-1.png"><!-- --></p>
 <p>$\lambda$를 높였을 때 훨씬 정확한 것처럼 보인다.<br>
 그러나 test error는&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>fitted.test <span style="color:#f92672">=</span> <span style="color:#a6e22e">attributes</span>(<span style="color:#a6e22e">predict</span>(svmfit.opt,
@@ -1666,7 +1666,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>        main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Test Data&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">rocplot</span>(fitted.flex.test, dat[<span style="color:#f92672">-</span>train, <span style="color:#e6db74">&#34;y&#34;</span>],
 </span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-15-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-15-1.png"><!-- --></p>
 <h3 id="964-svm-with-multiple-classes">9.6.4. SVM with Multiple Classes<a hidden class="anchor" aria-hidden="true" href="#964-svm-with-multiple-classes">#</a></h3>
 <p>Class가 세 개 이상이면 <code>svm()</code>은 기본값으로 one-versus-one approach를 사용한다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1</span>)
@@ -1677,14 +1677,14 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
 </span></span><span style="display:flex;"><span>dat <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> x , y <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(y))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x, col <span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>))
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-16-1.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-16-1.png"><!-- --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svmfit <span style="color:#f92672">=</span> <span style="color:#a6e22e">svm</span>(y <span style="color:#f92672">~</span> .,
 </span></span><span style="display:flex;"><span>             data <span style="color:#f92672">=</span> dat,
 </span></span><span style="display:flex;"><span>             kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;radial&#34;</span>,
 </span></span><span style="display:flex;"><span>             cost <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>,
 </span></span><span style="display:flex;"><span>             gamma <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(svmfit, dat)
-</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-16-2.png"></p>
+</span></span></code></pre></div><p><img loading="lazy" src="ISLR_files/figure-html/unnamed-chunk-16-2.png"><!-- --></p>
 <h3 id="965-application-to-gene-expression-data">9.6.5. Application to Gene Expression Data<a hidden class="anchor" aria-hidden="true" href="#965-application-to-gene-expression-data">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ISLR)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">names</span>(Khan)
@@ -1768,7 +1768,7 @@ cost가 매우 높은 경우보다 test error는 더 낮을 것이다!</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
 
     <span>
         Powered by

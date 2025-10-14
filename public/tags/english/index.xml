@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>English on My New Hugo Site</title>
+    <title>English on Bloght</title>
     <link>http://localhost:1313/tags/english/</link>
-    <description>Recent content in English on My New Hugo Site</description>
+    <description>Recent content in English on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Aug 2020 16:27:31 +0900</lastBuildDate>
@@ -20,7 +20,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/라이브아카데미/Eng_liveAcad_페이지_2.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -35,7 +35,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/라이브아카데미/Eng_liveAcad_페이지_3.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;

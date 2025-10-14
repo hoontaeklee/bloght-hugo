@@ -1,13 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>2025 on My New Hugo Site</title>
+    <title>2025 on Bloght</title>
     <link>http://localhost:1313/tags/2025/</link>
-    <description>Recent content in 2025 on My New Hugo Site</description>
+    <description>Recent content in 2025 on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Sep 2025 21:59:18 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In Paris: Week 009 (르 아브르 여행)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk009/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk009/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;춘휘랑 모찌 공원 산책&lt;/li&gt;
+&lt;li&gt;르 아브르 여행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tried to plot a response curve of fire occurrence to distance to roads. Hard to extract an expected response pattern, maybe because the fire occurrence only shows &amp;ldquo;yes or no&amp;rdquo;. Thinking that it would be better with more information such as counts, tried to download VIIRS active fire dataset. As the trade-off, the spatial resolution of analyses will become coarser from 30 m to &amp;gt;=375 m, which wouldn&amp;rsquo;t matter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Paris: Week 010 (르 아브르 여행)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk010/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk010/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xfires - visual inspect of road and burned area data&lt;/li&gt;
+&lt;li&gt;르 아브르 여행&lt;/li&gt;
+&lt;li&gt;춘휘@프라이부르크&lt;/li&gt;
+&lt;li&gt;신발 구경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2025-09-08-월요일&#34;&gt;2025. 09. 08 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_014.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_015.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk010/Paris_wk010_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;팔리주로 돌아가는 날이다. 돌아가는 길에 우리는 모찌에게 바다와 해변 구경을 시켜주고 싶었다. 르 아브르 해안은 바람이 세서? 사람이 많아서? 항구 같아서? 아무튼 적합한 것 같지가 않았고, 다른 곳에 가기로 했다. 르 아브르 건너편 해안마을 &lt;a href=&#34;https://maps.app.goo.gl/MskM15MohYhCCDLa9&#34;&gt;트로빌레&lt;/a&gt;(?)로 갔다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>In Paris: Week 011 (러닝화)</title>
       <link>http://localhost:1313/posts/20250921_paris_wk011/</link>
@@ -23,18 +81,49 @@
 &lt;p&gt;In the CALIPSO-Fire meeting, I shared maps of roads and burned area. I got some comments such as 1) add road vs non-road in addition to burned vs. unburned, 2) to set hypotheses and create relevant plots, 3) to consider buffers around roads as people move, and 4) to consider other attributes like land cover type and population size. Chunhui also gave the same comment as 1).&lt;/p&gt;</description>
     </item>
     <item>
-      <title>In Paris: Week 000 ()</title>
-      <link>http://localhost:1313/posts/20250913_paris_wk010/</link>
-      <pubDate>Sat, 13 Sep 2025 21:47:04 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250913_paris_wk010/</guid>
-      <description></description>
+      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk012/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk012/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xfires - VIIRS Active Fire data download&lt;/li&gt;
+&lt;li&gt;thesis: wait for the clearance certificate&lt;/li&gt;
+&lt;li&gt;프라이부르크&lt;/li&gt;
+&lt;li&gt;프라이싱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tried to plot a response curve of fire occurrence to distance to roads. Hard to extract an expected response pattern, maybe because the fire occurrence only shows &amp;ldquo;yes or no&amp;rdquo;. Thinking that it would be better with more information such as counts, tried to download VIIRS active fire dataset. As the trade-off, the spatial resolution of analyses will become coarser from 30 m to &amp;gt;=375 m, which wouldn&amp;rsquo;t matter.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>In Paris: Week 000 ()</title>
-      <link>http://localhost:1313/posts/20250913_paris_wk009/</link>
-      <pubDate>Sat, 13 Sep 2025 21:47:01 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250913_paris_wk009/</guid>
-      <description></description>
+      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
+      <link>http://localhost:1313/posts/20251006_paris_wk013/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20251006_paris_wk013/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;춘휘 졸업발표@프라이싱&lt;/li&gt;
+&lt;li&gt;신 졸업발표@인스부르크&lt;/li&gt;
+&lt;li&gt;중국 방문&lt;/li&gt;
+&lt;li&gt;thesis: wait for the clearance certificate&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2025-09-29-월요일&#34;&gt;2025. 09. 29 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘 디펜스 날. 오후 한 시에 시작한다. 나랑 춘휘는 아침에 카페에 들러 간단히 아침을 먹고 춘휘는 카페에서 나를 기다렸다. 나는 차를 빌려서 슈예얀과 춘휘를 차례대로 픽업했다. 춘휘는 대학에 내려주고, 나랑 슈예얀은 마실 것, 과자 등 장을 봤다. 로컬 맥주는 다행히, 그리고 예상대로 마트에서도 구할 수 있었다. 간단한 점심 거리도 같이 샀다. 다과 등은 대학에 내려서 세미나룸에 옮기고, 나는 차 반납 후 걸어서 대학으로 돌아왔다. 챠오링 등 뮌헨에서 공부하는 친구들도 디펜스 준비하는 데 도움을 줬다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Paris: Week 008 (춘휘@Palaiseau, 파리, 짜오휘 초대)</title>
@@ -52,8 +141,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk008/Paris_wk008_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk008/Paris_wk008_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -75,8 +164,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk007/Paris_wk007_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk007/Paris_wk007_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -100,8 +189,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk233/Jena_wk233_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk233/Jena_wk233_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -124,29 +213,29 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_014.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_016.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_017.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk232/Jena_wk232_015.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -157,7 +246,8 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;춘휘랑 도서관에서 잠깐 일하다가 쇼핑하고 집에 돌아와서 저녁 먹고 놀았다.&lt;/p&gt;</description>
+&lt;p&gt;춘휘랑 도서관에서 잠깐 일하다가 쇼핑하고 집에 돌아와서 저녁 먹고 놀았다.&lt;/p&gt;
+&lt;p&gt;이번 쇼핑몰 인테리어 테마는 &amp;ldquo;봄&amp;quot;인 것 같다. 화단과 정원을 잘 꾸며놨고, 오디오도 새소리라 좋다. 평소에 틀어도 좋을 듯.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 231</title>
@@ -179,7 +269,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -190,37 +280,46 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_014.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk231/Jena_wk231_015.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;오랜만의 떡볶이&lt;/p&gt;</description>
+&lt;p&gt;오랜만의 떡볶이&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;오랜만의 파스타&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;토마토, 김치, 돼지고기 스튜&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;요즘 시도해보고 있는 &lt;a href=&#34;https://www.bjorkandberries.com/&#34;&gt;Björk and Berries&lt;/a&gt; 향수. 바틀은 마음에 든다. 포장은 번지르르하지만 실용성 꽝. 왜 샘플을 굳이 개별포장해서 불편하게 만들까. 하루 하나씩 해서 9개 중 5개 시도해봤다. 나쁘지는 않은 듯.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 230</title>
@@ -237,20 +336,20 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk230/Jena_wk230_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -280,7 +379,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk229/Jena_wk229_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -303,19 +402,19 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk228/Jena_wk228_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -323,7 +422,13 @@
 &lt;/table&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;길가다 본 창가의 고양이. 땅바닥부터 점프해서 차-&amp;gt;현관 지붕-&amp;gt;창가 순으로  점프해서 올라갔다.&lt;/p&gt;</description>
+&lt;p&gt;길가다 본 창가의 고양이. 땅바닥부터 점프해서 차-&amp;gt;현관 지붕-&amp;gt;창가 순으로  점프해서 올라갔다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;다시 나온 양떼. 매 늦겨울~봄마다 나오는 것 같다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;새로 시도해보는 아침 메뉴. 통곡밀빵+버터+치즈+데운 우유. 일단 맛은 합격.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 227 (춘휘@예나)</title>
@@ -341,8 +446,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk227/Jena_wk227_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk227/Jena_wk227_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -364,20 +469,38 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;이번 연말도 사람들은 어김없이 폭죽놀이를 한다. 폭죽을 무서워하는 모찌. 작년(?) 연말에 밖에서 놀다가 사람들이 쏜 폭죽에 놀라서 도망친 적이 있다. 이번에도 밖에 폭죽소리가 들리자 여기저기 숨어다니고 기어다닌다. 내가 오피스에 있으면 발 밑에 숨고, 거실에 있으면 근처 소파 옆에 숨는다. 걸을 때도 자세를 낮춰서 호다닥.&lt;/p&gt;</description>
+&lt;p&gt;이번 연말도 사람들은 어김없이 폭죽놀이를 한다. 폭죽을 무서워하는 모찌. 작년(?) 연말에 밖에서 놀다가 사람들이 쏜 폭죽에 놀라서 도망친 적이 있다. 이번에도 밖에 폭죽소리가 들리자 여기저기 숨어다니고 기어다닌다. 내가 오피스에 있으면 발 밑에 숨고, 거실에 있으면 근처 소파 옆에 숨는다. 걸을 때도 자세를 낮춰서 호다닥.&lt;/p&gt;
+&lt;h2 id=&#34;2024-01-03-금요일&#34;&gt;2024. 01. 03. 금요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_014.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_015.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_016.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk226/Jena_wk226_017.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;올해 겨울은 날이 흐리고 비가 자주 온 것 같다. 이번주는 금요일, 일요일에 11월 말 이후 처음으로 눈이 내렸다. 모찌 어릴 때는 눈에서 잘 놀았던 것 같은데, 3살 넘게 먹고나니 추우 날은 오래 나가있지 않는다. 집에 그냥 들어와버리기. 나랑 비슷하구나.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

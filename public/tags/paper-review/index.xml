@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Paper Review on My New Hugo Site</title>
+    <title>Paper Review on Bloght</title>
     <link>http://localhost:1313/tags/paper-review/</link>
-    <description>Recent content in Paper Review on My New Hugo Site</description>
+    <description>Recent content in Paper Review on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Apr 2022 16:44:33 +0200</lastBuildDate>
@@ -48,7 +48,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/figures/paper_review/2019_Stocker_figS9.png&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -62,7 +62,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/figures/paper_review/2019_Stocker_figS10.png&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -210,7 +210,7 @@
       <description>&lt;h2 id=&#34;18-september-2020-humphrey-nature-tws-co2&#34;&gt;18 September, 2020 (Humphrey, nature, TWS-[CO2])&lt;/h2&gt;
 &lt;p&gt;Humphrey, V., Zscheischler, J., Ciais, P. &lt;em&gt;et al.&lt;/em&gt; Sensitivity of atmospheric CO2 growth rate to observed changes in terrestrial water storage. &lt;em&gt;Nature&lt;/em&gt; &lt;strong&gt;560,&lt;/strong&gt; 628–631 (2018). &lt;a href=&#34;https://doi.org/10.1038/s41586-018-0424-4&#34;&gt;https://doi.org/10.1038/s41586-018-0424-4&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This paper provides &lt;strong&gt;observational evidence&lt;/strong&gt; that &lt;strong&gt;the inter-annual variation (IAV) of CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; growth rate (CGR) is strongly coupled to changes in both terrestrial water storage (TWS) and temperature at the global scale.&lt;/strong&gt; It uses GRACE product, satellite observations of TWS, and measurements of CGR from NOAA. In addition, the authors compares their results with those by Jung et al. (2017), which is a root of my PhD project. The comparison reveals that &lt;strong&gt;the global CGR is more related to TWS rather than temperature, which counters Jung et al. (2017)&amp;rsquo;s results.&lt;/strong&gt; This contradictory is triggered by less sensitive response of DGVMs in the TRENDY project, calling further improvements.&lt;/p&gt;</description>
+&lt;p&gt;This paper provides &lt;strong&gt;observational evidence&lt;/strong&gt; that &lt;strong&gt;the inter-annual variation (IAV) of CO&lt;sub&gt;2&lt;/sub&gt; growth rate (CGR) is strongly coupled to changes in both terrestrial water storage (TWS) and temperature at the global scale.&lt;/strong&gt; It uses GRACE product, satellite observations of TWS, and measurements of CGR from NOAA. In addition, the authors compares their results with those by Jung et al. (2017), which is a root of my PhD project. The comparison reveals that &lt;strong&gt;the global CGR is more related to TWS rather than temperature, which counters Jung et al. (2017)&amp;rsquo;s results.&lt;/strong&gt; This contradictory is triggered by less sensitive response of DGVMs in the TRENDY project, calling further improvements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review: Green (2019). SMC-NBP</title>
@@ -220,7 +220,7 @@
       <description>&lt;h2 id=&#34;11-september-2020-green-nature-smc-nbp&#34;&gt;11 September, 2020 (Green, nature, SMC-&amp;gt;NBP)&lt;/h2&gt;
 &lt;p&gt;Green, J.K., Seneviratne, S.I., Berg, A.M. &lt;em&gt;et al.&lt;/em&gt; Large influence of soil moisture on long-term terrestrial carbon uptake. &lt;em&gt;Nature&lt;/em&gt; &lt;strong&gt;565,&lt;/strong&gt; 476–479 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41586-018-0848-x&#34;&gt;https://doi.org/10.1038/s41586-018-0848-x&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;The authors concluded that soil moisture has substantial effect on long-term net biosphere productivity (NBP, a.k.a. NEE?) using a global satellite product of SIF and TWS (GRACE) and multi-model ensemble from the GLACE-CMIP5 project. They explained that the SMC effect was attributable to non-linear response of NBP to SMC. Also, &lt;strong&gt;they emphasized the need for better improvement representations of CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; fertilization effect in models&lt;/strong&gt;, as it is a basis of their results.&lt;/p&gt;</description>
+&lt;p&gt;The authors concluded that soil moisture has substantial effect on long-term net biosphere productivity (NBP, a.k.a. NEE?) using a global satellite product of SIF and TWS (GRACE) and multi-model ensemble from the GLACE-CMIP5 project. They explained that the SMC effect was attributable to non-linear response of NBP to SMC. Also, &lt;strong&gt;they emphasized the need for better improvement representations of CO&lt;sub&gt;2&lt;/sub&gt; fertilization effect in models&lt;/strong&gt;, as it is a basis of their results.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review: McDowell (2020). Forest dynamics in the future</title>
@@ -348,7 +348,7 @@
       <pubDate>Sun, 01 Mar 2020 16:43:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/paper_review/p017_2017_jung_nature_compensatory/</guid>
       <description>&lt;h2 id=&#34;4-february-2020-jung-nature-compensatory&#34;&gt;4 February, 2020 (Jung, Nature, Compensatory)&lt;/h2&gt;
-&lt;p&gt;Jung, M., Reichstein, M., Schwalm, C. et al. Compensatory water effects link yearly global land CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt; sink changes to temperature. &lt;em&gt;&lt;strong&gt;Nature&lt;/strong&gt;&lt;/em&gt; 541, 516-520 (2017). &lt;a href=&#34;https://doi.org/10.1038/nature20780&#34;&gt;https://doi.org/10.1038/nature20780&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jung, M., Reichstein, M., Schwalm, C. et al. Compensatory water effects link yearly global land CO&lt;sub&gt;2&lt;/sub&gt; sink changes to temperature. &lt;em&gt;&lt;strong&gt;Nature&lt;/strong&gt;&lt;/em&gt; 541, 516-520 (2017). &lt;a href=&#34;https://doi.org/10.1038/nature20780&#34;&gt;https://doi.org/10.1038/nature20780&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;
@@ -412,8 +412,8 @@
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Recently second-generation DGVMs have become advanced in their capability to simulate short-term surface gas and energy exchanges and atmospheric CO&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
-&lt;li&gt;However, the 2&lt;!-- raw HTML omitted --&gt;nd&lt;!-- raw HTML omitted --&gt; gen. DGVMs are still lack in representation of demographic processes because of insufficient observations.&lt;/li&gt;
+&lt;li&gt;Recently second-generation DGVMs have become advanced in their capability to simulate short-term surface gas and energy exchanges and atmospheric CO&lt;sub&gt;2&lt;/sub&gt;.&lt;/li&gt;
+&lt;li&gt;However, the 2&lt;sup&gt;nd&lt;/sup&gt; gen. DGVMs are still lack in representation of demographic processes because of insufficient observations.&lt;/li&gt;
 &lt;li&gt;This poor representations of competition and coexistence may bring uncertainties in simulation of the community structure and responses of ecosystem to climate change.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

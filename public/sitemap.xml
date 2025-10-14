@@ -8,13 +8,25 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-21T21:59:18+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/daily-life/</loc>
+    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/20250928_paris_wk009/</loc>
+    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/20250928_paris_wk010/</loc>
     <lastmod>2025-09-21T21:59:18+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20250921_paris_wk011/</loc>
     <lastmod>2025-09-21T21:59:18+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/posts/20250928_paris_wk012/</loc>
+    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/20251006_paris_wk013/</loc>
     <lastmod>2025-09-21T21:59:18+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/paris/</loc>
@@ -22,12 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-21T21:59:18+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/20250913_paris_wk010/</loc>
-    <lastmod>2025-09-13T21:47:04+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/20250913_paris_wk009/</loc>
-    <lastmod>2025-09-13T21:47:01+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20250913_paris_wk008/</loc>
     <lastmod>2025-09-13T21:46:58+02:00</lastmod>
@@ -1130,6 +1136,9 @@
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2020-02-15T15:09:56+09:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/research_topics/</loc>
+    <lastmod>2020-06-26T10:02:48+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/paper_review/p018_2019_reichstein_nature_deep-learning/</loc>
     <lastmod>2020-02-07T20:00:00+09:00</lastmod>
   </url><url>
@@ -1198,6 +1207,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/20200105_abouttime/</loc>
     <lastmod>2020-01-19T16:23:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/%EA%B8%80%EA%B0%90/</loc>
+    <lastmod>2020-01-05T21:00:05+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/customizing/</loc>
     <lastmod>2020-01-03T20:33:22+09:00</lastmod>

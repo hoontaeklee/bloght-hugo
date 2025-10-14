@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>PhD Application on My New Hugo Site</title>
+    <title>PhD Application on Bloght</title>
     <link>http://localhost:1313/tags/phd-application/</link>
-    <description>Recent content in PhD Application on My New Hugo Site</description>
+    <description>Recent content in PhD Application on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 May 2020 18:19:28 +0900</lastBuildDate>
@@ -20,7 +20,7 @@
 &lt;ol&gt;
 &lt;li&gt;MPI에서는 외국인을 위한 &lt;a href=&#34;https://www.mpg.de/4311252/Living_working_Germany.pdf&#34;&gt;기초 가이드&lt;/a&gt;를 제공하니 한 번 읽어보자.&lt;/li&gt;
 &lt;li&gt;University of Jena에서도 &lt;a href=&#34;http://www.jga.uni-jena.de/en/Doctoral+candidates/Incoming+_+Outgoing/Arrival+in+Germany/Non_EU_Citizens.html&#34;&gt;좋은 가이드&lt;/a&gt;를 제공한다.&lt;/li&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;독일 유학 공통적인 것, MPI-bgc 한정적인 내용이 섞여있다.&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;독일 유학 공통적인 것, MPI-bgc 한정적인 내용이 섞여있다.&lt;/u&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;ul&gt;

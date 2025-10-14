@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Customizing on My New Hugo Site</title>
+    <title>Customizing on Bloght</title>
     <link>http://localhost:1313/tags/customizing/</link>
-    <description>Recent content in Customizing on My New Hugo Site</description>
+    <description>Recent content in Customizing on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Jan 2020 20:33:22 +0900</lastBuildDate>
@@ -49,6 +49,7 @@
       <pubDate>Wed, 01 Jan 2020 13:31:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/20200101_cupper_setting_datetime_for_posts/</guid>
       <description>&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
+&lt;!-- TOC --&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#%EB%AC%B8%EC%9D%98-%EC%82%AC%ED%95%AD&#34;&gt;문의 사항&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#1-darklight-%EB%B2%84%ED%8A%BC-%EC%9C%84%EC%B9%98-%EB%B3%80%EA%B2%BD&#34;&gt;1. &lt;strong&gt;Dark/Light 버튼 위치 변경&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
@@ -57,6 +58,7 @@
 &lt;li&gt;&lt;a href=&#34;#4-%EC%8B%9C%EA%B0%84-%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C-%EC%A0%95%EB%A0%AC&#34;&gt;4. &lt;strong&gt;시간 내림차순 정렬&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%ED%9B%84%EA%B8%B0&#34;&gt;후기&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;!-- /TOC --&gt;
 &lt;p&gt;블로그 테마로 &lt;a href=&#34;https://github.com/zwbetz-gh/cupper-hugo-theme&#34;&gt;Cupper&lt;/a&gt;를 선택했다.
 기본 세팅에서 네 가지 고치고 싶은 사항이 있어 &lt;a href=&#34;https://discourse.gohugo.io/t/four-issues-about-the-cupper-theme-dark-button-posting-time-and-an-error/22523&#34;&gt;Hugo Forum에 문의했다.&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;문의-사항&#34;&gt;문의 사항&lt;/h2&gt;

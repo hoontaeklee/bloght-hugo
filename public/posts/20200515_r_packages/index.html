@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>R packages by Hadley Wickham 정리 | My New Hugo Site</title>
+<title>R packages by Hadley Wickham 정리 | Bloght</title>
 <meta name="keywords" content="2020, Book Review, R">
 <meta name="description" content="Getting started
 Introduction
@@ -139,7 +139,7 @@ Creating a package
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -175,7 +175,7 @@ Creating a package
     <h1 class="post-title entry-hint-parent">
       R packages by Hadley Wickham 정리
     </h1>
-    <div class="post-meta"><span title='2020-05-12 10:00:00 +0900 +0900'>May 12, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
+    <div class="post-meta"><span title='2020-05-12 10:00:00 +0900 KST'>May 12, 2020</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span>
 
 </div>
   </header> 
@@ -818,12 +818,12 @@ to coordinate multiple functions to solve problems.</p></blockquote>
 유용하다. 또한, vignette을 통해 패키지 설명을 더욱 자세히 기술할 수 있다.</p>
 <p><code>browseVignettes()</code> 명령어로 현재 설치된 모든 vignettes를 볼 수 있다.
 특정 패키지의 것만 보고 싶다면 <code>browseVignettes(&quot;packagename&quot;)</code> 명령어를 사용한다.
-모든 vignettes는 <!-- raw HTML omitted -->소스코드, HTML(또는 PDF), R 코드<!-- raw HTML omitted --> 세 가지를 가지고 있다. 특정 vignette은
+모든 vignettes는 <u>소스코드, HTML(또는 PDF), R 코드</u> 세 가지를 가지고 있다. 특정 vignette은
 <code>vignette(x)</code> 명령어로 읽고, <code>edit(vignette(x))</code>로 편집할 수 있다.
 설치하지 않은 vignette을 읽는 방법은 [여기](CRAN page, e.g., <a href="http://cran.r-project.org/web/packages/dplyr">http://cran.r-project.org/web/packages/dplyr</a>)를 참고하자.</p>
 <p>R 3.0.0 이전에는 vignette를 만드는 방법이 Sweave 뿐이었다. Sweave는 무겁고 배우기 어려웠다(LaTeX).
 하지만 knitr이 개발되고나서는 vignette를 만드는 게 쉬워졌고 거의 모든 패키지에서 vignette를 사용하게 됐다.
-이 챕터에서는 <!-- raw HTML omitted -->knitr의 vignette engine<!-- raw HTML omitted -->에 대해 설명하려 한다. 이 엔진의 장점을 조금 소개하면 아래와 같다.</p>
+이 챕터에서는 <u>knitr의 vignette engine</u>에 대해 설명하려 한다. 이 엔진의 장점을 조금 소개하면 아래와 같다.</p>
 <ul>
 <li>마크다운 문법을 사용한다. LaTeX보다는 문법이 자유롭지 못 하지만, 대신 문법을 지킨다면 내용에 집중할 수 있다.</li>
 <li>텍스트, 코드, 결과를 함께 기록할 수 있다.</li>
@@ -931,7 +931,7 @@ procrastination</a>)</li>
 <h3 id="where-next">Where next<a hidden class="anchor" aria-hidden="true" href="#where-next">#</a></h3>
 <ul>
 <li>Rmarkdown 문법 공부</li>
-<li>vignette을 <!-- raw HTML omitted -->Journal of Statistical Software<!-- raw HTML omitted -->, <!-- raw HTML omitted -->The R Journal<!-- raw HTML omitted --> 등에 투고</li>
+<li>vignette을 <u>Journal of Statistical Software</u>, <u>The R Journal</u> 등에 투고</li>
 </ul>
 <h2 id="testing-tests">Testing (<code>Tests/</code>)<a hidden class="anchor" aria-hidden="true" href="#testing-tests">#</a></h2>
 <blockquote>
@@ -1211,8 +1211,8 @@ dim(mtcars)
 nrow(mtcars)
 ## [1] 32
 </code></pre><p>놀랍게도 <code>nrow()</code>는 변하지 않는다. <code>dim()</code>을 찾을 때 패키지 네임스페이스를 이용하기 때문이다.
-우리가 정의한 <!-- raw HTML omitted -->global environment에 있는 <code>dim()</code><!-- raw HTML omitted -->이 아닌
-<!-- raw HTML omitted -->base environment에 있는 <code>dim()</code><!-- raw HTML omitted -->을 참고한다는 뜻이다.</p>
+우리가 정의한 <u>global environment에 있는 <code>dim()</code></u>이 아닌
+<u>base environment에 있는 <code>dim()</code></u>을 참고한다는 뜻이다.</p>
 <p><strong>Export</strong>는 패키지의 함수 중 어떤 것들이 외부 패키지가 사용할 수 있는지 지정해준다.
 이렇게 해서 다른 패키지와의 충돌을 막아준다.</p>
 <h3 id="search-path">Search path<a hidden class="anchor" aria-hidden="true" href="#search-path">#</a></h3>
@@ -1234,7 +1234,7 @@ search path에는 내가 <strong>attach</strong>한 패키지 리스트가 담�
 로딩이 끝나면 패키지를 메모리에서 사용할 수 있게 된다. 하지만 아직 search path에는 없기 때문에에 <code>::</code>를 사용해서 접근해야 한다.
 사실 <code>::</code>역시 패키지를 로드한다(안 돼있을 경우).
 패키지를 직접 로드하는 경우는 별로 없지만, 가능은 하다(<code>requireNamespace()</code>나 <code>loadNamespace()</code>)</li>
-<li><strong>attaching</strong>은 <!-- raw HTML omitted -->로딩한<!-- raw HTML omitted --> 패키지를 search path에 등록한다.
+<li><strong>attaching</strong>은 <u>로딩한</u> 패키지를 search path에 등록한다.
 즉, <code>library()</code>와 <code>require()</code>은 loading과 attaching을 모두 수행하는 함수인 것이다.</li>
 </ul>
 <p>패키지가 설치되지 않았다면 loading(attaching도)할 수 없다(에러 발생).</p>
@@ -1433,7 +1433,7 @@ roxygen2를 사용하는 것의 장점은 크게 세 가지가 있다.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
 
     <span>
         Powered by

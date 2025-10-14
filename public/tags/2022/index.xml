@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>2022 on My New Hugo Site</title>
+    <title>2022 on Bloght</title>
     <link>http://localhost:1313/tags/2022/</link>
-    <description>Recent content in 2022 on My New Hugo Site</description>
+    <description>Recent content in 2022 on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2023 20:00:03 +0100</lastBuildDate>
@@ -73,7 +73,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -84,8 +84,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -96,9 +96,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -109,9 +109,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -119,7 +119,33 @@
 &lt;/table&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;버섯전골. 엄마 레시피랑은 다르지만 맛은 좋음.&lt;/p&gt;</description>
+&lt;p&gt;버섯전골. 엄마 레시피랑은 다르지만 맛은 좋음.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;베이컨&amp;amp;콩자루 국수&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;춘휘의 소고기감자찜(?). 항상 맛있음.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;모찌&#34;&gt;모찌&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk119/Jena_wk119_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;이 쉐키&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;다음-주는&#34;&gt;다음 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SINDBAD VEGPP - RECO &amp;amp; NEE formulation&lt;/li&gt;
+&lt;li&gt;바바리아 여행&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 118 (월드컵)</title>
@@ -154,8 +180,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk117/Jena_wk117_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk117/Jena_wk117_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -199,7 +225,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -210,14 +236,32 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_029.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;집에서 영화를 좀 봤다. 모찌도 같이.&lt;/p&gt;</description>
+&lt;p&gt;집에서 영화를 좀 봤다. 모찌도 같이.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk115/Jena_wk115_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2022-11-19-토요일&#34;&gt;2022. 11. 19. 토요일&lt;/h2&gt;
+&lt;p&gt;춘휘랑 에어푸어트에 있는 아이스스케이트타러 갔다. 춘휘는 처음 해보는 상황. 입장료 2.5+ 대여료 5 = 7.5 유로. 오후 4시부터 10시까지 무제한. 아주 나쁘지 않다. 1시간 정도 기다린 후 입장했다. 아이스링크가 꽤 커서 사람이 많아도 크게 문제되지 않았다. 춘휘는 롤러스케이트를 타봐서인지 반 바퀴 정도 같이 걸어주니까 감을 좀 잡았다. 조금 걷게 된 후 한 번 넘어졌지만, 그 이후로는 긴장한 채 그럭저럭 잘 익혀나갔다. 나도 오랜만에 타서 조금 어색했는데, 그래도 금방 적응했다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 114 (2주년, 오피스 이사, 토미 엠마뉴엘@바이마르)</title>
@@ -238,8 +282,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk114/Jena_wk114_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk114/Jena_wk114_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -263,7 +307,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk113/Jena_wk113_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -290,8 +334,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk112/Jena_wk112_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk112/Jena_wk112_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -314,8 +358,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk111/Jena_wk111_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk111/Jena_wk111_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -340,16 +384,16 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
           &lt;th&gt;&lt;/th&gt;
           &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -358,7 +402,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -371,16 +415,16 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk110/Jena_wk110_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -413,8 +457,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk109/Jena_wk109_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk109/Jena_wk109_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -431,13 +475,15 @@
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;SINDBAD VEGPP optimization&lt;/li&gt;
-&lt;li&gt;ABC&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt; group dinner&lt;/li&gt;
+&lt;li&gt;ABC&lt;sup&gt;3&lt;/sup&gt; group dinner&lt;/li&gt;
 &lt;li&gt;Summer party (did not join&amp;hellip;)&lt;/li&gt;
 &lt;li&gt;Martin&amp;rsquo;s garden party (did not join&amp;hellip;)&lt;/li&gt;
 &lt;li&gt;Wuwu 방문&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;이제 SINDBAD VEGPP 잘 돌아간다. soil texture 등 데이터 추가하고 구조 손보자.&lt;/p&gt;
-&lt;p&gt;원래 월요일에 알렉스 그룹 디너, 화요일에 Summer party, 토요일에 마틴네서 저녁이 있었다. 저번주부터 뭐 요리할까 춘휘랑 겁나 고민했는데, 월요일 지나고나니 요리하기 급 피곤해져서 섬머파티 생략하고 토요일에 비 오고 추우니 급 귀찮아져서 역시 집에서 쉬었다. 집이 최고.&lt;/p&gt;</description>
+&lt;p&gt;원래 월요일에 알렉스 그룹 디너, 화요일에 Summer party, 토요일에 마틴네서 저녁이 있었다. 저번주부터 뭐 요리할까 춘휘랑 겁나 고민했는데, 월요일 지나고나니 요리하기 급 피곤해져서 섬머파티 생략하고 토요일에 비 오고 추우니 급 귀찮아져서 역시 집에서 쉬었다. 집이 최고.&lt;/p&gt;
+&lt;h2 id=&#34;2022-09-27-월요일&#34;&gt;2022. 09. 27. 월요일&lt;/h2&gt;
+&lt;p&gt;춘휘를 지도하고 있는 알렉스가 ABC&lt;sup&gt;3&lt;/sup&gt; group dinner에 나와 춘휘를 초대했다. 요리 하나씩 해오기로 했다. 나는 김치부침개, 춘휘는 버섯튀김을 해갔다. 위치는 시티센터 조금 위쪽. 사람들이 김치부침개를 맛있게 먹어줬다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 107</title>
@@ -456,7 +502,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -467,7 +513,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -480,9 +526,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -497,14 +543,14 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -519,7 +565,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -532,7 +578,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk107/Jena_wk107_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -544,7 +590,7 @@
 &lt;h2 id=&#34;다음-주는&#34;&gt;다음 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;SINDBAD VEGPP optimization&lt;/li&gt;
-&lt;li&gt;ABC&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt; Dinner@Alex&amp;rsquo;s place&lt;/li&gt;
+&lt;li&gt;ABC&lt;sup&gt;3&lt;/sup&gt; Dinner@Alex&amp;rsquo;s place&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -562,7 +608,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk106/Jena_wk106_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -641,7 +687,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk102/Jena_wk102_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -668,8 +714,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk101/Jena_wk101_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk101/Jena_wk101_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -725,16 +771,17 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk98/Jena_wk98_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk98/Jena_wk98_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk98/Jena_wk98_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;2022-07-21-목요일&#34;&gt;2022. 07. 21. 목요일&lt;/h2&gt;
-&lt;p&gt;택배 도착. 이케아에서 주문한 프라이팬과 볼 + 중국 친구들과 다같이 구매한 Qian 줄 가방. 프라이팬은 인덕션 용이라고 써 있었는데 작동을 안 하더라 ㅜㅜ&lt;/p&gt;</description>
+&lt;p&gt;택배 도착. 이케아에서 주문한 프라이팬과 볼 + 중국 친구들과 다같이 구매한 Qian 줄 가방. 프라이팬은 인덕션 용이라고 써 있었는데 작동을 안 하더라 ㅜㅜ&lt;/p&gt;
+&lt;p&gt;저녁에 집으로 치안, 젬베이, 쓰위안을 초대했다. 치안이 다음주에 중국으로 돌아가기 때문. 중국 친구들과 같이 구매한 독일 더이터 백팩을 선물로 줬다. 음식은 김치전, 야채&amp;amp;겨자소스, 두부강정, 춘휘가 만든 돼지고기 섬띵, 군만두 그리고 맥주. 잘 먹었습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 97 (BGI retreat, 예나 콘서트, Buchenwald)</title>
@@ -799,7 +846,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -810,24 +857,24 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk94/Jena_wk94_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -858,8 +905,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk93/Jena_wk93_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk93/Jena_wk93_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -883,31 +930,31 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_054.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_055.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_056.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_057.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_058.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk92/Jena_wk92_059.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -928,9 +975,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_028.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_029.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -940,15 +987,45 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;점심은 보통 학회장 샌드위치로 해결하고&amp;hellip; 저녁은 시내 가서 먹는다. 중국 식당을 많이 찾았다.&lt;/p&gt;</description>
+&lt;p&gt;점심은 보통 학회장 샌드위치로 해결하고&amp;hellip; 저녁은 시내 가서 먹는다. 중국 식당을 많이 찾았다.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;근처 건물이나 공원을 돌아봤다. 모찌는 탈출 시도 중&amp;hellip;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk91/Jena_wk91_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2022-05-24-화요일&#34;&gt;2022. 05. 24. 화요일&lt;/h2&gt;
+&lt;p&gt;날씨가 좋다. 점심 시간에 학회장 뒤 공원을 돌아봤다. 아주 큼. 한인문화회관도 있더라. 한글, 문학, 태권도 가르치는 듯.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 90 (빈)</title>
@@ -967,7 +1044,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk90/Jena_wk90_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -978,7 +1055,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk90/Jena_wk90_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -990,8 +1067,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk90/Jena_wk90_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk90/Jena_wk90_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1017,7 +1094,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk89/Jena_wk89_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1028,8 +1105,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk89/Jena_wk89_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk89/Jena_wk89_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1054,14 +1131,14 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_016.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_017.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_018.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_019.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1069,14 +1146,14 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_020.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_021.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_022.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk88/Jena_wk88_023.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1151,8 +1228,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk85/Jena_wk85_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk85/Jena_wk85_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1176,9 +1253,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk84/Jena_wk84_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk84/Jena_wk84_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk84/Jena_wk84_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1232,7 +1309,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1243,9 +1320,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1256,8 +1333,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1271,19 +1348,19 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk82/Jena_wk82_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -1312,7 +1389,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk81/Jena_wk81_016.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1333,7 +1410,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1344,8 +1421,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1356,21 +1433,33 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_016.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_017.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_018.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_019.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_020.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_021.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;2022-03-09-수요일&#34;&gt;2022. 03. 09. 수요일&lt;/h2&gt;
-&lt;p&gt;모찌용품 도착.&lt;/p&gt;</description>
+&lt;p&gt;모찌용품 도착.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk80/Jena_wk80_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2022-03-11-금요일&#34;&gt;2022. 03. 11. 금요일&lt;/h2&gt;
+&lt;p&gt;오랜만에 춘휘랑 훠궈 + 패치워크. 춘휘가 44점 신기록을 냈다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 79</title>
@@ -1387,8 +1476,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1399,9 +1488,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1416,19 +1505,19 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk79/Jena_wk79_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -1458,14 +1547,14 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1474,8 +1563,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1489,29 +1578,29 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_015.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_016.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_017.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_018.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_019.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_021.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk78/Jena_wk78_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
@@ -1543,9 +1632,9 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1556,20 +1645,31 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_048.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_049.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_050.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_051.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_052.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_053.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;모찌 목욕 시키기. 일 년에 두 번 정도 시킬 예정. 춘휘를 한 대 때리기는 했지만 그래도 생각보다 얌전했다.&lt;/p&gt;</description>
+&lt;p&gt;모찌 목욕 시키기. 일 년에 두 번 정도 시킬 예정. 춘휘를 한 대 때리기는 했지만 그래도 생각보다 얌전했다.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk77/Jena_wk77_015.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2022-02-18-금요일&#34;&gt;2022. 02. 18. 금요일&lt;/h2&gt;
+&lt;p&gt;모찌 중성화 수술 + 내 발목 체크&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review: Stocker et al., (2019). Underestimated GPP by RS models under dry soils</title>
@@ -1593,7 +1693,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/figures/paper_review/2019_Stocker_figS9.png&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1607,7 +1707,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/figures/paper_review/2019_Stocker_figS10.png&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1634,7 +1734,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk76/Jena_wk76_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1645,8 +1745,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk76/Jena_wk76_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk76/Jena_wk76_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1654,7 +1754,20 @@
 &lt;/table&gt;
 &lt;p&gt;Xin에게 아주 중요했던 날.&lt;/p&gt;
 &lt;h2 id=&#34;2022-02-11-금요일&#34;&gt;2022. 02. 11. 금요일&lt;/h2&gt;
-&lt;p&gt;아빠 생신 축하드립니다! 까먹어서 죄송합니다!&lt;/p&gt;</description>
+&lt;p&gt;아빠 생신 축하드립니다! 까먹어서 죄송합니다!&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk76/Jena_wk76_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk76/Jena_wk76_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk76/Jena_wk76_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2022-02-12-토요일&#34;&gt;2022. 02. 12. 토요일&lt;/h2&gt;
+&lt;p&gt;에어푸어트 소풍. 목적은 1) 내 백팩 찾기 2) 동물원 가기 + 아이스 스케이팅&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 75 (설날2, 훠궈)</title>
@@ -1672,20 +1785,20 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_018.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk75/Jena_wk75_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -1708,7 +1821,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1719,18 +1832,18 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_021.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_022.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_023.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_024.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_025.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_026.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_027.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk74/Jena_wk74_028.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1765,14 +1878,14 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk72/Jena_wk72_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk72/Jena_wk72_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk72/Jena_wk72_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk72/Jena_wk72_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1792,7 +1905,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1803,8 +1916,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_004.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_005.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1814,14 +1927,68 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_014.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;2022-01-08-토요일&#34;&gt;2022. 01. 08. 토요일&lt;/h2&gt;
-&lt;p&gt;하이킹. 이번에는 Fox tower 절벽 코스로. 날씨 잘못 고르면 상당히 위험할 듯.&lt;/p&gt;</description>
+&lt;p&gt;하이킹. 이번에는 Fox tower 절벽 코스로. 날씨 잘못 고르면 상당히 위험할 듯.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;그-외&#34;&gt;그 외&amp;hellip;&lt;/h2&gt;
+&lt;h3 id=&#34;먹은-것&#34;&gt;먹은 것&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_006.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_012.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;처음 가본 치킨집. 갓 튀긴 게 아니라서 불합격.&lt;/li&gt;
+&lt;li&gt;춘휘가 만든 단호박타르트. 굳.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;모찌&#34;&gt;모찌&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_013.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk71/Jena_wk71_008.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;물을 곱게 안 두는 모찌.. 쉐키&lt;/li&gt;
+&lt;li&gt;커피를 좋아한다?&lt;/li&gt;
+&lt;li&gt;모자에 쏙 들어감!&lt;/li&gt;
+&lt;li&gt;토끼 닮았음!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;다음-주는&#34;&gt;다음 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;연구연구 - PAC 미팅 준비, EGU abstract submission&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>In Jena: Week 70 (새해, 백신)</title>
@@ -1840,8 +2007,8 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk70/Jena_wk70_002.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Jena/wk70/Jena_wk70_003.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1850,7 +2017,8 @@
 &lt;h2 id=&#34;2021-12-30-목요일&#34;&gt;2021. 12. 30. 목요일&lt;/h2&gt;
 &lt;p&gt;춘휘랑 코로나 3차 접종. 바이온텍 백신 (=화이자) 맞았다. 나는 나이가 많아서 (&amp;hellip;) 처음엔 모더나 배정 받았는데 따로 요청해서 바이온텍으로 바꿨다.&lt;/p&gt;
 &lt;h2 id=&#34;2021-12-31-금요일&#34;&gt;2021. 12. 31. 금요일&lt;/h2&gt;
-&lt;p&gt;작년에 이어 올해도 새해 맞이 불꽃놀이 +포항의 새해 일출.&lt;/p&gt;</description>
+&lt;p&gt;작년에 이어 올해도 새해 맞이 불꽃놀이 +포항의 새해 일출.&lt;/p&gt;
+&lt;p&gt;새해는 부스터샷 부작용과 함께&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

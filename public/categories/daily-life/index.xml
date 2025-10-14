@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Daily Life on My New Hugo Site</title>
+    <title>Daily Life on Bloght</title>
     <link>http://localhost:1313/categories/daily-life/</link>
-    <description>Recent content in Daily Life on My New Hugo Site</description>
+    <description>Recent content in Daily Life on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Jan 2020 23:11:00 +0900</lastBuildDate>
@@ -15,10 +15,12 @@
       <guid>http://localhost:1313/posts/20200108_new_user_of_the_month/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;[Hugo] [PM] You&amp;rsquo;re a New User of the Month!
-&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;br&gt;&lt;br&gt;
 Congratulations, you’ve earned the New User of the Month award for January 2020.&lt;br&gt;
 This award is only granted to two new users per month, and it will be permanently visible on the badges page.&lt;br&gt;
-You’ve quickly become a valuable member of our community. Thanks for joining, and keep up the great work!&lt;/p&gt;</description>
+You’ve quickly become a valuable member of our community. Thanks for joining, and keep up the great work!&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;이달의 뉴비로 선정되었다.&lt;/p&gt;
+&lt;p&gt;이 뱃지는 한 달에 두 명을 선정해서 수여한다고 한다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

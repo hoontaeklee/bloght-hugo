@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Blog | My New Hugo Site</title>
+<title>Blog | Bloght</title>
 <meta name="keywords" content="">
-<meta name="description" content="Blog - My New Hugo Site">
+<meta name="description" content="Blog - Bloght">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
@@ -74,7 +74,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -111,15 +111,72 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">프로그래머를 위한 선형대수
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>선형대수 학점을 높이고 싶거나 선형대수에 관한 직관을 키우고 싶다면 꼭 읽어야 할 책이다.
+논문을 읽다 보면 가끔 어려운 수학 표현이 등장하는데, 이를 이해하지 못하는 경우가 있다. 이해하지 못하면 써먹을 수도 없으므로 내가 손을 뻗을 수 있는 참고 문헌의 범위가 수학 때문에 줄어들게 되는 것이다. 그리고 통계 관련 자료도 조금 깊이 있는 설명을 원하면 어려운 수학이 꼭 등장하고 비슷한 어려움을 겪는다. 이런 일 때문에 수학을 공부할 필요성을 느낀다.
+먼저 잡힌 건 선형대수학이다. 내가 선형대수학을 공부할 때 힘들었던 건 교재의 설명을 뚜렷하게 상상할 수 없었다는 것이다. 다른 도움이 될 만한 자료를 찾다가 “coding the matrix”라는 책을 발견했다. 시각화를 해주기 때문에 이해가 수월할 것 같으면서도 파이썬 공부도 겸할 수 있을 것 같았다. 하지만 막상 책을 보니 쓸데없이 크고 묵직했다. 속지 또한 출판사에서 하나도 다듬지 않은 미완의 강의 자료 같았다. 사서 볼 의욕이 뚝 떨어졌다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-05-19 21:27:18 +0900 KST'>May 19, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to 프로그래머를 위한 선형대수" href="http://localhost:1313/posts/20190519_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%84%A0%EB%8C%80/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Fisher (2014). TBM. ANN
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>18 May, 2019 (Fisher, ANN, TBM) Fisher, J.B., Huntzinger, D.N., Schwalm, C.R. and Sitch, S. (2014). Modeling the terrestrial biosphere. Annual Review of Environment and Resources, 39, 91-123.
+This paper synthesized in what context the terrestrial biosphere model (TBM) appeared, which processes TBMs included, and what’s next. It was interesting that actually many part of the TBM was studied and developed separately around the world, and the development was accelerated after the parts were incorporated into a type of model.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-05-18 20:00:00 +0900 KST'>May 18, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Fisher (2014). TBM. ANN" href="http://localhost:1313/posts/paper_review/p006_2014_fisher_ann_tbm/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Zhang (2019). CLM4.5. JGRBG
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>11 May, 2019 (Zhang, JGRBG, CLM4.5) Zhang, L., Lei, H., Shen, H., Cong, Z., Yang, D. and Liu, T. (2019). Evaluating the representation of vegetation phenology in the Community Land model 4.5 in a temperate grassland. Journal of Geophysical Research: Biogeosciences 124.
+This was a key paper for the first revision of my paper. This paper had its focus on improving phenology module in CLM 4.5 by comparing MODIS LAI. Two problem were issued and resolved. First, EOS in the CLM 4.5 was too late compared with that of MODIS LAI. The authors showed that too low threshold soil temperature for leaf offset caused this problem; the temperature was increased. Second, the model sometimes showed zero LAI during summer, which caused multiple growing cycles. This problem was resulted from too high rate of leaf onset. By adjusting the rate, this problem could be solved. And then the authors confirmed that how these improvements affected GPP and ET simulations at stand and national levels.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-05-11 20:00:00 +0900 KST'>May 11, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Zhang (2019). CLM4.5. JGRBG" href="http://localhost:1313/posts/paper_review/p005_2019_zhang_jgrbg_clm45/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paper Review: Xu (2016). ED-Hydro. NPH
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>5 May, 2019 (Xu, NPH, ED-Hydro) Xu, X., Medvigy, D., Powers, J.S., Becknell, J.M. and Guan, K. (2016). Diversity in plant hydraulic traits explains seasonal and inter‐annual variations of vegetation dynamics in seasonally dry tropical forests. New Phytologist 212(1), 80-95.
+This paper incoporated hydraulic module into the ED2. This module accounted for hydraulic traits such as tugor loss point (TLP), saturated xylem conductivity, 50% xylem conductivity loss water potential, and area-based Anet under sufficient water supply. These traits were estimated using a meta analysis in which relationships between the traits and wood density (WD) or SLA were retrieved. Also, four new PFTs, which were classified based on the SLA-WD space, were introduced to the model. And then finally some simulations were conducted to investigate the effect of adding the new module and PFTs by comparing with in-situ observation and MODIS data.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-05-05 20:00:00 +0900 KST'>May 5, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Paper Review: Xu (2016). ED-Hydro. NPH" href="http://localhost:1313/posts/paper_review/p004_2016_xu_nph_ed-hydro/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">고급 문장 수업
     </h2>
   </header>
   <div class="entry-content">
-    <p> 목차를 보고 바로 샀다. 더 좋은 한글 문장을 쓰는 데 도움이 되는 실용적인 팁들이 많이 담겨있을 것 같았다. 구성도 짤막짤막하게 끊어 읽기 좋았다. 출근 후 근무 시작 전에 하루 다섯 개씩 읽었다.
+    <p>목차를 보고 바로 샀다. 더 좋은 한글 문장을 쓰는 데 도움이 되는 실용적인 팁들이 많이 담겨있을 것 같았다. 구성도 짤막짤막하게 끊어 읽기 좋았다. 출근 후 근무 시작 전에 하루 다섯 개씩 읽었다.
 읽은 후에는 아쉬움이 많이 들었다. 수록한 팁 중에서는 강조하고자 하는 것에 따라 ‘은/는’과 ‘이/가’를 구분해 사용하는 방법을 설명한 것 등 비교적 명쾌하게 설명한 것이 있었다. 하지만 대부분의 설명은 두루뭉술하다고 느꼈다. “이렇게 쓰는 것이 더 안정적이다”와 같은 설명이 많다. 이런 애매한 설명으로 177개 팁을 나열하다 보니 기억하기도 쉽지 않다. 그 177개 중에서도 별로 다르지 않은 팁이 매우 많다. 자세히 구분하는 것도 좋지만, 177개는 너무 많지 않은가. 좋은 사례 문장을 많이 볼 수 있어 좋았지만 더 기억하기 쉽게 정리했더라면 하는 아쉬움이 남는다.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-04-30 00:02:59 +0900 +0900'>April 30, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <footer class="entry-footer"><span title='2019-04-30 00:02:59 +0900 KST'>April 30, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to 고급 문장 수업" href="http://localhost:1313/posts/20190402_%EA%B3%A0%EA%B8%89%EB%AC%B8%EC%9E%A5%EC%88%98%EC%97%85/"></a>
 </article>
 
@@ -133,7 +190,7 @@
 This paper conducted an interesting numerical experiment to investigate changes in SMC and Carbon &amp; Water fluxes by vegetation mixing. This vegetation mixing was represented by adjusting PFT cover ratios of grid in the JULES model. Results show that NPP and LE flux were increased and SMC was decreased, especially during drought period. This was because multiple PFTs could better exploit ecosystem resources than the sole PFT does, which was related to differences in niche classified by phenology, WUE, and rooting depth.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-04-27 20:00:00 +0900 +0900'>April 27, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <footer class="entry-footer"><span title='2019-04-27 20:00:00 +0900 KST'>April 27, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to Paper Review: Van den Hoof (2016). JULES. JGRBG" href="http://localhost:1313/posts/paper_review/p003_2016_vandenhoof_jgrbg_jules/"></a>
 </article>
 
@@ -147,7 +204,7 @@ This paper conducted an interesting numerical experiment to investigate changes 
 NSC is important for tree plants because it acts as an physiological insurance budget for them. I expected that this paper would be organized as a chapter about NSC in a textbook and I can get basic knowledge about NSC. Although this paper is not organized as I expected, it provides well-summarized review about NSC related research results which contain interesting knowledge about NSC.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-04-20 20:00:00 +0900 +0900'>April 20, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <footer class="entry-footer"><span title='2019-04-20 20:00:00 +0900 KST'>April 20, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to Paper Review: Dietze (2014). NSC. ANN" href="http://localhost:1313/posts/paper_review/p002_2014_dietze_ann_nsc/"></a>
 </article>
 
@@ -161,7 +218,7 @@ NSC is important for tree plants because it acts as an physiological insurance b
 I anticipated that this paper explains how the results from forest-climate research have been deployed to public policy. However, this paper had its focus to forest-climate relationships, and “these relationships should be understood well to be properly applied to policy” was all about the public policy.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-04-13 20:00:00 +0900 +0900'>April 13, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <footer class="entry-footer"><span title='2019-04-13 20:00:00 +0900 KST'>April 13, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to Paper Review: Bonan (2016). Climate. ANN" href="http://localhost:1313/posts/paper_review/p001_2016_bonan_ann_climate/"></a>
 </article>
 
@@ -171,11 +228,11 @@ I anticipated that this paper explains how the results from forest-climate resea
     </h2>
   </header>
   <div class="entry-content">
-    <p> 세상에서 가장 쉬운 통계학 입문을 보고 같은 저자의 다른 책도 읽어 봤다. 베이즈통계학 역시 머신러닝에서도 많이 쓰이기 때문에(나이브 베이즈) 한 번 관심을 가져볼 만 했다.
+    <p>세상에서 가장 쉬운 통계학 입문을 보고 같은 저자의 다른 책도 읽어 봤다. 베이즈통계학 역시 머신러닝에서도 많이 쓰이기 때문에(나이브 베이즈) 한 번 관심을 가져볼 만 했다.
 서술 방식은 다른 책과 동일하다. 이해하는 데 어려운 개념이 필요하지 않았고 비약 없이 차근차근 잘 설명해준다. 책 전반에 걸쳐 사전 분포 설정, 새로운 관찰로 경우의 수 조정, 사후 분포 계산이라는 과정이 반복된다. 이 단순한 과정이 나이브 베이즈의 기본이라는 건 알겠는데 실제로 머신 러닝이 해내는 문제와는 복잡도 측면에서 괴리가 있다고 느껴지고 이 책에서는 이를 메워주지 못하는 것 같다. 이런 아쉬움이 있지만 아무튼 기본 개념을 알려주기 위한 입문 서적이기 때문에 이 정도에서 만족해야겠다.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-03-31 20:22:00 +0900 +0900'>March 31, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <footer class="entry-footer"><span title='2019-03-31 20:22:00 +0900 KST'>March 31, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to 세상에서 가장 쉬운 베이즈통계학 입문" href="http://localhost:1313/posts/20190330_%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99%EC%9E%85%EB%AC%B8/"></a>
 </article>
 
@@ -189,67 +246,8 @@ I anticipated that this paper explains how the results from forest-climate resea
 글쓰기 필독서 석사학위논문 쓰는 데 참고하려고 구입한 책 중 하나. 같이 산 다른 책들이 “논문 작성법”에 관한 실용적 팁 위주의 내용을 담고 있다면, 이 책은 “논문이라는 글을 쓰는 방법”이라는 큰 목표에 더 치우쳐 있다. 예를 들어, 단어부터 문장, 문단, 섹션까지 단위별로 어떻게 구성하고 전개해나가야 하는지 그 방법을 설명하기도 하고, 독자의 입장을 고려해 이렇게 쓰는 게 좋다는 설명을 자주하기도 한다. 한 번 쓱 읽으면서 습득하기는 힘든 내용들이다. 주변에 두고 여러 번 읽고 연습해야 할 책이다.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2019-03-29 23:42:00 +0900 +0900'>March 29, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
+  <footer class="entry-footer"><span title='2019-03-29 23:42:00 +0900 KST'>March 29, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
   <a class="entry-link" aria-label="post link to Writing Science" href="http://localhost:1313/posts/20190329_writing_science/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">이공계 연구자를 위한 영문과학논문 작성매뉴얼
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>
-석사학위논문을 쓰는 데 참고하려고 산 책. 구입 전에 들여다 본 논문 작성법 관련 한글 책 중에서는 가장 내용이 충실한 것 같다. 게다가 찰랑찰랑한 속지로 잘 만들어졌다.
-책의 구성이 논문 같아서 참고하기 좋다. 논문의 각 파트에 어떤 내용을 써 넣으면 좋을 것인지 힌트를 얻거나 영작 관련 내용을 주로 참고했다.
-제목 저자 출판사 판 출간 완독 이공계 연구자를 위한 영문과학논문 작성매뉴얼 민양기 범문에듀케이션 1 2013. 6. 2018. 4. </p>
-  </div>
-  <footer class="entry-footer"><span title='2019-03-29 11:11:00 +0900 +0900'>March 29, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 이공계 연구자를 위한 영문과학논문 작성매뉴얼" href="http://localhost:1313/posts/20180400_%EC%98%81%EB%AC%B8%EA%B3%BC%ED%95%99%EB%85%BC%EB%AC%B8%EC%9E%91%EC%84%B1%EB%A7%A4%EB%89%B4%EC%96%BC/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">초보자를 위한 RStudio 마스터
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> RStudio로 할 수 있는 다양한 컨텐츠를 소개한다. Git과 연동, Shiny 앱, R 마크다운, RStudio 서버, 패키지 개발과 같은 주제를 모두 다루고 있는 책이기에 기대를 가지고 구입했지만 실망만 안겨줬다.
-장점 위에 나열한 내용을 포함해 여러 주제를 전반적으로 다룬다. 검색 한 번 해보지 않은 주제가 많다면 읽어볼 만하다.
-단점 아주 얕다. 주제가 방대하기 때문에 구입하기 전에 당연히 예상 했어야 했다. 대부분 주제가 튜토리얼을 보여주거나 그보다 얕은 수준으로 다룬다. 한 번 미리 찾아봤던 주제는 추가로 배우는 것이 없고, 심지어 완전 처음 접하는 주제라도 크게 배울 것이 없었다. 특히 RStudio 서버 다루기나 R 패키지 개발하는 내용은 블로그 게시글 하나 찾아보는 게 나을 정도로 정말 배울 게 없었다. 단, Shiny 앱을 다룬 내용에서는 그나마 코드를 자세히 살펴줘서 대략 어느 논리로 돌아가는지는 알 수 있게 해줬다.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-03-19 17:15:06 +0900 +0900'>March 19, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 초보자를 위한 RStudio 마스터" href="http://localhost:1313/posts/20190319_mastering_rstudio/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">세상에서 가장 쉬운 통계학 입문
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> t검정을 이해하는 데 필요한 직관을 효율적으로 심어주는 책.
-대체로 모든 설명이 친절해서 중학생도 이해할 수 있을 것 같다.
-특히 표준편차가 가지는 의미를 더 잘 이해할 수 있게 해준다.
-저자가 더 많은 통계학 책을 쓰지 않아 아쉽다.
-제목 저자 출판사 판 출간 완독 세상에서 가장 쉬운 통계학 입문 고지마 히로유키 지상사 1 2009. 12. 2019. 03. 10. </p>
-  </div>
-  <footer class="entry-footer"><span title='2019-03-10 00:06:32 +0900 +0900'>March 10, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to 세상에서 가장 쉬운 통계학 입문" href="http://localhost:1313/posts/20190310_%ED%86%B5%EA%B3%84%ED%95%99%EC%9E%85%EB%AC%B8/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Machine Learning with R
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> R로 다양한 머신 러닝 기법을 직접 체험해보기 좋은 책. 각 기법이 어떤 유형의 문제에 활용될 수 있는지를 정리한 표가 있어서 좋다. 각 기법이 동작하는 기본 원리도 잘 설명했고 실습 코드도 따라해보기 좋다. R 머신러닝 입문으로 추천.
-제목 저자 출판사 판 출간 완독 Machine Learning with R Brett Lantz Packt Publishing 2 2015. 07. 2019. 02. 15. </p>
-  </div>
-  <footer class="entry-footer"><span title='2019-02-15 00:04:09 +0900 +0900'>February 15, 2019</span>&nbsp;·&nbsp;<span>Hoontaek Lee</span></footer>
-  <a class="entry-link" aria-label="post link to Machine Learning with R" href="http://localhost:1313/posts/20190215_machine_learning_with_r/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -263,7 +261,7 @@ I anticipated that this paper explains how the results from forest-climate resea
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
 
     <span>
         Powered by

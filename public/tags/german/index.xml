@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>German on My New Hugo Site</title>
+    <title>German on Bloght</title>
     <link>http://localhost:1313/tags/german/</link>
-    <description>Recent content in German on My New Hugo Site</description>
+    <description>Recent content in German on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Sep 2020 16:51:20 +0200</lastBuildDate>
@@ -687,13 +687,14 @@
 &lt;p&gt;적어도 3년을 독일에서 머물게 됐다.&lt;/p&gt;
 &lt;p&gt;연구소 공용어는 영어다.&lt;/p&gt;
 &lt;p&gt;하지만 독일 사람이 많고 연구 외 생활도 있기 때문에 어느 정도 독일어는 필수일 것이다.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;br&gt;
 &lt;p&gt;첫 번째 목적은 잘 적응하고 어울리기,&lt;/p&gt;
 &lt;p&gt;두 번째 욕심은 독일어 능력 인증하기.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;단어와 문법을 이렇게 많이 외우고 시험에도 합격했는데 말 한마디 제대로 할 수 없다니&amp;quot;와 같은 한탄은 없기를 바란다.&lt;/p&gt;
 &lt;h2 id=&#34;주-커리큘럼-20030&#34;&gt;주 커리큘럼: 20030&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/20200426_languagestudy&#34;&gt;외국어 공부의 감각&lt;/a&gt;에서 소개한 방법을 사용하려 한다.&lt;/p&gt;
-&lt;p&gt;필수 단어 200개와 표현 30개를 정리하고,&lt;/p&gt;</description>
+&lt;p&gt;필수 단어 200개와 표현 30개를 정리하고,&lt;/p&gt;
+&lt;p&gt;어플(HelloTalk) 및 일상(in Germany)에서 연습한다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

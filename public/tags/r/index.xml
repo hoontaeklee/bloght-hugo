@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>R on My New Hugo Site</title>
+    <title>R on Bloght</title>
     <link>http://localhost:1313/tags/r/</link>
-    <description>Recent content in R on My New Hugo Site</description>
+    <description>Recent content in R on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Nov 2020 20:53:43 +0100</lastBuildDate>
@@ -245,7 +245,7 @@
       <link>http://localhost:1313/posts/20200412_advr/</link>
       <pubDate>Sun, 12 Apr 2020 17:19:53 +0900</pubDate>
       <guid>http://localhost:1313/posts/20200412_advr/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;img src=&#34;https://adv-r.hadley.nz/cover.png&#34; style=&#34;zoom:40%;&#34; /&gt;
 &lt;h1 id=&#34;log&#34;&gt;Log&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -290,7 +290,7 @@
 &lt;ul&gt;
 &lt;li&gt;측정값 &lt;em&gt;X&lt;/em&gt;로 &lt;em&gt;Y&lt;/em&gt; 값을 예측한다(&lt;em&gt;Y&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;X&lt;/em&gt;)).&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;f&lt;/em&gt;는 &lt;em&gt;black box&lt;/em&gt;로 남아도 상관 없다(&lt;em&gt;Y&lt;/em&gt;만 잘 맞추면 된다).&lt;/li&gt;
-&lt;li&gt;이 때 발생하는 에러는 두 가지: &lt;!-- raw HTML omitted --&gt;reducible&lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt;irreducible&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;이 때 발생하는 에러는 두 가지: &lt;u&gt;reducible&lt;/u&gt;, &lt;u&gt;irreducible&lt;/u&gt;.&lt;/li&gt;
 &lt;li&gt;reducible: &lt;em&gt;f&lt;/em&gt;를 더 잘 예측하면 줄일 수 있다.&lt;/li&gt;
 &lt;li&gt;irreducible: 측정 항목에서 어떤 중요한 변수를 놓치고 있거나,&lt;br&gt;
 혹은 측정 불가능한 요소(예: 약물 투여 때 환자의 심리)가 개입하기 때문에 발생한다.&lt;/li&gt;

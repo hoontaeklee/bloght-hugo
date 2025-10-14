@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/paper-review/</link>
     <description>Recent content in Paper Review on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 24 Apr 2022 16:44:33 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/paper-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -264,7 +264,7 @@
       <description>&lt;h2 id=&#34;20-may-2020-guo-nph-sam-isoansiohydry&#34;&gt;20 May, 2020 (Guo, NPH, SAM-&amp;gt;iso/ansiohydry)&lt;/h2&gt;
 &lt;p&gt;Guo, J.S., Hultine, K.R., Koch, G.W., Kropp, H. and Ogle, K. (2020), Temporal shifts in iso/anisohydry revealed from daily observations of plant water potential in a dominant desert shrub. New Phytol, 225: 713-726. doi:&lt;a href=&#34;https://doi.org/10.1111/nph.16196&#34;&gt;10.1111/nph.16196&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;a-key-reference-for-applying-the-sam-framework&#34;&gt;A key reference for applying the SAM framework&lt;/h2&gt;
-&lt;p&gt;I have reviewed a &lt;a href=&#34;http://localhost:1313/posts/paper_review/p023_2019_liu_ele_SAM_NEE&#34;&gt;paper&lt;/a&gt; in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). &lt;strong&gt;However&lt;/strong&gt;, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.&lt;/p&gt;</description>
+&lt;p&gt;I have reviewed a &lt;a href=&#34;http://localhost:1313/posts/paper_review/p023_2019_liu_ele_sam_nee/&#34;&gt;paper&lt;/a&gt; in which the SAM framework was applied to fluxtower NEE data. I read the paper because I used a similar type of data (i.e. fluxtower GPP and ET). &lt;strong&gt;However&lt;/strong&gt;, after looking into the source code by Liu et al. (2019), I have found that it was more complicated than one I want to implement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review: Liu (2019). SAM-&gt;NEE across biomes. ELE</title>

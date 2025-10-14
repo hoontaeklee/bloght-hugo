@@ -9,3 +9,26 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+pagination:
+  disableAliases: false
+  pagerSize: 5
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      tag: tags
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10  
+

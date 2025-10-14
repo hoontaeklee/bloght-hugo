@@ -3,37 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/2025/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/daily-life/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/20250928_paris_wk009/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <loc>http://localhost:1313/posts/20251006_paris_wk013/</loc>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/20250928_paris_wk010/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <loc>http://localhost:1313/tags/paris/</loc>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/20250921_paris_wk011/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-21T21:59:19+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20250928_paris_wk012/</loc>
     <lastmod>2025-09-21T21:59:18+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/20251006_paris_wk013/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <loc>http://localhost:1313/posts/20250921_paris_wk011/</loc>
+    <lastmod>2025-09-21T21:59:17+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/paris/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <loc>http://localhost:1313/posts/20250928_paris_wk010/</loc>
+    <lastmod>2025-09-21T21:59:16+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-09-21T21:59:18+02:00</lastmod>
+    <loc>http://localhost:1313/posts/20250928_paris_wk009/</loc>
+    <lastmod>2025-09-21T21:59:15+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20250913_paris_wk008/</loc>
     <lastmod>2025-09-13T21:46:58+02:00</lastmod>
@@ -1115,20 +1115,11 @@
     <loc>http://localhost:1313/posts/paper_review/p020_2020_eller_nph_jules-sox/</loc>
     <lastmod>2020-02-22T20:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2020-05-25T20:21:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/r/</loc>
-    <lastmod>2020-02-17T19:46:25+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/20200217_using_api_in_r/</loc>
     <lastmod>2020-02-17T19:46:25+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/paper_review/p019_2016_ogle_chance_sam/</loc>
     <lastmod>2020-02-15T20:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/blog-maintenance/</loc>
-    <lastmod>2020-02-15T15:09:56+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20200215_switch_theme/</loc>
     <lastmod>2020-02-15T15:09:56+09:00</lastmod>
@@ -1144,9 +1135,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/20200204_lalaland/</loc>
     <lastmod>2020-02-07T00:18:07+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/movie-review/</loc>
-    <lastmod>2020-05-25T20:21:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/paper_review/p017_2017_jung_nature_compensatory/</loc>
     <lastmod>2020-02-04T20:00:00+09:00</lastmod>
@@ -1187,17 +1175,11 @@
     <loc>http://localhost:1313/posts/20200112_%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EB%85%B8%EC%B6%9C/</loc>
     <lastmod>2020-01-15T19:02:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/book-review/</loc>
-    <lastmod>2020-03-15T19:58:00+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/20200112_%EB%AC%BC%EB%A6%AC%ED%95%99%EA%B0%95%EC%9D%98/</loc>
     <lastmod>2020-03-15T19:58:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/paper_review/p015_2019_piao_gcb_phenology/</loc>
     <lastmod>2020-01-11T20:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/daily-life/</loc>
-    <lastmod>2020-01-08T23:11:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20200108_new_user_of_the_month/</loc>
     <lastmod>2020-01-08T23:11:00+09:00</lastmod>
@@ -1381,5 +1363,7 @@
   </url><url>
     <loc>http://localhost:1313/posts/20160628_%EC%84%9C%EB%AF%BC%EC%A0%81-%EA%B8%80%EC%93%B0%EA%B8%B0/</loc>
     <lastmod>2016-06-29T20:24:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

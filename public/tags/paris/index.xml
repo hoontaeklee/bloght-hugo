@@ -5,25 +5,72 @@
     <link>http://localhost:1313/tags/paris/</link>
     <description>Recent content in Paris on Bloght</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 21 Sep 2025 21:59:18 +0200</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Sep 2025 21:59:19 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/paris/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>In Paris: Week 009 (르 아브르 여행)</title>
-      <link>http://localhost:1313/posts/20250928_paris_wk009/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250928_paris_wk009/</guid>
+      <title>In Paris: Week 013 (프라이부르크, 프라이싱)</title>
+      <link>http://localhost:1313/posts/20251006_paris_wk013/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:19 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20251006_paris_wk013/</guid>
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;춘휘랑 모찌 공원 산책&lt;/li&gt;
-&lt;li&gt;르 아브르 여행&lt;/li&gt;
+&lt;li&gt;춘휘 졸업발표@프라이싱&lt;/li&gt;
+&lt;li&gt;신 졸업발표@인스부르크&lt;/li&gt;
+&lt;li&gt;중국 방문&lt;/li&gt;
+&lt;li&gt;thesis: wait for the clearance certificate&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2025-09-29-월요일&#34;&gt;2025. 09. 29 월요일&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;춘휘 디펜스 날. 오후 한 시에 시작한다. 나랑 춘휘는 아침에 카페에 들러 간단히 아침을 먹고 춘휘는 카페에서 나를 기다렸다. 나는 차를 빌려서 슈예얀과 춘휘를 차례대로 픽업했다. 춘휘는 대학에 내려주고, 나랑 슈예얀은 마실 것, 과자 등 장을 봤다. 로컬 맥주는 다행히, 그리고 예상대로 마트에서도 구할 수 있었다. 간단한 점심 거리도 같이 샀다. 다과 등은 대학에 내려서 세미나룸에 옮기고, 나는 차 반납 후 걸어서 대학으로 돌아왔다. 챠오링 등 뮌헨에서 공부하는 친구들도 디펜스 준비하는 데 도움을 줬다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk012/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk012/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xfires - VIIRS Active Fire data download&lt;/li&gt;
+&lt;li&gt;thesis: wait for the clearance certificate&lt;/li&gt;
+&lt;li&gt;프라이부르크&lt;/li&gt;
+&lt;li&gt;프라이싱&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Tried to plot a response curve of fire occurrence to distance to roads. Hard to extract an expected response pattern, maybe because the fire occurrence only shows &amp;ldquo;yes or no&amp;rdquo;. Thinking that it would be better with more information such as counts, tried to download VIIRS active fire dataset. As the trade-off, the spatial resolution of analyses will become coarser from 30 m to &amp;gt;=375 m, which wouldn&amp;rsquo;t matter.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>In Paris: Week 011 (러닝화)</title>
+      <link>http://localhost:1313/posts/20250921_paris_wk011/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:17 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250921_paris_wk011/</guid>
+      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xfires - visual inspect of road and burned area data&lt;/li&gt;
+&lt;li&gt;thesis: apply for the clearance certificate&lt;/li&gt;
+&lt;li&gt;러닝화 구경 및 구입&lt;/li&gt;
+&lt;li&gt;축구&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the CALIPSO-Fire meeting, I shared maps of roads and burned area. I got some comments such as 1) add road vs non-road in addition to burned vs. unburned, 2) to set hypotheses and create relevant plots, 3) to consider buffers around roads as people move, and 4) to consider other attributes like land cover type and population size. Chunhui also gave the same comment as 1).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>In Paris: Week 010 (르 아브르 여행)</title>
       <link>http://localhost:1313/posts/20250928_paris_wk010/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
+      <pubDate>Sun, 21 Sep 2025 21:59:16 +0200</pubDate>
       <guid>http://localhost:1313/posts/20250928_paris_wk010/</guid>
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
@@ -67,63 +114,16 @@
 &lt;p&gt;팔리주로 돌아가는 날이다. 돌아가는 길에 우리는 모찌에게 바다와 해변 구경을 시켜주고 싶었다. 르 아브르 해안은 바람이 세서? 사람이 많아서? 항구 같아서? 아무튼 적합한 것 같지가 않았고, 다른 곳에 가기로 했다. 르 아브르 건너편 해안마을 &lt;a href=&#34;https://maps.app.goo.gl/MskM15MohYhCCDLa9&#34;&gt;트로빌레&lt;/a&gt;(?)로 갔다.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>In Paris: Week 011 (러닝화)</title>
-      <link>http://localhost:1313/posts/20250921_paris_wk011/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250921_paris_wk011/</guid>
+      <title>In Paris: Week 009 (르 아브르 여행)</title>
+      <link>http://localhost:1313/posts/20250928_paris_wk009/</link>
+      <pubDate>Sun, 21 Sep 2025 21:59:15 +0200</pubDate>
+      <guid>http://localhost:1313/posts/20250928_paris_wk009/</guid>
       <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Xfires - visual inspect of road and burned area data&lt;/li&gt;
-&lt;li&gt;thesis: apply for the clearance certificate&lt;/li&gt;
-&lt;li&gt;러닝화 구경 및 구입&lt;/li&gt;
-&lt;li&gt;축구&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the CALIPSO-Fire meeting, I shared maps of roads and burned area. I got some comments such as 1) add road vs non-road in addition to burned vs. unburned, 2) to set hypotheses and create relevant plots, 3) to consider buffers around roads as people move, and 4) to consider other attributes like land cover type and population size. Chunhui also gave the same comment as 1).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
-      <link>http://localhost:1313/posts/20250928_paris_wk012/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20250928_paris_wk012/</guid>
-      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Xfires - VIIRS Active Fire data download&lt;/li&gt;
-&lt;li&gt;thesis: wait for the clearance certificate&lt;/li&gt;
-&lt;li&gt;프라이부르크&lt;/li&gt;
-&lt;li&gt;프라이싱&lt;/li&gt;
+&lt;li&gt;춘휘랑 모찌 공원 산책&lt;/li&gt;
+&lt;li&gt;르 아브르 여행&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Tried to plot a response curve of fire occurrence to distance to roads. Hard to extract an expected response pattern, maybe because the fire occurrence only shows &amp;ldquo;yes or no&amp;rdquo;. Thinking that it would be better with more information such as counts, tried to download VIIRS active fire dataset. As the trade-off, the spatial resolution of analyses will become coarser from 30 m to &amp;gt;=375 m, which wouldn&amp;rsquo;t matter.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>In Paris: Week 012 (프라이부르크, 프라이싱)</title>
-      <link>http://localhost:1313/posts/20251006_paris_wk013/</link>
-      <pubDate>Sun, 21 Sep 2025 21:59:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/20251006_paris_wk013/</guid>
-      <description>&lt;h2 id=&#34;이번-주는&#34;&gt;이번 주는&amp;hellip;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;춘휘 졸업발표@프라이싱&lt;/li&gt;
-&lt;li&gt;신 졸업발표@인스부르크&lt;/li&gt;
-&lt;li&gt;중국 방문&lt;/li&gt;
-&lt;li&gt;thesis: wait for the clearance certificate&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2025-09-29-월요일&#34;&gt;2025. 09. 29 월요일&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_001.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_007.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_009.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_011.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/posts/weekly_log_in_Paris/wk013/Paris_wk013_010.jpg&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;춘휘 디펜스 날. 오후 한 시에 시작한다. 나랑 춘휘는 아침에 카페에 들러 간단히 아침을 먹고 춘휘는 카페에서 나를 기다렸다. 나는 차를 빌려서 슈예얀과 춘휘를 차례대로 픽업했다. 춘휘는 대학에 내려주고, 나랑 슈예얀은 마실 것, 과자 등 장을 봤다. 로컬 맥주는 다행히, 그리고 예상대로 마트에서도 구할 수 있었다. 간단한 점심 거리도 같이 샀다. 다과 등은 대학에 내려서 세미나룸에 옮기고, 나는 차 반납 후 걸어서 대학으로 돌아왔다. 챠오링 등 뮌헨에서 공부하는 친구들도 디펜스 준비하는 데 도움을 줬다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Paris: Week 008 (춘휘@Palaiseau, 파리, 짜오휘 초대)</title>

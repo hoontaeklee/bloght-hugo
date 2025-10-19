@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>In Jena: Week 3 | Bloght</title>
 <meta name="keywords" content="2020, Daily Life, Jena">
 <meta name="description" content="이번 주는&hellip;
@@ -32,16 +32,16 @@ ex2) ggplot: 각 그룹별로 ggplot 생성 후 저장 (ggplot도 list이므로 
 
 Package 만들기">
 <meta name="author" content="Hoontaek Lee">
-<link rel="canonical" href="http://localhost:1313/posts/20200920_jena_wk3/">
+<link rel="canonical" href="https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://bloght-hugo.pages.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bloght-hugo.pages.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bloght-hugo.pages.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bloght-hugo.pages.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bloght-hugo.pages.dev/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200920_jena_wk3/">
+<link rel="alternate" hreflang="en" href="https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/">
 <noscript>
     <style>
         #theme-toggle,
@@ -78,7 +78,104 @@ Package 만들기">
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/">
+  <meta property="og:site_name" content="Bloght">
+  <meta property="og:title" content="In Jena: Week 3">
+  <meta property="og:description" content="이번 주는… 수업: Advanced R &amp; Terrestrial Biosphere Part 2 German course 레벨 테스트 Panda Panda Asia Shop 구경 2020. 09. 14-16. 월-수요일 : Advanced R Advanced R course.
+Tidyverse, Package 만들기, Debuging, benchmarking &amp; profiling, ggplot2 등을 배웠다.
+map(), nest() functions
+map()은 apply() 계열과 하는 일이 비슷하지만, ~ , .x 등 축약 표현이 있어서 익히면 좋을 것 같다. nest()를 사용하면 dplyr에서 group_by()를 한 후 각 그룹을 한 원소에 넣을 수 있다(list를 list의 원소로 넣는 것처럼). 이를 이용하면 복잡한 코드를 간결하게 만들 수 있다. ex1) 그룹별로 분석하는 코드: 각 variable 별로 어떤 x1과의 linear regression 수행 후 R2 추출 등 ex2) ggplot: 각 그룹별로 ggplot 생성 후 저장 (ggplot도 list이므로 각 원소에 저장할 수 있다). Package 만들기">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-09-20T14:04:33+02:00">
+    <meta property="article:modified_time" content="2020-09-21T10:56:53+02:00">
+    <meta property="article:tag" content="2020">
+    <meta property="article:tag" content="Daily Life">
+    <meta property="article:tag" content="Jena">
+    <meta property="og:image" content="https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/posts/meta/Jena_wk3%20%283%29.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/posts/meta/Jena_wk3%20%283%29.jpg">
+<meta name="twitter:title" content="In Jena: Week 3">
+<meta name="twitter:description" content="이번 주는&hellip;
+
+수업: Advanced R &amp; Terrestrial Biosphere Part 2
+German course 레벨 테스트
+Panda Panda Asia Shop 구경
+
+2020. 09. 14-16. 월-수요일 : Advanced R
+Advanced R course.
+Tidyverse, Package 만들기, Debuging, benchmarking &amp; profiling, ggplot2 등을 배웠다.
+
+
+map(), nest() functions
+
+map()은 apply() 계열과 하는 일이 비슷하지만, ~ , .x 등 축약 표현이 있어서 익히면 좋을 것 같다.
+nest()를 사용하면 dplyr에서 group_by()를 한 후 각 그룹을 한 원소에 넣을 수 있다(list를 list의 원소로 넣는 것처럼). 이를 이용하면 복잡한 코드를 간결하게 만들 수 있다.
+
+ex1) 그룹별로 분석하는 코드: 각 variable 별로 어떤 x1과의 linear regression 수행 후 R2 추출 등
+ex2) ggplot: 각 그룹별로 ggplot 생성 후 저장 (ggplot도 list이므로 각 원소에 저장할 수 있다).
+
+
+
+
+
+Package 만들기">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://bloght-hugo.pages.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "In Jena: Week 3",
+      "item": "https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "In Jena: Week 3",
+  "name": "In Jena: Week 3",
+  "description": "이번 주는\u0026hellip; 수업: Advanced R \u0026amp; Terrestrial Biosphere Part 2 German course 레벨 테스트 Panda Panda Asia Shop 구경 2020. 09. 14-16. 월-수요일 : Advanced R Advanced R course.\nTidyverse, Package 만들기, Debuging, benchmarking \u0026amp; profiling, ggplot2 등을 배웠다.\nmap(), nest() functions\nmap()은 apply() 계열과 하는 일이 비슷하지만, ~ , .x 등 축약 표현이 있어서 익히면 좋을 것 같다. nest()를 사용하면 dplyr에서 group_by()를 한 후 각 그룹을 한 원소에 넣을 수 있다(list를 list의 원소로 넣는 것처럼). 이를 이용하면 복잡한 코드를 간결하게 만들 수 있다. ex1) 그룹별로 분석하는 코드: 각 variable 별로 어떤 x1과의 linear regression 수행 후 R2 추출 등 ex2) ggplot: 각 그룹별로 ggplot 생성 후 저장 (ggplot도 list이므로 각 원소에 저장할 수 있다). Package 만들기\n",
+  "keywords": [
+     2020 , "Daily Life", "Jena"
+  ],
+  "articleBody": "이번 주는… 수업: Advanced R \u0026 Terrestrial Biosphere Part 2 German course 레벨 테스트 Panda Panda Asia Shop 구경 2020. 09. 14-16. 월-수요일 : Advanced R Advanced R course.\nTidyverse, Package 만들기, Debuging, benchmarking \u0026 profiling, ggplot2 등을 배웠다.\nmap(), nest() functions\nmap()은 apply() 계열과 하는 일이 비슷하지만, ~ , .x 등 축약 표현이 있어서 익히면 좋을 것 같다. nest()를 사용하면 dplyr에서 group_by()를 한 후 각 그룹을 한 원소에 넣을 수 있다(list를 list의 원소로 넣는 것처럼). 이를 이용하면 복잡한 코드를 간결하게 만들 수 있다. ex1) 그룹별로 분석하는 코드: 각 variable 별로 어떤 x1과의 linear regression 수행 후 R2 추출 등 ex2) ggplot: 각 그룹별로 ggplot 생성 후 저장 (ggplot도 list이므로 각 원소에 저장할 수 있다). Package 만들기\n과학원에 있을 때 한 번 어려움을 겪어서 배워두고 싶었다. 완전히 배운 건 아니지만, roxygen2() 패키지를 한 번 사용해봤다는 점에 의의를 둘 수 있겠다. 더 연습 필요. benchmarking \u0026 profiling\nbenchmarking은 두 함수(코드) 간 수행 시간을 비교하는 것이다.\nrbenchmark::benchmark(func1(), func2()) 와 같이 실행한다. profiling은 한 함수(코드) 내 부분별로 수행 시간을 구한다. 어디서 시간을 많이 잡아먹는지 파악이 가능하다.\nprofvis::profvis({ 코드 }) 와 같이 실행한다.\nfor 구문이나 memory allocation (c, cbind(), rbind() 등)에서 시간을 잡아먹는 경우가 많다.\n2020. 09. 17. 목요일 : Terrestrial \u0026 Biosphere Part 2 Henrik Hartmann의 수업이다(근육질 선생님). 수목생리학 시간이랑 비슷했다.\n광합성, 호흡, 물 순환, .. 등 이론 수업 후 오후 2시 반부터 두 시간 정도 실습했다.\n여기는 실내 수업 때는 환기를 위해서 에어컨을 튼다. **이 날은 스테파니가 실수로 에어컨 온도를 22도가 아닌 12도로 맞췄다. **\n정말 추웠다.\n온실 오랜만의 광합성 측정 using 라이코 오랜만의 동위원소 측정 using 피카로 모두가 의문이었던 그래프 Sap flow 측정 중 Diurnal change in stem diameter 마루타 체리트리. 실습 중에는 오랜만의 기기들을 만났다.\nLi-6800로 광조건을 1500–\u003e0으로 바꿀 때 Anet 줄어드는 속도가 해바라기랑 헤이즐넛 사이에 차이가 어떤지 살펴보려 했다. 해바라기를 실험했을 때 Anet이 항상 곧바로 쭉 감소했다가 다시 증가하고 안정화되는 모습을 보였다. 모두들 왜 그런가 싶었던 반응. 나는 일단 Licor 기계가 stable state를 찾는 과정이라고 생각했다. CO2를 변화시킬 때도 목표 값을 지나갔다가 다시 돌아오곤 한다.\nSap flow 측정은 서울대 연구실 때처럼 수작업한 게 아닌 우리가 비싸서 사지 못 했던 비싼 제품을(개당 약 2000 유로) 쓰고 있었다(수작업은 개당 약 5유로). 당장 발견했던 장점은 1) 설치가 쉽고, 2) 한 센서로 두 가지 깊이를 동시에 측정하고, 3) 다시 뺐다가 꽂을 수 있다(!)는 것. 태화산에 이거 300개만 깔았어도…\nStem diameter 역시 자동 측정되고 있었다. 얼만지는 모르지만, 마이크로미터 단위로(!) diurnal change까지(!) 기록이 된다. 가뭄일 때는 diurnal change의 amplitude가 커지기 때문에 drought index 역할도 어느 정도 할 수 있다. 태화산에 이거 300개만 깔았어도…\n2020. 09. 18. 금요일 : German course Beutenberg Campus는 일종의 연구단지다. 내가 있는 MPI-bgc뿐만 아니라 MPI-ce, 예나 대학교 연구시설, 라이프치히 연구 그룹 등… 이 모여있다.\n이들을 위한 German course가 있나보다. 등록 ㄱㄱ\n레벨 테스트를 봤다.\n과거시제 등.. 내가 안 배운 것도 있지만 배웠던 건데 기억 안 나는 것도 아주 많았다. 영상만 보고 연습 안 한 결과.\nAdvanced beginner course (A1.3) 추천 받았다. 완전 beginner 보다는 잘 하지만 저 코스 수강생보다는 부족할 테니 공부하면서 들어야 할 거라 하셨다. 그럴 시간이 있을까 ㅋㅋ 독일어는 살짝 뒷전으로 밀려있다. 연구가 더 중요해.\n연구소에서 A1.1, A1.2는 지원 안 해주고, A1.3 부터는 전액 지원해준다고 한다. 영상을 보기만이라도 한 결과.\n2020. 09. 19. Panda Panda Asia Shop Panda Panda. 예나 유일의(?) 아시안 마켓이다. 생각보다 파는 게 많아서 침이 고였다.\n전경 짜파게티도 있고 감자면도 있다 . 컵라면, 불닭볶음면 당면, 잔치국수, … 생생우동 양념. 고추장, 참기름, 맛술(!), 매실청(!), … 쌀 소주, 모구모구 복숭아맛, … 종갓집 김치 3시 15분 밀크티 고춧가루(!) 뚝배기(!) 독일 오기 직전 엄마한테 요리 배울 때 “거기서 매실청을 어떻게 구하냐\"는 말을 했었는데… 판다판다에서 구할 수 있다.\n친구가 독일에 없다던 고춧가루고 있었고(맛은 모르겠다),\n심지어 뚝배기(!)도 판다(제품명도 Kumkang Meckbansuck Ddukbaegi = 금강 맥반석 뚝배기다).\n다 팔아서 판다 판다인가…\n이 외에는 알아볼 수 없는 중국\u0026일본\u0026태국 음식 대다수.\n그 외… N26 카드가 도착했다. 이제 돈만 들어오면 된다(…)\n지나가다 발견한 Crossfit gym.\n다음 주는… German course 시작 SINDBAD 개발 작업 참관(?) with Sujan, Nuno, and Tina CARDAMOM + DALEC2를 CARDAMOM + SINDBAD로 바꿔서 Global-scale application 가능한지 조사 or CARDAMOM + DALEC2 + SINDBAD? ",
+  "wordCount" : "649",
+  "inLanguage": "en",
+  "image":"https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/posts/meta/Jena_wk3%20%283%29.jpg","datePublished": "2020-09-20T14:04:33+02:00",
+  "dateModified": "2020-09-21T10:56:53+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Hoontaek Lee"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bloght-hugo.pages.dev/posts/20200920_jena_wk3/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloght",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bloght-hugo.pages.dev/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -96,7 +193,7 @@ Package 만들기">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
+            <a href="https://bloght-hugo.pages.dev/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -122,12 +219,12 @@ Package 만들기">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/search/" title="Search">
+                <a href="https://bloght-hugo.pages.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://bloght-hugo.pages.dev/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -147,7 +244,7 @@ Package 만들기">
 </div>
   </header> 
 <figure class="entry-cover">
-        <img loading="eager" src="http://localhost:1313/posts/meta/Jena_wk3%20%283%29.jpg" alt="">
+        <img loading="eager" src="https://bloght-hugo.pages.dev/posts/meta/Jena_wk3%20%283%29.jpg" alt="">
         
 </figure>
   <div class="post-content"><h2 id="이번-주는">이번 주는&hellip;<a hidden class="anchor" aria-hidden="true" href="#이번-주는">#</a></h2>
@@ -364,16 +461,16 @@ Package 만들기">
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
-      <li><a href="http://localhost:1313/tags/daily-life/">Daily Life</a></li>
-      <li><a href="http://localhost:1313/tags/jena/">Jena</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/2020/">2020</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/daily-life/">Daily Life</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/jena/">Jena</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
+        <span>&copy; 2025 <a href="https://bloght-hugo.pages.dev/">Bloght</a></span> · 
 
     <span>
         Powered by

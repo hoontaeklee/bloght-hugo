@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>How to switch to another Hugo theme (Hugo 테마 변경하기) | Bloght</title>
 <meta name="keywords" content="Hugo, Blog, 2020">
 <meta name="description" content="Intro
@@ -14,16 +14,16 @@ Zzo 테마는 예쁘고, 기능도 있을 것 다 있고(맨 위로 가는 버�
 Plan
 처음에는 Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. 삽질한 게 얼만데.">
 <meta name="author" content="Hoontaek Lee">
-<link rel="canonical" href="http://localhost:1313/posts/20200215_switch_theme/">
+<link rel="canonical" href="https://bloght-hugo.pages.dev/posts/20200215_switch_theme/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://bloght-hugo.pages.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bloght-hugo.pages.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bloght-hugo.pages.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bloght-hugo.pages.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bloght-hugo.pages.dev/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200215_switch_theme/">
+<link rel="alternate" hreflang="en" href="https://bloght-hugo.pages.dev/posts/20200215_switch_theme/">
 <noscript>
     <style>
         #theme-toggle,
@@ -60,7 +60,84 @@ Plan
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://bloght-hugo.pages.dev/posts/20200215_switch_theme/">
+  <meta property="og:site_name" content="Bloght">
+  <meta property="og:title" content="How to switch to another Hugo theme (Hugo 테마 변경하기)">
+  <meta property="og:description" content="Intro Hugo theme 목록에 마음에 드는 테마가 올라왔다. 기존에 사용하던 Cupper 테마에서 Zzo 테마로 바꾸기로 했다. 이유는 굳이 따지지 않는다. 그냥 바꾸고 싶은 거다.
+Zzo 테마는 예쁘고, 기능도 있을 것 다 있고(맨 위로 가는 버튼, 이전/다음 게시글 이동 버튼 등), 없을 기능도 있고(Resume page, publication page, …), 메뉴얼도 잘 돼있다.
+어떻게 바꿔야 할까.
+Plan 처음에는 Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. 삽질한 게 얼만데.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-02-15T15:09:56+09:00">
+    <meta property="article:modified_time" content="2020-02-15T15:09:56+09:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="2020">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to switch to another Hugo theme (Hugo 테마 변경하기)">
+<meta name="twitter:description" content="Intro
+Hugo theme 목록에 마음에 드는 테마가 올라왔다. 기존에 사용하던 Cupper 테마에서 Zzo 테마로 바꾸기로 했다. 이유는 굳이 따지지 않는다. 그냥 바꾸고 싶은 거다.
+Zzo 테마는 예쁘고, 기능도 있을 것 다 있고(맨 위로 가는 버튼, 이전/다음 게시글 이동 버튼 등), 없을 기능도 있고(Resume page, publication page, &hellip;), 메뉴얼도 잘 돼있다.
+어떻게 바꿔야 할까.
+Plan
+처음에는 Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. 삽질한 게 얼만데.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://bloght-hugo.pages.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "How to switch to another Hugo theme (Hugo 테마 변경하기)",
+      "item": "https://bloght-hugo.pages.dev/posts/20200215_switch_theme/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to switch to another Hugo theme (Hugo 테마 변경하기)",
+  "name": "How to switch to another Hugo theme (Hugo 테마 변경하기)",
+  "description": "Intro Hugo theme 목록에 마음에 드는 테마가 올라왔다. 기존에 사용하던 Cupper 테마에서 Zzo 테마로 바꾸기로 했다. 이유는 굳이 따지지 않는다. 그냥 바꾸고 싶은 거다.\nZzo 테마는 예쁘고, 기능도 있을 것 다 있고(맨 위로 가는 버튼, 이전/다음 게시글 이동 버튼 등), 없을 기능도 있고(Resume page, publication page, \u0026hellip;), 메뉴얼도 잘 돼있다.\n어떻게 바꿔야 할까.\nPlan 처음에는 Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. 삽질한 게 얼만데.\n",
+  "keywords": [
+    "Hugo", "Blog",  2020 
+  ],
+  "articleBody": "Intro Hugo theme 목록에 마음에 드는 테마가 올라왔다. 기존에 사용하던 Cupper 테마에서 Zzo 테마로 바꾸기로 했다. 이유는 굳이 따지지 않는다. 그냥 바꾸고 싶은 거다.\nZzo 테마는 예쁘고, 기능도 있을 것 다 있고(맨 위로 가는 버튼, 이전/다음 게시글 이동 버튼 등), 없을 기능도 있고(Resume page, publication page, …), 메뉴얼도 잘 돼있다.\n어떻게 바꿔야 할까.\nPlan 처음에는 Cupper와 zzo 모두 설치해놓고 언제든 이 테마에서 저 테마로 스위치 누르듯 옮길 수 있으면 좋겠다고 생각했다. 내가 쓰고 있는 Cupper는 오리지널 버전을 조금 수정한 것이기 때문이다. 삽질한 게 얼만데.\n현재 내 테마 폴더 구조는… Cupper 오리지널 버전을 /themes/Cupper-hugo-theme에 submodule로 저장해놓고 테마 구조를 root에 복사하여 overriding(같은 이름이면 root에 있는 코드가 우선 적용되는 것)해 사용하고 있는 상태다. 처음 구상했던 방법으로는 themes안에 있는 것은 여러 테마를 보전할 수 있다 쳐도, root에 overriding해놓은 것은 어떻게 살릴지 감이 안 왔다. Hugo에 물어봤다.\n결국, 기존 테마를 지우고 새로 테마를 설치하기로 했다. 운 좋게도 **zzo님이 직접 답변**을 해주셨다. 요약하면, 1) 내 상상은 상상에 불과했고, 2) 테마는 하나만 설치하는 게 좋다(테마마다 세부 구조가 서로 다르기 때문에 서로 충돌할 수 있음), 3) 내가 상상한 여러 테마를 왔다갔다하는 방법은 어떻게든 실현 가능하겠지만 에러 날 확률이 높다는 내용이었다. 깔끔하게 새로 테마 하나를 깔기로 했다.\n메뉴얼 읽기 : 설명서를 읽으면 어떻게 할지, 어떤 문제가 생길 수 있을지 감이 좀 오겠지.\n컨텐츠 백업 : 가장 중요하다. 컨텐츠만 있으면 블로그 하나 다시 만들어서라도 복구가 가능하다. 나는 블로그 폴더를 Dropbox에 저장해놓으니 백업 문제는 자동으로 해결된 듯하다.\n테마 삭제 : 깔끔하게 지우는 방법이 따로 있을까 찾아봤더니 잘 안 나온다. 내 로컬 블로그 폴더에서만 지우기로 했다.\n테마 설치 : 기존에 썼던 글의 테마 적용 부분부터 따라해보려 한다. 블로그 만들 때와 다른 점(내 로컬 폴더는 이미 git init 된 상태, hoontaeklee.github.io 저장소는 이미 submodule로 추가된 상태 등)이 있다는 걸 고려하며 참고한다.\nAction 메뉴얼 읽기 : 메뉴얼은 설치(Getting Started), 페이지 관련 세팅(Pages), 기타 세팅(Configuration), Shortcodes, Customization, External Libraries로 구성된다. 그렇게 길지 않고 필요한 부분을 쉽게 찾을 수 있게 돼 있다.\n컨텐츠 백업 : Dropbox\n테마 삭제 :\nCupper와 zzo 공통으로 일곱 개 폴더를 가지고 있다(archetypes, assets, data, exampleSite, images, layouts, static).\nzzo는 i18n 폴더(언어 설정 관련?)를 추가로 가지고 있다.\n테마 설치 :\n테마 다운로드\nHugo 메뉴얼에도, 테마 메뉴얼에도 같은 코드를 알려준다.\ngit submodule add https://github.com/zzossig/hugo-theme-zzo.git themes/zzo 위 코드를 Git bash나 cmd를 이용해 블로그 폴더에서 실행한다.\n폴더 구조 수정\n테마를 다운받으면, themes/zzo 와 exampleSite 폴더를 root로 복사한다. Overriding하는 것인데, 원래의 테마 코드를 건들지 않고 내 입맛에 맞게 테마를 수정할 수 있다.\n주의할 것은, 내 질문에 zzo님이 답변한 것처럼 테마 구조가 조금씩 다르다. 예를 들어 Cupper 테마는 post폴더지만, zzo는 posts 폴더다. 그리고 post 폴더 구조도 Cupper는 바로 게시글이나 그림이 들어가는 반면, zzo는 다중 언어 사용을 지원하기 때문에 en, ko 언어별 폴더가 있고 각 폴더 안에 게시글 관련 파일이 담겨있다. 그리고 Cupper는 config.toml만 덩그러니 있는 반면, zzo는 config 폴더가 따로 있어서 이 안에 config.toml 파일이 들어있다.\n이런 다른 점까지 모두 똑같이 맞춰줘야 오류가 없다.\n기타 수정할 것들\ndeploy.sh 파일(포스팅 자동화한 배쉬 파일) 안에서 사용할 테마 이름을 zzo로 바꿔준다.\nfront matter : 이거야말로 테마마다 가지각색이다.\n반영하기\n맨 처음 블로그 만들 때 했던 것처럼 deploy.sh 내용을 한 번 단계별로 실행하면서 문제가 없는지 살펴본다.\n# site build\rhugo -t zzo\r# username.github.io 업데이트\rcd public\rgit add .\rgit commit -m \"commit message\"\rgit push origin master\r# anyblogname 업데이트\rgit ..\rgit add .\rgit commit -m \"commit message\"\rgit push !!!!!!!!!!!!!!!!!\norigin mastersite build 후에는 몇분 기다려야 한다(게시글이 많을 수록 더 오래 걸린다). 누구처럼 404 Not Found 에러보고 이것저것 삽질하지 말자.\n에러 메세지 : TOCSS: failed to transform ~~ 해결 : hugo extended version을 설치한다. 방법은 여기. 재부팅 필요 Close 어찌어찌 뼈대는 완성됐다. 이쁘군.\n관건은 테마 구조 똑같이 맞춰주기였다.\n검색엔진노출 설정, Google Analytics 설정만 아니었으면 블로그 하나 다시 만드는 게 나을지도 모르겠다(별 거 아니라 생각되면 그냥 저 두 개도 새로 해도 되겠다).\n",
+  "wordCount" : "604",
+  "inLanguage": "en",
+  "datePublished": "2020-02-15T15:09:56+09:00",
+  "dateModified": "2020-02-15T15:09:56+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "Hoontaek Lee"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bloght-hugo.pages.dev/posts/20200215_switch_theme/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloght",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bloght-hugo.pages.dev/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -78,7 +155,7 @@ Plan
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
+            <a href="https://bloght-hugo.pages.dev/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -104,12 +181,12 @@ Plan
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/search/" title="Search">
+                <a href="https://bloght-hugo.pages.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://bloght-hugo.pages.dev/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -240,16 +317,16 @@ git push
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/tags/blog/">Blog</a></li>
-      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/hugo/">Hugo</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/blog/">Blog</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/2020/">2020</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
+        <span>&copy; 2025 <a href="https://bloght-hugo.pages.dev/">Bloght</a></span> · 
 
     <span>
         Powered by

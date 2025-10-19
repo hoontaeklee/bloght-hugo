@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Hugo 블로그 댓글 기능 추가: utterances | Bloght</title>
 <meta name="keywords" content="Hugo, GitHub, Blog, Customizing, 2020">
 <meta name="description" content="서론
@@ -22,16 +22,16 @@ Theme은 내 블로그가 밝으니 Github Light를 선택했다.
 Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.
 각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.">
 <meta name="author" content="Hoontaek Lee">
-<link rel="canonical" href="http://localhost:1313/posts/20200101_add_utterances/">
+<link rel="canonical" href="https://bloght-hugo.pages.dev/posts/20200101_add_utterances/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://bloght-hugo.pages.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bloght-hugo.pages.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bloght-hugo.pages.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bloght-hugo.pages.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bloght-hugo.pages.dev/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/20200101_add_utterances/">
+<link rel="alternate" hreflang="en" href="https://bloght-hugo.pages.dev/posts/20200101_add_utterances/">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,7 +68,98 @@ Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하�
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://bloght-hugo.pages.dev/posts/20200101_add_utterances/">
+  <meta property="og:site_name" content="Bloght">
+  <meta property="og:title" content="Hugo 블로그 댓글 기능 추가: utterances">
+  <meta property="og:description" content="서론 댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.
+이 글에는 utterrances 소개는 관두고… 설치 관련 내용만 적었다.
+utterances 설치 1. utterances 사이트 접속 여기로 이동해서 configuration 부분을 따라한다.
+2. Public 저장소 생성 나는 bloght-comments 라고 만들었다.
+3. Blog Post ↔️ Issue Mapping, Theme 선택 Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),
+Theme은 내 블로그가 밝으니 Github Light를 선택했다.
+4. Enable Utterances Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-01-01T15:37:00+09:00">
+    <meta property="article:modified_time" content="2020-01-01T15:54:00+09:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Customizing">
+    <meta property="article:tag" content="2020">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hugo 블로그 댓글 기능 추가: utterances">
+<meta name="twitter:description" content="서론
+댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.
+이 글에는 utterrances 소개는 관두고&hellip; 설치 관련 내용만 적었다.
+utterances 설치
+1. utterances 사이트 접속
+여기로 이동해서 configuration 부분을 따라한다.
+2. Public 저장소 생성
+나는 bloght-comments 라고 만들었다.
+3. Blog Post ↔️ Issue Mapping, Theme 선택
+Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),
+Theme은 내 블로그가 밝으니 Github Light를 선택했다.
+4. Enable Utterances
+Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.
+각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://bloght-hugo.pages.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hugo 블로그 댓글 기능 추가: utterances",
+      "item": "https://bloght-hugo.pages.dev/posts/20200101_add_utterances/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo 블로그 댓글 기능 추가: utterances",
+  "name": "Hugo 블로그 댓글 기능 추가: utterances",
+  "description": "서론 댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.\n이 글에는 utterrances 소개는 관두고\u0026hellip; 설치 관련 내용만 적었다.\nutterances 설치 1. utterances 사이트 접속 여기로 이동해서 configuration 부분을 따라한다.\n2. Public 저장소 생성 나는 bloght-comments 라고 만들었다.\n3. Blog Post ↔️ Issue Mapping, Theme 선택 Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),\nTheme은 내 블로그가 밝으니 Github Light를 선택했다.\n4. Enable Utterances Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.\n각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.\n",
+  "keywords": [
+    "Hugo", "GitHub", "Blog", "Customizing",  2020 
+  ],
+  "articleBody": "서론 댓글 기능이 꼭 필요할 것 같지는 않지만, 좋은 레퍼런스를 찾았기 때문에 일단 시도했다.\n이 글에는 utterrances 소개는 관두고… 설치 관련 내용만 적었다.\nutterances 설치 1. utterances 사이트 접속 여기로 이동해서 configuration 부분을 따라한다.\n2. Public 저장소 생성 나는 bloght-comments 라고 만들었다.\n3. Blog Post ↔️ Issue Mapping, Theme 선택 Blog Post ↔️ Issue Mapping은 세 번째 옵션을(Title 기준 매칭),\nTheme은 내 블로그가 밝으니 Github Light를 선택했다.\n4. Enable Utterances Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하는 부분에 붙여넣으라고 한다.\n각 게시글 맨 아래에 댓글 부분이 나타나게 하려면 어디에 그 코드를 붙여 넣어야 할까. 나는 Hugo가 어떻게 작동하는지 잘 모르니까 hugo server로 로컬 사이트를 켠 상태에서 원하는 위치를 찾아보겠다. 지난번 테마 커스텀할 때 각 게시글 맨아래는 footer.html에 담겨있었던 것 같으니 거기부터 시도.\n{{ with .Site.Params.footer }}\r{{ . | markdownify }}\r{{ end }}\r위와 같은 footer.html을 아래와 같이 바꿨다:\n{{ with .Site.Params.footer }}\r{{ . | markdownify }}\r{{ end }}\r원하는 결과가 나왔다:\n한 가지 문제가 있다. 원래 Cupper 테마는 댓글 플러그인으로 Disqus 사용을 전제로 만들어진 것 같다. 위 그림의 Show comments 버튼을 누르면 “Disqus comments are disabled.“라는 메시지가 뜬다. 두 가지 안이 있다.\n저 버튼을 살리면서 Disqus를 utterances로 교체: 버튼 디자인이 테마와 잘 어울린다 저 버튼과 Disqus를 한 번에 제거 버튼이 이쁘니 1안을 시도해보자.\nDisqus를 utterances로 대체 각 게시글의 레이아웃 정보는 post/single.html에 담겨있다. 역시 테마 커스터마이징 때 삽질했던 게 도움이 된다(ㅜㅜ).\nsingle.html을 보면 맨 아랫줄에\n{{ partial \"disqus.html\" . }}\r{{ end }} 위와 같이 partial에 있는 disqus.html을 불러오도록 돼 있다. disqus.html을 확인해보자.\n{{ with .Site.DisqusShortname }}\rShow comments\r{{ $isDummyName := eq . \"yourdiscussshortname\" }}\r{{ $isServer := $.Site.IsServer }}\r{{ if or $isDummyName $isServer }}\rDisqus comments are disabled.\n{{ else }}\r{{ end }}\rEnable JavaScript to view Disqus comments.\r{{ end }}\rdisqus.html을 보면… 첫 부분에 Show comments와 같이 내가 보전하려 했던 버튼을 생성하는 듯한 코드가 보인다. 클릭하면 showComments()라는 함수가 작동하는 것 같다.\n다음으로 if 조건문이 등장하는데, disqus가 off일 경우, on일 경우가 순서대로 적혀있다. 현재 나는 disqus를 설치하지 않았고, 버튼을 클릭하면 disqus 없다는 메시지가 나타난다. on일 경우는 어찌됐든 상관 없으니 지우고, if문 형식도 지우고, off인 경우 실행되는 코드만 살린다. 이 부분에서 메시지를 띄우는 듯한 Disqus comments are disabled.\n을 지우고 utterances 사이트에서 복사했던 코드를 붙여 넣자. 그럼 아래와 같이 남는다.\n{{ with .Site.DisqusShortname }}\rShow comments\r{{ $isDummyName := eq . \"yourdiscussshortname\" }}\r{{ $isServer := $.Site.IsServer }}\rEnable JavaScript to view Disqus comments.\r{{ end }}\r웹페이지를 보면\n잘 나왔다. Show comments 버튼을 클릭하면 위 그림과 같이 나온다.\n다만, Dark 모드로 바꾸면 같이 어둡게 변하면 좋겠는데 계속 밝게 남아있어서 거슬린다. 일단은 여기까지.\nReference Hugo로 Github.io 블로그 만들기 ",
+  "wordCount" : "520",
+  "inLanguage": "en",
+  "datePublished": "2020-01-01T15:37:00+09:00",
+  "dateModified": "2020-01-01T15:54:00+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "Hoontaek Lee"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bloght-hugo.pages.dev/posts/20200101_add_utterances/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloght",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bloght-hugo.pages.dev/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -86,7 +177,7 @@ Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하�
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
+            <a href="https://bloght-hugo.pages.dev/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -112,12 +203,12 @@ Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하�
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/search/" title="Search">
+                <a href="https://bloght-hugo.pages.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://bloght-hugo.pages.dev/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -248,18 +339,18 @@ Enable Utterances 부분에 있는 코드를 내 블로그 템플릿 중 원하�
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/tags/github/">GitHub</a></li>
-      <li><a href="http://localhost:1313/tags/blog/">Blog</a></li>
-      <li><a href="http://localhost:1313/tags/customizing/">Customizing</a></li>
-      <li><a href="http://localhost:1313/tags/2020/">2020</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/hugo/">Hugo</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/github/">GitHub</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/blog/">Blog</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/customizing/">Customizing</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/2020/">2020</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Bloght</a></span> · 
+        <span>&copy; 2025 <a href="https://bloght-hugo.pages.dev/">Bloght</a></span> · 
 
     <span>
         Powered by

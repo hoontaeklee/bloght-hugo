@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20250928_paris_wk009.md",
+                "file": "20251019_reconstruct_blog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20250928_paris_wk009"
+              "title": "20251019_reconstruct_blog"
             }
           }
         ]
@@ -171,24 +171,32 @@
   },
   "active": "e98a6c4ac778d4d2",
   "lastOpenFiles": [
-    "weekly_log_in_Paris/wk013/Paris_wk013_021.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_020.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_019.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_018.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_017.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_016.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_015.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_014.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_013.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_012.jpg",
-    "weekly_log_in_Paris/wk013/Paris_wk013_011.jpg",
+    "reconstruct_blog/blog_hide_old_domain_3.png",
+    "reconstruct_blog/html_render.png",
+    "reconstruct_blog/blog_hide_old_domain_2.png",
+    "reconstruct_blog/blog_hide_old_domain_1.png",
+    "reconstruct_blog",
+    "20251018_paris_wk015.md",
+    "20250928_paris_wk012.md",
+    "20250928_paris_wk010.md",
+    "20251006_paris_wk013.md",
+    "20251018_paris_wk014.md",
+    "20251019_reconstruct_blog.md",
+    "weekly_log_in_Paris/wk014/Paris_wk014_106.jpg",
+    "weekly_log_in_Paris/wk014/Paris_wk014_105.jpg",
+    "weekly_log_in_Paris/wk014/Paris_wk014_104.jpg",
+    "weekly_log_in_Paris/wk014/Paris_wk014_103.jpg",
+    "weekly_log_in_Paris/wk014/Paris_wk014_102.jpg",
+    "weekly_log_in_Paris/wk014/Paris_wk014_101.jpg",
+    "weekly_log_in_Paris/wk014/Paris_wk014_100.jpg",
+    "weekly_log_in_Paris/wk014",
+    "weekly_log_in_Paris/wk015",
+    "20250928_paris_wk009.md",
     "weekly_log_in_Paris/wk013",
     "weekly_log_in_Paris/wk012",
     "weekly_log_in_Paris/wk010",
     "weekly_log_in_Paris/wk009",
     "20250913_paris_wk009.md",
-    "20250928_paris_wk009.md",
-    "20250928_paris_wk010.md",
     "20250913_paris_wk010.md",
     "20250913_paris_wk008.md",
     "20250921_paris_wk011.md",
@@ -206,16 +214,8 @@
     "Untitled 1.base",
     "Untitled.base",
     "20241020_jena_wk215.md",
-    "weekly_log_in_Paris/wk008",
-    "weekly_log_in_Paris/wk007",
-    "weekly_log_in_Paris/wk006",
     "20250628_jena_wk250.md",
     "20250616_jena_wk249.md",
-    "20250712_jena_wk251.md",
-    "20250727_paris_wk004 (ossla's conflicted copy 2025-08-04).md",
-    "20250616_jena_wk248.md",
-    "20250601_jena_wk247.md",
-    "20250525_jena_wk246.md",
-    "20250504_jena_wk243.md"
+    "20250712_jena_wk251.md"
   ]
 }

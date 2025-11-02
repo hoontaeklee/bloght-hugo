@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20251026_paris_wk016.md",
+                "file": "20251102_paris_wk017.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20251026_paris_wk016"
+              "title": "20251102_paris_wk017"
             }
           }
         ]
@@ -171,26 +171,28 @@
   },
   "active": "e98a6c4ac778d4d2",
   "lastOpenFiles": [
-    "weekly_log_in_Paris/wk016/Paris_wk016_012.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_011.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_010.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_009.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_008.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_007.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_006.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_005.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_004.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_003.jpg",
-    "weekly_log_in_Paris/wk016/Paris_wk016_002.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_004.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_002.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_031.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_030.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_029.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_028.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_027.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_026.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_025.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_024.jpg",
+    "weekly_log_in_Paris/wk017/Paris_wk017_023.jpg",
+    "weekly_log_in_Paris/wk017",
+    "20251006_paris_wk013.md",
+    "20251102_paris_wk017.md",
+    "20251026_paris_wk016.md",
     "weekly_log_in_Paris/wk016",
     "20251018_paris_wk015.md",
-    "20251026_paris_wk016.md",
     "20251018_paris_wk014.md",
     "20251019_reconstruct_blog.md",
     "reconstruct_blog",
     "20250928_paris_wk012.md",
     "20250928_paris_wk010.md",
-    "20251006_paris_wk013.md",
     "weekly_log_in_Paris/wk014",
     "weekly_log_in_Paris/wk015",
     "20250928_paris_wk009.md",
@@ -213,9 +215,7 @@
     "20191229_blogging_with_hugo.md",
     "20191208_Dropbox-RStudio-Github연동.md",
     "weekly_log_in_Paris/wk011",
-    "Untitled 1.base",
     "20241020_jena_wk215.md",
-    "20250628_jena_wk250.md",
-    "20250616_jena_wk249.md"
+    "20250628_jena_wk250.md"
   ]
 }

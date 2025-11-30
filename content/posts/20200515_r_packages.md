@@ -467,7 +467,7 @@ override하지 않기.
 .onLoad <- function(libname, pkgname) {
 op <- options()
 op.devtools <- list(
-devtools.path = "~/R-dev",
+devtools.path = "`~/R-dev",
 devtools.install.args = "",
 devtools.name = "Your name goes here",
 devtools.desc.author = "First Last <first.last@example.com> [aut, cre]",
@@ -632,7 +632,7 @@ add(10, 1)
 }
 ```
 
-첫 번째 줄의 "%~~"는 roxygen2 생성한 파일이고 **수정하면 안 된다.** 보통 `add.Rd` 파일을 들여다 볼 일은 없을 것이다.
+첫 번째 줄의 "%~"는 roxygen2 생성한 파일이고 **수정하면 안 된다.** 보통 `add.Rd` 파일을 들여다 볼 일은 없을 것이다.
 [R extensions 메뉴얼](http://cran.r-project.org/doc/manuals/R-exts.html#Rd-format)에
 더 자세한 정보가 나와있다.
 

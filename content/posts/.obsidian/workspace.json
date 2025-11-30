@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20251123_paris_wk020.md",
+                "file": "20200927_jena_wk4.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "20251123_paris_wk020"
+              "title": "20200927_jena_wk4"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "~",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -171,50 +172,51 @@
   },
   "active": "e98a6c4ac778d4d2",
   "lastOpenFiles": [
-    "20251116_paris_wk019.md",
-    "20251123_paris_wk020.md",
+    "20200920_jena_wk3.md",
+    "20200927_jena_wk4.md",
+    "20200531_시원스쿨왕초보1.md",
+    "20200531_liveAcad.md",
+    "20200517_helloapple.md",
+    "20200516_ISLR.md",
+    "20200515_r_packages.md",
+    "20200506_속초출장.md",
+    "20200418_morningroutine.md",
+    "20200225_probprog.md",
+    "20200215_switch_theme.md",
+    "20200127_und_visit_day3.md",
+    "20200126_und_visit_prep.md",
+    "20200112_물리학강의.md",
+    "20200101_cupper_setting_datetime_for_posts.md",
+    "20191208_blogstart_platform.md",
+    "20170704_그리스인 조르바.md",
+    "20161200_철학자와 늑대.md",
+    "20160700_마스터 알고리즘.md",
+    "20140800_첫사랑.md",
+    "20231231_jena_wk173.md",
+    "20231225_jena_wk172.md",
+    "20230910_jena_wk157.md",
+    "20230908_jena_wk156.md",
+    "paper_review/p001_2016_bonan_ann_climate.md",
+    "20240421_jena_wk189.md",
+    "weekly_log_in_Paris/wk021/Paris_wk021_007.jpg",
+    "weekly_log_in_Paris/wk021/Paris_wk021_006.jpg",
+    "weekly_log_in_Paris/wk021/Paris_wk021_005.jpg",
+    "weekly_log_in_Paris/wk021/Paris_wk021_004.jpg",
+    "weekly_log_in_Paris/wk021/Paris_wk021_003.jpg",
+    "weekly_log_in_Paris/wk021/Paris_wk021_002.jpg",
+    "weekly_log_in_Paris/wk021/Paris_wk021_001.jpg",
+    "weekly_log_in_Paris/wk021",
     "weekly_log_in_Paris/wk020/Paris_wk020_013.jpg",
     "weekly_log_in_Paris/wk019/Paris_wk019_101.jpg",
     "weekly_log_in_Paris/wk020/Paris_wk020_012.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_011.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_010.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_009.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_008.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_007.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_006.jpg",
-    "weekly_log_in_Paris/wk020/Paris_wk020_005.jpg",
     "weekly_log_in_Paris/wk020",
-    "20250913_paris_wk008.md",
     "weekly_log_in_Paris/wk019",
-    "20251109_paris_wk018.md",
     "weekly_log_in_Paris/wk018",
-    "20251102_paris_wk017.md",
     "weekly_log_in_Paris/wk017",
-    "20251006_paris_wk013.md",
-    "20251026_paris_wk016.md",
     "weekly_log_in_Paris/wk016",
-    "20251018_paris_wk015.md",
-    "20251018_paris_wk014.md",
-    "20251019_reconstruct_blog.md",
     "reconstruct_blog",
-    "20250928_paris_wk012.md",
-    "20250928_paris_wk010.md",
     "weekly_log_in_Paris/wk014",
     "weekly_log_in_Paris/wk015",
-    "20250928_paris_wk009.md",
-    "weekly_log_in_Paris/wk013",
-    "weekly_log_in_Paris/wk012",
-    "20250913_paris_wk009.md",
-    "20250913_paris_wk010.md",
-    "20250921_paris_wk011.md",
-    "20250913_paris_wk007.md",
-    "20250803_paris_wk004.md",
-    "20250727_paris_wk003.md",
-    "20250817_paris_wk006.md",
-    "20250810_paris_wk005.md",
-    "20250712_jena_wk252.md",
-    "20250713_paris_wk001.md",
-    "20250721_paris_wk002.md",
-    "20191229_blogging_with_hugo.md"
+    "weekly_log_in_Paris/wk013"
   ]
 }

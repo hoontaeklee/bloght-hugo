@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20251207_paris_wk022.md",
+                "file": "20251214_paris_wk023.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "20251207_paris_wk022"
+              "title": "20251214_paris_wk023"
             }
           }
         ]
@@ -171,20 +171,22 @@
   },
   "active": "e98a6c4ac778d4d2",
   "lastOpenFiles": [
+    "weekly_log_in_Paris/wk023/Paris_wk023_007.jpg",
+    "weekly_log_in_Paris/wk023/Paris_wk023_006.jpg",
+    "weekly_log_in_Paris/wk023/Paris_wk023_005.jpg",
+    "weekly_log_in_Paris/wk023/Paris_wk023_004.jpg",
+    "weekly_log_in_Paris/wk023/Paris_wk023_003.jpg",
+    "weekly_log_in_Paris/wk023/Paris_wk023_002.jpg",
+    "weekly_log_in_Paris/wk023/Paris_wk023_001.jpg",
+    "weekly_log_in_Paris/wk023",
+    "20251207_paris_wk022.md",
+    "20251214_paris_wk023.md",
     "weekly_log_in_Paris/wk022/Paris_wk022_011.jpg",
     "weekly_log_in_Paris/wk022/Paris_wk022_010.jpg",
     "weekly_log_in_Paris/wk022/Paris_wk022_009.jpg",
     "weekly_log_in_Paris/wk022/Paris_wk022_008.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_007.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_006.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_005.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_004.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_003.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_002.jpg",
     "weekly_log_in_Paris/wk022",
     "20251123_paris_wk020.md",
-    "20251207_paris_wk022.md",
-    "weekly_log_in_Paris/wk020/Paris_wk020_101.jpg",
     "20251130_paris_wk021.md",
     "20200927_jena_wk4.md",
     "20200920_jena_wk3.md",
@@ -207,7 +209,6 @@
     "20160700_마스터 알고리즘.md",
     "20140800_첫사랑.md",
     "20231231_jena_wk173.md",
-    "20231225_jena_wk172.md",
     "weekly_log_in_Paris/wk021",
     "weekly_log_in_Paris/wk020",
     "weekly_log_in_Paris/wk019",
@@ -215,7 +216,6 @@
     "weekly_log_in_Paris/wk017",
     "weekly_log_in_Paris/wk016",
     "reconstruct_blog",
-    "weekly_log_in_Paris/wk014",
-    "weekly_log_in_Paris/wk015"
+    "weekly_log_in_Paris/wk014"
   ]
 }

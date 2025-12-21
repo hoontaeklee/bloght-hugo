@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "49ecdc038e5c0972",
+        "id": "63c29345f3450371",
         "type": "tabs",
         "children": [
           {
-            "id": "e98a6c4ac778d4d2",
+            "id": "a55f4ae001e0ad7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20251214_paris_wk023.md",
+                "file": "20251221_paris_wk024.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "20251214_paris_wk023"
+              "title": "20251221_paris_wk024"
             }
           }
         ]
@@ -169,22 +169,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e98a6c4ac778d4d2",
+  "active": "a55f4ae001e0ad7c",
   "lastOpenFiles": [
-    "weekly_log_in_Paris/wk023/Paris_wk023_007.jpg",
-    "weekly_log_in_Paris/wk023/Paris_wk023_006.jpg",
-    "weekly_log_in_Paris/wk023/Paris_wk023_005.jpg",
-    "weekly_log_in_Paris/wk023/Paris_wk023_004.jpg",
-    "weekly_log_in_Paris/wk023/Paris_wk023_003.jpg",
-    "weekly_log_in_Paris/wk023/Paris_wk023_002.jpg",
-    "weekly_log_in_Paris/wk023/Paris_wk023_001.jpg",
-    "weekly_log_in_Paris/wk023",
+    "weekly_log_in_Paris/wk024/Paris_wk024_017.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_002.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_003.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_004.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_005.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_006.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_007.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_008.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_009.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_010.jpg",
+    "weekly_log_in_Paris/wk024/Paris_wk024_011.jpg",
+    "weekly_log_in_Paris/wk024",
+    "20240317_jena_wk183.md",
+    "20251221_paris_wk024.md",
+    "20240317_jena_wk183 1.md",
+    "20240317_jena_wk183.md.md",
     "20251207_paris_wk022.md",
     "20251214_paris_wk023.md",
-    "weekly_log_in_Paris/wk022/Paris_wk022_011.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_010.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_009.jpg",
-    "weekly_log_in_Paris/wk022/Paris_wk022_008.jpg",
+    "weekly_log_in_Paris/wk023",
     "weekly_log_in_Paris/wk022",
     "20251123_paris_wk020.md",
     "20251130_paris_wk021.md",
@@ -205,17 +210,12 @@
     "20200101_cupper_setting_datetime_for_posts.md",
     "20191208_blogstart_platform.md",
     "20170704_그리스인 조르바.md",
-    "20161200_철학자와 늑대.md",
-    "20160700_마스터 알고리즘.md",
-    "20140800_첫사랑.md",
-    "20231231_jena_wk173.md",
     "weekly_log_in_Paris/wk021",
     "weekly_log_in_Paris/wk020",
     "weekly_log_in_Paris/wk019",
     "weekly_log_in_Paris/wk018",
     "weekly_log_in_Paris/wk017",
     "weekly_log_in_Paris/wk016",
-    "reconstruct_blog",
-    "weekly_log_in_Paris/wk014"
+    "reconstruct_blog"
   ]
 }

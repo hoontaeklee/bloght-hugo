@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20251221_paris_wk024.md",
+                "file": "20251228_paris_wk025.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "20251221_paris_wk024"
+              "title": "20251228_paris_wk025"
             }
           }
         ]
@@ -171,20 +171,22 @@
   },
   "active": "a55f4ae001e0ad7c",
   "lastOpenFiles": [
-    "weekly_log_in_Paris/wk024/Paris_wk024_017.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_002.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_003.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_004.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_005.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_006.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_007.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_008.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_009.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_010.jpg",
-    "weekly_log_in_Paris/wk024/Paris_wk024_011.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_002.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_003.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_004.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_005.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_006.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_007.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_008.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_009.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_010.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_011.jpg",
+    "weekly_log_in_Paris/wk025/Paris_wk025_012.jpg",
+    "weekly_log_in_Paris/wk025",
+    "20251221_paris_wk024.md",
+    "20251228_paris_wk025.md",
     "weekly_log_in_Paris/wk024",
     "20240317_jena_wk183.md",
-    "20251221_paris_wk024.md",
     "20240317_jena_wk183 1.md",
     "20240317_jena_wk183.md.md",
     "20251207_paris_wk022.md",
@@ -209,13 +211,11 @@
     "20200112_물리학강의.md",
     "20200101_cupper_setting_datetime_for_posts.md",
     "20191208_blogstart_platform.md",
-    "20170704_그리스인 조르바.md",
     "weekly_log_in_Paris/wk021",
     "weekly_log_in_Paris/wk020",
     "weekly_log_in_Paris/wk019",
     "weekly_log_in_Paris/wk018",
     "weekly_log_in_Paris/wk017",
-    "weekly_log_in_Paris/wk016",
-    "reconstruct_blog"
+    "weekly_log_in_Paris/wk016"
   ]
 }

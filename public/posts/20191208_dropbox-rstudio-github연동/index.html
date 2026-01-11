@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Dropbox - RStudio- Github 연동 : 더 편해졌을까? | Bloght</title>
+<meta name="keywords" content="Hugo, Blog, 2019">
+<meta name="description" content="2019. 12. 08.
+하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 
+옮기는 방식은 다음과 같다 :
+
+Git의 블로그 저장소에 .md 파일 생성
+옮기려는 워드 파일을 열어서 내용 복붙
+오타, 문장 수정 &amp; Preview를 보며 문장, 문단 배치 수정
+표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가
+Medium Story로 Publish
+
+조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.">
+<meta name="author" content="HoonTaek Lee">
+<link rel="canonical" href="https://bloght-hugo.pages.dev/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0352c0849e1e5917401774d6e72e0cfa0940fab6da16bbeeb0da011434ee9cfc.css" integrity="sha256-A1LAhJ4eWRdAF3TW5y4M&#43;glA&#43;rbaFrvusNoBFDTunPw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bloght-hugo.pages.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bloght-hugo.pages.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bloght-hugo.pages.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bloght-hugo.pages.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bloght-hugo.pages.dev/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bloght-hugo.pages.dev/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://bloght-hugo.pages.dev/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/">
+  <meta property="og:site_name" content="Bloght">
+  <meta property="og:title" content="Dropbox - RStudio- Github 연동 : 더 편해졌을까?">
+  <meta property="og:description" content="2019. 12. 08. 하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 옮기는 방식은 다음과 같다 :
+Git의 블로그 저장소에 .md 파일 생성 옮기려는 워드 파일을 열어서 내용 복붙 오타, 문장 수정 &amp; Preview를 보며 문장, 문단 배치 수정 표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가 Medium Story로 Publish 조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-01-01T14:16:00+09:00">
+    <meta property="article:modified_time" content="2020-01-01T14:14:00+09:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="2019">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dropbox - RStudio- Github 연동 : 더 편해졌을까?">
+<meta name="twitter:description" content="2019. 12. 08.
+하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 
+옮기는 방식은 다음과 같다 :
+
+Git의 블로그 저장소에 .md 파일 생성
+옮기려는 워드 파일을 열어서 내용 복붙
+오타, 문장 수정 &amp; Preview를 보며 문장, 문단 배치 수정
+표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가
+Medium Story로 Publish
+
+조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://bloght-hugo.pages.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Dropbox - RStudio- Github 연동 : 더 편해졌을까?",
+      "item": "https://bloght-hugo.pages.dev/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dropbox - RStudio- Github 연동 : 더 편해졌을까?",
+  "name": "Dropbox - RStudio- Github 연동 : 더 편해졌을까?",
+  "description": "2019. 12. 08. 하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 옮기는 방식은 다음과 같다 :\nGit의 블로그 저장소에 .md 파일 생성 옮기려는 워드 파일을 열어서 내용 복붙 오타, 문장 수정 \u0026amp; Preview를 보며 문장, 문단 배치 수정 표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가 Medium Story로 Publish 조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.\n",
+  "keywords": [
+    "Hugo", "Blog",  2019 
+  ],
+  "articleBody": "2019. 12. 08. 하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 옮기는 방식은 다음과 같다 :\nGit의 블로그 저장소에 .md 파일 생성 옮기려는 워드 파일을 열어서 내용 복붙 오타, 문장 수정 \u0026 Preview를 보며 문장, 문단 배치 수정 표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가 Medium Story로 Publish 조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 blogdown 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. 이 글을 참고해서 일단 해봤다.\nRStudio - new project - version control에서 기존 github에 있던 블로그 저장소 url을 따온다 폴더 생성 위치를 내 Dropbox로 지정한다 이렇게 하면 Github의 원격 저장소(내 컴퓨터에 없고 Github에 있으니까 원격이다)로 존재하던 블로그 폴더를\nDropbox에 로컬 저장소(=탐색기에서 보이는 폴더)로 통째로 옮겨오게 된다.\n이제 RStudio에서 쓴 글을 Github와 Dropbox에 반영할 수 있고, 그 반대도 가능하다.\n로컬 –\u003e 원격 : commit + push 원격 –\u003e 로컬 : pull 다만, 여전히 몇 가지 이슈가 있다.\n에디터마다 장단점이 서로 다르다\nRStudio : Rmarkdown, R code 작성은 쉽지만 preview가 불편하다 Git : R code를 작성하기 힘들다(불가능하다?). 대신 markdown은 바로바로 렌더링해주기 때문에 편하다 Medium : 게시글이 어떻게 보일지 글을 작성하면서 볼 수 있다. 하지만 Rmarkdown, markdown 다루기는 제일 불편하다 그래서 무엇이 편해졌는지 잘 모르겠다\n쓰면서 알아보자 일단은 version control을 사용한다는 것에 의의를 두자 2020. 01. 01. 지금은 Medium이 아닌, Github와 Hugo를 이용하는 플랫폼을 시험해보고 있다.\n이 방법에서는 Github 저장소로 블로그가 백업되는데, Dropbox와 연동하면 백업을 한 번 더 할 수 있다는 장점이 있다. 다만, RStudio와 연동하는 것은 아직까지 큰 장점이 없다. 마크다운 에디터로 사용하는 것도 아니고. 만약 R 코드가 내용이 포함된다면 장점이 있을지도 모르겠다.\n",
+  "wordCount" : "262",
+  "inLanguage": "en",
+  "datePublished": "2020-01-01T14:16:00+09:00",
+  "dateModified": "2020-01-01T14:14:00+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "HoonTaek Lee"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bloght-hugo.pages.dev/posts/20191208_dropbox-rstudio-github%EC%97%B0%EB%8F%99/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloght",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bloght-hugo.pages.dev/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bloght-hugo.pages.dev/" accesskey="h" title="Bloght (Alt + H)">Bloght</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://bloght-hugo.pages.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bloght-hugo.pages.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Dropbox - RStudio- Github 연동 : 더 편해졌을까?
+    </h1>
+    <div class="post-meta"><span title='2019-12-08 16:42:00 +0900 KST'>December 8, 2019</span>&nbsp;·&nbsp;<span>HoonTaek Lee</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="2019-12-08">2019. 12. 08.<a hidden class="anchor" aria-hidden="true" href="#2019-12-08">#</a></h2>
+<p>하루 하나씩 Dropbox에 저장된 서평(.docx)을 블로그에 옮기고 있다. 
+옮기는 방식은 다음과 같다 :</p>
+<ol>
+<li>Git의 블로그 저장소에 .md 파일 생성</li>
+<li>옮기려는 워드 파일을 열어서 내용 복붙</li>
+<li>오타, 문장 수정 &amp; Preview를 보며 문장, 문단 배치 수정</li>
+<li>표(저자, 제목, 출판일, 읽은 날짜 등)와 책 그림 추가</li>
+<li>Medium Story로 Publish</li>
+</ol>
+<p>조만간 논문 리뷰(.Rmd)도 Medium에 옮기려 한다. 논문 리뷰는 RStudio에서 작업하고 Rmd 파일로 저장한다. 이전에 <code>blogdown</code> 라이브러리 사용할 때 RStudio와 Github 저장소를 연동했던 것이 떠올랐다. 지금 블로그도 연동해두면 뭔가 편해질 것 같았다. <a href="https://uang.tistory.com/11">이 글</a>을 참고해서 일단 해봤다.</p>
+<ul>
+<li>RStudio - new project - version control에서 기존 github에 있던 블로그 저장소 url을 따온다</li>
+<li>폴더 생성 위치를 내 Dropbox로 지정한다</li>
+</ul>
+<p>이렇게 하면 Github의 원격 저장소(내 컴퓨터에 없고 Github에 있으니까 원격이다)로 존재하던 블로그 폴더를<br>
+Dropbox에 로컬 저장소(=탐색기에서 보이는 폴더)로 통째로 옮겨오게 된다.</p>
+<p>이제 RStudio에서 쓴 글을 Github와 Dropbox에 반영할 수 있고, 그 반대도 가능하다.</p>
+<ul>
+<li>로컬 &ndash;&gt; 원격 : commit + push</li>
+<li>원격 &ndash;&gt; 로컬 : pull</li>
+</ul>
+<p>다만, 여전히 몇 가지 이슈가 있다.</p>
+<ul>
+<li>
+<p>에디터마다 장단점이 서로 다르다</p>
+<ul>
+<li>RStudio : Rmarkdown, R code 작성은 쉽지만 preview가 불편하다</li>
+<li>Git : R code를 작성하기 힘들다(불가능하다?). 대신 markdown은 바로바로 렌더링해주기 때문에 편하다</li>
+<li>Medium : 게시글이 어떻게 보일지 글을 작성하면서 볼 수 있다. 하지만 Rmarkdown, markdown 다루기는 제일 불편하다</li>
+</ul>
+</li>
+<li>
+<p>그래서 무엇이 편해졌는지 잘 모르겠다</p>
+<ul>
+<li>쓰면서 알아보자</li>
+<li>일단은 version control을 사용한다는 것에 의의를 두자</li>
+</ul>
+</li>
+</ul>
+<h2 id="2020-01-01">2020. 01. 01.<a hidden class="anchor" aria-hidden="true" href="#2020-01-01">#</a></h2>
+<p>지금은 <code>Medium</code>이 아닌, <code>Github</code>와 <code>Hugo</code>를 이용하는 플랫폼을 시험해보고 있다.<br>
+이 방법에서는 <code>Github</code> 저장소로 블로그가 백업되는데, <code>Dropbox</code>와 연동하면 백업을 한 번 더 할 수 있다는 장점이 있다. 다만, <code>RStudio</code>와 연동하는 것은 아직까지 큰 장점이 없다. 마크다운 에디터로 사용하는 것도 아니고. 만약 <code>R</code> 코드가 내용이 포함된다면 장점이 있을지도 모르겠다.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bloght-hugo.pages.dev/tags/hugo/">Hugo</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/blog/">Blog</a></li>
+      <li><a href="https://bloght-hugo.pages.dev/tags/2019/">2019</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://bloght-hugo.pages.dev/">Bloght</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

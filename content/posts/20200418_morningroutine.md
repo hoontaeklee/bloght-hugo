@@ -3,7 +3,6 @@ title: "모닝 루틴 (Morning Routine)"
 author: "Hoontaek Lee"
 date: 2020-04-18T16:56:03+09:00
 description:
-draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false

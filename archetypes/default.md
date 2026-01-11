@@ -13,7 +13,7 @@ enableTocContent: false
 tocPosition: outer
 tocLevels: ["h2", "h3", "h4"]
 tags:
-- 2025
+- 2026
 - Daily Life
 - Paris
 ---

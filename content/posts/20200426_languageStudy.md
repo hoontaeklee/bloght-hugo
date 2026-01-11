@@ -5,7 +5,6 @@ date: 2020-04-26T15:00:25+09:00
 description:
 cover: 
   relative: true
-draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false

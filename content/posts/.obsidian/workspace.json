@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c1046d77630b0a77",
+        "id": "c1b9d4e727007a69",
         "type": "tabs",
         "children": [
           {
-            "id": "59bd2649a35ccd3e",
+            "id": "0b8398fa036d049c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20260406_paris_wk039.md",
+                "file": "글감.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260406_paris_wk039"
+              "title": "글감"
             }
           }
         ]
@@ -170,8 +170,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "59bd2649a35ccd3e",
+  "active": "0b8398fa036d049c",
   "lastOpenFiles": [
+    "Untitled 6.base",
+    "Untitled 5.base",
+    "20260406_paris_wk039.md",
     "20260412_paris_wk040.md",
     "20260419_paris_wk041.md",
     "weekly_log_in_Paris/wk041/Paris_wk041_007.jpg",
@@ -186,7 +189,6 @@
     "wk041/Paris_wk041_006.jpg",
     "wk041/Paris_wk041_005.jpg",
     "wk041",
-    "20260406_paris_wk039.md",
     "weekly_log_in_Paris/wk040",
     "weekly_log_in_Paris/wk039",
     "20260322_paris_wk037.md",
@@ -201,7 +203,6 @@
     "weekly_log_in_Paris/wk036",
     "weekly_log_in_Paris/wk035",
     "weekly_log_in_Paris/wk034",
-    "weekly_log_in_Paris/wk027/wk034",
     "20260201_paris_wk030.md",
     "20260208_paris_wk031.md",
     "20260215_paris_wk032.md",

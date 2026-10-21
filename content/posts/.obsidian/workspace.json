@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "글감.md",
+                "file": "20261013_paris_wk066.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "글감"
+              "title": "20261013_paris_wk066"
             }
           }
         ]
@@ -172,6 +172,8 @@
   },
   "active": "0b8398fa036d049c",
   "lastOpenFiles": [
+    "20261019_paris_wk067.md",
+    "글감.md",
     "Untitled 6.base",
     "Untitled 5.base",
     "20260406_paris_wk039.md",
@@ -202,7 +204,6 @@
     "20260223_paris_wk033.md",
     "weekly_log_in_Paris/wk036",
     "weekly_log_in_Paris/wk035",
-    "weekly_log_in_Paris/wk034",
     "20260201_paris_wk030.md",
     "20260208_paris_wk031.md",
     "20260215_paris_wk032.md",
@@ -216,7 +217,6 @@
     "20210321_jena_wk29.md",
     "20210314_jena_wk28.md",
     "20210228_ubuntu_blog_imageProcess.md",
-    "20210228_ubuntu_blog_git.md",
-    "20210228_jena_wk26.md"
+    "20210228_ubuntu_blog_git.md"
   ]
 }

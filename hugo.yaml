@@ -5,6 +5,7 @@ theme: ["PaperMod"]
 caches:
   images:
     dir: :cacheDir/images
+    maxAge: 1440h
 markup:
   goldmark:
     renderer:

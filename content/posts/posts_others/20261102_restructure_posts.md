@@ -23,8 +23,8 @@ I changed the blog folder structure, with helps by Claude. Below is some notes f
 - Removed /public from git tracking because:
     - it will add a lot of work and storage size
     - Cloudflare will not use pre-built /public but will build /public by itself. This is confirmed in the cloudflare dashboard "Build command: hugo"
-    
-        <img src="/posts/figures/wk069/20261102_restructure_posts_001.jpg" style="zoom:100%;" />
+
+      <img src="/posts/figures/20261102_restructure_posts_001.jpg" style="zoom:100%;" />
 
 - Structure change  
     - before: all .md files and images under content
